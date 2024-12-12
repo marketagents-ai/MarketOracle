@@ -47,12 +47,7 @@ llm_configs:
       4. Consider both immediate news and short-term historical context
 
       Return the response in the following JSON format:
-      {{
-        "queries": [
-          "query1 with time context",
-          "query2 with time context"
-        ]
-      }}
+
 
 
   content_analysis:
