@@ -15,8 +15,8 @@ fastapi
 uvicorn
 pydantic_settings
 bs4
-pip install playwright
-playwright install chromium
+playwright
+google
 
 newspaper3k
 requests-html
