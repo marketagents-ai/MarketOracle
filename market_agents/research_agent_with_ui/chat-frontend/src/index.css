@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scrollbar scrollbar-track-gray-200 scrollbar-thumb-gray-400 hover:scrollbar-thumb-gray-500;
+  }
+
+  .dark html {
+    @apply scrollbar-track-gray-800 scrollbar-thumb-gray-600 hover:scrollbar-thumb-gray-500;
+  }
+}
+
+body {
+  @apply m-0 font-sans antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  @apply h-screen;
+}
+
+* {
+  @apply box-border;
+}
+
+button:disabled {
+  @apply opacity-60 cursor-not-allowed;
+}
+
+.loading {
+  @apply opacity-70 pointer-events-none;
+}
