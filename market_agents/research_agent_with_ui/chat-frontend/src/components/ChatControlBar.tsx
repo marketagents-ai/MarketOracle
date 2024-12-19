@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Trash2, X, Eraser, Wand2, Wrench, Settings, Edit2, MessageSquare, Bot, Play, Pause } from 'lucide-react';
-import { ChatControlBarProps, LLMConfig, LLMConfigUpdate,ResponseFormat } from '../types';
+import { ChatControlBarProps, LLMConfig, LLMConfigUpdate } from '../types';
 import { chatApi } from '../api';
 import { LLMConfigMenu } from './LLMConfigMenu';
 import { tokens } from '../styles/tokens';
-
+import { MessageRole } from '../api/index.ts';
 
 export const ChatControlBar: React.FC<ChatControlBarProps> = ({
   chatId,

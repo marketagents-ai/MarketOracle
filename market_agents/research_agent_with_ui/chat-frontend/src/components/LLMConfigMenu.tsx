@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { LLMConfig, LLMConfigUpdate, ResponseFormat, LLMClient } from '../types';
+import { LLMConfig, LLMConfigUpdate, LLMClient } from '../types';
 import { X } from 'lucide-react';
+import { ResponseFormat } from '../api/responseTypes';
 
 interface LLMConfigMenuProps {
+  config: LLMConfig;
+  onUpdate: (update: Partial<LLMConfig>) => void;
   chatId: number;
   isOpen: boolean;
   onClose: () => void;
-  onUpdate: (config: LLMConfigUpdate) => Promise<void>;
   currentConfig?: LLMConfig;
 }
 export const LLMConfigMenu: React.FC<LLMConfigMenuProps> = ({

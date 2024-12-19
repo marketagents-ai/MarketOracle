@@ -11,7 +11,7 @@ import {
   Bot
 } from 'lucide-react';
 import DataViewer from './DataViewer';
-import { Message, MessageRole } from '../types';
+import { MessageRole } from '../api/index.ts';
 
 interface ChatMessageProps {
   message: Message;

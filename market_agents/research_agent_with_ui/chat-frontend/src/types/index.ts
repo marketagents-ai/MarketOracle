@@ -1,5 +1,3 @@
-import { MessageRole } from '../api';
-
 export type Theme = 'light' | 'dark';
 
 export interface ThemeContextType {
@@ -11,7 +9,13 @@ export interface UserPreviewMessageProps {
   content: string;
 }
 
-export type ResponseFormat = 'text' | 'json_object';
+export enum MessageRole {
+  USER = 'user',
+  ASSISTANT = 'assistant',
+  SYSTEM = 'system',
+  TOOL = 'tool'
+}
+export type ResponseFormat = 'text' | 'json' | 'function_call' | 'json_object';
 
 export interface ResearchResult {
   query: string;
@@ -30,13 +34,20 @@ export interface Analysis {
 }
 
 
-export type MessageRole = 'user' | 'assistant' | 'system' | 'tool' | 'function';
+// export type MessageRole = 'user' | 'assistant' | 'system' | 'tool' | 'function';
 
 export interface Message {
   role: MessageRole;
   content: string | any;
   timestamp?: string;
   metadata?: any;
+}
+
+export interface Chat {
+  id: number;
+  name: string;
+  created_at: string;
+  history: any[];
 }
 
 export interface ChatState {
@@ -49,7 +60,6 @@ export interface ChatState {
   systemPromptId?: number;
   systemPrompt?: SystemPrompt;
 }
-
 export interface LLMConfig {
   temperature?: number;
   max_tokens?: number;
@@ -59,7 +69,8 @@ export interface LLMConfig {
   response_format?: ResponseFormat;
 }
 
-export type ResponseFormat = 'text' | 'json' | 'function_call';
+
+
 export interface Tool {
     id: number;
     schema_name: string;
@@ -104,4 +115,45 @@ export interface ActivityState {
     };
   };
 }
+
+
+export interface ValidationErrors {
+  [key: string]: string[];
+}
+
+export interface TabBarProps {
+  tabs: Tab[];
+  activeTabId: string | null;
+  onTabSelect: (tabId: string) => void;
+  onTabClose: (tabId: string) => void;
+  onTmuxModeToggle: () => void;
+  isTmuxMode: boolean;
+}
+
+export interface TmuxLayoutProps {
+  openChats: Record<string, ChatState>;
+  tabOrder: number[];
+  activeTabId: string | null;
+  onSendMessage: (message: string) => Promise<void>;
+  onTabSelect: (tabId: string) => void;
+  onTabClose: (tabId: string) => void;
+  tools: Tool[];
+  systemPrompts: SystemPrompt[];
+}
+
+export interface TypedTool extends Tool {
+  type: 'typed';
+}
+
+export interface CallableTool extends Tool {
+  type: 'callable';
+}
+
+export type TypedToolCreate = ToolCreate & {
+  type: 'typed';
+};
+
+export type CallableToolCreate = ToolCreate & {
+  type: 'callable';
+};
 

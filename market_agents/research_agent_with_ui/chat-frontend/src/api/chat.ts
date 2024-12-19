@@ -1,24 +1,24 @@
 import axios from 'axios';
-import type { Message, LLMConfig } from '../types';
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8000/api';
+import type { Chat, Message, LLMConfig, SystemPrompt, SystemPromptCreate } from '../types';
+import { API_BASE_URL } from './config';
 
-export const chatApi = {
+export interface ChatApi {
+  getChats: () => Promise<Chat[]>;
+  sendMessage: (chatId: number, message: string, config?: LLMConfig) => Promise<Message>;
+  getChatHistory: (chatId: number) => Promise<Message[]>;
+  createSystemPrompt: (prompt: SystemPromptCreate) => Promise<SystemPrompt>;
+  getChat: (chatId: number) => Promise<Chat>;
+  getLLMConfig: (chatId: number) => Promise<LLMConfig>;
+  setStopTool: (chatId: number, toolId: number) => Promise<void>;
+  removeStopTool: (chatId: number) => Promise<void>;
+}
+
+// Implement the ChatApi interface
+export const chatApi: ChatApi = {
   getChats: async () => {
-    const response = await axios.get(`${API_BASE_URL}/chats/`);
-    return response.data;
+    const response = await fetch('/api/chats');
+    return response.json();
   },
-
-    sendMessage: async (chatId: number, message: string, config?: LLMConfig): Promise<Message> => {
-        const response = await axios.post(`${API_BASE_URL}/chats/${chatId}/messages/`, {
-            content: message,
-            config
-        });
-        return response.data as Message;
-    },
-
-    getChatHistory: async (chatId: number): Promise<Message[]> => {
-        const response = await axios.get(`${API_BASE_URL}/chats/${chatId}/messages/`);
-        return response.data as Message[];
-    },
+  // ... implement other methods
 };

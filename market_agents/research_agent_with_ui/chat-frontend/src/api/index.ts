@@ -1,22 +1,34 @@
-import { API_BASE_URL } from '../index';
+import { 
+  Chat, 
+  Message, 
+  LLMConfig, 
+  ResearchResult, 
+  MessageRole,
+  // ... other types you need
+} from '../types';
+
+import { ResponseFormat } from './responseTypes';
+import { API_BASE_URL } from './config';
+import axios from 'axios';
+// import { MessageRole } from '../types';
+
 export { chatApi } from './chat';
-import { Message, MessageRole, ResponseFormat } from '../types';
 export { toolsApi } from './tools';
 export { researchApi } from './research';
 
 // Export types from types file
 export type { 
-    MessageRole,
-    Chat,
-    ChatState,
-    Tool,
-    ToolCreate,
-    SystemPrompt,
-    SystemPromptCreate,
-    LLMConfig,
-    LLMConfigUpdate,
-    // Remove duplicate ResponseFormat export
-} from '../types';
+  MessageRole,
+  Chat,
+  Message,
+  LLMConfig,
+  ResearchResult,
+  ResponseFormat
+};
+
+// Re-export MessageRole from types
+export { MessageRole };
+
 
 export interface ValidationErrors {
     [key: string]: string[];
@@ -36,43 +48,55 @@ export interface Chat {
   config?: LLMConfig;
 }
 
-export const chatApi = {
-  getChats: async (): Promise<Chat[]> => {
-      const response = await axios.get(`${API_BASE_URL}/chats/`);
-      return response.data as Chat[];
+const chatapi = axios.create({
+  baseURL: API_BASE_URL,
+  headers: {
+    'Content-Type': 'application/json',
   },
+});
 
-  sendMessage: async (chatId: number, message: string, config?: LLMConfig): Promise<Message> => {
-      const response = await axios.post(`${API_BASE_URL}/chats/${chatId}/messages/`, {
-          content: message,
-          config
-      });
-      return response.data as Message;
-  },
+// export const chatapi = axios.create({
+//   baseURL: API_BASE_URL,
+//   headers: {
+//     'Content-Type': 'application/json',
+//   },
+// });
 
-  getChatHistory: async (chatId: number): Promise<Message[]> => {
-      const response = await axios.get(`${API_BASE_URL}/chats/${chatId}/messages/`);
-      return response.data as Message[];
-  },
-};
+
+
+//   getHistory: async (): Promise<ResearchResult[]> => {
+//     const response = await chatapi.get('/research/history');
+//     return response.data;
+//   }
+// };
+
+// // Remove duplicate declarations
+// export type ResponseFormat = 'text' | 'json' | 'function_call' | 'json_object';
+
 
 export interface Message {
   id: number;
   chat_id: number;
   role: MessageRole;
+
   content: string;
   created_at: string;
 }
 
-export enum MessageRole {
-  USER = 'user',
-  ASSISTANT = 'assistant',
-  SYSTEM = 'system',
-  TOOL = 'tool'
+// export enum MessageRole {
+//   USER = 'user',
+//   ASSISTANT = 'assistant',
+//   SYSTEM = 'system',
+//   TOOL = 'tool'
+// }
+
+export interface Tab {
+  id: string;
+  title: string;
 }
 
 
-export type ResponseFormat = 'text' | 'json' | 'json_object' | 'tool' | 'function_call' | 'auto_tools';
+
 
 
 export interface Summary {
@@ -88,16 +112,33 @@ export interface Analysis {
 
 export interface ResearchResult {
   query: string;
-  summary: Summary;
-  analysis: Analysis;
   timestamp: string;
+  results: WebSearchResult[];
 }
 
-// Message Types
+export interface ResearchRequest {
+  query: string;
+  parameters?: Record<string, any>;
+}
+
+
+export interface WebSearchResult {
+  url: string;
+  title: string;
+  content: string;
+  timestamp?: string;
+  status?: string;
+  summary?: {
+    summary?: string;
+    sentiment?: string;
+    key_points?: string[];
+  };
+}
+
 export interface Message {
-    role: MessageRole;
-    content: string | { type: string; data: any };
-    timestamp?: string;
+  role: MessageRole;
+  content: string | { type: string; data: any };
+  timestamp?: string;
 }
 
 
@@ -109,30 +150,33 @@ export interface Chat {
   config?: LLMConfig;
 }
 
-export interface ChatState {
-    chat: Chat;
-    messages: Message[];
-    error?: string;
-    isLoading: boolean;
-    previewMessage?: string;
+export interface Chat {
+  id: number;
+  name?: string;
+  history: Message[];
+  active_tool_id?: number;
+  stop_tool_id?: number;
+  system_prompt_id?: number;
 }
 
-// Tool Related Types
 export interface Tool {
-    id: number;
-    name: string;
-    description: string;
-    schema: any;
-    is_enabled?: boolean;
-    is_callable?: boolean;
-    created_at?: string;
+  id: number;
+  name: string;
+  description: string;
+  schema_name: string;
+  input_schema: Record<string, any>;
+  output_schema: Record<string, any>;
+  is_callable?: boolean;
 }
+
 
 export interface ToolCreate {
-    name: string;
-    description: string;
-    schema: any;
-    is_callable?: boolean;
+  name: string;
+  description: string;
+  schema_name: string;
+  input_schema: Record<string, any>;
+  output_schema: Record<string, any>;
+  is_callable?: boolean;
 }
 
 // System Prompt Types
@@ -149,15 +193,21 @@ export interface SystemPromptCreate {
 }
 
 
-
 export interface LLMConfig {
-  temperature: number;
-  max_tokens: number;
-  top_p: number;
-  frequency_penalty: number;
-  presence_penalty: number;
-  response_format: ResponseFormat;
   client: string;
+  model: string;
+  temperature?: number;
+  max_tokens?: number;
+  response_format?: ResponseFormat;
+  system_prompt?: string;
+}
+
+export interface ChatState {
+  chat: Chat;
+  messages: Message[];
+  error?: Error;
+  isLoading: boolean;
+  previewMessage?: string;
 }
 
 
@@ -255,20 +305,16 @@ export interface ChatWindowProps {
   isActive?: boolean;
   researchResults?: ResearchResult;
 }
+
+
+
 export interface TabBarProps {
-  tabs: {
-    id: string;
-    name?: string;
-    chatId: number;
-    systemPromptName?: string;
-    toolName?: string;
-  }[];
+  tabs: Tab[];
   activeTabId: string | null;
   onTabSelect: (tabId: string) => void;
   onTabClose: (tabId: string) => void;
   onTmuxModeToggle: () => void;
   isTmuxMode: boolean;
-  tabOrder: number[];
 }
 
 export interface ErrorDisplayProps {
@@ -293,7 +339,6 @@ export interface DataNodeProps extends DataViewerProps {
 export interface ValidationErrors {
   [key: string]: string[];
 }
-
 
 export interface SystemPanelProps {
   systemPrompts: SystemPrompt[];
