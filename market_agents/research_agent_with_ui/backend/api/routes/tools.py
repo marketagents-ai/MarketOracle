@@ -1,3 +1,4 @@
+# backend/api/routes/tools.py
 from fastapi import APIRouter, HTTPException
 from typing import List, Optional, Dict, Any
 from datetime import datetime
@@ -5,44 +6,22 @@ from pydantic import BaseModel
 
 router = APIRouter()
 
-# Pydantic models
-class ToolBase(BaseModel):
-    schema_name: str
-    schema_description: str
-    instruction_string: str
-    json_schema: Dict[str, Any]
-    strict_schema: bool = True
-
-class CallableToolBase(BaseModel):
+class Tool(BaseModel):
+    id: Optional[int] = None
     name: str
     description: str
-    input_schema: Dict[str, Any]
-    output_schema: Dict[str, Any]
-    is_callable: bool = True
+    parameters: Dict[str, Any] = {}
+    created_at: Optional[datetime] = None
 
-class Tool(ToolBase):
-    id: int
-    created_at: datetime
-
-class AutoToolsUpdate(BaseModel):
-    tool_ids: List[int]
-
-# Global state (replace with database in production)
-tools: List[Dict] = []
-auto_tools_ids: List[int] = []
-stop_tool_id: Optional[int] = None
+tools: List[Dict[str, Any]] = []
 tool_counter = 0
 
-@router.get("/tools")
+@router.get("/tools", response_model=List[Tool])
 async def get_tools():
-    return {
-        "tools": tools,
-        "autoToolsIds": auto_tools_ids,
-        "stopToolId": stop_tool_id
-    }
+    return tools
 
-@router.post("/tools")
-async def create_tool(tool: ToolBase | CallableToolBase):
+@router.post("/tools", response_model=Tool)
+async def create_tool(tool: Tool):
     global tool_counter
     tool_counter += 1
     tool_dict = tool.dict()
