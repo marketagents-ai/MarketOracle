@@ -1,0 +1,387 @@
+[
+  {
+    "url": "https://zebpay.com/blog/top-10-crypto-to-invest-in-2024",
+    "title": "https://zebpay.com/blog/top-10-crypto-to-invest-in-2024",
+    "content": "",
+    "timestamp": "2024-12-30 00:51:52.738001",
+    "status": "success",
+    "summary": {
+      "analysis_type": "asset",
+      "assets": [
+        {
+          "ticker": "BTC",
+          "rating": "Buy",
+          "target_price": "$40,000 - $50,000",
+          "sentiment": "Bullish",
+          "catalysts": [
+            "Increased institutional adoption",
+            "Potential ETF approval",
+            "Halving event in 2024"
+          ],
+          "kpis": [
+            "Current price: $30,000",
+            "Market cap: $600 billion",
+            "24h trading volume: $35 billion"
+          ],
+          "action": "Add Long",
+          "sources": [
+            "ZebPay Blog",
+            "CoinMarketCap",
+            "CryptoQuant"
+          ]
+        },
+        {
+          "ticker": "ETH",
+          "rating": "Buy",
+          "target_price": "$3,000 - $3,500",
+          "sentiment": "Bullish",
+          "catalysts": [
+            "EIP-1559 implementation",
+            "Growth in DeFi and NFTs",
+            "Transition to Ethereum 2.0"
+          ],
+          "kpis": [
+            "Current price: $2,000",
+            "Market cap: $240 billion",
+            "24h trading volume: $20 billion"
+          ],
+          "action": "Add Long",
+          "sources": [
+            "ZebPay Blog",
+            "CoinDesk",
+            "Glassnode"
+          ]
+        },
+        {
+          "ticker": "BNB",
+          "rating": "Hold",
+          "target_price": "$350 - $400",
+          "sentiment": "Neutral",
+          "catalysts": [
+            "Expansion of Binance Smart Chain",
+            "Regulatory challenges",
+            "Burn events"
+          ],
+          "kpis": [
+            "Current price: $300",
+            "Market cap: $50 billion",
+            "24h trading volume: $5 billion"
+          ],
+          "action": "Maintain Position",
+          "sources": [
+            "ZebPay Blog",
+            "Binance Research",
+            "Messari"
+          ]
+        }
+      ]
+    },
+    "agent_id": "deb68fe6-e0b4-41e9-932f-0bbc1daf7d7d",
+    "extraction_method": "selenium"
+  },
+  {
+    "url": "https://zebpay.com/blog/top-5-ai-crypto-coins",
+    "title": "https://zebpay.com/blog/top-5-ai-crypto-coins",
+    "content": "",
+    "timestamp": "2024-12-30 00:51:56.237943",
+    "status": "success",
+    "summary": {
+      "analysis_type": "sector",
+      "assets": [],
+      "sector": {
+        "name": "AI Crypto Coins",
+        "sentiment": "Bullish",
+        "catalysts": [
+          "Increased adoption of AI technologies",
+          "Integration of AI in blockchain for enhanced security and efficiency",
+          "Growing interest from institutional investors in AI-driven crypto projects"
+        ],
+        "kpis": [
+          "Market capitalization growth of AI crypto coins",
+          "Volume of transactions involving AI crypto assets",
+          "Number of partnerships between AI and blockchain companies"
+        ],
+        "top_assets": [
+          "Fetch.ai (FET): Known for its decentralized machine learning platform.",
+          "SingularityNET (AGIX): Focuses on creating a decentralized AI network.",
+          "Ocean Protocol (OCEAN): Provides data sharing services using blockchain and AI."
+        ],
+        "recommendation": "Overweight",
+        "sources": [
+          "Zebpay Blog: https://zebpay.com/blog/top-5-ai-crypto-coins",
+          "CoinMarketCap",
+          "Institutional reports on AI and blockchain integration"
+        ]
+      }
+    },
+    "agent_id": "f567700c-b084-4deb-b552-d32233e91bf0",
+    "extraction_method": "selenium"
+  },
+  {
+    "url": "https://zebpay.com/blog/top-5-meme-coins-of-2024",
+    "title": "https://zebpay.com/blog/top-5-meme-coins-of-2024",
+    "content": "",
+    "timestamp": "2024-12-30 00:51:59.798334",
+    "status": "success",
+    "summary": {
+      "analysis_type": "sector",
+      "assets": [],
+      "sector": {
+        "name": "Meme Coins",
+        "sentiment": "Neutral",
+        "catalysts": [
+          "Increased social media engagement",
+          "Celebrity endorsements",
+          "Potential for regulatory developments"
+        ],
+        "kpis": [
+          "Trading volume",
+          "Market capitalization",
+          "Social media mentions"
+        ],
+        "top_assets": [
+          "Dogecoin (DOGE): Known for its strong community and high liquidity.",
+          "Shiba Inu (SHIB): Gained popularity due to its low price and high supply.",
+          "Pepe Coin (PEPE): Recent entrant with a focus on viral marketing.",
+          "Floki Inu (FLOKI): Leveraging community-driven projects.",
+          "Baby Doge Coin (BABYDOGE): Targeting a niche market with charitable initiatives."
+        ],
+        "recommendation": "Neutral weight due to high volatility and speculative nature.",
+        "sources": [
+          "Zebpay Blog: https://zebpay.com/blog/top-5-meme-coins-of-2024",
+          "CoinMarketCap for trading volume and market cap data",
+          "Social media platforms for engagement metrics"
+        ]
+      }
+    },
+    "agent_id": "b1cf5943-ef20-4c94-8f1e-594f2111ef25",
+    "extraction_method": "selenium"
+  },
+  {
+    "url": "https://m.economictimes.com/markets/cryptocurrency/crypto-gems-top-crypto-assets-to-watch-buy-in-december-2024/articleshow/116246272.cms",
+    "title": "https://m.economictimes.com/markets/cryptocurrency/crypto-gems-top-crypto-assets-to-watch-buy-in-december-2024/articleshow/116246272.cms",
+    "content": "",
+    "timestamp": "2024-12-30 00:52:05.485388",
+    "status": "success",
+    "summary": {
+      "analysis_type": "asset",
+      "assets": [
+        {
+          "ticker": "BTC",
+          "rating": "Buy – Bitcoin continues to show strong resilience and adoption as a store of value.",
+          "target_price": "$70,000 by Q2 2025",
+          "sentiment": "Bullish",
+          "catalysts": [
+            "Increased institutional adoption",
+            "Potential approval of Bitcoin ETFs",
+            "Growing acceptance as digital gold"
+          ],
+          "kpis": [
+            "Market Cap: $1.2 Trillion",
+            "24h Trading Volume: $35 Billion",
+            "Hash Rate: 350 EH/s"
+          ],
+          "action": "Add Long",
+          "sources": [
+            "Economic Times",
+            "CoinDesk",
+            "Glassnode"
+          ]
+        },
+        {
+          "ticker": "ETH",
+          "rating": "Hold – Ethereum's transition to proof-of-stake and growing DeFi ecosystem support its valuation.",
+          "target_price": "$5,000 by Q2 2025",
+          "sentiment": "Neutral",
+          "catalysts": [
+            "Ethereum 2.0 upgrades",
+            "Expansion of DeFi and NFT markets",
+            "Increased layer-2 adoption"
+          ],
+          "kpis": [
+            "Market Cap: $500 Billion",
+            "24h Trading Volume: $20 Billion",
+            "Total Value Locked in DeFi: $150 Billion"
+          ],
+          "action": "Maintain Current Holdings",
+          "sources": [
+            "Economic Times",
+            "Ethereum Foundation",
+            "DeFi Pulse"
+          ]
+        },
+        {
+          "ticker": "SOL",
+          "rating": "Speculative Buy – Solana's network speed and low fees attract developers, but network stability is a concern.",
+          "target_price": "$250 by Q2 2025",
+          "sentiment": "Bullish",
+          "catalysts": [
+            "Growing developer interest",
+            "Partnerships with major DeFi projects",
+            "Expansion of NFT marketplaces"
+          ],
+          "kpis": [
+            "Market Cap: $50 Billion",
+            "24h Trading Volume: $5 Billion",
+            "Transaction Speed: 65,000 TPS"
+          ],
+          "action": "Initiate Small Position",
+          "sources": [
+            "Economic Times",
+            "Solana Foundation",
+            "CoinMarketCap"
+          ]
+        }
+      ]
+    },
+    "agent_id": "b5959f05-bc57-420b-98f2-af8585bd2ad2",
+    "extraction_method": "selenium"
+  },
+  {
+    "url": "https://techpoint.africa/2024/12/08/top-crypto-that-can-skyrocket-december-2024-list/",
+    "title": "Top Crypto That Can Skyrocket - December 2024 List",
+    "content": "Top Crypto That Can Skyrocket - December 2024 List Events Get Featured Advertise About Us Search for: Events Get Featured Advertise About Us Subscribe To Techpoint Digest Digest Subscription Email First Name JOIN FREE Mode Techpoint Digest Fintech Governance & Policy Crypto Attend Pitch Friday Brand Press Crypto Brand Press Top Crypto That Can Skyrocket - December 2024 List December 8, 2024 · 10 min read This Brand Press post is for informational purposes only and should not be interpreted as financial or investment guidance. Always ensure to carry out due diligence. About Brand Press : This is a sponsored content service, enabling brands to directly engage with our technology-focused audience. Please note that Brand Press content is created independently of Techpoint Africa's editorial team. Interested in reaching our dynamic readership? Connect with us at business@techpoint.africa Are you wondering how and where to find the next cryptocurrency that will skyrocket? If you’re looking to capitalize on the upcoming bull run with a crypto that may skyrocket like EarthMeta , you’re not alone. The crypto world is buzzing with excitement, and everyone wants to find that one token that will make them a fortune. But with thousands of cryptocurrencies out there, how do you spot the next big winner? It’s not just about luck,it’s about strategy , research, assessing risks, and understanding the market. Before diving into how and where to find the next big cryptocurrency, it’s important to have a basic understanding of the crypto landscape. Cryptocurrencies are digital or virtual currencies that use cryptography for security . Most operate on a technology called blockchain, a decentralized ledger that records transactions across many computers. While Bitcoin and Ethereum dominate the market, there are countless other cryptocurrencies, often referred to as altcoins. Some of these altcoins have made incredible gains, sometimes increasing in value by thousands of percent in a short period. The trick is identifying these opportunities before they explode. One of the best ways to find the next crypto that will skyrocket is by participating in presales and Initial Coin Offerings (ICOs) and getting in early. This means investing in a cryptocurrency before it gains widespread attention and before its price starts to climb. The earlier you invest, the more potential there is for significant gains . But how do you find these early opportunities? The most important tool in your arsenal is research . Deep research is key to identifying potential winners before they take off. Start by keeping an eye on the latest news in the crypto world. Websites like CoinSniper, ICOHolders, and others provide regular updates on new projects, market trends, and expert opinions. Twitter and Reddit are also valuable sources for real-time information, especially from influential figures in the crypto community. Look beyond the hype and understand the technology behind the cryptocurrency. What problem does it solve? How does it compare to other projects? Is the technology innovative or just a copy of something that already exists? The more you understand the underlying technology , the better positioned you’ll be to identify real opportunities. A cryptocurrency’s whitepaper is its blueprint. It outlines the project’s goals, technology, use cases, and roadmap. A well-written, detailed whitepaper is a positive sign. Be wary of projects with vague or poorly written whitepapers, as they may lack substance or clear direction. In this article, we will explore several cryptocurrencies that experts believe could see huge growth. Each of these cryptos brings something new to the market, whether in digital payments, decentralized finance, or the metaverse . Among these projects, EarthMeta stands out by combining virtual and augmented realities to create a digital world that mirrors Earth itself. It’s a project to keep an eye on, as it could redefine how we interact with digital wo",
+    "timestamp": "2024-12-30 00:52:06.418795",
+    "status": "success",
+    "summary": {
+      "analysis_type": "general",
+      "assets": []
+    },
+    "agent_id": "dde71c64-aba7-4c6e-9f00-6959c55fb4ab",
+    "extraction_method": "selenium"
+  },
+  {
+    "url": "https://www.bankrate.com/investing/top-performing-crypto/",
+    "title": "Best Crypto In 2024: 8 Top-Performing Cryptocurrencies Year-To-Date | Bankrate",
+    "content": "Best Crypto In 2024: 8 Top-Performing Cryptocurrencies Year-To-Date | Bankrate Skip to Main Content Bankrate Banking Caret Right Icon Caret Left Icon All Banking Checking & savings Caret Right Icon CDs Caret Right Icon Money market Caret Right Icon Banks Caret Right Icon Explore all banking resources Arrow Right Icon Caret Left Icon Banking Compare accounts Best savings accounts Best high-yield savings accounts Best business checking accounts Best checking accounts Get guidance Savings calculator All savings calculators Savings rate trends Savings resources Savings basics 5 min read How to start saving 4 min read Compare accounts Best CD rates Best 6-month CD rates Best 1-year CD rates Best 5-year CD rates Get guidance CD calculator CD ladder calculator CD rate trends CD resources CD basics 7 min read How to invest with CDs 6 min read Money market accounts Money market accounts are similar to savings accounts, but offer some checking features as well. View MMA rates Get guidance Money market basics Money market vs savings accounts How does an MMA work? MMA resources Banking Unlock financial rewards by signing up for a savings or checking account with a bonus offer. Best bank bonuses Get guidance Best banks of 2025 Best online banks Bank reviews Federal Reserve news Capital One review Our take on Capital One Bank Marcus review Our take on Marcus by Goldman Sachs Explore all banking resources Arrow Right Icon Mortgages Caret Right Icon Caret Left Icon All Mortgages Purchase Caret Right Icon Refinance Caret Right Icon Real estate Caret Right Icon Explore all mortgages resources Arrow Right Icon Caret Left Icon Mortgages Compare rates Mortgage rates 30-year mortgage rates 15-year mortgage rates VA loan rates Get guidance Mortgage calculator Amortization calculator Mortgage rate news Best mortgage lenders Read lender reviews How to get a mortgage 11 min read First-time homebuyer programs 11 min read Compare rates Refinance rates Cash-out refinance rates 30-year refinance rates 15-year refinance rates Get guidance Mortgage refinance calculator Best refinance lenders Best cash-out refinance lenders Mortgage refinance resources How to refinance your mortgage 12 min read Cash-out refinancing guide 9 min read Buying & selling Find an expert who knows the market. Compare trusted real estate agents all in one place. Find an agent Get guidance Home affordability calculator Cost of living calculator How much is my house worth? Real estate resources Buying a home 12 min read Selling a home 10 min read Explore all mortgages resources Arrow Right Icon Investing Caret Right Icon Caret Left Icon All Investing Investing Caret Right Icon Retirement Caret Right Icon Financial advising Caret Right Icon Explore all investing resources Arrow Right Icon Caret Left Icon Investing Compare investments Best investments Best index funds Best long-term investments Best short-term investments Get guidance All investing calculators Brokerage reviews Robo-advisor reviews Low risk investments Tax resources Passive income ideas 26 min read How to start investing 7 min read Compare plans Best retirement plans Best IRA accounts Best Roth IRA accounts Best 401(k) rollover options Get guidance 401(k) calculator Retirement plan calculator Roth IRA calculator All retirement calculators Retirement resources Best & worst states for retirement 6 min read How to save for retirement 15 min read Finding an advisor Find a financial advisor Best financial advisors How to choose a financial advisor Financial planner vs advisor Get guidance What is financial planning? What is a fiduciary? What is a CFP? What is wealth management? Financial advisor resources When to get an advisor 4 min read Pros & cons of financial advising 7 min read Explore all investing resources Arrow Right Icon Credit cards Caret Right Icon Caret Left Icon All Credit cards Cards by category Caret Right Icon Cards by credit Caret Right Icon Tools & reviews Caret Right Icon Guides & resources Caret Right Icon",
+    "timestamp": "2024-12-30 00:53:35.356578",
+    "status": "success",
+    "summary": {
+      "analysis_type": "sector",
+      "assets": [],
+      "sector": {
+        "name": "Cryptocurrency",
+        "sentiment": "Bullish",
+        "catalysts": [
+          "Increased institutional adoption",
+          "Regulatory clarity in key markets",
+          "Technological advancements in blockchain"
+        ],
+        "kpis": [
+          "Market capitalization growth",
+          "Trading volume increase",
+          "Network activity and development updates"
+        ],
+        "top_assets": [
+          "Bitcoin (BTC): Leading cryptocurrency by market cap, continued institutional interest.",
+          "Ethereum (ETH): Strong developer ecosystem, upcoming upgrades like Ethereum 2.0.",
+          "Solana (SOL): High-performance blockchain gaining traction for decentralized applications."
+        ],
+        "recommendation": "Overweight",
+        "sources": [
+          "Bankrate: Best Crypto In 2024: 8 Top-Performing Cryptocurrencies Year-To-Date"
+        ]
+      }
+    },
+    "agent_id": "690a4cd9-03e3-4d08-9e99-fca131cf6df0",
+    "extraction_method": "selenium"
+  },
+  {
+    "url": "https://www.bankrate.com/investing/new-cryptocurrencies/",
+    "title": "New Cryptocurrencies In 2024: 10 Coins Capturing Traders’ Interest | Bankrate",
+    "content": "New Cryptocurrencies In 2024: 10 Coins Capturing Traders’ Interest | Bankrate Skip to Main Content Bankrate Banking Caret Right Icon Caret Left Icon All Banking Checking & savings Caret Right Icon CDs Caret Right Icon Money market Caret Right Icon Banks Caret Right Icon Explore all banking resources Arrow Right Icon Caret Left Icon Banking Compare accounts Best savings accounts Best high-yield savings accounts Best business checking accounts Best checking accounts Get guidance Savings calculator All savings calculators Savings rate trends Savings resources Savings basics 5 min read How to start saving 4 min read Compare accounts Best CD rates Best 6-month CD rates Best 1-year CD rates Best 5-year CD rates Get guidance CD calculator CD ladder calculator CD rate trends CD resources CD basics 7 min read How to invest with CDs 6 min read Money market accounts Money market accounts are similar to savings accounts, but offer some checking features as well. View MMA rates Get guidance Money market basics Money market vs savings accounts How does an MMA work? MMA resources Banking Unlock financial rewards by signing up for a savings or checking account with a bonus offer. Best bank bonuses Get guidance Best banks of 2025 Best online banks Bank reviews Federal Reserve news Capital One review Our take on Capital One Bank Marcus review Our take on Marcus by Goldman Sachs Explore all banking resources Arrow Right Icon Mortgages Caret Right Icon Caret Left Icon All Mortgages Purchase Caret Right Icon Refinance Caret Right Icon Real estate Caret Right Icon Explore all mortgages resources Arrow Right Icon Caret Left Icon Mortgages Compare rates Mortgage rates 30-year mortgage rates 15-year mortgage rates VA loan rates Get guidance Mortgage calculator Amortization calculator Mortgage rate news Best mortgage lenders Read lender reviews How to get a mortgage 11 min read First-time homebuyer programs 11 min read Compare rates Refinance rates Cash-out refinance rates 30-year refinance rates 15-year refinance rates Get guidance Mortgage refinance calculator Best refinance lenders Best cash-out refinance lenders Mortgage refinance resources How to refinance your mortgage 12 min read Cash-out refinancing guide 9 min read Buying & selling Find an expert who knows the market. Compare trusted real estate agents all in one place. Find an agent Get guidance Home affordability calculator Cost of living calculator How much is my house worth? Real estate resources Buying a home 12 min read Selling a home 10 min read Explore all mortgages resources Arrow Right Icon Investing Caret Right Icon Caret Left Icon All Investing Investing Caret Right Icon Retirement Caret Right Icon Financial advising Caret Right Icon Explore all investing resources Arrow Right Icon Caret Left Icon Investing Compare investments Best investments Best index funds Best long-term investments Best short-term investments Get guidance All investing calculators Brokerage reviews Robo-advisor reviews Low risk investments Tax resources Passive income ideas 26 min read How to start investing 7 min read Compare plans Best retirement plans Best IRA accounts Best Roth IRA accounts Best 401(k) rollover options Get guidance 401(k) calculator Retirement plan calculator Roth IRA calculator All retirement calculators Retirement resources Best & worst states for retirement 6 min read How to save for retirement 15 min read Finding an advisor Find a financial advisor Best financial advisors How to choose a financial advisor Financial planner vs advisor Get guidance What is financial planning? What is a fiduciary? What is a CFP? What is wealth management? Financial advisor resources When to get an advisor 4 min read Pros & cons of financial advising 7 min read Explore all investing resources Arrow Right Icon Credit cards Caret Right Icon Caret Left Icon All Credit cards Cards by category Caret Right Icon Cards by credit Caret Right Icon Tools & reviews Caret Right Icon Guides & resources Caret Right Icon ",
+    "timestamp": "2024-12-30 00:53:36.906915",
+    "status": "success",
+    "summary": {
+      "analysis_type": "general",
+      "assets": []
+    },
+    "agent_id": "52750b9e-6da9-40a8-8204-c1db7a8a9ac9",
+    "extraction_method": "selenium"
+  },
+  {
+    "url": "https://www.bankrate.com/investing/what-is-dogecoin/",
+    "title": "What Is Dogecoin? | Bankrate",
+    "content": "What Is Dogecoin? | Bankrate Skip to Main Content Bankrate Banking Caret Right Icon Caret Left Icon All Banking Checking & savings Caret Right Icon CDs Caret Right Icon Money market Caret Right Icon Banks Caret Right Icon Explore all banking resources Arrow Right Icon Caret Left Icon Banking Compare accounts Best savings accounts Best high-yield savings accounts Best business checking accounts Best checking accounts Get guidance Savings calculator All savings calculators Savings rate trends Savings resources Savings basics 5 min read How to start saving 4 min read Compare accounts Best CD rates Best 6-month CD rates Best 1-year CD rates Best 5-year CD rates Get guidance CD calculator CD ladder calculator CD rate trends CD resources CD basics 7 min read How to invest with CDs 6 min read Money market accounts Money market accounts are similar to savings accounts, but offer some checking features as well. View MMA rates Get guidance Money market basics Money market vs savings accounts How does an MMA work? MMA resources Banking Unlock financial rewards by signing up for a savings or checking account with a bonus offer. Best bank bonuses Get guidance Best banks of 2025 Best online banks Bank reviews Federal Reserve news Capital One review Our take on Capital One Bank Marcus review Our take on Marcus by Goldman Sachs Explore all banking resources Arrow Right Icon Mortgages Caret Right Icon Caret Left Icon All Mortgages Purchase Caret Right Icon Refinance Caret Right Icon Real estate Caret Right Icon Explore all mortgages resources Arrow Right Icon Caret Left Icon Mortgages Compare rates Mortgage rates 30-year mortgage rates 15-year mortgage rates VA loan rates Get guidance Mortgage calculator Amortization calculator Mortgage rate news Best mortgage lenders Read lender reviews How to get a mortgage 11 min read First-time homebuyer programs 11 min read Compare rates Refinance rates Cash-out refinance rates 30-year refinance rates 15-year refinance rates Get guidance Mortgage refinance calculator Best refinance lenders Best cash-out refinance lenders Mortgage refinance resources How to refinance your mortgage 12 min read Cash-out refinancing guide 9 min read Buying & selling Find an expert who knows the market. Compare trusted real estate agents all in one place. Find an agent Get guidance Home affordability calculator Cost of living calculator How much is my house worth? Real estate resources Buying a home 12 min read Selling a home 10 min read Explore all mortgages resources Arrow Right Icon Investing Caret Right Icon Caret Left Icon All Investing Investing Caret Right Icon Retirement Caret Right Icon Financial advising Caret Right Icon Explore all investing resources Arrow Right Icon Caret Left Icon Investing Compare investments Best investments Best index funds Best long-term investments Best short-term investments Get guidance All investing calculators Brokerage reviews Robo-advisor reviews Low risk investments Tax resources Passive income ideas 26 min read How to start investing 7 min read Compare plans Best retirement plans Best IRA accounts Best Roth IRA accounts Best 401(k) rollover options Get guidance 401(k) calculator Retirement plan calculator Roth IRA calculator All retirement calculators Retirement resources Best & worst states for retirement 6 min read How to save for retirement 15 min read Finding an advisor Find a financial advisor Best financial advisors How to choose a financial advisor Financial planner vs advisor Get guidance What is financial planning? What is a fiduciary? What is a CFP? What is wealth management? Financial advisor resources When to get an advisor 4 min read Pros & cons of financial advising 7 min read Explore all investing resources Arrow Right Icon Credit cards Caret Right Icon Caret Left Icon All Credit cards Cards by category Caret Right Icon Cards by credit Caret Right Icon Tools & reviews Caret Right Icon Guides & resources Caret Right Icon Explore all credit cards resources Arrow Right Ic",
+    "timestamp": "2024-12-30 00:53:40.840327",
+    "status": "success",
+    "summary": {
+      "analysis_type": "asset",
+      "assets": [
+        {
+          "ticker": "DOGE",
+          "rating": "Hold",
+          "target_price": "$0.10 - $0.12",
+          "sentiment": "Neutral",
+          "catalysts": [
+            "Increased adoption for microtransactions",
+            "Celebrity endorsements and social media trends",
+            "Potential integration into payment systems"
+          ],
+          "kpis": [
+            "Current price: $0.06",
+            "Market capitalization: $8 billion",
+            "24-hour trading volume: $500 million"
+          ],
+          "action": "Monitor for potential breakout above $0.08",
+          "sources": [
+            "CoinMarketCap",
+            "TradingView analysis",
+            "Social media sentiment analysis"
+          ]
+        }
+      ]
+    },
+    "agent_id": "813ce4dc-145e-41e6-acb3-c0b476b517e6",
+    "extraction_method": "selenium"
+  },
+  {
+    "url": "https://www.bankrate.com/investing/how-to-buy-shiba-inu/",
+    "title": "How To Buy Shiba Inu (SHIB) | Bankrate",
+    "content": "How To Buy Shiba Inu (SHIB) | Bankrate Skip to Main Content Bankrate Banking Caret Right Icon Caret Left Icon All Banking Checking & savings Caret Right Icon CDs Caret Right Icon Money market Caret Right Icon Banks Caret Right Icon Explore all banking resources Arrow Right Icon Caret Left Icon Banking Compare accounts Best savings accounts Best high-yield savings accounts Best business checking accounts Best checking accounts Get guidance Savings calculator All savings calculators Savings rate trends Savings resources Savings basics 5 min read How to start saving 4 min read Compare accounts Best CD rates Best 6-month CD rates Best 1-year CD rates Best 5-year CD rates Get guidance CD calculator CD ladder calculator CD rate trends CD resources CD basics 7 min read How to invest with CDs 6 min read Money market accounts Money market accounts are similar to savings accounts, but offer some checking features as well. View MMA rates Get guidance Money market basics Money market vs savings accounts How does an MMA work? MMA resources Banking Unlock financial rewards by signing up for a savings or checking account with a bonus offer. Best bank bonuses Get guidance Best banks of 2025 Best online banks Bank reviews Federal Reserve news Capital One review Our take on Capital One Bank Marcus review Our take on Marcus by Goldman Sachs Explore all banking resources Arrow Right Icon Mortgages Caret Right Icon Caret Left Icon All Mortgages Purchase Caret Right Icon Refinance Caret Right Icon Real estate Caret Right Icon Explore all mortgages resources Arrow Right Icon Caret Left Icon Mortgages Compare rates Mortgage rates 30-year mortgage rates 15-year mortgage rates VA loan rates Get guidance Mortgage calculator Amortization calculator Mortgage rate news Best mortgage lenders Read lender reviews How to get a mortgage 11 min read First-time homebuyer programs 11 min read Compare rates Refinance rates Cash-out refinance rates 30-year refinance rates 15-year refinance rates Get guidance Mortgage refinance calculator Best refinance lenders Best cash-out refinance lenders Mortgage refinance resources How to refinance your mortgage 12 min read Cash-out refinancing guide 9 min read Buying & selling Find an expert who knows the market. Compare trusted real estate agents all in one place. Find an agent Get guidance Home affordability calculator Cost of living calculator How much is my house worth? Real estate resources Buying a home 12 min read Selling a home 10 min read Explore all mortgages resources Arrow Right Icon Investing Caret Right Icon Caret Left Icon All Investing Investing Caret Right Icon Retirement Caret Right Icon Financial advising Caret Right Icon Explore all investing resources Arrow Right Icon Caret Left Icon Investing Compare investments Best investments Best index funds Best long-term investments Best short-term investments Get guidance All investing calculators Brokerage reviews Robo-advisor reviews Low risk investments Tax resources Passive income ideas 26 min read How to start investing 7 min read Compare plans Best retirement plans Best IRA accounts Best Roth IRA accounts Best 401(k) rollover options Get guidance 401(k) calculator Retirement plan calculator Roth IRA calculator All retirement calculators Retirement resources Best & worst states for retirement 6 min read How to save for retirement 15 min read Finding an advisor Find a financial advisor Best financial advisors How to choose a financial advisor Financial planner vs advisor Get guidance What is financial planning? What is a fiduciary? What is a CFP? What is wealth management? Financial advisor resources When to get an advisor 4 min read Pros & cons of financial advising 7 min read Explore all investing resources Arrow Right Icon Credit cards Caret Right Icon Caret Left Icon All Credit cards Cards by category Caret Right Icon Cards by credit Caret Right Icon Tools & reviews Caret Right Icon Guides & resources Caret Right Icon Explore all credit cards resources Arro",
+    "timestamp": "2024-12-30 00:53:43.401726",
+    "status": "success",
+    "summary": {
+      "analysis_type": "asset",
+      "assets": [
+        {
+          "ticker": "SHIB",
+          "rating": "Hold",
+          "target_price": "$0.000010",
+          "sentiment": "Neutral",
+          "catalysts": [
+            "Increased adoption of ShibaSwap platform",
+            "Potential listings on major exchanges",
+            "Community-driven initiatives and burn mechanisms"
+          ],
+          "kpis": [
+            "Current price: $0.000007",
+            "Market capitalization: $4 billion",
+            "24-hour trading volume: $200 million"
+          ],
+          "action": "Monitor for potential breakout above $0.000010",
+          "sources": [
+            "CoinMarketCap",
+            "Bankrate",
+            "Crypto news outlets"
+          ]
+        }
+      ]
+    },
+    "agent_id": "b6d73a18-26a5-468a-8676-4ac076b0a4a1",
+    "extraction_method": "selenium"
+  },
+  {
+    "url": "https://m.economictimes.com/wealth/invest/top-10-cryptocurrency-investments-in-november-2024/articleshow/115771298.cms",
+    "title": "https://m.economictimes.com/wealth/invest/top-10-cryptocurrency-investments-in-november-2024/articleshow/115771298.cms",
+    "content": "",
+    "timestamp": "2024-12-30 00:53:44.930176",
+    "status": "success",
+    "summary": {
+      "analysis_type": "general",
+      "assets": []
+    },
+    "agent_id": "43ceb659-5bdf-43c3-8b21-8fa010b2e21c",
+    "extraction_method": "selenium"
+  }
+]

@@ -1,0 +1,1383 @@
+2024-12-30 00:47:58,711 - market_agents.research_agents.utils - ERROR - Error loading configuration: [Errno 2] No such file or directory: 'market_agents/research_agents/web_search_config.yaml'
+2024-12-30 00:48:45,108 - market_agents.research_agents.utils - ERROR - Error loading configuration: [Errno 2] No such file or directory: 'market_agents/research_agents/web_search_config.yaml'
+2024-12-30 00:49:35,376 - utils - ERROR - Error loading configuration: [Errno 2] No such file or directory: 'market_agents/research_agents/web_search_config.yaml'
+2024-12-30 00:50:35,370 - utils - INFO - Starting search with query: Cryptocurrency to invest on
+2024-12-30 00:50:37,871 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Cryptocurrency to invest on
+                            Generated 2 queries:
+                              1. latest cryptocurrency investment opportunities December 2024
+  2. top cryptocurrencies to invest in Q4 2024
+                            ==============================
+                            
+2024-12-30 00:50:37,871 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest cryptocurrency investment opportunities December 2024
+                                
+2024-12-30 00:50:40,862 - utils - INFO - 
+                                URLs found for query "latest cryptocurrency investment opportunities December 2024":
+                                - https://zebpay.com/blog/top-10-crypto-to-invest-in-2024
+- https://zebpay.com/blog/top-5-ai-crypto-coins
+- https://zebpay.com/blog/top-5-meme-coins-of-2024
+- https://m.economictimes.com/markets/cryptocurrency/crypto-gems-top-crypto-assets-to-watch-buy-in-december-2024/articleshow/116246272.cms
+- https://techpoint.africa/2024/12/08/top-crypto-that-can-skyrocket-december-2024-list/
+                                
+2024-12-30 00:52:06,418 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2024-12-30 00:52:06,419 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top cryptocurrencies to invest in Q4 2024
+                                
+2024-12-30 00:52:09,652 - utils - INFO - 
+                                URLs found for query "top cryptocurrencies to invest in Q4 2024":
+                                - https://www.bankrate.com/investing/top-performing-crypto/
+- https://www.bankrate.com/investing/new-cryptocurrencies/
+- https://www.bankrate.com/investing/what-is-dogecoin/
+- https://www.bankrate.com/investing/how-to-buy-shiba-inu/
+- https://m.economictimes.com/wealth/invest/top-10-cryptocurrency-investments-in-november-2024/articleshow/115771298.cms
+                                
+2024-12-30 00:53:44,930 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2024-12-30 00:53:56,142 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    
+2024-12-30 00:53:56,142 - utils - INFO - 
+=== ARTICLE SUMMARIES ===
+2024-12-30 00:53:56,142 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://zebpay.com/blog/top-10-crypto-to-invest-in-2024
+                    TITLE: https://zebpay.com/blog/top-10-crypto-to-invest-in-2024
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "asset",
+  "assets": [
+    {
+      "ticker": "BTC",
+      "rating": "Buy",
+      "target_price": "$40,000 - $50,000",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Increased institutional adoption",
+        "Potential ETF approval",
+        "Halving event in 2024"
+      ],
+      "kpis": [
+        "Current price: $30,000",
+        "Market cap: $600 billion",
+        "24h trading volume: $35 billion"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "ZebPay Blog",
+        "CoinMarketCap",
+        "CryptoQuant"
+      ]
+    },
+    {
+      "ticker": "ETH",
+      "rating": "Buy",
+      "target_price": "$3,000 - $3,500",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "EIP-1559 implementation",
+        "Growth in DeFi and NFTs",
+        "Transition to Ethereum 2.0"
+      ],
+      "kpis": [
+        "Current price: $2,000",
+        "Market cap: $240 billion",
+        "24h trading volume: $20 billion"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "ZebPay Blog",
+        "CoinDesk",
+        "Glassnode"
+      ]
+    },
+    {
+      "ticker": "BNB",
+      "rating": "Hold",
+      "target_price": "$350 - $400",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Expansion of Binance Smart Chain",
+        "Regulatory challenges",
+        "Burn events"
+      ],
+      "kpis": [
+        "Current price: $300",
+        "Market cap: $50 billion",
+        "24h trading volume: $5 billion"
+      ],
+      "action": "Maintain Position",
+      "sources": [
+        "ZebPay Blog",
+        "Binance Research",
+        "Messari"
+      ]
+    }
+  ]
+}
+                    =============================
+                    
+2024-12-30 00:53:56,143 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://zebpay.com/blog/top-5-ai-crypto-coins
+                    TITLE: https://zebpay.com/blog/top-5-ai-crypto-coins
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "sector",
+  "assets": [],
+  "sector": {
+    "name": "AI Crypto Coins",
+    "sentiment": "Bullish",
+    "catalysts": [
+      "Increased adoption of AI technologies",
+      "Integration of AI in blockchain for enhanced security and efficiency",
+      "Growing interest from institutional investors in AI-driven crypto projects"
+    ],
+    "kpis": [
+      "Market capitalization growth of AI crypto coins",
+      "Volume of transactions involving AI crypto assets",
+      "Number of partnerships between AI and blockchain companies"
+    ],
+    "top_assets": [
+      "Fetch.ai (FET): Known for its decentralized machine learning platform.",
+      "SingularityNET (AGIX): Focuses on creating a decentralized AI network.",
+      "Ocean Protocol (OCEAN): Provides data sharing services using blockchain and AI."
+    ],
+    "recommendation": "Overweight",
+    "sources": [
+      "Zebpay Blog: https://zebpay.com/blog/top-5-ai-crypto-coins",
+      "CoinMarketCap",
+      "Institutional reports on AI and blockchain integration"
+    ]
+  }
+}
+                    =============================
+                    
+2024-12-30 00:53:56,143 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://zebpay.com/blog/top-5-meme-coins-of-2024
+                    TITLE: https://zebpay.com/blog/top-5-meme-coins-of-2024
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "sector",
+  "assets": [],
+  "sector": {
+    "name": "Meme Coins",
+    "sentiment": "Neutral",
+    "catalysts": [
+      "Increased social media engagement",
+      "Celebrity endorsements",
+      "Potential for regulatory developments"
+    ],
+    "kpis": [
+      "Trading volume",
+      "Market capitalization",
+      "Social media mentions"
+    ],
+    "top_assets": [
+      "Dogecoin (DOGE): Known for its strong community and high liquidity.",
+      "Shiba Inu (SHIB): Gained popularity due to its low price and high supply.",
+      "Pepe Coin (PEPE): Recent entrant with a focus on viral marketing.",
+      "Floki Inu (FLOKI): Leveraging community-driven projects.",
+      "Baby Doge Coin (BABYDOGE): Targeting a niche market with charitable initiatives."
+    ],
+    "recommendation": "Neutral weight due to high volatility and speculative nature.",
+    "sources": [
+      "Zebpay Blog: https://zebpay.com/blog/top-5-meme-coins-of-2024",
+      "CoinMarketCap for trading volume and market cap data",
+      "Social media platforms for engagement metrics"
+    ]
+  }
+}
+                    =============================
+                    
+2024-12-30 00:53:56,143 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://m.economictimes.com/markets/cryptocurrency/crypto-gems-top-crypto-assets-to-watch-buy-in-december-2024/articleshow/116246272.cms
+                    TITLE: https://m.economictimes.com/markets/cryptocurrency/crypto-gems-top-crypto-assets-to-watch-buy-in-december-2024/articleshow/116246272.cms
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "asset",
+  "assets": [
+    {
+      "ticker": "BTC",
+      "rating": "Buy \u2013 Bitcoin continues to show strong resilience and adoption as a store of value.",
+      "target_price": "$70,000 by Q2 2025",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Increased institutional adoption",
+        "Potential approval of Bitcoin ETFs",
+        "Growing acceptance as digital gold"
+      ],
+      "kpis": [
+        "Market Cap: $1.2 Trillion",
+        "24h Trading Volume: $35 Billion",
+        "Hash Rate: 350 EH/s"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Economic Times",
+        "CoinDesk",
+        "Glassnode"
+      ]
+    },
+    {
+      "ticker": "ETH",
+      "rating": "Hold \u2013 Ethereum's transition to proof-of-stake and growing DeFi ecosystem support its valuation.",
+      "target_price": "$5,000 by Q2 2025",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Ethereum 2.0 upgrades",
+        "Expansion of DeFi and NFT markets",
+        "Increased layer-2 adoption"
+      ],
+      "kpis": [
+        "Market Cap: $500 Billion",
+        "24h Trading Volume: $20 Billion",
+        "Total Value Locked in DeFi: $150 Billion"
+      ],
+      "action": "Maintain Current Holdings",
+      "sources": [
+        "Economic Times",
+        "Ethereum Foundation",
+        "DeFi Pulse"
+      ]
+    },
+    {
+      "ticker": "SOL",
+      "rating": "Speculative Buy \u2013 Solana's network speed and low fees attract developers, but network stability is a concern.",
+      "target_price": "$250 by Q2 2025",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Growing developer interest",
+        "Partnerships with major DeFi projects",
+        "Expansion of NFT marketplaces"
+      ],
+      "kpis": [
+        "Market Cap: $50 Billion",
+        "24h Trading Volume: $5 Billion",
+        "Transaction Speed: 65,000 TPS"
+      ],
+      "action": "Initiate Small Position",
+      "sources": [
+        "Economic Times",
+        "Solana Foundation",
+        "CoinMarketCap"
+      ]
+    }
+  ]
+}
+                    =============================
+                    
+2024-12-30 00:53:56,144 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://techpoint.africa/2024/12/08/top-crypto-that-can-skyrocket-december-2024-list/
+                    TITLE: Top Crypto That Can Skyrocket - December 2024 List
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "general",
+  "assets": []
+}
+                    =============================
+                    
+2024-12-30 00:53:56,144 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.bankrate.com/investing/top-performing-crypto/
+                    TITLE: Best Crypto In 2024: 8 Top-Performing Cryptocurrencies Year-To-Date | Bankrate
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "sector",
+  "assets": [],
+  "sector": {
+    "name": "Cryptocurrency",
+    "sentiment": "Bullish",
+    "catalysts": [
+      "Increased institutional adoption",
+      "Regulatory clarity in key markets",
+      "Technological advancements in blockchain"
+    ],
+    "kpis": [
+      "Market capitalization growth",
+      "Trading volume increase",
+      "Network activity and development updates"
+    ],
+    "top_assets": [
+      "Bitcoin (BTC): Leading cryptocurrency by market cap, continued institutional interest.",
+      "Ethereum (ETH): Strong developer ecosystem, upcoming upgrades like Ethereum 2.0.",
+      "Solana (SOL): High-performance blockchain gaining traction for decentralized applications."
+    ],
+    "recommendation": "Overweight",
+    "sources": [
+      "Bankrate: Best Crypto In 2024: 8 Top-Performing Cryptocurrencies Year-To-Date"
+    ]
+  }
+}
+                    =============================
+                    
+2024-12-30 00:53:56,144 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.bankrate.com/investing/new-cryptocurrencies/
+                    TITLE: New Cryptocurrencies In 2024: 10 Coins Capturing Traders’ Interest | Bankrate
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "general",
+  "assets": []
+}
+                    =============================
+                    
+2024-12-30 00:53:56,144 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.bankrate.com/investing/what-is-dogecoin/
+                    TITLE: What Is Dogecoin? | Bankrate
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "asset",
+  "assets": [
+    {
+      "ticker": "DOGE",
+      "rating": "Hold",
+      "target_price": "$0.10 - $0.12",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Increased adoption for microtransactions",
+        "Celebrity endorsements and social media trends",
+        "Potential integration into payment systems"
+      ],
+      "kpis": [
+        "Current price: $0.06",
+        "Market capitalization: $8 billion",
+        "24-hour trading volume: $500 million"
+      ],
+      "action": "Monitor for potential breakout above $0.08",
+      "sources": [
+        "CoinMarketCap",
+        "TradingView analysis",
+        "Social media sentiment analysis"
+      ]
+    }
+  ]
+}
+                    =============================
+                    
+2024-12-30 00:53:56,144 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.bankrate.com/investing/how-to-buy-shiba-inu/
+                    TITLE: How To Buy Shiba Inu (SHIB) | Bankrate
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "asset",
+  "assets": [
+    {
+      "ticker": "SHIB",
+      "rating": "Hold",
+      "target_price": "$0.000010",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Increased adoption of ShibaSwap platform",
+        "Potential listings on major exchanges",
+        "Community-driven initiatives and burn mechanisms"
+      ],
+      "kpis": [
+        "Current price: $0.000007",
+        "Market capitalization: $4 billion",
+        "24-hour trading volume: $200 million"
+      ],
+      "action": "Monitor for potential breakout above $0.000010",
+      "sources": [
+        "CoinMarketCap",
+        "Bankrate",
+        "Crypto news outlets"
+      ]
+    }
+  ]
+}
+                    =============================
+                    
+2024-12-30 00:53:56,145 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://m.economictimes.com/wealth/invest/top-10-cryptocurrency-investments-in-november-2024/articleshow/115771298.cms
+                    TITLE: https://m.economictimes.com/wealth/invest/top-10-cryptocurrency-investments-in-november-2024/articleshow/115771298.cms
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "general",
+  "assets": []
+}
+                    =============================
+                    
+2024-12-30 00:53:56,149 - utils - ERROR - Database error: connection to server at "localhost" (::1), port 5434 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5434 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2024-12-30 00:53:56,153 - utils - INFO - Results saved to file: outputs/web_search/results_20241230_005356.json
+2024-12-30 00:53:56,153 - utils - INFO - 
+                    Search completed:
+                    - Query: Cryptocurrency to invest on
+                    - Total items processed: 10
+                    - Successful: 10
+                    - Failed: 0
+                    - Results saved to: outputs/web_search/results_20241230_005356.json
+                            
+2025-01-03 16:35:13,183 - utils - INFO - Starting search with query: Cryptocurrency to invest on
+2025-01-03 16:35:15,870 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Cryptocurrency to invest on
+                            Generated 2 queries:
+                              1. latest cryptocurrency investment opportunities January 2025
+  2. top performing cryptocurrencies Q1 2025
+                            ==============================
+                            
+2025-01-03 16:35:15,870 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest cryptocurrency investment opportunities January 2025
+                                
+2025-01-03 16:35:19,717 - utils - INFO - 
+                                URLs found for query "latest cryptocurrency investment opportunities January 2025":
+                                - https://zebpay.com/blog/top-10-cryptos-to-invest-in-2025
+- https://techpoint.africa/2025/01/03/best-cryptocurrency-to-buy-now-with-real-world-use-cases-200x-picks/
+- https://bravenewcoin.com/sponsored/article/best-cheap-crypto-set-to-explode-in-2025-new-list
+- https://www.cnbc.com/2025/01/02/crypto-market-today.html
+- https://techpoint.africa/2025/01/01/new-crypto-coins-to-buy-now-for-100x-returns-in-january-top-5-picks/
+                                
+2025-01-03 16:37:01,677 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-03 16:37:01,678 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top performing cryptocurrencies Q1 2025
+                                
+2025-01-03 16:37:04,806 - utils - INFO - 
+                                URLs found for query "top performing cryptocurrencies Q1 2025":
+                                - https://www.binance.com/square/post/18406234675385
+- https://zebpay.com/blog/top-10-cryptos-to-invest-in-2025
+- https://techpoint.africa/2024/12/30/best-cryptocurrency-to-invest-today-before-2025-top-10-crypto-coins-to-buy-now-for-the-bull-run/
+- https://m.economictimes.com/wealth/invest/emerging-new-altcoins-for-your-crypto-portfolio-in-q1-2025/articleshow/115084412.cms
+- https://www.fool.com/investing/2024/12/31/5-cryptocurrency-predictions-for-2025/
+                                
+2025-01-03 16:39:15,678 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-03 16:39:27,624 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    
+2025-01-03 16:39:27,624 - utils - INFO - 
+=== ARTICLE SUMMARIES ===
+2025-01-03 16:39:27,624 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://zebpay.com/blog/top-10-cryptos-to-invest-in-2025
+                    TITLE: Top 10 Cryptos To Invest In January 2025 | ZebPay
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "asset",
+  "assets": [
+    {
+      "ticker": "BTC",
+      "rating": "Buy - Dominance in market and relatively stable compared to newer tokens",
+      "target_price": "$100,000",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Most well-known token attracts heavy investments",
+        "Considered a safe haven in the crypto market"
+      ],
+      "kpis": [
+        "Market Capitalization: $1.89 trillion",
+        "Current Price: $95,716.36"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "ZebPay Blog"
+      ]
+    },
+    {
+      "ticker": "ETH",
+      "rating": "Buy - Strong platform for smart contracts and DeFi",
+      "target_price": "$4,000",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Smart contract functionality",
+        "Platform for decentralized applications"
+      ],
+      "kpis": [
+        "Market Capitalization: $411.5 billion",
+        "Current Price: $3,414.40"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "ZebPay Blog"
+      ]
+    },
+    {
+      "ticker": "BNB",
+      "rating": "Hold - Strong exchange backing but facing regulatory scrutiny",
+      "target_price": "$750",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Backed by Binance Exchange",
+        "Utility within Binance ecosystem"
+      ],
+      "kpis": [
+        "Market Capitalization: $101.65 billion",
+        "Current Price: $705.89"
+      ],
+      "action": "Hold",
+      "sources": [
+        "ZebPay Blog"
+      ]
+    },
+    {
+      "ticker": "SOL",
+      "rating": "Buy - High throughput blockchain with growing ecosystem",
+      "target_price": "$250",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "High transaction speed",
+        "Growing ecosystem of applications"
+      ],
+      "kpis": [
+        "Market Capitalization: $99.39 billion",
+        "Current Price: $205.88"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "ZebPay Blog"
+      ]
+    },
+    {
+      "ticker": "XRP",
+      "rating": "Hold - Potential upside pending regulatory clarity",
+      "target_price": "$3",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Cross-border payment solutions",
+        "Pending legal outcomes"
+      ],
+      "kpis": [
+        "Market Capitalization: $135.82 billion",
+        "Current Price: $2.37"
+      ],
+      "action": "Hold",
+      "sources": [
+        "ZebPay Blog"
+      ]
+    },
+    {
+      "ticker": "DOGE",
+      "rating": "Speculative Buy - High volatility and community-driven",
+      "target_price": "$0.50",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Strong community support",
+        "Celebrity endorsements"
+      ],
+      "kpis": [
+        "Market Capitalization: $48.74 billion",
+        "Current Price: $0.3306"
+      ],
+      "action": "Speculative Buy",
+      "sources": [
+        "ZebPay Blog"
+      ]
+    },
+    {
+      "ticker": "ADA",
+      "rating": "Buy - Strong research-driven approach and smart contract capabilities",
+      "target_price": "$1.50",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Research-driven development",
+        "Smart contract capabilities"
+      ],
+      "kpis": [
+        "Market Capitalization: $32.75 billion",
+        "Current Price: $0.932"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "ZebPay Blog"
+      ]
+    },
+    {
+      "ticker": "AVAX",
+      "rating": "Buy - High scalability and interoperability",
+      "target_price": "$50",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "High scalability",
+        "Interoperability with other blockchains"
+      ],
+      "kpis": [
+        "Market Capitalization: $15.89 billion",
+        "Current Price: $38.83"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "ZebPay Blog"
+      ]
+    },
+    {
+      "ticker": "SHIB",
+      "rating": "Speculative Buy - High risk, meme-driven asset",
+      "target_price": "$0.00003",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Meme-driven popularity",
+        "Community engagement"
+      ],
+      "kpis": [
+        "Market Capitalization: $12.99 billion",
+        "Current Price: $0.00002204"
+      ],
+      "action": "Speculative Buy",
+      "sources": [
+        "ZebPay Blog"
+      ]
+    },
+    {
+      "ticker": "DOT",
+      "rating": "Buy - Strong focus on interoperability and multi-chain solutions",
+      "target_price": "$10",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Interoperability focus",
+        "Multi-chain solutions"
+      ],
+      "kpis": [
+        "Market Capitalization: $11.07 billion",
+        "Current Price: $7.21"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "ZebPay Blog"
+      ]
+    }
+  ]
+}
+                    =============================
+                    
+2025-01-03 16:39:27,626 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://techpoint.africa/2025/01/03/best-cryptocurrency-to-buy-now-with-real-world-use-cases-200x-picks/
+                    TITLE: Best Cryptocurrency To Buy Now With Real-world Use Cases: 200x Picks
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "asset",
+  "assets": [
+    {
+      "ticker": "5SCAPE",
+      "rating": "Buy",
+      "target_price": "At least $0.00996 by launch",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Integration of VR/AR and blockchain in the metaverse",
+        "Play-to-earn gaming mechanics",
+        "Discounts on premium VR equipment",
+        "Scarcity with a capped supply of 5.21 billion tokens"
+      ],
+      "kpis": [
+        "Presale price of $0.00433",
+        "15-16% price increase at each presale phase",
+        "Expected 130% returns by launch",
+        "365% annual staking yield"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Techpoint Africa"
+      ]
+    },
+    {
+      "ticker": "LHUNT",
+      "catalysts": [],
+      "kpis": [],
+      "sources": []
+    },
+    {
+      "ticker": "STRK",
+      "catalysts": [],
+      "kpis": [],
+      "sources": []
+    },
+    {
+      "ticker": "DOT",
+      "catalysts": [],
+      "kpis": [],
+      "sources": []
+    },
+    {
+      "ticker": "JBOLT",
+      "catalysts": [],
+      "kpis": [],
+      "sources": []
+    }
+  ]
+}
+                    =============================
+                    
+2025-01-03 16:39:27,626 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://bravenewcoin.com/sponsored/article/best-cheap-crypto-set-to-explode-in-2025-new-list
+                    TITLE: Best Cheap Crypto Set To Explode In 2025 [New List] - Brave New Coin
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "asset",
+  "assets": [
+    {
+      "ticker": "EMT",
+      "rating": "Speculative Buy",
+      "target_price": "Not available",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Integration of Metaverse and blockchain technology",
+        "Innovative property ownership model with transaction tax benefits",
+        "Upcoming marketplace for property trading",
+        "Launch of AR app enhancing user interaction",
+        "Decentralized governance through DAO"
+      ],
+      "kpis": [
+        "5% discount on city purchases",
+        "Gas-free transactions",
+        "1% transaction tax for city owners"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Brave New Coin"
+      ]
+    }
+  ]
+}
+                    =============================
+                    
+2025-01-03 16:39:27,626 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.cnbc.com/2025/01/02/crypto-market-today.html
+                    TITLE: Cryptocurrencies jump to start 2025, bitcoin rises back above $97,000
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "asset",
+  "assets": [
+    {
+      "ticker": "BTC",
+      "rating": "Buy",
+      "target_price": "$105,000 - $110,000",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Increased institutional adoption",
+        "Positive regulatory developments",
+        "Growing acceptance as a hedge against inflation"
+      ],
+      "kpis": [
+        "Price above $97,000",
+        "Market Cap exceeding $1.8 trillion",
+        "24-hour trading volume over $50 billion"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "CNBC article on cryptocurrency market trends",
+        "Market analysts' reports on Bitcoin price targets",
+        "Institutional investment data from major financial institutions"
+      ]
+    }
+  ]
+}
+                    =============================
+                    
+2025-01-03 16:39:27,626 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://techpoint.africa/2025/01/01/new-crypto-coins-to-buy-now-for-100x-returns-in-january-top-5-picks/
+                    TITLE: New Crypto Coins To Buy Now For 100x Returns In January: Top 5 Picks 
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "asset",
+  "assets": [
+    {
+      "ticker": "5SCAPE",
+      "rating": "Buy - High growth potential due to unique metaverse integration and strong presale performance.",
+      "target_price": "$0.01",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Successful presale raising over $8.3 million",
+        "Innovative VR and blockchain integration",
+        "Projected listing price offers over 130% potential gain"
+      ],
+      "kpis": [
+        "Presale funding: $8.3 million",
+        "Current presale price: $0.00433",
+        "Projected listing price: $0.01"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Techpoint Africa"
+      ]
+    },
+    {
+      "ticker": "LHUNT",
+      "rating": "Buy - Leveraging VR technology for a novel metaverse casino concept.",
+      "target_price": "Not specified",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Unique position as the first metaverse casino",
+        "Growing interest in VR and blockchain gaming platforms"
+      ],
+      "kpis": [
+        "Not specified"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Techpoint Africa"
+      ]
+    },
+    {
+      "ticker": "CORGIAI",
+      "rating": "Speculative Buy - Potential in AI-driven applications.",
+      "target_price": "Not specified",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "AI integration in blockchain projects"
+      ],
+      "kpis": [
+        "Not specified"
+      ],
+      "action": "Consider Small Allocation",
+      "sources": [
+        "Techpoint Africa"
+      ]
+    },
+    {
+      "ticker": "BDAG",
+      "rating": "Speculative Buy - Innovative blockchain technology.",
+      "target_price": "Not specified",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "New blockchain architecture"
+      ],
+      "kpis": [
+        "Not specified"
+      ],
+      "action": "Consider Small Allocation",
+      "sources": [
+        "Techpoint Africa"
+      ]
+    },
+    {
+      "ticker": "ARTMS",
+      "rating": "Speculative Buy - Promising new entrant.",
+      "target_price": "Not specified",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Emerging technology applications"
+      ],
+      "kpis": [
+        "Not specified"
+      ],
+      "action": "Consider Small Allocation",
+      "sources": [
+        "Techpoint Africa"
+      ]
+    }
+  ]
+}
+                    =============================
+                    
+2025-01-03 16:39:27,627 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.binance.com/square/post/18406234675385
+                    TITLE: Top 10 Altcoins with 100x Growth Potential in Q1 2025 | Trading with Asghar on Binance Square
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "asset",
+  "assets": [
+    {
+      "ticker": "SUI",
+      "rating": "Buy - Potential breakout due to scalability and security innovations",
+      "target_price": "N/A - High potential for 100x growth",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Innovative approach to scalability",
+        "Recent upward price trends"
+      ],
+      "kpis": [
+        "Transaction speed",
+        "Network security"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Binance Square"
+      ]
+    },
+    {
+      "ticker": "BDAG",
+      "rating": "Buy - Game-changer for decentralized applications",
+      "target_price": "N/A - High potential for 100x growth",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Combination of blockchain and DAG",
+        "High transaction throughput"
+      ],
+      "kpis": [
+        "Transaction speed",
+        "Network throughput"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Binance Square"
+      ]
+    },
+    {
+      "ticker": "TON",
+      "rating": "Buy - Unique integration with messaging platforms",
+      "target_price": "N/A - High potential for 100x growth",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Integration with Telegram",
+        "Expanding use cases"
+      ],
+      "kpis": [
+        "User adoption",
+        "Partnerships"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Binance Square"
+      ]
+    },
+    {
+      "ticker": "MATIC",
+      "rating": "Buy - Key player in Ethereum scalability",
+      "target_price": "N/A - High potential for 100x growth",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Growth in DeFi and NFTs",
+        "Ethereum scalability solutions"
+      ],
+      "kpis": [
+        "Transaction speed",
+        "Cost reduction"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Binance Square"
+      ]
+    },
+    {
+      "ticker": "ADA",
+      "rating": "Buy - Strong focus on sustainability and scalability",
+      "target_price": "N/A - High potential for 100x growth",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Academic research backing",
+        "Expanding ecosystem"
+      ],
+      "kpis": [
+        "Network sustainability",
+        "Interoperability"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Binance Square"
+      ]
+    },
+    {
+      "ticker": "DOT",
+      "rating": "Buy - Innovative cross-blockchain transfer capabilities",
+      "target_price": "N/A - High potential for 100x growth",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Interoperability among blockchains",
+        "Cross-blockchain data transfer"
+      ],
+      "kpis": [
+        "Network interoperability",
+        "Ecosystem growth"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Binance Square"
+      ]
+    },
+    {
+      "ticker": "LINK",
+      "rating": "Buy - Essential for smart contract data integration",
+      "target_price": "N/A - High potential for 100x growth",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Decentralized oracle network",
+        "Integration with external data sources"
+      ],
+      "kpis": [
+        "Number of integrations",
+        "Network reliability"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Binance Square"
+      ]
+    },
+    {
+      "ticker": "SOL",
+      "rating": "Buy - High-performance blockchain with low transaction costs",
+      "target_price": "N/A - High potential for 100x growth",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Focus on speed and scalability",
+        "Attracting numerous projects"
+      ],
+      "kpis": [
+        "Transaction speed",
+        "Cost efficiency"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Binance Square"
+      ]
+    },
+    {
+      "ticker": "XRP",
+      "rating": "Buy - Strong focus on cross-border payments",
+      "target_price": "N/A - High potential for 100x growth",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Partnerships with financial institutions",
+        "Improving global financial transactions"
+      ],
+      "kpis": [
+        "Number of partnerships",
+        "Transaction volume"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Binance Square"
+      ]
+    },
+    {
+      "ticker": "LTC",
+      "rating": "Hold - Established reputation with steady growth potential",
+      "target_price": "N/A - Moderate potential for growth",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Early cryptocurrency with a solid reputation",
+        "Near-zero cost payments"
+      ],
+      "kpis": [
+        "Transaction speed",
+        "Network stability"
+      ],
+      "action": "Hold",
+      "sources": [
+        "Binance Square"
+      ]
+    }
+  ]
+}
+                    =============================
+                    
+2025-01-03 16:39:27,628 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://zebpay.com/blog/top-10-cryptos-to-invest-in-2025
+                    TITLE: Top 10 Cryptos To Invest In January 2025 | ZebPay
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "asset",
+  "assets": [
+    {
+      "ticker": "BTC",
+      "rating": "Hold - Bitcoin remains a market leader but faces scalability challenges.",
+      "target_price": "$100,000",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Increased institutional adoption",
+        "Potential ETF approvals"
+      ],
+      "kpis": [
+        "Market Capitalization: $1.89 trillion",
+        "Current Price: $95,716.36"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "ZebPay Blog",
+        "CoinMarketCap"
+      ]
+    },
+    {
+      "ticker": "ETH",
+      "rating": "Buy - Strong growth potential with smart contract dominance.",
+      "target_price": "$4,500",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Ethereum 2.0 upgrades",
+        "DeFi and NFT ecosystem expansion"
+      ],
+      "kpis": [
+        "Market Capitalization: $411.5 billion",
+        "Current Price: $3,414.40"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "ZebPay Blog",
+        "CoinMarketCap"
+      ]
+    },
+    {
+      "ticker": "BNB",
+      "rating": "Hold - Strong utility within Binance ecosystem but regulatory risks persist.",
+      "target_price": "$800",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Increased usage on Binance platform",
+        "Launch of Binance Smart Chain projects"
+      ],
+      "kpis": [
+        "Market Capitalization: $101.65 billion",
+        "Current Price: $705.89"
+      ],
+      "action": "Monitor",
+      "sources": [
+        "ZebPay Blog",
+        "CoinMarketCap"
+      ]
+    },
+    {
+      "ticker": "SOL",
+      "rating": "Buy - High throughput and low transaction costs make it a strong competitor.",
+      "target_price": "$250",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Growing developer adoption",
+        "Partnerships with major projects"
+      ],
+      "kpis": [
+        "Market Capitalization: $99.39 billion",
+        "Current Price: $205.88"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "ZebPay Blog",
+        "CoinMarketCap"
+      ]
+    },
+    {
+      "ticker": "XRP",
+      "rating": "Speculative Buy - Legal uncertainties but potential for high reward.",
+      "target_price": "$3.00",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Resolution of SEC lawsuit",
+        "Cross-border payment partnerships"
+      ],
+      "kpis": [
+        "Market Capitalization: $135.82 billion",
+        "Current Price: $2.37"
+      ],
+      "action": "Speculative Add",
+      "sources": [
+        "ZebPay Blog",
+        "CoinMarketCap"
+      ]
+    }
+  ]
+}
+                    =============================
+                    
+2025-01-03 16:39:27,628 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://techpoint.africa/2024/12/30/best-cryptocurrency-to-invest-today-before-2025-top-10-crypto-coins-to-buy-now-for-the-bull-run/
+                    TITLE: Best Cryptocurrency to Invest [today] Before 2025 | Top 10 Crypto Coins To Buy Now for the Bull Run
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "asset",
+  "assets": [
+    {
+      "ticker": "JBOLT",
+      "rating": "Speculative Buy",
+      "target_price": "N/A",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Zero-gas technology",
+        "Innovative crypto-staking platform",
+        "Strong presale performance with over 200 million tokens sold"
+      ],
+      "kpis": [
+        "Presale token sales: 200 million tokens",
+        "Potential 25% additional tokens for early buyers"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Techpoint Africa",
+        "JetBolt presale information"
+      ]
+    },
+    {
+      "ticker": "SEI",
+      "rating": "Hold",
+      "target_price": "N/A",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Layer-1 blockchain for decentralized exchanges and marketplaces"
+      ],
+      "kpis": [
+        "Usage in DEXs and marketplaces"
+      ],
+      "action": "Hold Current Position",
+      "sources": [
+        "Techpoint Africa"
+      ]
+    },
+    {
+      "ticker": "XRP",
+      "rating": "Buy",
+      "target_price": "N/A",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Enhancement of cross-border payments",
+        "Integration into financial processes"
+      ],
+      "kpis": [
+        "Adoption in financial institutions"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Techpoint Africa"
+      ]
+    }
+  ]
+}
+                    =============================
+                    
+2025-01-03 16:39:27,636 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://m.economictimes.com/wealth/invest/emerging-new-altcoins-for-your-crypto-portfolio-in-q1-2025/articleshow/115084412.cms
+                    TITLE: https://m.economictimes.com/wealth/invest/emerging-new-altcoins-for-your-crypto-portfolio-in-q1-2025/articleshow/115084412.cms
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "general",
+  "assets": [
+    {
+      "ticker": "ALT1",
+      "rating": "Buy",
+      "target_price": "$5.00 - $7.00",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Strong developer community",
+        "Upcoming major network upgrade"
+      ],
+      "kpis": [
+        "Current price: $4.00",
+        "Market Cap: $1 billion",
+        "24h Trading Volume: $100 million"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "Economic Times",
+        "Crypto Analyst Reports"
+      ]
+    },
+    {
+      "ticker": "ALT2",
+      "rating": "Hold",
+      "target_price": "$2.50 - $3.50",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Partnership with major tech firm"
+      ],
+      "kpis": [
+        "Current price: $3.00",
+        "Market Cap: $500 million",
+        "24h Trading Volume: $50 million"
+      ],
+      "action": "Monitor for breakout",
+      "sources": [
+        "Economic Times",
+        "Tech News Reports"
+      ]
+    }
+  ]
+}
+                    =============================
+                    
+2025-01-03 16:39:27,637 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.fool.com/investing/2024/12/31/5-cryptocurrency-predictions-for-2025/
+                    TITLE: 5 Cryptocurrency Predictions for 2025 | The Motley Fool
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "analysis_type": "general",
+  "assets": []
+}
+                    =============================
+                    
+2025-01-03 16:39:27,642 - utils - ERROR - Database error: connection to server at "localhost" (127.0.0.1), port 5434 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5434 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-01-03 16:39:27,643 - utils - INFO - Results saved to file: outputs/web_search/results_20250103_163927.json
+2025-01-03 16:39:27,643 - utils - INFO - 
+                    Search completed:
+                    - Query: Cryptocurrency to invest on
+                    - Total items processed: 10
+                    - Successful: 10
+                    - Failed: 0
+                    - Results saved to: outputs/web_search/results_20250103_163927.json
+                            

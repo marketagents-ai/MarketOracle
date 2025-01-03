@@ -22,12 +22,7 @@ export interface ResearchData {
       trend_direction: string;
       support_levels: string[];
       resistance_levels: string[];
-      indicators: {
-        rsi: string;
-        macd: string;
-        moving_averages: string;
-      };
-      patterns: string[];
+      indicators: Record<string, string>;
     };
     sentiment_analysis: {
       overall_sentiment: string;

@@ -1,0 +1,6 @@
+2024-12-30 00:36:41,366 - market_agents.research_agents.utils - ERROR - Error loading configuration: [Errno 2] No such file or directory: 'market_agents/research_agents/web_search_config.yaml'
+2024-12-30 00:37:15,140 - market_agents.research_agents.utils - ERROR - Error loading configuration: [Errno 2] No such file or directory: 'market_agents/research_agents/web_search_config.yaml'
+2024-12-30 00:37:21,473 - market_agents.research_agents.utils - ERROR - Error loading configuration: [Errno 2] No such file or directory: 'market_agents/research_agents/web_search_config.yaml'
+2024-12-30 00:45:44,068 - market_agents.research_agents.utils - ERROR - Error loading configuration: [Errno 2] No such file or directory: 'market_agents/research_agents/web_search_config.yaml'
+2024-12-30 00:45:44,068 - market_agents.research_agents.utils - ERROR - Research error: [Errno 2] No such file or directory: 'market_agents/research_agents/web_search_config.yaml'
+2024-12-30 00:46:44,274 - market_agents.research_agents.utils - ERROR - Research error: 'dict' object has no attribute 'llm_configs'

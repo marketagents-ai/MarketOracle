@@ -63,3 +63,4 @@ export const ToolsPanel: React.FC = () => {
     </div>
   );
 };
+
