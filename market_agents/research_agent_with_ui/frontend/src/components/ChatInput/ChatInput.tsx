@@ -42,13 +42,22 @@ interface ChatInputProps {
 }
 
 export const ChatInput: React.FC<ChatInputProps> = ({ mode, onSubmit, isLoading, disabled }) => {
-  return mode === 'custom' ? (
-    <ChatInputCustom
-      onSubmit={(message) => onSubmit(message)}
-      isLoading={isLoading}
-      disabled={disabled}
-    />
-  ) : (
+  console.log('ChatInput - Current mode:', mode); // Debug log
+  
+  if (mode === 'custom') {
+    return (
+      <ChatInputCustom
+        onSubmit={(message, file) => {
+          console.log('ChatInputCustom - Submitting:', message, file); // Debug log
+          onSubmit(message, file);
+        }}
+        isLoading={isLoading}
+        disabled={disabled}
+      />
+    );
+  }
+
+  return (
     <ChatInputResearch
       onSubmit={onSubmit}
       isLoading={isLoading}

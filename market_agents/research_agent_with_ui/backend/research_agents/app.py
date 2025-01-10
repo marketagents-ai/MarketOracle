@@ -1,11 +1,22 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Form, File, UploadFile  # Add Form, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
 from datetime import datetime
 from fastapi.responses import HTMLResponse
+from openai import AsyncOpenAI
 import sys
 from pathlib import Path
+from openai import OpenAI
+import os
+from dotenv import load_dotenv
+import pandas as pd
+import json
+import openai
+from io import StringIO
+import io
+
+load_dotenv()
 
 # Setup path for imports
 ROOT_DIR = Path(__file__).parent.parent.parent
@@ -15,21 +26,24 @@ from research_agent_enhanced import WebSearchAgent, WebSearchConfig
 from utils import load_config, logger
 
 # Initialize FastAPI with metadata
+
+client = AsyncOpenAI(
+    api_key=os.getenv('OPENAI_KEY')
+)
+
+
 app = FastAPI(
     title="Research API",
     description="API for web research and analysis",
     version="1.0.0"
 )
-
-# Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Update with Vite's default port
+    allow_origins=["*"],  # Configure this appropriately for production
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],  # Add OPTIONS
+    allow_methods=["*"],
     allow_headers=["*"],
 )
-
 class ResearchRequest(BaseModel):
     query: str
     urls: Optional[List[str]] = None
@@ -98,6 +112,142 @@ async def test():
     """Health check endpoint"""
     return {"status": "ok", "message": "Backend is running"}
 
+
+@app.post("/api/custom")
+async def custom_chat(
+    message: Optional[str] = Form(None),
+    file: Optional[UploadFile] = File(None)
+):
+    try:
+        logger.info(f"Received message: {message}, file: {file.filename if file else None}")
+        
+        if not message and not file:
+            raise HTTPException(
+                status_code=400, 
+                detail="Either message or file is required for analysis"
+            )
+
+        if file:
+            try:
+                content = await file.read()
+                logger.info(f"File content type: {file.content_type}")
+                logger.info(f"File size: {len(content)} bytes")
+                
+                data = None
+                if file.filename.endswith('.csv'):
+                    try:
+                        df = pd.read_csv(io.StringIO(content.decode('utf-8')))
+                    except UnicodeDecodeError:
+                        df = pd.read_csv(io.StringIO(content.decode('latin-1')))
+                    data = df.head(10).to_dict('records')
+                    file_info = {
+                        "filename": file.filename,
+                        "total_records": len(df),
+                        "columns": df.columns.tolist(),
+                        "preview_records": 10
+                    }
+                elif file.filename.endswith('.json'):
+                    json_data = json.loads(content.decode('utf-8'))
+                    if isinstance(json_data, list):
+                        data = json_data[:10]
+                        file_info = {
+                            "filename": file.filename,
+                            "total_records": len(json_data),
+                            "preview_records": 10
+                        }
+                    else:
+                        data = [json_data]
+                        file_info = {
+                            "filename": file.filename,
+                            "total_records": 1,
+                            "preview_records": 1
+                        }
+                else:
+                    raise HTTPException(
+                        status_code=400, 
+                        detail="Currently only CSV and JSON files are supported"
+                    )
+
+                system_prompt = """You are a data analysis expert. Analyze the following data and provide insights.
+                Focus on:
+                1. Data structure and content overview
+                2. Key patterns or trends
+                3. Notable observations
+                4. Potential areas for deeper analysis
+                Be specific and reference actual data points from the preview."""
+
+                user_prompt = f"""
+                Analyzing file: {file.filename}
+                Total records: {file_info['total_records']}
+                
+                Preview of data:
+                {json.dumps(data, indent=2)}
+                
+                User query: {message if message else 'Provide a general analysis of this data.'}
+                """
+
+                response = await client.chat.completions.create(
+                    model="gpt-4",
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_prompt}
+                    ],
+                    temperature=0.7,
+                    max_tokens=2000
+                )
+
+                return {
+                    "content": response.choices[0].message.content,
+                    "file_info": file_info,
+                    "status": "success"
+                }
+
+            except json.JSONDecodeError as e:
+                logger.error(f"JSON parsing error: {str(e)}", exc_info=True)
+                raise HTTPException(
+                    status_code=400, 
+                    detail="Invalid JSON file format"
+                )
+            except pd.errors.EmptyDataError:
+                raise HTTPException(
+                    status_code=400, 
+                    detail="The CSV file is empty"
+                )
+            except Exception as e:
+                logger.error(f"File parsing error: {str(e)}", exc_info=True)
+                raise HTTPException(
+                    status_code=400, 
+                    detail=f"Error parsing file: {str(e)}"
+                )
+
+        # Handle text-only queries
+        system_prompt = """You are an expert financial analyst. 
+        Provide detailed, actionable insights based on the user's query."""
+        
+        response = await client.chat.completions.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": message}
+            ],
+            temperature=0.7,
+            max_tokens=1500
+        )
+
+        return {
+            "content": response.choices[0].message.content,
+            "status": "success"
+        }
+
+    except Exception as e:
+        logger.error(f"Custom chat error: {str(e)}", exc_info=True)
+        raise HTTPException(
+            status_code=500, 
+            detail=f"An error occurred while processing your request: {str(e)}"
+        )
+    
+
+    
 @app.post("/api/research")
 async def research(request: ResearchRequest):
     try:

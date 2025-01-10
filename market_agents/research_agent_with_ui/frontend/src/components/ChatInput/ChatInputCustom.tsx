@@ -1,44 +1,50 @@
+// src/components/ChatInput/ChatInputCustom.tsx
+
 import React, { useState } from 'react';
 import { Send } from 'lucide-react';
 import { FileUpload } from '../FileUpload/FileUpload';
 
 interface ChatInputCustomProps {
-  onSubmit: (message: string) => void;
-  isLoading: boolean;
-  disabled?: boolean;
+  onSubmit: (message: string, file?: File) => void;
+  isLoading?: boolean;
 }
 
-export const ChatInputCustom: React.FC<ChatInputCustomProps> = ({ onSubmit, isLoading, disabled }) => {
+export const ChatInputCustom: React.FC<ChatInputCustomProps> = ({
+  onSubmit,
+  isLoading
+}) => {
   const [message, setMessage] = useState('');
+  const [file, setFile] = useState<File | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (message.trim() && !isLoading && !disabled) {
-      onSubmit(message);
+    console.log('ChatInputCustom handleSubmit called'); // Debug log
+    if (message.trim() || file) {
+      console.log('Submitting message:', message); // Debug log
+      onSubmit(message, file || undefined);
       setMessage('');
+      setFile(null);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="border-t border-gray-700 p-4 bg-gray-800">
-      <div className="flex gap-2 items-center">
-        <FileUpload />
-        <input
-          type="text"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder={disabled ? 'Create a new chat to start' : 'Ask about your data...'}
-          className="flex-1 bg-gray-700 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          disabled={isLoading || disabled}
-        />
-        <button
-          type="submit"
-          disabled={isLoading || disabled || !message.trim()}
-          className="bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700 disabled:opacity-50 transition-colors"
-        >
-          <Send size={20} />
-        </button>
-      </div>
+    <form onSubmit={handleSubmit} className="flex gap-2">
+      <FileUpload onDataProcessed={(uploadedFile) => setFile(uploadedFile)} />
+      <input
+        type="text"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+        placeholder="Type your message..."
+        className="flex-1 bg-gray-800 rounded-lg px-4 py-2 text-white"
+        disabled={isLoading}
+      />
+      <button
+        type="submit"
+        disabled={isLoading || (!message.trim() && !file)}
+        className="p-2 rounded-lg bg-blue-600 text-white disabled:opacity-50"
+      >
+        <Send size={20} />
+      </button>
     </form>
   );
 };

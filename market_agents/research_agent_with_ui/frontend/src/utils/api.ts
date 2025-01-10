@@ -21,7 +21,7 @@ import type { Chat, ChatItem, ChatMode } from '../types/chat';
 import type { SystemMessage } from '../types/system';
 import type { CustomTool } from '../types/tools';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 // Chat related API calls
 export const fetchChats = async (): Promise<Chat[]> => {
@@ -96,10 +96,19 @@ export const deleteChat = async (chatId: string): Promise<void> => {
     throw new APIError('An unexpected error occurred');
   }
 };
+const debugApiCall = (endpoint: string, method: string) => {
+  console.trace(`API Call: ${method} ${endpoint}`);
+};
 
-// Research related API calls
 export const fetchResearch = async (query: string, urls?: string[]): Promise<ResearchData[]> => {
   try {
+    // Log the request for debugging
+    console.log('Sending research request:', {
+      url: `${API_URL}/api/research`,
+      query,
+      urls
+    });
+
     const response = await fetch(`${API_URL}/api/research`, {
       method: 'POST',
       headers: {
@@ -107,12 +116,7 @@ export const fetchResearch = async (query: string, urls?: string[]): Promise<Res
       },
       body: JSON.stringify({
         query,
-        urls: urls || [],
-        options: {
-          use_ai_summary: true,
-          content_max_length: 10000,
-          urls_per_query: 3
-        }
+        urls: urls || []
       }),
     });
 
@@ -121,72 +125,10 @@ export const fetchResearch = async (query: string, urls?: string[]): Promise<Res
     }
 
     const data = await response.json();
-    
-    return data.results.map((result: any) => ({
-      url: result.url,
-      title: result.title,
-      content: result.content,
-      timestamp: result.timestamp,
-      status: result.status,
-      summary: {
-        summary: result.summary.main_summary || '',
-        key_points: result.summary.key_points || [],
-        market_impact: result.summary.market_impact || {
-          short_term: '',
-          medium_term: '',
-          long_term: ''
-        },
-        trading_implications: result.summary.trading_implications || {
-          entry_points: [],
-          exit_targets: [],
-          stop_loss_levels: [],
-          position_sizing: ''
-        },
-        technical_analysis: result.summary.technical_analysis || {
-          trend_direction: '',
-          support_levels: [],
-          resistance_levels: [],
-          indicators: {
-            rsi: '',
-            macd: '',
-            moving_averages: ''
-          },
-          patterns: []
-        },
-        sentiment_analysis: result.summary.sentiment_analysis || {
-          overall_sentiment: '',
-          sentiment_score: '',
-          social_metrics: {
-            social_volume: '',
-            sentiment_trend: ''
-          },
-          market_confidence: ''
-        },
-        risk_assessment: result.summary.risk_assessment || {
-          risk_level: '',
-          risk_factors: [],
-          mitigation_strategies: [],
-          risk_reward_ratio: ''
-        },
-        price_analysis: result.summary.price_analysis || {
-          current_price: '',
-          target_prices: {
-            short_term: [],
-            medium_term: [],
-            long_term: []
-          },
-          price_drivers: [],
-          volatility_assessment: ''
-        }
-      },
-      agent_id: result.agent_id,
-      extraction_method: result.extraction_method
-    }));
+    return data;
   } catch (error) {
-    if (error instanceof APIError) {
-      throw error;
-    }
-    throw new APIError('An unexpected error occurred');
+    console.error('Research API Error:', error);
+    throw error instanceof APIError ? error : new APIError('Failed to connect to research service');
   }
 };
 
@@ -298,5 +240,24 @@ export const deleteCustomTool = async (toolId: string): Promise<void> => {
       throw error;
     }
     throw new APIError('An unexpected error occurred');
+  }
+};
+
+export const sendCustomMessage = async (formData: FormData): Promise<any> => {
+  try {
+    const response = await fetch(`${API_URL}/api/custom`, {
+      method: 'POST',
+      body: formData, // FormData handles content-type automatically
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({ detail: 'Failed to send message' }));
+      throw new APIError(errorData.detail || `Error: ${response.status}`, response.status);
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error('Custom API Error:', error);
+    throw error instanceof APIError ? error : new APIError('Failed to send message');
   }
 };

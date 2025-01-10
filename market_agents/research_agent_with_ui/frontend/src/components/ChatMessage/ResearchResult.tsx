@@ -1,3 +1,81 @@
+// import React, { useState } from 'react';
+// import type { ResearchData } from '../../types/research';
+// import { ChevronDown, ChevronUp } from 'lucide-react';
+
+// interface ResearchResultProps {
+//   data: ResearchData[];
+// }
+
+// export const ResearchResult: React.FC<ResearchResultProps> = ({ data }) => {
+//   const [expandedItems, setExpandedItems] = useState<Record<number, boolean>>({});
+
+//   return (
+//     <div className="flex flex-col gap-4 w-full max-w-full overflow-hidden">
+//       {data.map((item, index) => (
+//         <div 
+//           key={index}
+//           className="bg-gray-800 rounded-lg p-4 overflow-hidden break-words"
+//         >
+//           <div 
+//             className="flex items-center justify-between cursor-pointer"
+//             onClick={() => setExpandedItems(prev => ({
+//               ...prev,
+//               [index]: !prev[index]
+//             }))}
+//           >
+//             <h3 className="font-medium text-lg text-white truncate pr-4">
+//               {item.title || item.url}
+//             </h3>
+//             {expandedItems[index] ? <ChevronUp /> : <ChevronDown />}
+//           </div>
+
+//           {expandedItems[index] && (
+//             <div className="mt-4 space-y-4">
+//               {/* Summary Section */}
+//               <div className="space-y-2">
+//                 <h4 className="font-medium text-blue-400">Summary</h4>
+//                 <p className="text-sm text-gray-300 whitespace-pre-wrap break-words">
+//                   {item.summary?.summary}
+//                 </p>
+//               </div>
+
+//               {/* Key Points */}
+//               {item.summary?.key_points && item.summary.key_points.length > 0 && (
+//                 <div className="space-y-2">
+//                   <h4 className="font-medium text-blue-400">Key Points</h4>
+//                   <ul className="list-disc list-inside text-sm text-gray-300 space-y-1">
+//                     {item.summary.key_points.map((point, i) => (
+//                       <li key={i} className="break-words">{point}</li>
+//                     ))}
+//                   </ul>
+//                 </div>
+//               )}
+
+//               {/* Source Info */}
+//               <div className="text-sm text-gray-400 pt-2 border-t border-gray-700">
+//                 <p className="break-words">
+//                   Source: <a 
+//                     href={item.url} 
+//                     className="text-blue-400 hover:underline" 
+//                     target="_blank" 
+//                     rel="noopener noreferrer"
+//                   >
+//                     {item.url}
+//                   </a>
+//                 </p>
+//                 <p>Last Updated: {new Date(item.timestamp).toLocaleString()}</p>
+//               </div>
+//             </div>
+//           )}
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
+
+////////////////////////////////////////////////////////
+
+
 import React, { useState } from 'react';
 import type { ResearchData } from '../../types/research';
 
@@ -91,7 +169,7 @@ export const ResearchResult: React.FC<ResearchResultProps> = ({ data }) => {
   );
 };
 
-
+///////////////////////////////////////////////////////
 // import React, { useState } from 'react';
 // import type { ResearchData } from '../../types/research';
 

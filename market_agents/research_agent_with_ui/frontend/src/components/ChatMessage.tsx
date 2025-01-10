@@ -9,31 +9,34 @@ interface ChatMessageProps {
 }
 
 export const ChatMessage: React.FC<ChatMessageProps> = ({ isUser = false, content }) => {
-  // Handle array of research data
-  if (Array.isArray(content)) {
+  // Add debug logging
+  console.log('ChatMessage content:', content);
+
+  // Check if content is research data
+  const isResearchData = Array.isArray(content) && content.length > 0 && 'url' in content[0];
+
+  if (isResearchData) {
     return (
       <div className="flex gap-3">
         <Avatar isUser={isUser} />
         <div className="flex-1">
-          <ResearchResult data={content} />
+          <ResearchResult data={content as ResearchData[]} />
         </div>
       </div>
     );
   }
 
-  // Handle string content (user messages)
   return (
     <div className={`flex gap-3 ${isUser ? 'justify-end' : 'justify-start'}`}>
       <Avatar isUser={isUser} />
       <div className={`p-3 rounded-lg max-w-[80%] ${
         isUser ? 'bg-blue-600 text-white' : 'bg-gray-700 text-white'
       }`}>
-        {content}
+        {typeof content === 'string' ? content : JSON.stringify(content)}
       </div>
     </div>
   );
 };
-
 // export const ChatMessage: React.FC<ChatMessageProps> = ({ isUser, content }) => {
 //   const messageClass = isUser 
 //     ? 'bg-blue-600 text-white ml-auto' 
