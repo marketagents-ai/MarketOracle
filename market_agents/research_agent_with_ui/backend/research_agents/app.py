@@ -113,6 +113,7 @@ async def test():
     return {"status": "ok", "message": "Backend is running"}
 
 
+
 @app.post("/api/custom")
 async def custom_chat(
     message: Optional[str] = Form(None),
@@ -127,124 +128,175 @@ async def custom_chat(
                 detail="Either message or file is required for analysis"
             )
 
-        if file:
+        # Handle message-only case
+        if message and not file:
             try:
-                content = await file.read()
-                logger.info(f"File content type: {file.content_type}")
-                logger.info(f"File size: {len(content)} bytes")
-                
-                data = None
-                if file.filename.endswith('.csv'):
-                    try:
-                        df = pd.read_csv(io.StringIO(content.decode('utf-8')))
-                    except UnicodeDecodeError:
-                        df = pd.read_csv(io.StringIO(content.decode('latin-1')))
-                    data = df.head(10).to_dict('records')
-                    file_info = {
-                        "filename": file.filename,
-                        "total_records": len(df),
-                        "columns": df.columns.tolist(),
-                        "preview_records": 10
-                    }
-                elif file.filename.endswith('.json'):
-                    json_data = json.loads(content.decode('utf-8'))
-                    if isinstance(json_data, list):
-                        data = json_data[:10]
-                        file_info = {
-                            "filename": file.filename,
-                            "total_records": len(json_data),
-                            "preview_records": 10
-                        }
-                    else:
-                        data = [json_data]
-                        file_info = {
-                            "filename": file.filename,
-                            "total_records": 1,
-                            "preview_records": 1
-                        }
-                else:
-                    raise HTTPException(
-                        status_code=400, 
-                        detail="Currently only CSV and JSON files are supported"
-                    )
-
-                system_prompt = """You are a data analysis expert. Analyze the following data and provide insights.
-                Focus on:
-                1. Data structure and content overview
-                2. Key patterns or trends
-                3. Notable observations
-                4. Potential areas for deeper analysis
-                Be specific and reference actual data points from the preview."""
-
-                user_prompt = f"""
-                Analyzing file: {file.filename}
-                Total records: {file_info['total_records']}
-                
-                Preview of data:
-                {json.dumps(data, indent=2)}
-                
-                User query: {message if message else 'Provide a general analysis of this data.'}
-                """
-
+                # Use GPT-4 for generating responses
                 response = await client.chat.completions.create(
                     model="gpt-4",
                     messages=[
-                        {"role": "system", "content": system_prompt},
-                        {"role": "user", "content": user_prompt}
+                        {"role": "system", "content": "You are an expert financial analyst and trading advisor. Provide detailed, accurate, and actionable insights."},
+                        {"role": "user", "content": message}
                     ],
                     temperature=0.7,
-                    max_tokens=2000
+                    max_tokens=1000
                 )
-
+                
                 return {
                     "content": response.choices[0].message.content,
-                    "file_info": file_info,
-                    "status": "success"
+                    "timestamp": datetime.now().isoformat()
+                }
+            except Exception as e:
+                logger.error(f"OpenAI API error: {str(e)}")
+                return {
+                    "content": "I apologize, but I'm having trouble processing your request at the moment.",
+                    "timestamp": datetime.now().isoformat()
                 }
 
-            except json.JSONDecodeError as e:
-                logger.error(f"JSON parsing error: {str(e)}", exc_info=True)
-                raise HTTPException(
-                    status_code=400, 
-                    detail="Invalid JSON file format"
-                )
-            except pd.errors.EmptyDataError:
-                raise HTTPException(
-                    status_code=400, 
-                    detail="The CSV file is empty"
-                )
-            except Exception as e:
-                logger.error(f"File parsing error: {str(e)}", exc_info=True)
-                raise HTTPException(
-                    status_code=400, 
-                    detail=f"Error parsing file: {str(e)}"
-                )
-
-        # Handle text-only queries
-        system_prompt = """You are an expert financial analyst. 
-        Provide detailed, actionable insights based on the user's query."""
-        
-        response = await client.chat.completions.create(
-            model="gpt-4",
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": message}
-            ],
-            temperature=0.7,
-            max_tokens=1500
-        )
-
-        return {
-            "content": response.choices[0].message.content,
-            "status": "success"
-        }
+        # Handle file case
+        if file:
+            content = await file.read()
+            return {
+                "content": f"Processed file: {file.filename}" + (f" with message: {message}" if message else ""),
+                "timestamp": datetime.now().isoformat()
+            }
 
     except Exception as e:
-        logger.error(f"Custom chat error: {str(e)}", exc_info=True)
-        raise HTTPException(
-            status_code=500, 
-            detail=f"An error occurred while processing your request: {str(e)}"
-        )
+        logger.error(f"Custom chat error: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+# @app.post("/api/custom")
+# async def custom_chat(
+#     message: Optional[str] = Form(None),
+#     file: Optional[UploadFile] = File(None)
+# ):
+#     try:
+#         logger.info(f"Received message: {message}, file: {file.filename if file else None}")
+        
+#         if not message and not file:
+#             raise HTTPException(
+#                 status_code=400, 
+#                 detail="Either message or file is required for analysis"
+#             )
+
+#         if file:
+#             try:
+#                 content = await file.read()
+#                 logger.info(f"File content type: {file.content_type}")
+#                 logger.info(f"File size: {len(content)} bytes")
+                
+#                 data = None
+#                 if file.filename.endswith('.csv'):
+#                     try:
+#                         df = pd.read_csv(io.StringIO(content.decode('utf-8')))
+#                     except UnicodeDecodeError:
+#                         df = pd.read_csv(io.StringIO(content.decode('latin-1')))
+#                     data = df.head(10).to_dict('records')
+#                     file_info = {
+#                         "filename": file.filename,
+#                         "total_records": len(df),
+#                         "columns": df.columns.tolist(),
+#                         "preview_records": 10
+#                     }
+#                 elif file.filename.endswith('.json'):
+#                     json_data = json.loads(content.decode('utf-8'))
+#                     if isinstance(json_data, list):
+#                         data = json_data[:10]
+#                         file_info = {
+#                             "filename": file.filename,
+#                             "total_records": len(json_data),
+#                             "preview_records": 10
+#                         }
+#                     else:
+#                         data = [json_data]
+#                         file_info = {
+#                             "filename": file.filename,
+#                             "total_records": 1,
+#                             "preview_records": 1
+#                         }
+#                 else:
+#                     raise HTTPException(
+#                         status_code=400, 
+#                         detail="Currently only CSV and JSON files are supported"
+#                     )
+
+#                 system_prompt = """You are a data analysis expert. Analyze the following data and provide insights.
+#                 Focus on:
+#                 1. Data structure and content overview
+#                 2. Key patterns or trends
+#                 3. Notable observations
+#                 4. Potential areas for deeper analysis
+#                 Be specific and reference actual data points from the preview."""
+
+#                 user_prompt = f"""
+#                 Analyzing file: {file.filename}
+#                 Total records: {file_info['total_records']}
+                
+#                 Preview of data:
+#                 {json.dumps(data, indent=2)}
+                
+#                 User query: {message if message else 'Provide a general analysis of this data.'}
+#                 """
+
+#                 response = await client.chat.completions.create(
+#                     model="gpt-4",
+#                     messages=[
+#                         {"role": "system", "content": system_prompt},
+#                         {"role": "user", "content": user_prompt}
+#                     ],
+#                     temperature=0.7,
+#                     max_tokens=2000
+#                 )
+
+#                 return {
+#                     "content": response.choices[0].message.content,
+#                     "file_info": file_info,
+#                     "status": "success"
+#                 }
+
+#             except json.JSONDecodeError as e:
+#                 logger.error(f"JSON parsing error: {str(e)}", exc_info=True)
+#                 raise HTTPException(
+#                     status_code=400, 
+#                     detail="Invalid JSON file format"
+#                 )
+#             except pd.errors.EmptyDataError:
+#                 raise HTTPException(
+#                     status_code=400, 
+#                     detail="The CSV file is empty"
+#                 )
+#             except Exception as e:
+#                 logger.error(f"File parsing error: {str(e)}", exc_info=True)
+#                 raise HTTPException(
+#                     status_code=400, 
+#                     detail=f"Error parsing file: {str(e)}"
+#                 )
+
+#         # Handle text-only queries
+#         system_prompt = """You are an expert financial analyst. 
+#         Provide detailed, actionable insights based on the user's query."""
+        
+#         response = await client.chat.completions.create(
+#             model="gpt-4",
+#             messages=[
+#                 {"role": "system", "content": system_prompt},
+#                 {"role": "user", "content": message}
+#             ],
+#             temperature=0.7,
+#             max_tokens=1500
+#         )
+
+#         return {
+#             "content": response.choices[0].message.content,
+#             "status": "success"
+#         }
+
+#     except Exception as e:
+#         logger.error(f"Custom chat error: {str(e)}", exc_info=True)
+#         raise HTTPException(
+#             status_code=500, 
+#             detail=f"An error occurred while processing your request: {str(e)}"
+#         )
     
 
     
