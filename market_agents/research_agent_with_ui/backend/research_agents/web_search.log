@@ -4178,3 +4178,84 @@ fastapi.exceptions.HTTPException
 2025-01-15 17:10:23,882 - utils - INFO - Received message: What are fundamentals of tradingh, file: None
 2025-01-15 17:10:44,631 - utils - ERROR - OpenAI API error: 'str' object has no attribute 'content'
 2025-01-15 17:12:06,403 - utils - INFO - Received message: What are fundamentals of tradingh, file: None
+2025-01-15 17:16:21,194 - utils - INFO - Received message: What are market idicators, file: None
+2025-01-15 17:17:33,159 - utils - INFO - Received message: analyze this data, file: None
+2025-01-15 17:20:57,593 - utils - INFO - Received message: What are market indicators, file: None
+2025-01-15 17:21:24,367 - utils - INFO - Received message: Analyze this data, file: None
+2025-01-15 17:24:14,903 - utils - INFO - Received message: Analyze this data., file: None
+2025-01-15 17:24:34,395 - utils - INFO - Received message: analyze this data, file: None
+2025-01-15 17:26:54,842 - utils - INFO - Received message: Analyze this data., file: None
+2025-01-15 17:29:00,685 - utils - INFO - Received message: analyze this data, file: None
+2025-01-15 17:29:42,385 - utils - INFO - Received message: analyze this file, file: None
+2025-01-15 17:29:55,227 - utils - INFO - Received message: None, file: None
+2025-01-15 17:29:55,227 - utils - ERROR - Custom chat error: 
+2025-01-15 17:30:56,541 - utils - INFO - Received message: what are market indicators, file: None
+2025-01-15 17:31:45,988 - utils - INFO - Received message: What are market indicators, file: None
+2025-01-15 17:32:06,855 - utils - INFO - Received message: analyze this data, file: None
+2025-01-15 17:32:26,529 - utils - INFO - Received message: what are market indicators?, file: None
+2025-01-15 17:35:29,020 - utils - INFO - Received message: What are market indicators, file: None
+2025-01-15 17:36:29,930 - utils - INFO - Received message: Analyze this., file: None
+2025-01-15 18:00:37,661 - utils - INFO - Received message: What are market indicators, file: None
+2025-01-15 18:01:09,284 - utils - INFO - Received message: Analyze this file., file: None
+2025-01-15 18:06:25,929 - utils - INFO - Received message: analyze this data, file: None
+2025-01-15 18:06:59,164 - utils - INFO - Received message: what are market indicators, file: None
+2025-01-15 18:07:24,351 - utils - INFO - Received message: what are the market indicators, file: None
+2025-01-15 18:07:50,919 - utils - INFO - Received message: What are market indicators, file: None
+2025-01-15 18:08:20,614 - utils - INFO - Received message: what are market indicators, file: None
+2025-01-15 18:08:45,317 - utils - INFO - Received message: what are market indicators, file: None
+2025-01-15 18:10:14,634 - utils - INFO - Received message: what are market indicatorts, file: None
+2025-01-15 18:10:48,834 - utils - INFO - Received message: what are market indicators, file: None
+2025-01-15 18:11:14,747 - utils - INFO - Received message: analyze this data., file: None
+2025-01-15 18:12:37,280 - utils - INFO - Received message: analyze this data., file: None
+2025-01-15 18:15:46,427 - utils - INFO - Received message: what are market indicators, file: None
+2025-01-15 18:16:00,698 - utils - INFO - Received message: what are market indicators, file: None
+2025-01-15 18:16:14,744 - utils - INFO - Received message: what are market indicatro, file: None
+2025-01-15 18:16:36,935 - utils - INFO - Received message: what are market indicators, file: None
+2025-01-15 18:16:57,751 - utils - INFO - Received message: what are techbical analysis, file: None
+2025-01-15 18:18:14,479 - utils - INFO - Received message: what are technical analysis, file: None
+2025-01-15 18:18:34,976 - utils - INFO - Received message: analyze this data., file: None
+2025-01-15 18:31:36,514 - utils - INFO - Received message: what are the cost to enter a financial market., file: None
+2025-01-15 18:32:23,364 - utils - INFO - Received message: what are the cost to enter a financial market., file: None
+2025-01-15 18:36:18,946 - utils - INFO - Received message: what are the cost to enter a financial market., file: None
+2025-01-15 18:41:28,042 - utils - INFO - Received message: what are cost to enter finacial markets , file: None
+2025-01-15 18:43:03,523 - utils - INFO - Received message: what are cost to enter finanical market., file: None
+2025-01-15 18:45:48,812 - utils - INFO - Received message: what are the cost to enter financial market, file: None
+2025-01-15 18:49:28,472 - utils - INFO - Received request data:
+2025-01-15 18:49:28,472 - utils - INFO - - Message: what are fiancial cost to enter financial market
+2025-01-15 18:49:28,473 - utils - INFO - - File: None
+2025-01-15 18:49:28,473 - utils - INFO - - Tools: None
+2025-01-16 16:36:43,302 - utils - INFO - Received request data:
+2025-01-16 16:36:43,302 - utils - INFO - - Message: What are market implications while investing in stock market
+2025-01-16 16:36:43,303 - utils - INFO - - File: None
+2025-01-16 16:36:43,303 - utils - INFO - - Tools: None
+2025-01-16 16:37:45,732 - utils - INFO - Received request data:
+2025-01-16 16:37:45,733 - utils - INFO - - Message: give me the cost of entering a financial marketing
+2025-01-16 16:37:45,733 - utils - INFO - - File: None
+2025-01-16 16:37:45,733 - utils - INFO - - Tools: None
+2025-01-16 17:01:50,033 - utils - INFO - Processing research query: cyrpto
+2025-01-16 17:01:51,485 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: cyrpto
+                            Generated 2 queries:
+                              1. latest cryptocurrency market trends January 2025
+  2. recent developments in crypto regulations Q4 2024
+                            ==============================
+                            
+2025-01-16 17:01:51,486 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest cryptocurrency market trends January 2025
+                                
+2025-01-16 17:01:54,869 - utils - INFO - 
+                                URLs found for query "latest cryptocurrency market trends January 2025":
+                                - https://www.globenewswire.com/news-release/2025/01/16/3010609/0/en/Blockchain-and-Cryptocurrency-Market-Report-2025-Tokenization-is-Expanding-with-Tokenized-Bonds-Projected-to-Reach-USD-1-Trillion-by-2028.html
+- https://www.binance.com/en/blog/research/binance-research-key-trends-in-crypto--january-2025-7113592559394488172
+- https://www.cointribune.com/en/crypto-trends-you-cant-miss-in-2025/
+- https://techpoint.africa/2025/01/13/january-to-may-2025-will-be-wild-grab-these-7-best-crypto-to-buy-now-before-the-bull-run-erupts/
+- https://zebpay.com/blog/crypto-technical-analysis-report-16th-january-2025
+                                
+2025-01-16 17:10:33,583 - utils - INFO - Received custom chat request - Message: [object FormData]
+2025-01-16 17:10:45,545 - utils - INFO - Received custom chat request - Message: [object FormData]
+2025-01-16 17:11:16,669 - utils - INFO - Received custom chat request - Message: [object FormData]
+2025-01-16 17:12:18,410 - utils - INFO - Received custom chat request - Message: [object FormData]
+2025-01-16 17:12:54,986 - utils - INFO - Received custom chat request - Message: What are market implications while investing in stock market
+2025-01-16 17:13:42,897 - utils - INFO - Received custom chat request - Message: I want my company to enter stock market. give me details

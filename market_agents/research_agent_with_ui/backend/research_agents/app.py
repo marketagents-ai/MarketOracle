@@ -113,58 +113,73 @@ async def test():
     return {"status": "ok", "message": "Backend is running"}
 
 
+class Tool(BaseModel):
+    id: str
+    name: str
+    description: str
 
 @app.post("/api/custom")
 async def custom_chat(
-    message: Optional[str] = Form(None),
-    file: Optional[UploadFile] = File(None)
+    message: str = Form(...),
+    file: Optional[UploadFile] = File(None),
+    tools: Optional[str] = Form(None)
 ):
     try:
-        logger.info(f"Received message: {message}, file: {file.filename if file else None}")
+        logger.info(f"Received custom chat request - Message: {message}")
         
-        if not message and not file:
-            raise HTTPException(
-                status_code=400, 
-                detail="Either message or file is required for analysis"
+        # Parse tools if provided
+        enabled_tools = []
+        if tools:
+            try:
+                enabled_tools = json.loads(tools)
+                logger.info(f"Enabled tools: {enabled_tools}")
+            except json.JSONDecodeError:
+                logger.warning("Failed to parse tools JSON")
+
+        # Process file if provided
+        file_content = None
+        if file:
+            try:
+                content = await file.read()
+                file_content = content.decode('utf-8')
+            except Exception as e:
+                logger.error(f"Error reading file: {e}")
+                raise HTTPException(status_code=400, detail="Error reading file")
+
+        # Create the system prompt
+        system_prompt = "You are an expert financial analyst and market researcher."
+        if enabled_tools:
+            tool_descriptions = "\n".join(f"- {tool['name']}: {tool['description']}" for tool in enabled_tools)
+            system_prompt += f"\nEnabled tools:\n{tool_descriptions}"
+
+        try:
+            # Call OpenAI API
+            response = await client.chat.completions.create(
+                model="gpt-4",
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": message if not file_content else f"{message}\n\nFile content:\n{file_content}"}
+                ],
+                temperature=0.7,
+                max_tokens=1000
             )
 
-        # Handle message-only case
-        if message and not file:
-            try:
-                # Use GPT-4 for generating responses
-                response = await client.chat.completions.create(
-                    model="gpt-4",
-                    messages=[
-                        {"role": "system", "content": "You are an expert financial analyst and trading advisor. Provide detailed, accurate, and actionable insights."},
-                        {"role": "user", "content": message}
-                    ],
-                    temperature=0.7,
-                    max_tokens=1000
-                )
-                
-                return {
-                    "content": response.choices[0].message.content,
-                    "timestamp": datetime.now().isoformat()
-                }
-            except Exception as e:
-                logger.error(f"OpenAI API error: {str(e)}")
-                return {
-                    "content": "I apologize, but I'm having trouble processing your request at the moment.",
-                    "timestamp": datetime.now().isoformat()
-                }
-
-        # Handle file case
-        if file:
-            content = await file.read()
             return {
-                "content": f"Processed file: {file.filename}" + (f" with message: {message}" if message else ""),
-                "timestamp": datetime.now().isoformat()
+                "content": response.choices[0].message.content,
+                "timestamp": datetime.now().isoformat(),
+                "file_info": {
+                    "filename": file.filename,
+                    "size": len(file_content) if file_content else 0
+                } if file else None
             }
+
+        except Exception as e:
+            logger.error(f"OpenAI API error: {str(e)}")
+            raise HTTPException(status_code=500, detail="Failed to process request")
 
     except Exception as e:
         logger.error(f"Custom chat error: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
-
 # @app.post("/api/custom")
 # async def custom_chat(
 #     message: Optional[str] = Form(None),
