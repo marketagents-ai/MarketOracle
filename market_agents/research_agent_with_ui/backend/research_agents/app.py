@@ -330,8 +330,14 @@ async def research(request: ResearchRequest):
         # Log the raw results
         logger.info(f"Raw results: {agent.results}")
         
-        # Return the raw results directly
-        return agent.results
+        # Convert Pydantic models to dict for JSON serialization
+        formatted_results = [
+            result.model_dump(exclude_none=True) 
+            for result in agent.results 
+            if result is not None
+        ]
+        
+        return formatted_results
 
     except Exception as e:
         logger.error(f"Research error: {str(e)}")

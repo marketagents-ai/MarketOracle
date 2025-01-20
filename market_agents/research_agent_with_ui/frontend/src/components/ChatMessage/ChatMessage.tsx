@@ -16,27 +16,34 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({
   content,
   timestamp
 }) => {
+  // Add debug logging
+  console.log('ChatMessage content:', content);
+
+  // Check if content is research data
+  const isResearchData = Array.isArray(content) && content.length > 0 && 'url' in content[0];
+
+  if (isResearchData) {
+    return (
+      <div className="flex gap-3">
+        <Avatar isUser={isUser} />
+        <div className="flex-1">
+          <ResearchResult data={content as ResearchData[]} />
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className={`flex gap-4 mb-4 ${isUser ? 'justify-end' : 'justify-start'}`}>
+    <div className={`flex gap-3 ${isUser ? 'justify-end' : 'justify-start'}`}>
       <Avatar isUser={isUser} />
-      
-      <div className={`flex-1 max-w-[80%] ${isUser ? 'text-right' : 'text-left'}`}>
-        {typeof content === 'string' ? (
-          <div className={`rounded-lg p-3 inline-block ${
-            isUser ? 'bg-blue-600 text-white' : 'bg-gray-700 text-white'
-          }`}>
-            <p>{content}</p>
-          </div>
-        ) : (
-          <div className="w-full">
-            <ResearchResult data={content} />
-          </div>
-        )}
+      <div className={`p-3 rounded-lg max-w-[80%] ${
+        isUser ? 'bg-blue-600 text-white' : 'bg-gray-700 text-white'
+      }`}>
+        {content as string}
       </div>
     </div>
   );
 };
-
 
 // import React from 'react';
 // import { Avatar } from '../Avatar/Avatar';
