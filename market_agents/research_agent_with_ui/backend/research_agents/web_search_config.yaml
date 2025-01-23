@@ -61,3 +61,5 @@ llm_configs:
       schema_name: "MarketResearch"  # pydantic class from research_schemas.py for json output
       schema_description: "Generate comprehensive market research analysis covering asset-specific, sector-wide, or macro-level insights with actionable recommendations"
       instruction_string: "Analyze the content and provide detailed market research following this schema:"
+
+tools_storage_path: "market_agents/research_agent_with_ui/storage/custom_tools.json"

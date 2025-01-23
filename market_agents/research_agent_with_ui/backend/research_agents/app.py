@@ -313,7 +313,162 @@ async def custom_chat(
 #             detail=f"An error occurred while processing your request: {str(e)}"
 #         )
     
+def get_tools_path():
+    """Get the absolute path to the custom_tools.json file and ensure the directory exists"""
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    storage_dir = os.path.join(
+        os.path.dirname(os.path.dirname(current_dir)),  # Go up two levels
+        'storage'
+    )
+    # Create the storage directory if it doesn't exist
+    os.makedirs(storage_dir, exist_ok=True)
+    
+    tools_path = os.path.join(storage_dir, 'custom_tools.json')
+    
+    # Create an empty tools file if it doesn't exist
+    if not os.path.exists(tools_path):
+        with open(tools_path, 'w', encoding='utf-8') as f:
+            json.dump({}, f, indent=2, ensure_ascii=False)
+    
+    return tools_path
+@app.post("/api/save-tool")
+async def save_tool(tool_data: dict):
+    try:
+        # Path to custom_tools.json
+        file_path = "storage/custom_tools.json"
+        
+        # Create directory if it doesn't exist
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        
+        # Read existing tools
+        existing_tools = {}
+        if os.path.exists(file_path):
+            with open(file_path, 'r') as f:
+                existing_tools = json.load(f)
+        
+        # Merge new tool with existing tools
+        existing_tools.update(tool_data)
+        
+        # Save updated tools back to file
+        with open(file_path, 'w') as f:
+            json.dump(existing_tools, f, indent=2)
+            
+        return {"status": "success", "message": "Tool saved successfully"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
 
+class DeleteToolRequest(BaseModel):
+    toolName: str
+
+@app.delete("/api/tools/delete")
+async def delete_tool(request: DeleteToolRequest):
+    try:
+        file_path = "storage/custom_tools.json"
+        with open(file_path, 'r') as f:
+            tools = json.load(f)
+            
+        if request.toolName in tools:
+            del tools[request.toolName]
+            
+            with open(file_path, 'w') as f:
+                json.dump(tools, f, indent=2)
+            
+        return {"status": "success"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+
+@app.post("/api/delete-tool")
+async def delete_tool(request: DeleteToolRequest):
+    try:
+        file_path = Path("storage/custom_tools.json")
+        
+        if file_path.exists():
+            # Read existing tools
+            with open(file_path, 'r', encoding='utf-8') as f:
+                tools = json.load(f)
+            
+            # Remove the tool if it exists
+            if request.toolName in tools:
+                del tools[request.toolName]
+                
+                # Write updated tools back to file
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    json.dump(tools, f, indent=2, ensure_ascii=False)
+                
+        return {"status": "success", "message": "Tool deleted successfully"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+
+
+@app.post("/api/save-tools")
+async def save_tools(tools: dict):
+    try:
+        # Use absolute path to ensure correct file location
+        base_dir = Path(__file__).resolve().parent.parent
+        file_path = base_dir / "storage" / "custom_tools.json"
+        
+        # Create directory if it doesn't exist
+        os.makedirs(file_path.parent, exist_ok=True)
+        
+        print(f"Saving tools to: {file_path}")  # Debug print
+        print(f"Tools data: {json.dumps(tools, indent=2)}")  # Debug print
+        
+        # Write tools to file
+        with open(file_path, 'w', encoding='utf-8') as f:
+            json.dump(tools, f, indent=2, ensure_ascii=False)
+            
+        return {"status": "success", "message": "Tools saved successfully"}
+    except Exception as e:
+        print(f"Error saving tools: {str(e)}")  # Debug print
+        raise HTTPException(status_code=500, detail=str(e))
+    
+
+
+
+@app.post("/api/tools")
+async def save_tools(tools: dict):
+    try:
+        file_path = Path("storage/custom_tools.json")
+        file_path.parent.mkdir(exist_ok=True)
+        
+        # Read existing tools if file exists
+        existing_tools = {}
+        if file_path.exists():
+            with open(file_path, 'r') as f:
+                existing_tools = json.load(f)
+        
+        # Merge new tools with existing ones
+        existing_tools.update(tools)
+        
+        # Save all tools back to file
+        with open(file_path, 'w') as f:
+            json.dump(existing_tools, f, indent=2)
+            
+        return {"status": "success"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.put("/api/tools/{tool_id}/toggle")
+async def toggle_tool(tool_id: str, enabled: bool):
+    try:
+        tools_path = get_tools_path()
+        if os.path.exists(tools_path):
+            with open(tools_path, 'r', encoding='utf-8') as f:
+                tools = json.load(f)
+            
+            if tool_id in tools:
+                tools[tool_id]['enabled'] = enabled
+                with open(tools_path, 'w', encoding='utf-8') as f:
+                    json.dump(tools, f, indent=2, ensure_ascii=False)
+                return {"status": "success"}
+        
+        raise HTTPException(status_code=404, detail="Tool not found")
+    except Exception as e:
+        logger.error(f"Error toggling tool: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
     
 @app.post("/api/research")
 async def research(request: ResearchRequest):

@@ -12,7 +12,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 from urllib.parse import urlparse
-
+from .tools_manager import ToolsManager
 import yaml
 from googlesearch import search
 from pydantic import BaseModel, Field
@@ -62,6 +62,18 @@ class SearchManager:
             'user_agent': self.headers['User-Agent']
         }
         self.query_url_mapping = {}
+        self.tools_manager = ToolsManager(config.tools_storage_path)
+    def add_custom_tool(self, tool_name: str, tool_config: Dict[str, Any]):
+        """Add a new custom tool"""
+        self.tools_manager.add_tool(tool_name, tool_config)
+
+    def remove_custom_tool(self, tool_name: str):
+        """Remove a custom tool"""
+        self.tools_manager.remove_tool(tool_name)
+
+    def get_custom_tools(self) -> Dict[str, Any]:
+        """Get all custom tools"""
+        return self.tools_manager.get_tools()
         
     async def generate_search_queries(self, base_query: str) -> List[str]:
         try:
