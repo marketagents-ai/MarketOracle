@@ -2,10 +2,11 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import Any, Dict, List, Optional
 import sys
 from pathlib import Path
 from datetime import datetime
+import importlib
 
 # Setup path for imports
 ROOT_DIR = Path(__file__).parent.parent.parent
@@ -19,7 +20,7 @@ app = FastAPI()
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://0.0.0.0:5000", "http://localhost:5000", "http://127.0.0.1:5000"],
+    allow_origins=["http://0.0.0.0:5173", "http://localhost:5173", "http://127.0.0.1:5173"],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE"],
     allow_headers=["*"],
@@ -28,6 +29,50 @@ app.add_middleware(
 class ResearchRequest(BaseModel):
     query: str
     urls: Optional[List[str]] = None
+
+class SchemaField(BaseModel):
+    name: str
+    type: str
+    description: Optional[str] = None
+    required: bool = False
+    nested: Optional[List['SchemaField']] = None
+
+class SchemaInfo(BaseModel):
+    fields: List[SchemaField]
+
+class ResearchResponse(BaseModel):
+    results: List[Dict[str, Any]]
+    metrics: Dict[str, Any]
+    schema: Optional[SchemaInfo] = None
+
+def convert_pydantic_schema_to_frontend_schema(schema_data: Dict[str, Any]) -> Dict[str, Any]:
+    """Convert Pydantic schema to frontend-friendly format"""
+    fields = []
+    
+    for prop_name, prop_data in schema_data.get("properties", {}).items():
+        field = {
+            "name": prop_name,
+            "type": prop_data.get("type", "string"),
+            "description": prop_data.get("description", ""),
+            "required": prop_name in schema_data.get("required", [])
+        }
+        
+        # Handle nested objects
+        if prop_data.get("type") == "object" and "properties" in prop_data:
+            field["nested"] = convert_pydantic_schema_to_frontend_schema(prop_data)["fields"]
+        
+        # Handle arrays
+        elif prop_data.get("type") == "array":
+            field["type"] = "array"
+            if "items" in prop_data:
+                if prop_data["items"].get("type") == "object":
+                    field["nested"] = convert_pydantic_schema_to_frontend_schema(
+                        {"properties": prop_data["items"].get("properties", {})}
+                    )["fields"]
+        
+        fields.append(field)
+    
+    return {"fields": fields}
 
 @app.get("/", response_class=HTMLResponse)
 async def home():
@@ -78,7 +123,7 @@ async def home():
             
             <h2>Usage Example:</h2>
             <pre>
-curl -X POST "http://localhost:5000/api/research" \\
+curl -X POST "http://localhost:5001/api/research" \\
      -H "Content-Type: application/json" \\
      -d '{"query": "Latest developments in AI technology"}'
             </pre>
@@ -90,9 +135,31 @@ curl -X POST "http://localhost:5000/api/research" \\
 async def test():
     return {"status": "ok", "message": "Backend is running"}
 
-class ResearchResponse(BaseModel):
-    results: List[Dict[str, Any]]
-    metrics: Dict[str, Any]
+@app.get("/api/schema")
+async def get_schema():
+    """Return the schema based on the configured research schema"""
+    try:
+        # Load config to get schema name
+        config_data, _ = load_config()
+        config = WebSearchConfig(**config_data)
+        
+        # Get schema class from config
+        schema_name = config.llm_configs["content_analysis"]["schema_config"]["schema_name"]
+        
+        # Import the schema dynamically
+        schemas_module = importlib.import_module('market_agents.research_agents.research_schemas')
+        schema_class = getattr(schemas_module, schema_name)
+        
+        # Get Pydantic schema (using model_json_schema instead of model_schema)
+        pydantic_schema = schema_class.model_json_schema()
+        
+        # Convert to frontend format
+        frontend_schema = convert_pydantic_schema_to_frontend_schema(pydantic_schema)
+        
+        return frontend_schema
+    except Exception as e:
+        logger.error(f"Schema generation error: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/api/research", response_model=ResearchResponse)
 async def research(request: ResearchRequest):
@@ -111,71 +178,66 @@ async def research(request: ResearchRequest):
         output_file = f"outputs/web_search/results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         
         # Save results and get metrics
-        save_result = agent.save_results(output_file)
+        try:
+            save_result = agent.save_results(output_file)
+        except Exception as save_error:
+            logger.error(f"Error saving results: {str(save_error)}")
+            save_result = None
         
+        # Format results with null checks
         formatted_results = []
-        for result in agent.results:
-            if result:
-                formatted_results.append({
-                    "url": result.url,
-                    "title": result.title,
-                    "content": result.content,
-                    "timestamp": result.timestamp.isoformat(),
-                    "status": result.status,
-                    "summary": result.summary,
-                    "agent_id": result.agent_id,
-                    "extraction_method": result.extraction_method
-                })
+        if hasattr(agent, 'results') and agent.results:
+            for result in agent.results:
+                if result and hasattr(result, 'status'):
+                    try:
+                        formatted_results.append({
+                            "url": getattr(result, 'url', ''),
+                            "title": getattr(result, 'title', 'No title'),
+                            "content": getattr(result, 'content', ''),
+                            "timestamp": result.timestamp.isoformat() if hasattr(result, 'timestamp') and result.timestamp else datetime.now().isoformat(),
+                            "status": getattr(result, 'status', 'unknown'),
+                            "summary": getattr(result, 'summary', {}),
+                            "agent_id": getattr(result, 'agent_id', None),
+                            "extraction_method": getattr(result, 'extraction_method', None)
+                        })
+                    except Exception as e:
+                        logger.error(f"Error formatting result: {str(e)}")
+                        continue
         
-        # Return both results and metrics in the expected format
-        return {
+        # Get schema
+        schema = await get_schema()
+        
+        # Return both results and metrics with schema
+        response_data = {
             "results": formatted_results,
             "metrics": {
-                "total_articles": len(agent.results),
-                "successful_extractions": sum(1 for r in agent.results if r and r.status == "success"),
-                "failed_extractions": sum(1 for r in agent.results if not r or r.status != "success"),
-                "database_status": save_result["metrics"]["database_status"],
-                "output_file": output_file
-            }
+                "total_articles": len(agent.results) if hasattr(agent, 'results') and agent.results else 0,
+                "successful_extractions": len(formatted_results),
+                "failed_extractions": (len(agent.results) if hasattr(agent, 'results') and agent.results else 0) - len(formatted_results),
+                "database_status": "success" if formatted_results else "error",
+                "output_file": output_file if formatted_results else None
+            },
+            "schema": schema
         }
+        
+        logger.debug(f"Response data: {response_data}")
+        return response_data
         
     except Exception as e:
         logger.error(f"Research error: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-# @app.post("/api/research")
-# async def research(request: ResearchRequest):
-#     logger.info(f"Received research request: {request.query}")
-#     try:
-#         config_data, prompts = load_config()
-#         config_data["query"] = request.query
-#         if request.urls:
-#             config_data["urls"] = request.urls
-            
-#         config = WebSearchConfig(**config_data)
-#         agent = WebSearchAgent(config, prompts)
-#         await agent.process_search_query(request.query)
-        
-#         formatted_results = []
-#         for result in agent.results:
-#             if result:
-#                 formatted_results.append({
-#                     "url": result.url,
-#                     "title": result.title,
-#                     "content": result.content,
-#                     "timestamp": result.timestamp.isoformat(),
-#                     "status": result.status,
-#                     "summary": result.summary,
-#                     "agent_id": result.agent_id,
-#                     "extraction_method": result.extraction_method
-#                 })
-        
-#         return formatted_results
-        
-#     except Exception as e:
-#         logger.error(f"Research error: {str(e)}")
-#         raise HTTPException(status_code=500, detail=str(e))
+        return {
+            "results": [],
+            "metrics": {
+                "total_articles": 0,
+                "successful_extractions": 0,
+                "failed_extractions": 0,
+                "database_status": "error",
+                "output_file": None,
+                "error": str(e)
+            },
+            "schema": None
+        }
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=5000)
+    uvicorn.run(app, host="0.0.0.0", port=5001)

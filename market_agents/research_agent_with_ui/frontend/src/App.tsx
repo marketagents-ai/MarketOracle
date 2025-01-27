@@ -9,20 +9,21 @@ import { useChats } from './hooks/useChats';
 import { fetchResearch, sendCustomMessage } from './services/api';
 import { handleAPIError } from './utils/api';
 import type { ChatItem, ChatMode } from './types/chat';
+import type { ResearchResponse } from './types/research';
 
 export const App: React.FC = () => {
   const { chats, activeChat, setActiveChat, createChat, updateChat, updateChatMode } = useChats();
   const [isLoading, setIsLoading] = useState(false);
 
-  const activeMessages = chats.find(chat => chat.id === activeChat)?.messages || [];
-  const activeChatMode = chats.find(chat => chat.id === activeChat)?.mode || 'custom';
+  const activeMessages = chats.find((chat) => chat.id === activeChat)?.messages || [];
+  const activeChatMode = chats.find((chat) => chat.id === activeChat)?.mode || 'custom';
 
   const handleSubmit = async (query: string, urls?: string[]) => {
     if (!activeChat) {
       const newChatId = createChat(activeChatMode);
       if (!newChatId) return;
     }
-  
+
     const chatId = activeChat || chats[0].id;
     const userMessage: ChatItem = {
       isUser: true,
@@ -30,37 +31,39 @@ export const App: React.FC = () => {
       timestamp: new Date(),
       mode: activeChatMode
     };
-    
+
     const newMessages = [...activeMessages, userMessage];
     updateChat(chatId, newMessages);
-    
+
     setIsLoading(true);
     try {
-      let responseData;
-      
       if (activeChatMode === 'research') {
-        responseData = await fetchResearch(query, urls);
+        const response = (await fetchResearch(query, urls)) as ResearchResponse;
+        const results = response.results;
+
+        const responseMessage: ChatItem = {
+          isUser: false,
+          // We store the entire response object if you want to process
+          // `metrics` or `schema` further in the component
+          content: {
+            results,
+            metrics: response.metrics,
+            schema: response.schema
+          },
+          timestamp: new Date(),
+          mode: 'research'
+        };
+        updateChat(chatId, [...newMessages, responseMessage]);
       } else {
-        // Custom mode
-        const response = await sendCustomMessage(message, file);
-      
+        const response = await sendCustomMessage(query);
         const aiMessage: ChatItem = {
           isUser: false,
           content: response.content,
           timestamp: new Date(),
-          mode: 'custom',
-          fileInfo: response.file_info
+          mode: 'custom'
         };
+        updateChat(chatId, [...newMessages, aiMessage]);
       }
-  
-      const responseMessage: ChatItem = {
-        isUser: false,
-        content: responseData,
-        timestamp: new Date(),
-        mode: activeChatMode
-      };
-      
-      updateChat(chatId, [...newMessages, responseMessage]);
     } catch (error) {
       console.error('Error:', error);
       const errorMessage: ChatItem = {

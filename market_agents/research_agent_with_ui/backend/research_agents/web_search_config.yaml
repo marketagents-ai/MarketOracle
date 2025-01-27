@@ -1,9 +1,9 @@
-query: "Cryptocurrency to invest on"
+query: "Top stocks to invest"
 max_concurrent_requests: 50
 rate_limit: 0.1
 content_max_length: 4000
 request_timeout: 30
-urls_per_query: 5
+urls_per_query: 1
 use_ai_summary: true
 methods: 
   - "selenium"
@@ -58,7 +58,7 @@ llm_configs:
     system_prompt: "You are an expert financial & Trading analyst."
     prompt_template: "{prompt}"
     schema_config:
-      schema_name: "MarketResearch"  # pydantic class from research_schemas.py for json output
+      schema_name: "AssetAnalysis"  # pydantic class from research_schemas.py for json output
       schema_description: "Generate comprehensive market research analysis covering asset-specific, sector-wide, or macro-level insights with actionable recommendations"
       instruction_string: "Analyze the content and provide detailed market research following this schema:"
 

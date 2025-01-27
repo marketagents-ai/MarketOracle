@@ -187,7 +187,7 @@ class WebSearchAgent:
                     "insights and clear investment strategies."
                 ),
                 new_message=formatted_prompt,
-                llm_config=llm_config.dict(),
+                llm_config=llm_config.model_dump(),
                 structured_output=structured_tool,
                 use_schema_instruction=True,
                 use_history=False
@@ -203,8 +203,13 @@ class WebSearchAgent:
                         
                         if response.json_object and hasattr(response.json_object, 'object'):
                             try:
+                                # The error is happening here - we're getting a dict instead of a string
                                 result = schema_class(**response.json_object.object)
-                                return json.loads(result.model_dump_json(exclude_none=True))
+                                # Fix: Convert dict to string before parsing
+                                if isinstance(response.json_object.object, dict):
+                                    return response.json_object.object
+                                else:
+                                    return json.loads(response.json_object.object)
                             except Exception as e:
                                 logger.error(f"Error validating response: {str(e)}")
                                 continue
@@ -216,12 +221,11 @@ class WebSearchAgent:
                         continue
 
             # Return empty schema structure if all attempts fail
-            return json.loads(schema_class().model_dump_json())
+            return schema_class.model_json_schema()
 
         except Exception as e:
             logger.error(f"Error in summary generation: {str(e)}")
-            schema_class = self.get_schema_class(self.config.llm_configs["content_analysis"]["schema_config"]["schema_name"])
-            return json.loads(schema_class().model_dump_json())
+            return schema_class.model_json_schema()
 
     def save_results(self, output_file: str):
         """Save results to file and attempt database insertion"""

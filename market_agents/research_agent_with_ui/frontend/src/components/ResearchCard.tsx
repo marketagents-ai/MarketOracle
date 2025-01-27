@@ -1,96 +1,172 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
-import type { ResearchData } from '../types/research';
+import type { ResearchData, SchemaInfo, SchemaField } from '../types/research';
 
 interface ResearchCardProps {
-  data: ResearchData;
+  data: ResearchData[];
 }
 
 export const ResearchCard: React.FC<ResearchCardProps> = ({ data }) => {
-  const [isExpanded, setIsExpanded] = React.useState(false);
+  const [schema, setSchema] = useState<SchemaInfo | null>(null);
+  const [expandedItems, setExpandedItems] = React.useState<Record<number, boolean>>({});
+
+  // Fetch schema from backend
+  useEffect(() => {
+    const fetchSchema = async () => {
+      try {
+        const response = await fetch('/api/schema');
+        const schemaData: SchemaInfo = await response.json();
+        setSchema(schemaData);
+      } catch (error) {
+        console.error('Failed to fetch schema:', error);
+        // Fallback to inferred schema
+        const inferredSchema: SchemaInfo = {
+          fields: inferColumnsFromData(data)
+        };
+        setSchema(inferredSchema);
+      }
+    };
+
+    fetchSchema();
+  }, [data]);
+
+  // Infer columns from data if schema fetch fails
+  const inferColumnsFromData = (data: ResearchData[]): SchemaField[] => {
+    const columnSet = new Set<string>();
+    data.forEach(item => {
+      Object.keys(item).forEach(key => columnSet.add(key));
+    });
+    
+    return Array.from(columnSet).map(name => ({
+      name,
+      type: 'string', // Default type
+      required: false
+    }));
+  };
+
+  // Get current columns from schema or infer them
+  const columns = schema?.fields || inferColumnsFromData(data);
+
+  // Render cell based on field type
+  const renderCell = (value: any, field: SchemaField) => {
+    if (value == null) return 'N/A';
+
+    switch (field.type) {
+      case 'array':
+        return Array.isArray(value) ? (
+          <ul className="list-disc pl-4">
+            {value.map((item, i) => (
+              <li key={i}>{renderValue(item)}</li>
+            ))}
+          </ul>
+        ) : renderValue(value);
+      
+      case 'object':
+        return (
+          <div className="space-y-1">
+            {Object.entries(value).map(([key, val]) => (
+              <div key={key}>
+                <span className="font-medium">{key}: </span>
+                {renderValue(val)}
+              </div>
+            ))}
+          </div>
+        );
+      
+      case 'url':
+        return (
+          <a 
+            href={value}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline"
+            onClick={e => e.stopPropagation()}
+          >
+            {new URL(value).hostname}
+          </a>
+        );
+      
+      default:
+        return renderValue(value);
+    }
+  };
+
+  // Generic value renderer
+  const renderValue = (value: any): React.ReactNode => {
+    if (value == null) return 'N/A';
+    if (Array.isArray(value)) return value.join(', ');
+    if (typeof value === 'object') return JSON.stringify(value);
+    return String(value);
+  };
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 mb-4">
-      <div 
-        className="flex justify-between items-center cursor-pointer"
-        onClick={() => setIsExpanded(!isExpanded)}
-      >
-        <h2 className="text-xl font-semibold">{data.title.split('#').pop() || 'Research Result'}</h2>
-        {isExpanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+    <div className="space-y-4">
+      {/* Dynamic Table */}
+      <div className="overflow-x-auto bg-white rounded-lg shadow-md p-4">
+        <table className="min-w-full">
+          <thead>
+            <tr className="border-b">
+              {columns.map(field => (
+                <th key={field.name} className="px-4 py-3 text-left">
+                  <div className="flex flex-col">
+                    <span>{field.name}</span>
+                    {field.description && (
+                      <span className="text-xs text-gray-500">{field.description}</span>
+                    )}
+                  </div>
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((item, index) => (
+              <tr 
+                key={index} 
+                className="border-b hover:bg-gray-50 cursor-pointer"
+                onClick={() => setExpandedItems(prev => ({
+                  ...prev,
+                  [index]: !prev[index]
+                }))}
+              >
+                {columns.map(field => (
+                  <td key={field.name} className="px-4 py-3">
+                    {renderCell(item[field.name], field)}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
 
-      {isExpanded && (
-        <div className="mt-4 space-y-6">
-          <div>
-            <h3 className="text-lg font-medium mb-2">Summary</h3>
-            <p className="text-gray-700">{data.summary.summary}</p>
-            
-            <div className="mt-4">
-              <h4 className="font-medium mb-2">Key Points</h4>
-              <ul className="list-disc pl-5">
-                {data.summary.key_points.map((point, index) => (
-                  <li key={index} className="text-gray-700">{point}</li>
-                ))}
-              </ul>
-            </div>
+      {/* Detailed View */}
+      {data.map((item, index) => (
+        <div key={index} className="bg-white rounded-lg shadow-md p-6">
+          <div 
+            className="flex justify-between items-center cursor-pointer"
+            onClick={() => setExpandedItems(prev => ({
+              ...prev,
+              [index]: !prev[index]
+            }))}
+          >
+            <h2 className="text-xl font-semibold">
+              {item.title || `Research Result ${index + 1}`}
+            </h2>
+            {expandedItems[index] ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-lg font-medium mb-3">Market Impact</h3>
-              <div className="space-y-2">
-                <p><span className="font-medium">Short Term:</span> {data.summary.market_impact.short_term}</p>
-                <p><span className="font-medium">Medium Term:</span> {data.summary.market_impact.medium_term}</p>
-                <p><span className="font-medium">Long Term:</span> {data.summary.market_impact.long_term}</p>
-              </div>
+          {expandedItems[index] && (
+            <div className="mt-4 space-y-4">
+              {columns.map(field => (
+                <div key={field.name} className="bg-gray-50 p-4 rounded-lg">
+                  <h3 className="font-medium mb-2">{field.name}</h3>
+                  {renderCell(item[field.name], field)}
+                </div>
+              ))}
             </div>
-
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-lg font-medium mb-3">Price Analysis</h3>
-              <p><span className="font-medium">Current Price:</span> {data.summary.price_analysis.current_price}</p>
-              <p><span className="font-medium">Volatility:</span> {data.summary.price_analysis.volatility_assessment}</p>
-              <div className="mt-2">
-                <h4 className="font-medium">Price Drivers</h4>
-                <ul className="list-disc pl-5">
-                  {data.summary.price_analysis.price_drivers.map((driver, index) => (
-                    <li key={index} className="text-gray-700">{driver}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-lg font-medium mb-3">Technical Analysis</h3>
-              <p><span className="font-medium">Trend:</span> {data.summary.technical_analysis.trend_direction}</p>
-              <div className="mt-2">
-                <h4 className="font-medium">Indicators</h4>
-                <p><span className="font-medium">RSI:</span> {data.summary.technical_analysis.indicators.rsi}</p>
-                <p><span className="font-medium">MACD:</span> {data.summary.technical_analysis.indicators.macd}</p>
-                <p><span className="font-medium">Moving Averages:</span> {data.summary.technical_analysis.indicators.moving_averages}</p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h3 className="text-lg font-medium mb-3">Risk Assessment</h3>
-              <p><span className="font-medium">Risk Level:</span> {data.summary.risk_assessment.risk_level}</p>
-              <p><span className="font-medium">Risk/Reward Ratio:</span> {data.summary.risk_assessment.risk_reward_ratio}</p>
-              <div className="mt-2">
-                <h4 className="font-medium">Risk Factors</h4>
-                <ul className="list-disc pl-5">
-                  {data.summary.risk_assessment.risk_factors.map((factor, index) => (
-                    <li key={index} className="text-gray-700">{factor}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-sm text-gray-500 mt-4">
-            <p>Source: <a href={data.url} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">{data.url}</a></p>
-            <p>Last Updated: {new Date(data.timestamp).toLocaleString()}</p>
-          </div>
+          )}
         </div>
-      )}
+      ))}
     </div>
   );
 };

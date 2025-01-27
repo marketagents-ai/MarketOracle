@@ -3,7 +3,7 @@ import { APIError } from '../utils/api';
 import type { ResearchData } from '../types/research';
 
 // Change the API_URL definition
-const API_URL = 'http://localhost:8000'; 
+const API_URL = 'http://localhost:5001'; 
 
 export const fetchResearch = async (query: string, urls?: string[]): Promise<ResearchData[]> => {
   try {

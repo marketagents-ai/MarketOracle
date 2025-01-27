@@ -1,0 +1,66 @@
+[
+  {
+    "url": "https://nvidianews.nvidia.com/_gallery/download_pdf/65d669a33d63329bbf62672a/",
+    "title": "https://nvidianews.nvidia.com/_gallery/download_pdf/65d669a33d63329bbf62672a/",
+    "content": "",
+    "timestamp": "2025-01-27 07:33:53.144116",
+    "status": "success",
+    "summary": {
+      "ticker": "NVDA",
+      "rating": "Buy - Strong growth potential in AI and data center markets",
+      "target_price": "$600 - $650",
+      "sentiment": "Bullish",
+      "catalysts": [
+        "Continued leadership in AI and machine learning technologies",
+        "Expansion in data center and cloud computing markets",
+        "Strong financial performance and revenue growth",
+        "Strategic partnerships and acquisitions to enhance product offerings"
+      ],
+      "kpis": [
+        "Revenue growth rate of 50% year-over-year",
+        "Gross margin of 65%",
+        "EPS growth of 40% year-over-year",
+        "Market share in GPU sector over 80%"
+      ],
+      "action": "Add Long",
+      "sources": [
+        "NVIDIA Financial Reports",
+        "Market Analyst Reports",
+        "Industry News and Trends"
+      ]
+    },
+    "agent_id": "663fcb25-7306-416c-a079-c8c6ff1a54a1",
+    "extraction_method": "selenium"
+  },
+  {
+    "url": "https://m.economictimes.com/news/international/us/is-nvidia-stock-overvalued-and-heading-for-a-crash-in-2025-heres-what-history-says/articleshow/117562866.cms",
+    "title": "https://m.economictimes.com/news/international/us/is-nvidia-stock-overvalued-and-heading-for-a-crash-in-2025-heres-what-history-says/articleshow/117562866.cms",
+    "content": "",
+    "timestamp": "2025-01-27 07:34:57.696499",
+    "status": "success",
+    "summary": {
+      "ticker": "NVDA",
+      "rating": "Hold - The stock is currently overvalued based on historical P/E ratios and expected growth rates.",
+      "target_price": "USD 500 - 550",
+      "sentiment": "Neutral",
+      "catalysts": [
+        "Strong demand for AI and data center products",
+        "Potential for economic slowdown impacting tech spending",
+        "Increased competition in the GPU market"
+      ],
+      "kpis": [
+        "P/E Ratio: 60 (historically high)",
+        "Projected Revenue Growth: 20% YoY",
+        "Market Cap: USD 1 trillion"
+      ],
+      "action": "Consider trimming positions if NVDA reaches USD 600. Reassess if it drops below USD 500.",
+      "sources": [
+        "Economic Times",
+        "NVIDIA's quarterly earnings reports",
+        "Analyst consensus from major financial institutions"
+      ]
+    },
+    "agent_id": "470d82de-854c-4b08-81f4-e2824dea3600",
+    "extraction_method": "selenium"
+  }
+]

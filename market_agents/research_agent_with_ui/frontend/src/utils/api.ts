@@ -21,7 +21,7 @@ import type { Chat, ChatItem, ChatMode } from '../types/chat';
 import type { SystemMessage } from '../types/system';
 import type { CustomTool } from '../types/tools';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
 
 // Chat related API calls
 export const fetchChats = async (): Promise<Chat[]> => {
@@ -100,36 +100,22 @@ const debugApiCall = (endpoint: string, method: string) => {
   console.trace(`API Call: ${method} ${endpoint}`);
 };
 
-export const fetchResearch = async (query: string, urls?: string[]): Promise<ResearchData[]> => {
-  try {
-    // Log the request for debugging
-    console.log('Sending research request:', {
-      url: `${API_URL}/api/research`,
-      query,
-      urls
-    });
+export const fetchResearch = async (query: string, urls?: string[]) => {
+  const response = await fetch(`${API_URL}/api/research`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ query, urls: urls || [] }),
+  });
 
-    const response = await fetch(`${API_URL}/api/research`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        query,
-        urls: urls || []
-      }),
-    });
-
-    if (!response.ok) {
-      throw new APIError('Failed to fetch research data', response.status);
-    }
-
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Research API Error:', error);
-    throw error instanceof APIError ? error : new APIError('Failed to connect to research service');
+  if (!response.ok) {
+    throw new APIError('Failed to fetch research data', response.status);
   }
+  
+  // This should now return a full ResearchResponse object
+  const data = await response.json();
+  return data;
 };
 
 // System messages related API calls

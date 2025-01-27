@@ -4415,3 +4415,3685 @@ fastapi.exceptions.HTTPException
                     Total Successful Extractions: 10
                     
 2025-01-20 14:53:11,411 - utils - INFO - Raw results: [WebSearchResult(url='https://www.reuters.com/technology/trumps-new-crypto-token-jumps-ahead-his-inauguration-2025-01-20/', title='reuters.com', content='reuters.com', timestamp=datetime.datetime(2025, 1, 20, 14, 51, 4, 226094), status='success', summary={'analysis_type': 'asset', 'assets': [{'ticker': 'TRUMP2025', 'rating': 'Speculative Buy', 'target_price': 'Not available', 'sentiment': 'Bullish', 'catalysts': ["Anticipation of Trump's inauguration in 2025", 'Increased media coverage and public interest'], 'kpis': ['Trading volume surge', 'Price increase percentage since launch'], 'action': 'Consider adding a speculative position', 'sources': ["Reuters article on Trump's new crypto token"]}]}, agent_id='5717e5ed-57c7-48c6-a346-28c09730e482', extraction_method='selenium'), WebSearchResult(url='https://www.coindesk.com/markets/2025/01/20/bitcoin-surges-to-109-k-hits-record-high-ahead-of-donald-trumps-inauguration', title='https://www.coindesk.com/markets/2025/01/20/bitcoin-surges-to-109-k-hits-record-high-ahead-of-donald-trumps-inauguration', content='', timestamp=datetime.datetime(2025, 1, 20, 14, 51, 8, 120651), status='success', summary={'analysis_type': 'asset', 'assets': [{'ticker': 'BTC', 'rating': "Buy - Bitcoin's momentum and upcoming political events suggest continued upward pressure.", 'target_price': '$120,000', 'sentiment': 'Bullish', 'catalysts': ["Record high of $109,000 reached ahead of significant political event (Donald Trump's inauguration).", 'Increased institutional interest and adoption.', 'Potential for increased volatility and trading volume around political events.'], 'kpis': ['Current price: $109,000', '24-hour trading volume increase by 30%', 'Market capitalization reaching new highs'], 'action': 'Add Long', 'sources': ["CoinDesk article detailing Bitcoin's price surge", 'Market data from major cryptocurrency exchanges']}]}, agent_id='6d5acf62-244f-4794-9a94-f30aa4776265', extraction_method='selenium'), WebSearchResult(url='https://m.economictimes.com/markets/cryptocurrency/crypto-news/crypto-gems-top-crypto-assets-to-watch-buy-in-january-2025/articleshow/117321127.cms', title='https://m.economictimes.com/markets/cryptocurrency/crypto-news/crypto-gems-top-crypto-assets-to-watch-buy-in-january-2025/articleshow/117321127.cms', content='', timestamp=datetime.datetime(2025, 1, 20, 14, 51, 14, 817863), status='success', summary={'analysis_type': 'asset', 'assets': [{'ticker': 'BTC', 'rating': 'Buy', 'target_price': '$50,000', 'sentiment': 'Bullish', 'catalysts': ['Increased institutional adoption', 'Halving event in 2024 leading to reduced supply'], 'kpis': ['Current price: $45,000', 'Market Cap: $900 Billion', '24-hour trading volume: $30 Billion'], 'action': 'Add Long', 'sources': ['Economic Times', 'CoinMarketCap', 'Blockchain.com']}, {'ticker': 'ETH', 'rating': 'Hold', 'target_price': '$3,500', 'sentiment': 'Neutral', 'catalysts': ['Ethereum 2.0 full deployment', 'Rising DeFi applications'], 'kpis': ['Current price: $3,200', 'Market Cap: $380 Billion', '24-hour trading volume: $15 Billion'], 'action': 'Maintain Current Position', 'sources': ['Economic Times', 'CoinMarketCap', 'Ethereum.org']}, {'ticker': 'SOL', 'rating': 'Sell', 'target_price': '$40', 'sentiment': 'Bearish', 'catalysts': ['Network outages impacting reliability', 'Increased competition from other Layer-1 blockchains'], 'kpis': ['Current price: $45', 'Market Cap: $15 Billion', '24-hour trading volume: $2 Billion'], 'action': 'Close Short', 'sources': ['Economic Times', 'CoinMarketCap', 'Solana Status']}]}, agent_id='f0506db0-2677-433c-a664-03cb021e42bf', extraction_method='selenium'), WebSearchResult(url='https://www.livemint.com/market/latest-markets-today-live-updates-january-20-2025-11737331214983.html', title='Latest Market News Today Live Updates January 20, 2025: Wipro fights its way back into the game | Stock Market News', content="Latest Market News Today Live Updates January 20, 2025: Wipro fights its way back into the game | Stock Market News Explore Sign in e-paper Subscribe Sign In Monday, 20 January 2025 Stocks Mutual Funds News POPULAR CATEGORIES Companies Markets Technology Money News Mutual Funds Opinion Industry Home Latest News Markets News Premium Companies Money Budget 2025 Personal Loan Technology Mint Hindi In Charts All Companies Technology Markets Money MyMint Mutual Funds Insurance Auto Industry Personal Finance Hello User Sign in Sign Out My Account My Account Subscribe My Watchlist Newsletters My Vouchers Notifications My Reads For You View Less - View More + Data Insights Market Dashboard Bullion Gold Silver Fuel Petrol Diesel Commodities Gold GoldM Aluminum Menthaoil Silver SilverMIC GoldPetal Natural Gas Copper Zinc SilverM CrudeOil GoldGinuea Lead CryptoCurrencies View Less - View More + Top Sections Today's News India News World News US News Today Budget 2025 Economy Money News Personal Finance Q&A Opinion Company Business News IPO News Start-ups Company Results Top Company Leader Stock Market News Stock Markets Commodity News Mark To Market IPO News Live Blog personal loan personal loan emi calculator Personal Loan Interest Rate Personal Loan Eligibility Business Loan Instant Loan Election Results 2024 Assembly Elections 2024 Indian Industry Analysis Banking News Infotech News Infrastructure Agriculture Manufacturing Energy News Retail News Auto News Sports News Opinion Views Columns Technology News Gadgets Tech Reviews App News Politics News Lounge Sports News IPL 2025 IPL Points Table 2025 IPL 2025 Orange Cap IPL 2025 Purple Cap IPL Match Today | IPL 2024 Schedule Education News Today View Less - View More + Premium Offerings e-paper WSJ Economist MyMint Mint Premium View Less - View More + Tools and Calculators IFSC Code Finder Income Tax Calculator SIP Calculator EMI Calculator Home Loan EMI Calculator Car Loan EMI NPS Calculator View Less - View More + MultiMedia Collections Videos WebStories Photo Gallery Podcasts View Less - View More + More From Mint Mint Genie Mint Lounge Mint Hindi Explore Mint About Us Print Subscription Mint Authors Terms of Use Disclaimer Mint Code Code of ethics Cookie Policy Privacy Policy Subscriber - Terms of Use SITEMAP Contact Us Mint Apps View Less - View More + Copyright © HT Digital Streams Limited All Rights Reserved. Gainers & Losers Top Gainers Top Losers Kotak Mahindra Bank share price 1,920.05 9.18% Wipro share price 299.95 6.42% Bajaj Finance share price 7,424.65 3.40% Bajaj Finserv share price 1,735.50 3.24% NTPC share price 334.80 2.57% Mahindra & Mahindra share price 2,885.00 -1.13% Tata Consultancy Services share price 4,079.35 -1.12% Maruti Suzuki India share price 12,003.85 -0.90% ITC share price 437.10 -0.69% Tata Motors share price 776.45 -0.38% Active Stocks Mon Jan 20 2025 14:19:36 Wipro share price 300.05 6.46% Axis Bank share price 992.00 0.08% Tata Steel share price 131.25 0.73% Kotak Mahindra Bank share price 1,920.60 9.21% State Bank Of India share price 782.45 2.40% Business News / Markets / Latest Market News Today Live Updates January 20, 2025: Wipro fights its way back into the game HDFC Bank Share Price Reliance Industries Share Price TCS Share Price Infosys Share Price HUL Share Price Back Share Via LIVE UPDATES Latest Market News Today Live Updates January 20, 2025: Wipro fights its way back into the game 14 min read . Updated: 20 Jan 2025, 01:42 PM IST Livemint Latest Market News Today Live Updates on January 20, 2025: Follow Mint's market blog for real-time updates on your favourite companies. This blog keeps you informed on all things Dalal Street and global markets. Premium Latest news on January 20, 2025: The Wipro stock is up 25% so far in FY25, beating the Nifty IT index's 20% returns. Read Full Story Latest Market News Today Live Updates: Catch today's market wrap-up! Track Nifty 50 and Sensex movements, along with top gainers and losers. See how Asian an", timestamp=datetime.datetime(2025, 1, 20, 14, 51, 20, 665759), status='success', summary={'analysis_type': 'asset', 'assets': [{'ticker': 'WIPRO', 'rating': 'Buy - Strong performance exceeding sector average', 'target_price': '320-340', 'sentiment': 'Bullish', 'catalysts': ["Wipro's stock has outperformed the Nifty IT index by 5% in FY25", 'Recent strategic initiatives and market recovery'], 'kpis': ['Stock up 25% in FY25', 'Current price: 300.05', 'Sector benchmark Nifty IT index return: 20%'], 'action': 'Add Long Position', 'sources': ['Livemint article on January 20, 2025', 'Nifty IT index performance data']}, {'ticker': 'KOTAKBANK', 'rating': 'Hold - Recent surge, but potential for consolidation', 'target_price': '1900-1950', 'sentiment': 'Neutral', 'catalysts': ['Significant price increase of 9.18% on reported day', 'Potential profit-taking after sharp rise'], 'kpis': ['Current price: 1920.60', 'Price increase: 9.21% on the day'], 'action': 'Maintain Position', 'sources': ['Livemint article on January 20, 2025']}]}, agent_id='f50f561e-71f8-40a9-8b6e-60e42799589a', extraction_method='selenium'), WebSearchResult(url='https://www.forbes.com/sites/digital-assets/2025/01/15/leak-reveals-imminent-trump-game-changer-100-trillion-bitcoin-price-predicted/', title='Error Page', content='Error Page Security Violation (403) mirror-next-hop.forbes.com | Access denied (403) Current session has been terminated. For further information, do not hesitate to contact us. Ref: 27.34.66.110 2025-01-20T09:06:01.609Z', timestamp=datetime.datetime(2025, 1, 20, 14, 51, 21, 480658), status='success', summary={'analysis_type': 'general', 'assets': []}, agent_id='5ade896e-4e0e-4b08-a816-059775daf840', extraction_method='selenium'), WebSearchResult(url='https://m.economictimes.com/markets/cryptocurrency/crypto-news/crypto-gems-top-crypto-assets-to-watch-buy-in-january-2025/articleshow/117321127.cms', title='https://m.economictimes.com/markets/cryptocurrency/crypto-news/crypto-gems-top-crypto-assets-to-watch-buy-in-january-2025/articleshow/117321127.cms', content='', timestamp=datetime.datetime(2025, 1, 20, 14, 52, 35, 941418), status='success', summary={'analysis_type': 'general', 'assets': [{'ticker': 'BTC', 'rating': 'Buy', 'target_price': '$80,000', 'sentiment': 'Bullish', 'catalysts': ['Increased institutional adoption', 'Favorable regulatory developments'], 'kpis': ['Market Cap: $1.5 Trillion', '24h Trading Volume: $50 Billion'], 'action': 'Add Long', 'sources': ['Economic Times', 'Crypto market analysis reports']}, {'ticker': 'ETH', 'rating': 'Buy', 'target_price': '$6,000', 'sentiment': 'Bullish', 'catalysts': ['Ethereum 2.0 upgrades', 'Growth in DeFi and NFT sectors'], 'kpis': ['Market Cap: $500 Billion', '24h Trading Volume: $30 Billion'], 'action': 'Add Long', 'sources': ['Economic Times', 'Crypto market analysis reports']}, {'ticker': 'SOL', 'rating': 'Hold', 'target_price': '$300', 'sentiment': 'Neutral', 'catalysts': ['Network upgrades', 'Partnerships with major tech firms'], 'kpis': ['Market Cap: $100 Billion', '24h Trading Volume: $10 Billion'], 'action': 'Maintain Current Position', 'sources': ['Economic Times', 'Crypto market analysis reports']}]}, agent_id='ffe31bdc-7fd2-4883-a908-8bd0f1389012', extraction_method='selenium'), WebSearchResult(url='https://techpoint.africa/2025/01/15/5-best-crypto-to-buy-now-top-investment-picks-in-january-2025/', title='5 Best Crypto to Buy Now: Top Investment Picks in January 2025', content="5 Best Crypto to Buy Now: Top Investment Picks in January 2025 Events Get Featured Advertise About Us Search for: Events Get Featured Advertise About Us Subscribe To Techpoint Digest Digest Subscription Email First Name JOIN FREE Mode Techpoint Digest Fintech Governance & Policy Crypto Attend Pitch Friday Brand Press Crypto Brand Press 5 Best Crypto to Buy Now: Top Investment Picks in January 2025 January 15, 2025 · 17 min read This Brand Press post is for informational purposes only and should not be interpreted as financial or investment guidance. Always ensure to carry out due diligence. About Brand Press : This is a sponsored content service, enabling brands to directly engage with our technology-focused audience. Please note that Brand Press content is created independently of Techpoint Africa's editorial team. Interested in reaching our dynamic readership? Connect with us at business@techpoint.africa With Bitcoin ($BTC) recently dipping below the $90,000 level in what many are calling “the final flush,” those in the know are seeing echoes of pre-bull market January 2021. Back then, BTC tumbled nearly 25% to $30,000, shaking out paper hands, only to surge a mind-blowing 130% to a new all-time high in February and then November. Fast forward to January 2025 and history is repeating itself, but this time, the stage is set for something far more monumental. The catalyst? Donald Trump’s inauguration as the 47th U.S. President. With news breaking that Trump is expected to issue pro-crypto executive orders on his very first day in office, according to The Washington Post , a tidal wave of optimism has already started sweeping through the crypto world. From proposed tax cuts on capital gains to rolling back anti-crypto regulations, the market is expecting an explosion of liquidity amidst greater adoption that could send crypto valuations skyrocketing. Therefore, crypto investors realize this is the moment to position themselves for life-changing returns as billions of dollars are ready to flood into the market . Altcoins and memecoins, often overlooked during Bitcoin’s dominance phase, are primed to soak up 9-figure worth of capital inflows as BTC stabilizes and investors rotate into higher-reward assets during the altcoin season. So, what’s the best crypto to buy now to transform modest investments today into millionaire-level portfolios 6-12 months from now on? Our comprehensive time-sensitive research has identified five standout projects that are primed for explosive growth in the 2025 crypto bull run. Among the frontrunners is 888 ($888) , a unique prophecy-driven numerological memecoin with a universally resonant narrative (set to list on a major Asian CEX this February on its path to an insane $888 valuation). Joining 888 is the evergreen market mover-and-shaker Bitcoin ($BTC), the blockchain powerhouse fueling the current memecoin bonanza, Solana ($SOL), and two more must-watch cryptos that we’ll reveal in the following sections. Each of these projects are riding on their unique narrative appeal, tokenomics foundation, and market momentum for massive growth in the months and years ahead. List of Top Cryptocurrency Investment Opportunities for 2025 888 ($888) - A Heavenly MemeCoin Ascending to a Major Asian CEX this February Bitcoin ($BTC) - The New Gold Standard of Wealth Solana ($SOL) : The Engine Powering the Recent Memecoin Bonanza XRP ($XRP) : Cross-Border Payment Leader Poised for Regulatory Triumph SPX6900 ($SPX) : The Standout Invisible Magnet Winner of 2024 Before getting into the specifics, let’s pull back the curtain on the meticulous research methodology behind our selection framework in the current pre-bull-market phase. How we Selected the Best Cryptocurrencies to Buy Now 1. Multi-Cycle Resilience Over Single-Cycle Hype Many cryptos surge in one bull run only to disappear into obscurity in the following bear market. To identify projects with staying power, we evaluated their performance across multiple marke", timestamp=datetime.datetime(2025, 1, 20, 14, 52, 45, 881589), status='success', summary={'analysis_type': 'asset', 'assets': [{'ticker': 'BTC', 'rating': 'Buy - Strong historical resilience and expected policy tailwinds.', 'target_price': '$120,000 - $150,000 by end of 2025', 'sentiment': 'Bullish', 'catalysts': ['Pro-crypto executive orders expected from US President Donald Trump', 'Historical patterns suggesting post-dip recovery', 'Increased liquidity and adoption potential'], 'kpis': ['Current price: Below $90,000', 'Historical surge: 130% post-January 2021 dip', 'Market capitalization'], 'action': 'Add Long', 'sources': ['The Washington Post', 'Techpoint Africa']}, {'ticker': '888', 'rating': 'Speculative Buy - High-risk, high-reward potential with upcoming exchange listing.', 'target_price': '$888', 'sentiment': 'Bullish', 'catalysts': ['Listing on major Asian CEX in February', 'Unique numerological narrative'], 'kpis': ['Valuation target: $888', 'Market momentum and investor interest'], 'action': 'Add Small Position', 'sources': ['Techpoint Africa']}, {'ticker': 'SOL', 'rating': 'Buy - Benefiting from memecoin trend and robust ecosystem.', 'target_price': '$300 - $400 by end of 2025', 'sentiment': 'Bullish', 'catalysts': ['Engine for memecoin growth', 'Strong developer ecosystem'], 'kpis': ['Current price', 'Ecosystem growth metrics'], 'action': 'Add Long', 'sources': ['Techpoint Africa']}, {'ticker': 'XRP', 'rating': 'Buy - Poised for regulatory clarity and cross-border payment expansion.', 'target_price': '$2 - $3 by end of 2025', 'sentiment': 'Bullish', 'catalysts': ['Potential regulatory triumph', 'Increasing adoption in cross-border payments'], 'kpis': ['Current price', 'Regulatory milestones'], 'action': 'Add Long', 'sources': ['Techpoint Africa']}, {'ticker': 'SPX6900', 'rating': 'Speculative Buy - Unique market positioning with invisible magnet technology.', 'target_price': 'High growth potential', 'sentiment': 'Bullish', 'catalysts': ['Innovative technology', 'Winner of 2024 market trends'], 'kpis': ['Technology adoption rate', 'Market performance in 2024'], 'action': 'Add Small Position', 'sources': ['Techpoint Africa']}]}, agent_id='f1488bb6-928d-4469-82fd-a9a9a3fcd313', extraction_method='selenium'), WebSearchResult(url='https://zebpay.com/blog/top-10-cryptos-to-invest-in-2025', title='https://zebpay.com/blog/top-10-cryptos-to-invest-in-2025', content='', timestamp=datetime.datetime(2025, 1, 20, 14, 52, 52, 450172), status='success', summary={'analysis_type': 'general', 'assets': [{'ticker': 'BTC', 'rating': 'Buy', 'target_price': '100,000 USD by 2025', 'sentiment': 'Bullish', 'catalysts': ['Increasing institutional adoption', 'Growing acceptance as a hedge against inflation', 'Scarcity due to the fixed supply'], 'kpis': ['Market cap growth', 'Hash rate increase', 'Transaction volume'], 'action': 'Add Long', 'sources': ['Zebpay Blog', 'Institutional reports', 'Market analysts']}, {'ticker': 'ETH', 'rating': 'Buy', 'target_price': '10,000 USD by 2025', 'sentiment': 'Bullish', 'catalysts': ['Ethereum 2.0 upgrade', 'Increased DeFi activity', 'Growing NFT market'], 'kpis': ['Network upgrade completion', 'DeFi total value locked', 'NFT transaction volume'], 'action': 'Add Long', 'sources': ['Zebpay Blog', 'DeFi Pulse', 'Ethereum Foundation']}, {'ticker': 'ADA', 'rating': 'Hold', 'target_price': '3 USD by 2025', 'sentiment': 'Neutral', 'catalysts': ['Smart contract implementation', 'Partnerships in Africa', 'Community growth'], 'kpis': ['Smart contract deployment', 'Partnership announcements', 'Active community members'], 'action': 'Maintain Position', 'sources': ['Zebpay Blog', 'Cardano Foundation', 'Market analysts']}]}, agent_id='c297e47e-2b3b-49c7-83b9-b3f47f053908', extraction_method='selenium'), WebSearchResult(url='https://zebpay.com/blog/top-5-ai-crypto-coins', title='https://zebpay.com/blog/top-5-ai-crypto-coins', content='', timestamp=datetime.datetime(2025, 1, 20, 14, 52, 56, 450725), status='success', summary={'analysis_type': 'sector', 'assets': [], 'sector': {'name': 'AI Crypto Coins', 'sentiment': 'Bullish', 'catalysts': ['Increasing integration of AI technologies with blockchain', 'Rising demand for AI-driven decentralized applications', 'Growing interest from institutional investors in AI and crypto convergence'], 'kpis': ['Market capitalization growth of AI-related crypto projects', 'Volume of transactions involving AI crypto coins', 'Number of partnerships between AI companies and blockchain platforms'], 'top_assets': ['Fetch.ai (FET): Known for its autonomous economic agents', 'SingularityNET (AGIX): Focuses on decentralized AI networks', 'Ocean Protocol (OCEAN): Provides data exchange and monetization services'], 'recommendation': 'Overweight', 'sources': ['ZebPay Blog: https://zebpay.com/blog/top-5-ai-crypto-coins', 'CoinMarketCap for market cap data', 'Partnership announcements and press releases from AI blockchain projects']}}, agent_id='0a1b0945-0bff-4634-8363-6e0011affbb7', extraction_method='selenium'), WebSearchResult(url='https://zebpay.com/blog/top-5-meme-coins-of-2025', title='https://zebpay.com/blog/top-5-meme-coins-of-2025', content='', timestamp=datetime.datetime(2025, 1, 20, 14, 53, 0, 394549), status='success', summary={'analysis_type': 'sector', 'assets': [], 'sector': {'name': 'Meme Coins', 'sentiment': 'Speculative', 'catalysts': ['Social media trends and virality', 'Celebrity endorsements', 'Community engagement and adoption', 'Market hype cycles'], 'kpis': ['Market capitalization growth', 'Trading volume fluctuations', 'Social media mentions and trends', 'Wallet address growth'], 'top_assets': ['Dogecoin: Established meme coin with strong community support.', 'Shiba Inu: Known for rapid growth and large trading volumes.', 'PepeCoin: Gaining popularity due to meme culture association.', 'Floki Inu: Leveraging community-driven marketing strategies.', 'Baby DogeCoin: Focused on social media campaigns and virality.'], 'recommendation': 'Cautious Exposure', 'sources': ['Zebpay Blog - Top 5 Meme Coins of 2025', 'Social media analytics platforms', 'Cryptocurrency market data aggregators']}}, agent_id='13de9d19-4bc2-48c8-9a9c-8b33a915ef88', extraction_method='selenium')]
+2025-01-27 06:33:53,522 - utils - INFO - Starting search with query: Top crypto to invest
+2025-01-27 06:33:53,523 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top crypto to invest
+                            Generated 1 queries:
+                              1. Top crypto to invest 2025 January latest
+                            ==============================
+                            
+2025-01-27 06:33:53,523 - utils - INFO - 
+                                === Processing Query 1/1 ===
+                                Query: Top crypto to invest 2025 January latest
+                                
+2025-01-27 06:35:24,003 - utils - INFO - Starting search with query: Top crypto to invest
+2025-01-27 06:35:24,004 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top crypto to invest
+                            Generated 1 queries:
+                              1. Top crypto to invest 2025 January latest
+                            ==============================
+                            
+2025-01-27 06:35:24,004 - utils - INFO - 
+                                === Processing Query 1/1 ===
+                                Query: Top crypto to invest 2025 January latest
+                                
+2025-01-27 06:35:24,799 - utils - INFO - 
+                                URLs found for query "Top crypto to invest 2025 January latest":
+                                - https://www.the-blockchain.com/2025/01/25/5-best-crypto-investments-in-jan-2025-the-future-of-crypto-blockchain/
+- https://www.forbes.com/sites/digital-assets/article/top-cryptocurrencies-to-watch-2025/
+- https://zebpay.com/blog/top-10-cryptos-to-invest-in-2025
+- https://m.economictimes.com/news/international/us/cryptocurrency-watch-top-7-cryptocurrencies-to-buy-in-january-2025/articleshow/117497958.cms
+- https://www.fool.com/investing/2025/01/19/thinking-about-investing-in-crypto-in-2025-here-ar/
+                                
+2025-01-27 06:36:57,536 - utils - INFO - Starting search with query: Top stocks to invest
+2025-01-27 06:36:57,537 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top stocks to invest
+                            Generated 1 queries:
+                              1. Top stocks to invest 2025 January latest
+                            ==============================
+                            
+2025-01-27 06:36:57,537 - utils - INFO - 
+                                === Processing Query 1/1 ===
+                                Query: Top stocks to invest 2025 January latest
+                                
+2025-01-27 06:36:58,194 - utils - INFO - 
+                                URLs found for query "Top stocks to invest 2025 January latest":
+                                - https://www.forbes.com/sites/investor-hub/article/best-stocks-buy-now-february-2025/
+- https://www.fool.com/investing/2025/01/23/my-top-5-stocks-to-buy-in-early-2025/
+- https://money.usnews.com/investing/articles/up-and-coming-stocks-to-buy-in-2025
+- https://www.ig.com/en/trading-strategies/best-undervalued-stocks-to-watch-in-2025-250122
+- https://www.motilaloswal.com/blog-details/key-trending-stocks-in-january-2025/23203
+                                
+2025-01-27 06:38:06,480 - utils - ERROR - Error in summary generation: 1 validation error for MarketResearch
+analysis_type
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-01-27 06:38:06,480 - utils - ERROR - Error processing search query: 1 validation error for MarketResearch
+analysis_type
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-01-27 06:40:44,578 - utils - INFO - Starting search with query: Top stocks to invest
+2025-01-27 06:40:44,579 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top stocks to invest
+                            Generated 1 queries:
+                              1. Top stocks to invest 2025 January latest
+                            ==============================
+                            
+2025-01-27 06:40:44,579 - utils - INFO - 
+                                === Processing Query 1/1 ===
+                                Query: Top stocks to invest 2025 January latest
+                                
+2025-01-27 06:40:45,236 - utils - INFO - 
+                                URLs found for query "Top stocks to invest 2025 January latest":
+                                - https://www.forbes.com/sites/investor-hub/article/best-stocks-buy-now-february-2025/
+- https://www.fool.com/investing/2025/01/23/my-top-5-stocks-to-buy-in-early-2025/
+- https://money.usnews.com/investing/articles/up-and-coming-stocks-to-buy-in-2025
+- https://www.ig.com/en/trading-strategies/best-undervalued-stocks-to-watch-in-2025-250122
+- https://www.motilaloswal.com/blog-details/key-trending-stocks-in-january-2025/23203
+                                
+2025-01-27 06:40:58,674 - utils - ERROR - Error in summary generation: 1 validation error for AssetAnalysis
+ticker
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-01-27 06:40:58,674 - utils - ERROR - Error processing search query: 1 validation error for AssetAnalysis
+ticker
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-01-27 06:46:46,912 - utils - INFO - Starting search with query: Top stocks to invest
+2025-01-27 06:46:46,913 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top stocks to invest
+                            Generated 1 queries:
+                              1. Top stocks to invest 2025 January latest
+                            ==============================
+                            
+2025-01-27 06:46:46,913 - utils - INFO - 
+                                === Processing Query 1/1 ===
+                                Query: Top stocks to invest 2025 January latest
+                                
+2025-01-27 06:46:47,569 - utils - INFO - 
+                                URLs found for query "Top stocks to invest 2025 January latest":
+                                - https://www.forbes.com/sites/investor-hub/article/best-stocks-buy-now-february-2025/
+- https://www.fool.com/investing/2025/01/23/my-top-5-stocks-to-buy-in-early-2025/
+- https://money.usnews.com/investing/articles/up-and-coming-stocks-to-buy-in-2025
+- https://www.ig.com/en/trading-strategies/best-undervalued-stocks-to-watch-in-2025-250122
+- https://www.livemint.com/market/stock-market-news/latest-stock-market-news-on-january-27-2025-live-updates-11737936011601.html
+                                
+2025-01-27 06:47:01,783 - utils - ERROR - Error loading schema AssetAnalysis: No module named 'market_agents/research_agent_with_ui/backend/research_agents/research_schemas'
+2025-01-27 06:47:01,783 - utils - ERROR - Error in summary generation: No module named 'market_agents/research_agent_with_ui/backend/research_agents/research_schemas'
+2025-01-27 06:47:01,783 - utils - ERROR - Error loading schema AssetAnalysis: No module named 'market_agents/research_agent_with_ui/backend/research_agents/research_schemas'
+2025-01-27 06:47:01,783 - utils - ERROR - Error processing search query: No module named 'market_agents/research_agent_with_ui/backend/research_agents/research_schemas'
+2025-01-27 06:48:07,922 - utils - INFO - Starting search with query: Top stocks to invest
+2025-01-27 06:48:07,923 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top stocks to invest
+                            Generated 1 queries:
+                              1. Top stocks to invest 2025 January latest
+                            ==============================
+                            
+2025-01-27 06:48:07,923 - utils - INFO - 
+                                === Processing Query 1/1 ===
+                                Query: Top stocks to invest 2025 January latest
+                                
+2025-01-27 06:48:08,576 - utils - INFO - 
+                                URLs found for query "Top stocks to invest 2025 January latest":
+                                - https://www.forbes.com/sites/investor-hub/article/best-stocks-buy-now-february-2025/
+- https://www.fool.com/investing/2025/01/23/my-top-5-stocks-to-buy-in-early-2025/
+- https://money.usnews.com/investing/articles/up-and-coming-stocks-to-buy-in-2025
+- https://www.ig.com/en/trading-strategies/best-undervalued-stocks-to-watch-in-2025-250122
+- https://www.motilaloswal.com/blog-details/key-trending-stocks-in-january-2025/23203
+                                
+2025-01-27 06:48:21,615 - utils - ERROR - Error loading schema AssetAnalysis: No module named 'market_agents/research_agent_with_ui/backend/research_agents/research_schemas'
+2025-01-27 06:48:21,615 - utils - ERROR - Error in summary generation: No module named 'market_agents/research_agent_with_ui/backend/research_agents/research_schemas'
+2025-01-27 06:48:21,616 - utils - ERROR - Error loading schema AssetAnalysis: No module named 'market_agents/research_agent_with_ui/backend/research_agents/research_schemas'
+2025-01-27 06:48:21,616 - utils - ERROR - Error processing search query: No module named 'market_agents/research_agent_with_ui/backend/research_agents/research_schemas'
+2025-01-27 06:51:10,531 - utils - INFO - Starting search with query: Top stocks to invest
+2025-01-27 06:51:10,531 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top stocks to invest
+                            Generated 1 queries:
+                              1. Top stocks to invest 2025 January latest
+                            ==============================
+                            
+2025-01-27 06:51:10,531 - utils - INFO - 
+                                === Processing Query 1/1 ===
+                                Query: Top stocks to invest 2025 January latest
+                                
+2025-01-27 06:51:11,268 - utils - INFO - 
+                                URLs found for query "Top stocks to invest 2025 January latest":
+                                - https://www.forbes.com/sites/investor-hub/article/best-stocks-buy-now-february-2025/
+- https://www.fool.com/investing/2025/01/23/my-top-5-stocks-to-buy-in-early-2025/
+- https://money.usnews.com/investing/articles/up-and-coming-stocks-to-buy-in-2025
+- https://www.ig.com/en/trading-strategies/best-undervalued-stocks-to-watch-in-2025-250122
+- https://www.morningstar.co.uk/uk/news/259262/33-undervalued-us-stocks-for-2025.aspx
+                                
+2025-01-27 06:51:25,355 - utils - ERROR - Error in summary generation: 1 validation error for AssetAnalysis
+ticker
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-01-27 06:51:25,355 - utils - ERROR - Error processing search query: 1 validation error for AssetAnalysis
+ticker
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-01-27 06:53:10,758 - utils - INFO - Starting search with query: Top stocks to invest
+2025-01-27 06:53:10,759 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top stocks to invest
+                            Generated 1 queries:
+                              1. Top stocks to invest 2025 January latest
+                            ==============================
+                            
+2025-01-27 06:53:10,759 - utils - INFO - 
+                                === Processing Query 1/1 ===
+                                Query: Top stocks to invest 2025 January latest
+                                
+2025-01-27 06:53:11,481 - utils - INFO - 
+                                URLs found for query "Top stocks to invest 2025 January latest":
+                                - https://www.forbes.com/sites/investor-hub/article/best-stocks-buy-now-february-2025/
+- https://www.fool.com/investing/2025/01/23/my-top-5-stocks-to-buy-in-early-2025/
+- https://money.usnews.com/investing/articles/up-and-coming-stocks-to-buy-in-2025
+- https://www.ig.com/en/trading-strategies/best-undervalued-stocks-to-watch-in-2025-250122
+- https://www.morningstar.co.uk/uk/news/259262/33-undervalued-us-stocks-for-2025.aspx
+                                
+2025-01-27 06:53:26,827 - utils - ERROR - Error in summary generation: 1 validation error for AssetAnalysis
+ticker
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-01-27 06:53:26,827 - utils - ERROR - Error processing search query: 1 validation error for AssetAnalysis
+ticker
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-01-27 06:54:21,190 - utils - INFO - Starting search with query: Top stocks to invest
+2025-01-27 06:54:21,191 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top stocks to invest
+                            Generated 1 queries:
+                              1. Top stocks to invest 2025 January latest
+                            ==============================
+                            
+2025-01-27 06:54:21,191 - utils - INFO - 
+                                === Processing Query 1/1 ===
+                                Query: Top stocks to invest 2025 January latest
+                                
+2025-01-27 06:54:21,835 - utils - INFO - 
+                                URLs found for query "Top stocks to invest 2025 January latest":
+                                - https://www.forbes.com/sites/investor-hub/article/best-stocks-buy-now-february-2025/
+- https://www.fool.com/investing/2025/01/23/my-top-5-stocks-to-buy-in-early-2025/
+- https://money.usnews.com/investing/articles/up-and-coming-stocks-to-buy-in-2025
+- https://www.ig.com/en/trading-strategies/best-undervalued-stocks-to-watch-in-2025-250122
+- https://www.motilaloswal.com/blog-details/key-trending-stocks-in-january-2025/23203
+                                
+2025-01-27 06:54:34,655 - utils - ERROR - Error in summary generation: 1 validation error for AssetAnalysis
+ticker
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-01-27 06:54:34,655 - utils - ERROR - Error processing search query: 1 validation error for AssetAnalysis
+ticker
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-01-27 06:56:30,471 - utils - INFO - Starting search with query: Top stocks to invest
+2025-01-27 06:56:30,472 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top stocks to invest
+                            Generated 1 queries:
+                              1. Top stocks to invest 2025 January latest
+                            ==============================
+                            
+2025-01-27 06:56:30,472 - utils - INFO - 
+                                === Processing Query 1/1 ===
+                                Query: Top stocks to invest 2025 January latest
+                                
+2025-01-27 06:56:31,212 - utils - INFO - 
+                                URLs found for query "Top stocks to invest 2025 January latest":
+                                - https://www.forbes.com/sites/investor-hub/article/best-stocks-buy-now-february-2025/
+- https://www.fool.com/investing/2025/01/23/my-top-5-stocks-to-buy-in-early-2025/
+- https://money.usnews.com/investing/articles/up-and-coming-stocks-to-buy-in-2025
+- https://www.ig.com/en/trading-strategies/best-undervalued-stocks-to-watch-in-2025-250122
+- https://www.motilaloswal.com/blog-details/key-trending-stocks-in-january-2025/23203
+                                
+2025-01-27 06:56:43,678 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-27 06:56:44,345 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 1
+                    Total URLs Processed: 2
+                    Total Successful Extractions: 5
+                    
+2025-01-27 06:56:44,345 - utils - INFO - 
+=== ARTICLE SUMMARIES ===
+2025-01-27 06:56:44,345 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.forbes.com/sites/investor-hub/article/best-stocks-buy-now-february-2025/
+                    TITLE: Error Page
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 06:56:44,346 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.fool.com/investing/2025/01/23/my-top-5-stocks-to-buy-in-early-2025/
+                    TITLE: My Top 5 Stocks to Buy in Early 2025 | The Motley Fool
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 06:56:44,346 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://money.usnews.com/investing/articles/up-and-coming-stocks-to-buy-in-2025
+                    TITLE: money.usnews.com
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 06:56:44,346 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.ig.com/en/trading-strategies/best-undervalued-stocks-to-watch-in-2025-250122
+                    TITLE: Best Undervalued Stocks to Watch in 2025 | IG International
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 06:56:44,346 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.motilaloswal.com/blog-details/key-trending-stocks-in-january-2025/23203
+                    TITLE: Top Trending Stocks to Watch in January 2025 | Motilal Oswal
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 06:56:44,350 - utils - ERROR - Database error: connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-01-27 06:56:44,350 - utils - INFO - Results saved to file: outputs/web_search/results_20250127_065644.json
+2025-01-27 06:56:44,350 - utils - INFO - 
+                    Search completed:
+                    - Query: Top stocks to invest
+                    - Total items processed: 5
+                    - Successful: 5
+                    - Failed: 0
+                    - Results saved to: outputs/web_search/results_20250127_065644.json
+                            
+2025-01-27 06:58:01,197 - utils - INFO - Starting search with query: Top stocks to invest
+2025-01-27 06:58:08,081 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top stocks to invest
+                            Generated 2 queries:
+                              1. latest stock market trends January 2025
+  2. top performing stocks Q1 2025
+                            ==============================
+                            
+2025-01-27 06:58:08,081 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest stock market trends January 2025
+                                
+2025-01-27 06:58:08,840 - utils - INFO - 
+                                URLs found for query "latest stock market trends January 2025":
+                                - https://www.livemint.com/market/stock-market-news/latest-stock-market-news-on-january-27-2025-live-updates-11737936011601.html
+- https://www.livemint.com/market/stock-market-news/latest-stock-market-news-on-january-26-2025-live-updates-11737831505954.html
+- https://www.investopedia.com/dow-jones-today-01242025-8779647
+- https://www.forbes.com/sites/investor-hub/article/stock-market-outlook-2025/
+- https://www.moneycontrol.com/news/business/markets/markets-near-end-of-downward-journey-charts-suggest-reversal-could-be-on-cards-next-week-post-budget-12919807.html
+                                
+2025-01-27 06:58:19,199 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:21,444 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:23,867 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:26,258 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:30,554 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:34,537 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:36,871 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:39,022 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:41,044 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:42,744 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:44,430 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:45,925 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:47,515 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:49,031 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:54,620 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:58:54,622 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-27 06:58:54,622 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top performing stocks Q1 2025
+                                
+2025-01-27 06:58:55,290 - utils - INFO - 
+                                URLs found for query "top performing stocks Q1 2025":
+                                - https://www.bankrate.com/investing/best-performing-stocks/
+- https://www.investors.com/research/best-stocks-sp500-sp400-sp600-magnificent-earnings-growth-january-2025/
+- https://www.ig.com/en/trading-strategies/best-undervalued-stocks-to-watch-in-2025-250122
+- https://www.ii.co.uk/analysis-commentary/where-invest-q1-2025-four-experts-have-their-say-ii534160
+- https://www.morningstar.co.uk/uk/news/259262/33-undervalued-us-stocks-for-2025.aspx
+                                
+2025-01-27 06:59:22,168 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:59:23,612 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:59:25,576 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:59:27,083 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:59:28,733 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:59:30,006 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:59:34,653 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:59:37,747 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:59:42,021 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:59:44,469 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:59:46,706 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:59:51,524 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:59:55,636 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 06:59:59,216 - utils - ERROR - Error validating response: BaseModel.model_json_schema() got an unexpected keyword argument 'exclude_none'
+2025-01-27 07:00:08,213 - utils - ERROR - Error validating response: 1 validation error for AssetAnalysis
+ticker
+  Field required [type=missing, input_value={'properties': {'ticker':...ysis', 'type': 'object'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-01-27 07:00:08,215 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-27 07:00:14,617 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    
+2025-01-27 07:00:14,618 - utils - INFO - 
+=== ARTICLE SUMMARIES ===
+2025-01-27 07:00:14,618 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.livemint.com/market/stock-market-news/latest-stock-market-news-on-january-27-2025-live-updates-11737936011601.html
+                    TITLE: Stock Market News Today Live Updates on January 27, 2025 : Chip stocks tumble after China’s DeepSeek AI models raise doubts over US tech dominance | Stock Market News
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 07:00:14,618 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.livemint.com/market/stock-market-news/latest-stock-market-news-on-january-26-2025-live-updates-11737831505954.html
+                    TITLE: Stock Market News Today highlights on January 26, 2025 : Wall Street week ahead: Spotlight on Federal Reserve's interest rate decision, megacap earnings | Stock Market News
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 07:00:14,619 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.investopedia.com/dow-jones-today-01242025-8779647
+                    TITLE: Markets News, January 24, 2025: Stocks Snap Four-Session Winning Streak as Chipmakers Slump; Major Indexes Post Weekly Gains
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 07:00:14,619 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.forbes.com/sites/investor-hub/article/stock-market-outlook-2025/
+                    TITLE: Error Page
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 07:00:14,619 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.moneycontrol.com/news/business/markets/markets-near-end-of-downward-journey-charts-suggest-reversal-could-be-on-cards-next-week-post-budget-12919807.html
+                    TITLE: Access Denied
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 07:00:14,620 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.bankrate.com/investing/best-performing-stocks/
+                    TITLE: Best Stocks For January 2025 | Bankrate
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 07:00:14,620 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.investors.com/research/best-stocks-sp500-sp400-sp600-magnificent-earnings-growth-january-2025/
+                    TITLE: Access to this page has been denied.
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 07:00:14,620 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.ig.com/en/trading-strategies/best-undervalued-stocks-to-watch-in-2025-250122
+                    TITLE: Best Undervalued Stocks to Watch in 2025 | IG International
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 07:00:14,621 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.ii.co.uk/analysis-commentary/where-invest-q1-2025-four-experts-have-their-say-ii534160
+                    TITLE: Where to invest in Q1 2025? Four experts have their say
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 07:00:14,621 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.morningstar.co.uk/uk/news/259262/33-undervalued-us-stocks-for-2025.aspx
+                    TITLE: 33 Undervalued US Stocks for 2025 | Morningstar
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "properties": {
+    "ticker": {
+      "description": "Asset ticker (e.g., stock symbol or crypto token).",
+      "title": "Ticker",
+      "type": "string"
+    },
+    "rating": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Analyst rating (e.g., Buy/Hold/Sell) and brief rationale.",
+      "title": "Rating"
+    },
+    "target_price": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Target price or price range from sources.",
+      "title": "Target Price"
+    },
+    "sentiment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Overall sentiment (Bullish, Bearish, Neutral).",
+      "title": "Sentiment"
+    },
+    "catalysts": {
+      "description": "Key qualitative catalysts for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Catalysts",
+      "type": "array"
+    },
+    "kpis": {
+      "description": "Key performance indicators (quantitative) for the asset.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Kpis",
+      "type": "array"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Recommended portfolio action (e.g., Add Long, Close Short).",
+      "title": "Action"
+    },
+    "sources": {
+      "description": "Information sources (e.g., brokers, analysts).",
+      "items": {
+        "type": "string"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "ticker"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 07:00:14,626 - utils - ERROR - Database error: connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-01-27 07:00:14,626 - utils - INFO - Results saved to file: outputs/web_search/results_20250127_070014.json
+2025-01-27 07:00:14,626 - utils - INFO - 
+                    Search completed:
+                    - Query: Top stocks to invest
+                    - Total items processed: 10
+                    - Successful: 10
+                    - Failed: 0
+                    - Results saved to: outputs/web_search/results_20250127_070014.json
+                            
+2025-01-27 07:00:36,339 - utils - INFO - Starting search with query: Top stocks to invest
+2025-01-27 07:00:37,360 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top stocks to invest
+                            Generated 2 queries:
+                              1. latest stock market investment trends January 2025
+  2. top performing stocks Q1 2025
+                            ==============================
+                            
+2025-01-27 07:00:37,360 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest stock market investment trends January 2025
+                                
+2025-01-27 07:00:38,073 - utils - INFO - 
+                                URLs found for query "latest stock market investment trends January 2025":
+                                - https://www.livemint.com/market/stock-market-news/latest-stock-market-news-on-january-27-2025-live-updates-11737936011601.html
+- https://www.livemint.com/market/stock-market-news/latest-stock-market-news-on-january-26-2025-live-updates-11737831505954.html
+- https://www.forbes.com/sites/investor-hub/article/stock-market-outlook-2025/
+- https://www.fidelity.com/learning-center/trading-investing/rocky-start
+- https://m.economictimes.com/markets/stocks/live-blog/bse-sensex-today-live-nifty-stock-market-updates-27-january-2025/liveblog/117588815.cms
+                                
+2025-01-27 07:01:49,137 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:01:53,062 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:01:55,931 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:01:59,133 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:02:04,723 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:02:08,710 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:02:10,252 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:02:11,955 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:02:13,735 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:02:16,155 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:02:17,960 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:02:20,536 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:02:23,355 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:02:26,444 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:02:29,400 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:02:29,402 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-27 07:02:29,403 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top performing stocks Q1 2025
+                                
+2025-01-27 07:02:30,103 - utils - INFO - 
+                                URLs found for query "top performing stocks Q1 2025":
+                                - https://www.bankrate.com/investing/best-performing-stocks/
+- https://www.investors.com/research/best-stocks-sp500-sp400-sp600-magnificent-earnings-growth-january-2025/
+- https://www.ig.com/en/trading-strategies/best-undervalued-stocks-to-watch-in-2025-250122
+- https://www.ii.co.uk/analysis-commentary/where-invest-q1-2025-four-experts-have-their-say-ii534160
+- https://www.morningstar.co.uk/uk/news/259262/33-undervalued-us-stocks-for-2025.aspx
+                                
+2025-01-27 07:02:55,635 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:02:57,319 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:03:03,370 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:03:05,120 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:03:06,420 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:03:08,375 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:03:11,040 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:03:15,939 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:03:19,367 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:03:28,859 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:03:37,776 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:03:42,191 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:03:47,643 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:03:51,242 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:03:53,836 - utils - ERROR - Error validating response: the JSON object must be str, bytes or bytearray, not dict
+2025-01-27 07:03:53,836 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-27 07:03:57,192 - utils - INFO - Starting search with query: Top stocks to invest
+2025-01-27 07:03:58,306 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top stocks to invest
+                            Generated 2 queries:
+                              1. latest top stocks to invest January 2025
+  2. recent stock market trends Q1 2025
+                            ==============================
+                            
+2025-01-27 07:03:58,306 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest top stocks to invest January 2025
+                                
+2025-01-27 07:03:59,073 - utils - INFO - 
+                                URLs found for query "latest top stocks to invest January 2025":
+                                - https://www.livemint.com/market/stock-market-news/stocks-to-buy-or-sell-under-rs-100-experts-recommend-six-intraday-stocks-for-today-27-january-2025-11737943845000.html
+- https://www.nasdaq.com/articles/my-top-5-stocks-buy-early-2025
+- https://www.ig.com/en/trading-strategies/best-undervalued-stocks-to-watch-in-2025-250122
+- https://timesofindia.indiatimes.com/business/india-business/top-stock-recommendations-for-january-23-2025-bajaj-finserv-muthoot-finance-abdl-best-stocks-to-buy-today/articleshow/117472939.cms
+- https://money.usnews.com/investing/articles/up-and-coming-stocks-to-buy-in-2025
+                                
+2025-01-27 07:05:21,773 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-27 07:05:21,774 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent stock market trends Q1 2025
+                                
+2025-01-27 07:05:22,480 - utils - INFO - 
+                                URLs found for query "recent stock market trends Q1 2025":
+                                - https://www.blackrock.com/us/individual/insights/taking-stock-quarterly-outlook
+- https://www.ssga.com/us/en/intermediary/insights/market-forecasts-q1-2025
+- https://www.rathbones.com/knowledge-and-insight/quarterly-investment-update-q1-2025-after-climbing-wall-worry-hopes-us-growth
+- https://www.jpmorgan.com/insights/global-research/outlook/market-outlook
+- https://www.investopedia.com/what-to-expect-from-the-us-stock-market-in-2025-8762883
+                                
+2025-01-27 07:05:52,113 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-27 07:05:58,534 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    
+2025-01-27 07:05:58,534 - utils - INFO - 
+=== ARTICLE SUMMARIES ===
+2025-01-27 07:05:58,534 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.livemint.com/market/stock-market-news/stocks-to-buy-or-sell-under-rs-100-experts-recommend-six-intraday-stocks-for-today-27-january-2025-11737943845000.html
+                    TITLE: Stocks to buy or sell under ₹100: Experts recommend six intraday stocks for today — 27 January 2025 | Stock Market News
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "N/A",
+  "rating": null,
+  "target_price": null,
+  "sentiment": "Bearish",
+  "catalysts": [
+    "Weak near-term trend of the Nifty 50 index",
+    "Downside momentum in the Indian stock market",
+    "Recent pullback rally followed by a decline"
+  ],
+  "kpis": [
+    "Nifty 50 index finished 114 points lower at 23,090",
+    "BSE Sensex went down 329 points and closed at 76,190",
+    "Bank Nifty Index ended 232 points lower at 48,356"
+  ],
+  "action": null,
+  "sources": [
+    "Livemint article on recommended stocks under \u20b9100"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:05:58,535 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.nasdaq.com/articles/my-top-5-stocks-buy-early-2025
+                    TITLE: www.nasdaq.com
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "N/A",
+  "rating": null,
+  "target_price": null,
+  "sentiment": null,
+  "catalysts": [],
+  "kpis": [],
+  "action": null,
+  "sources": [],
+  "analysis_type": "general",
+  "notes": "Unable to access the content of the webpage. The page might be temporarily down or moved permanently, resulting in an inability to perform a specific analysis on the assets mentioned in the article."
+}
+                    =============================
+                    
+2025-01-27 07:05:58,535 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.ig.com/en/trading-strategies/best-undervalued-stocks-to-watch-in-2025-250122
+                    TITLE: Best Undervalued Stocks to Watch in 2025 | IG International
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "N/A",
+  "rating": null,
+  "target_price": null,
+  "sentiment": null,
+  "catalysts": [],
+  "kpis": [],
+  "action": null,
+  "sources": [
+    "IG International"
+  ],
+  "title": "AssetAnalysis",
+  "type": "object"
+}
+                    =============================
+                    
+2025-01-27 07:05:58,535 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://timesofindia.indiatimes.com/business/india-business/top-stock-recommendations-for-january-23-2025-bajaj-finserv-muthoot-finance-abdl-best-stocks-to-buy-today/articleshow/117472939.cms
+                    TITLE: https://timesofindia.indiatimes.com/business/india-business/top-stock-recommendations-for-january-23-2025-bajaj-finserv-muthoot-finance-abdl-best-stocks-to-buy-today/articleshow/117472939.cms
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "BAJAJFINSV",
+  "rating": "Buy - Strong growth potential due to robust financial performance and market positioning.",
+  "target_price": "INR 2,500 - INR 2,700",
+  "sentiment": "Bullish",
+  "catalysts": [
+    "Strong financial results in the previous quarter",
+    "Expansion into new financial services markets",
+    "Positive macroeconomic indicators supporting financial sector growth"
+  ],
+  "kpis": [
+    "Quarterly revenue growth of 15%",
+    "Net profit margin of 12%",
+    "Return on equity (ROE) of 18%"
+  ],
+  "action": "Add Long",
+  "sources": [
+    "Times of India",
+    "Company financial reports",
+    "Analyst consensus estimates"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:05:58,535 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://money.usnews.com/investing/articles/up-and-coming-stocks-to-buy-in-2025
+                    TITLE: money.usnews.com
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "",
+  "rating": null,
+  "target_price": null,
+  "sentiment": null,
+  "catalysts": [],
+  "kpis": [],
+  "action": null,
+  "sources": []
+}
+                    =============================
+                    
+2025-01-27 07:05:58,535 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.blackrock.com/us/individual/insights/taking-stock-quarterly-outlook
+                    TITLE: Taking Stock: Q1 2025 equity market outlook | BlackRock
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "SPY",
+  "rating": "Hold - The market outlook suggests a cautious approach due to expected volatility.",
+  "target_price": "$450 - $470",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Potential interest rate hikes by the Federal Reserve",
+    "Geopolitical tensions impacting global markets",
+    "Earnings season outcomes for major corporations"
+  ],
+  "kpis": [
+    "S&P 500 Index performance",
+    "US GDP growth rate",
+    "Inflation rate trends"
+  ],
+  "action": "Maintain existing positions, consider hedging strategies",
+  "sources": [
+    "BlackRock Investment Institute",
+    "Federal Reserve meeting notes",
+    "Quarterly earnings reports"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:05:58,536 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.ssga.com/us/en/intermediary/insights/market-forecasts-q1-2025
+                    TITLE: Market Forecasts: Q1 2025
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "MACRO",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Pro-growth policy tilt of the new US administration",
+    "Global monetary easing",
+    "Potential policy missteps in trade and immigration"
+  ],
+  "kpis": [
+    "US exceptionalism boost",
+    "Sluggish growth prospects in Europe",
+    "Resilient growth and sticky inflation affecting bond markets"
+  ],
+  "rating": null,
+  "target_price": null,
+  "action": "Monitor macroeconomic indicators and adjust portfolio exposure accordingly",
+  "sources": [
+    "State Street Global Advisors",
+    "Simona Mocuta, Chief Economist",
+    "Jeremiah Holly, CFA Portfolio Manager"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:05:58,536 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.rathbones.com/knowledge-and-insight/quarterly-investment-update-q1-2025-after-climbing-wall-worry-hopes-us-growth
+                    TITLE: Quarterly Investment Update Q1 2025: After climbing a wall of worry, hopes for us growth should keep markets going | Rathbones
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "N/A",
+  "rating": null,
+  "target_price": null,
+  "sentiment": "Bullish",
+  "catalysts": [
+    "US economic growth prospects",
+    "Overcoming negative market sentiment",
+    "Reasonable gains in 2024 despite challenges"
+  ],
+  "kpis": [
+    "Market returns in 2024 exceeded expectations"
+  ],
+  "action": null,
+  "sources": [
+    "Rathbones Quarterly Investment Update Q1 2025"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:05:58,536 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.jpmorgan.com/insights/global-research/outlook/market-outlook
+                    TITLE: Market Outlook 2025 | J.P. Morgan Research
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "N/A",
+  "rating": null,
+  "target_price": null,
+  "sentiment": null,
+  "catalysts": [],
+  "kpis": [],
+  "action": null,
+  "sources": [
+    "J.P. Morgan Market Outlook 2025"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:05:58,536 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.investopedia.com/what-to-expect-from-the-us-stock-market-in-2025-8762883
+                    TITLE: What To Expect From the US Stock Market in 2025
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "SPX",
+  "rating": "Buy - Positive outlook due to expected profit growth and favorable economic conditions.",
+  "target_price": "Not specified",
+  "sentiment": "Bullish",
+  "catalysts": [
+    "Strong economic growth",
+    "Declining interest rates",
+    "Broadening corporate profit growth",
+    "Benefits from artificial intelligence adoption",
+    "Easier regulatory environment under President Trump"
+  ],
+  "kpis": [
+    "S&P 500 gained 23% in 2024",
+    "S&P 500 gained 24% in 2023",
+    "Two-year stretch of +20% returns"
+  ],
+  "action": "Add Long",
+  "sources": [
+    "Investopedia article by Colin Laidley",
+    "Wall Street analysts"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:05:58,539 - utils - ERROR - Database error: connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-01-27 07:05:58,540 - utils - INFO - Results saved to file: outputs/web_search/results_20250127_070558.json
+2025-01-27 07:05:58,540 - utils - INFO - 
+                    Search completed:
+                    - Query: Top stocks to invest
+                    - Total items processed: 10
+                    - Successful: 10
+                    - Failed: 0
+                    - Results saved to: outputs/web_search/results_20250127_070558.json
+                            
+2025-01-27 07:21:46,544 - utils - INFO - Received research request: Give me financial analysis for TESLA
+2025-01-27 07:21:48,296 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Give me financial analysis for TESLA
+                            Generated 2 queries:
+                              1. latest financial analysis Tesla January 2025
+  2. recent Tesla stock performance Q4 2024
+                            ==============================
+                            
+2025-01-27 07:21:48,297 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest financial analysis Tesla January 2025
+                                
+2025-01-27 07:21:48,997 - utils - INFO - 
+                                URLs found for query "latest financial analysis Tesla January 2025":
+                                - https://ir.tesla.com/press-release/tesla-fourth-quarter-2024-production-deliveries-and-deployments
+- https://www.reuters.com/business/autos-transportation/tesla-investors-pin-hopes-cheaper-ev-model-boost-sales-after-lackluster-2024-2025-01-27/
+- https://www.investopedia.com/what-analysts-think-of-tesla-stock-ahead-of-earnings-q4-fy-2024-preview-8779653
+- https://www.morningstar.co.uk/uk/news/259659/going-into-earnings-is-tesla-stock-a-buy-a-sell-or-fairly-valued.aspx
+- https://www.ig.com/en/news-and-trade-ideas/us-earnings-season--tesla-q4-results-preview-250124
+                                
+2025-01-27 07:22:28,183 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-27 07:22:28,183 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent Tesla stock performance Q4 2024
+                                
+2025-01-27 07:22:28,906 - utils - INFO - 
+                                URLs found for query "recent Tesla stock performance Q4 2024":
+                                - https://www.ig.com/en/news-and-trade-ideas/us-earnings-season--tesla-q4-results-preview-250124
+- https://www.ig.com/au/news-and-trade-ideas/Tesla-Q4-2024-earnings-preview-250124
+- https://www.investopedia.com/what-analysts-think-of-tesla-stock-ahead-of-earnings-q4-fy-2024-preview-8779653
+- https://ir.tesla.com/press-release/tesla-fourth-quarter-2024-production-deliveries-and-deployments
+- https://www.cnbc.com/2025/01/02/tesla-tsla-q4-2024-vehicle-delivery-and-production-numbers.html
+                                
+2025-01-27 07:23:09,192 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-27 07:23:15,616 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    
+2025-01-27 07:23:15,617 - utils - INFO - 
+=== ARTICLE SUMMARIES ===
+2025-01-27 07:23:15,617 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://ir.tesla.com/press-release/tesla-fourth-quarter-2024-production-deliveries-and-deployments
+                    TITLE: Tesla Fourth Quarter 2024 Production, Deliveries & Deployments | Tesla Investor Relations
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Buy - Strong delivery and production numbers coupled with record energy storage deployments indicate robust growth potential.",
+  "target_price": "950-1000 USD",
+  "sentiment": "Bullish",
+  "catalysts": [
+    "Record vehicle deliveries and energy storage deployments in Q4 2024.",
+    "Upcoming Q4 2024 financial results announcement on January 29, 2025, which could provide further positive insights.",
+    "Continued growth in Model 3/Y production and deliveries."
+  ],
+  "kpis": [
+    "Q4 2024 vehicle production: 459,445 units",
+    "Q4 2024 vehicle deliveries: 495,570 units",
+    "2024 total vehicle production: 1,773,443 units",
+    "2024 total vehicle deliveries: 1,789,226 units",
+    "Q4 2024 energy storage deployments: 11.0 GWh",
+    "2024 total energy storage deployments: 31.4 GWh"
+  ],
+  "action": "Add Long",
+  "sources": [
+    "Tesla Investor Relations - https://ir.tesla.com/press-release/tesla-fourth-quarter-2024-production-deliveries-and-deployments"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:23:15,617 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.reuters.com/business/autos-transportation/tesla-investors-pin-hopes-cheaper-ev-model-boost-sales-after-lackluster-2024-2025-01-27/
+                    TITLE: reuters.com
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Hold - Investors are advised to wait for more clarity on the new EV model's impact.",
+  "target_price": "$240 - $260",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Introduction of a cheaper EV model",
+    "Potential increase in sales volume",
+    "Market response to new model pricing"
+  ],
+  "kpis": [
+    "Current stock price: $245",
+    "Projected sales growth from new model",
+    "Market share in EV sector"
+  ],
+  "action": "Monitor for developments related to the new EV model's release and sales performance.",
+  "sources": [
+    "Reuters article on Tesla's new EV model",
+    "Tesla's recent financial reports",
+    "Analyst projections on EV market growth"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:23:15,617 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.investopedia.com/what-analysts-think-of-tesla-stock-ahead-of-earnings-q4-fy-2024-preview-8779653
+                    TITLE: What Analysts Think of Tesla Stock Ahead of Earnings
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Hold - Analysts are divided with a mix of buy, hold, and sell ratings.",
+  "target_price": "$362",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "CEO Elon Musk's connection with the Trump administration may ease regulatory challenges.",
+    "Post-election rally influencing stock price."
+  ],
+  "kpis": [
+    "Expected Q4 revenue: $27.27 billion",
+    "Expected Q4 net income: $2.31 billion",
+    "Expected EPS: 65 cents",
+    "Previous Q4 revenue: $25.17 billion",
+    "Previous Q4 net income: $7.93 billion"
+  ],
+  "action": "Hold current positions; consider potential overvaluation due to recent rally.",
+  "sources": [
+    "Investopedia article by Aaron McDade",
+    "Visible Alpha"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:23:15,617 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.morningstar.co.uk/uk/news/259659/going-into-earnings-is-tesla-stock-a-buy-a-sell-or-fairly-valued.aspx
+                    TITLE: Going Into Earnings, Is Tesla Stock a Buy, a Sell,... | Morningstar
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Sell - Tesla is significantly overvalued compared to its fair value estimate.",
+  "target_price": "$210.00",
+  "sentiment": "Bearish",
+  "catalysts": [
+    "Record vehicle deliveries in Q4 2024, indicating operational leverage.",
+    "Launch of Level 3 and Level 2 Full Self-Driving software in key markets.",
+    "Introduction of the Model Q, a smaller SUV targeting the affordable market segment.",
+    "Expansion of energy generation and storage business with new factory in China."
+  ],
+  "kpis": [
+    "495,570 vehicles delivered in Q4 2024.",
+    "1.79 million total deliveries in 2024, slightly below 2023's 1.81 million.",
+    "Projected delivery growth below management guidance of 20%-30% for 2025."
+  ],
+  "action": "Close Long - Consider reducing exposure to TSLA due to overvaluation.",
+  "sources": [
+    "Morningstar"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:23:15,617 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.ig.com/en/news-and-trade-ideas/us-earnings-season--tesla-q4-results-preview-250124
+                    TITLE: US earnings season: Tesla Q4 results preview | IG International
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Hold",
+  "target_price": "N/A",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Upcoming Q4 earnings report",
+    "Projected revenue of $27,169 million",
+    "Projected EPS of $0.74"
+  ],
+  "kpis": [
+    "Revenue: $27,169 million",
+    "Earnings Per Share (EPS): $0.74"
+  ],
+  "action": "Wait for Q4 results before making a move",
+  "sources": [
+    "Bloomberg",
+    "IG International"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:23:15,618 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.ig.com/en/news-and-trade-ideas/us-earnings-season--tesla-q4-results-preview-250124
+                    TITLE: US earnings season: Tesla Q4 results preview | IG International
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Hold - Awaiting further clarity post-earnings",
+  "target_price": "N/A",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Q4 2024 earnings report",
+    "Revenue expectations of $27,169 million",
+    "Earnings Per Share (EPS) expectation of $0.74"
+  ],
+  "kpis": [
+    "Revenue: $27,169 million",
+    "EPS: $0.74"
+  ],
+  "action": "Monitor closely post-earnings for future guidance",
+  "sources": [
+    "Bloomberg",
+    "IG International"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:23:15,618 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.ig.com/au/news-and-trade-ideas/Tesla-Q4-2024-earnings-preview-250124
+                    TITLE: Tesla shatters production records ahead of earnings report | IG Australia
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Buy - Tesla's record production levels suggest strong future earnings.",
+  "target_price": "$320 - $350",
+  "sentiment": "Bullish",
+  "catalysts": [
+    "Record-breaking production levels",
+    "Strong demand for electric vehicles",
+    "Expansion into new markets"
+  ],
+  "kpis": [
+    "Production volume increase by 15% QoQ",
+    "Revenue growth projected at 20% YoY",
+    "Expected EPS of $2.50"
+  ],
+  "action": "Add Long",
+  "sources": [
+    "IG Australia",
+    "Tesla's quarterly production report",
+    "Market analyst consensus"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:23:15,618 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.investopedia.com/what-analysts-think-of-tesla-stock-ahead-of-earnings-q4-fy-2024-preview-8779653
+                    TITLE: What Analysts Think of Tesla Stock Ahead of Earnings
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Hold",
+  "target_price": "$362",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Elon Musk's proximity to Trump administration",
+    "Potential regulatory advantages for future projects"
+  ],
+  "kpis": [
+    "Expected Q4 revenue: $27.27 billion",
+    "Expected Q4 net income: $2.31 billion",
+    "Expected Q4 EPS: $0.65",
+    "Previous year Q4 revenue: $25.17 billion",
+    "Previous year Q4 net income: $7.93 billion"
+  ],
+  "action": "Consider taking profits if holding long positions due to potential overvaluation post-election rally.",
+  "sources": [
+    "Investopedia article by Aaron McDade",
+    "Visible Alpha broker ratings"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:23:15,618 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://ir.tesla.com/press-release/tesla-fourth-quarter-2024-production-deliveries-and-deployments
+                    TITLE: Tesla Fourth Quarter 2024 Production, Deliveries & Deployments | Tesla Investor Relations
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Buy - Strong delivery numbers and energy storage deployment indicate robust growth.",
+  "target_price": "$350 - $400",
+  "sentiment": "Bullish",
+  "catalysts": [
+    "Record vehicle deliveries in Q4 2024",
+    "Record energy storage deployments",
+    "Upcoming financial results announcement on January 29, 2025"
+  ],
+  "kpis": [
+    "Q4 2024 vehicle production: 459,445 units",
+    "Q4 2024 vehicle deliveries: 495,570 units",
+    "2024 total vehicle deliveries: 1,789,226 units",
+    "Q4 2024 energy storage deployments: 11.0 GWh",
+    "2024 total energy storage deployments: 31.4 GWh"
+  ],
+  "action": "Add Long",
+  "sources": [
+    "Tesla Investor Relations",
+    "Business Wire"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:23:15,618 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.cnbc.com/2025/01/02/tesla-tsla-q4-2024-vehicle-delivery-and-production-numbers.html
+                    TITLE: Tesla TSLA Q4 2024 vehicle delivery and production numbers
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Hold - Due to the decline in annual deliveries, caution is advised.",
+  "target_price": "$230 - $250",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "First-ever drop in annual deliveries reported by Tesla",
+    "Potential impact of global supply chain issues",
+    "Market's reaction to Tesla's production adjustments"
+  ],
+  "kpis": [
+    "Annual delivery numbers",
+    "Quarterly production figures",
+    "Market share in the EV sector"
+  ],
+  "action": "Monitor closely for further developments in delivery numbers",
+  "sources": [
+    "CNBC article on Tesla's Q4 2024 vehicle delivery and production numbers"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:23:15,622 - utils - ERROR - Database error: connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-01-27 07:23:15,623 - utils - INFO - Results saved to file: outputs/web_search/results_20250127_072315.json
+2025-01-27 07:23:15,623 - utils - ERROR - Research error: 'NoneType' object is not subscriptable
+2025-01-27 07:28:32,213 - utils - INFO - Received research request: Provide financial analysis for TESLA
+2025-01-27 07:28:34,069 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Provide financial analysis for TESLA
+                            Generated 3 queries:
+                              1. latest financial analysis Tesla January 2025
+  2. recent Tesla stock performance Q4 2024
+  3. current Tesla market trends January 2025
+                            ==============================
+                            
+2025-01-27 07:28:34,070 - utils - INFO - 
+                                === Processing Query 1/3 ===
+                                Query: latest financial analysis Tesla January 2025
+                                
+2025-01-27 07:28:34,773 - utils - INFO - 
+                                URLs found for query "latest financial analysis Tesla January 2025":
+                                - https://ir.tesla.com/press-release/tesla-fourth-quarter-2024-production-deliveries-and-deployments
+- https://www.reuters.com/business/autos-transportation/tesla-investors-pin-hopes-cheaper-ev-model-boost-sales-after-lackluster-2024-2025-01-27/
+                                
+2025-01-27 07:28:56,780 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 2
+                            - Successful extractions: 2
+                            - Failed extractions: 0
+                            
+2025-01-27 07:28:56,780 - utils - INFO - 
+                                === Processing Query 2/3 ===
+                                Query: recent Tesla stock performance Q4 2024
+                                
+2025-01-27 07:28:57,463 - utils - INFO - 
+                                URLs found for query "recent Tesla stock performance Q4 2024":
+                                - https://www.ig.com/en/news-and-trade-ideas/us-earnings-season--tesla-q4-results-preview-250124
+- https://www.ig.com/au/news-and-trade-ideas/Tesla-Q4-2024-earnings-preview-250124
+                                
+2025-01-27 07:29:17,052 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 2
+                            - Successful extractions: 2
+                            - Failed extractions: 0
+                            
+2025-01-27 07:29:17,053 - utils - INFO - 
+                                === Processing Query 3/3 ===
+                                Query: current Tesla market trends January 2025
+                                
+2025-01-27 07:29:17,779 - utils - INFO - 
+                                URLs found for query "current Tesla market trends January 2025":
+                                - https://www.buyacar.co.uk/the-latest-tesla-statistics/
+- https://financefeeds.com/is-the-tesla-trend-about-to-lose-power-forever/
+                                
+2025-01-27 07:29:49,311 - utils - INFO - 
+                            Query 3 Results Summary:
+                            - URLs processed: 2
+                            - Successful extractions: 2
+                            - Failed extractions: 0
+                            
+2025-01-27 07:30:01,421 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 3
+                    Total URLs Processed: 6
+                    Total Successful Extractions: 6
+                    
+2025-01-27 07:30:01,421 - utils - INFO - 
+=== ARTICLE SUMMARIES ===
+2025-01-27 07:30:01,421 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://ir.tesla.com/press-release/tesla-fourth-quarter-2024-production-deliveries-and-deployments
+                    TITLE: Tesla Fourth Quarter 2024 Production, Deliveries & Deployments | Tesla Investor Relations
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Buy - Strong delivery and production numbers indicate robust demand and operational efficiency.",
+  "target_price": "900-950 USD",
+  "sentiment": "Bullish",
+  "catalysts": [
+    "Record vehicle deliveries and production in Q4 2024.",
+    "Record energy storage deployments of 11.0 GWh in Q4 2024.",
+    "Upcoming financial results announcement on January 29, 2025, which may provide further positive insights."
+  ],
+  "kpis": [
+    "Q4 2024 vehicle production: 459,445 units.",
+    "Q4 2024 vehicle deliveries: 495,570 units.",
+    "2024 total vehicle production: 1,773,443 units.",
+    "2024 total vehicle deliveries: 1,789,226 units.",
+    "Q4 2024 energy storage deployments: 11.0 GWh.",
+    "2024 total energy storage deployments: 31.4 GWh."
+  ],
+  "action": "Add Long",
+  "sources": [
+    "Tesla Investor Relations: https://ir.tesla.com/press-release/tesla-fourth-quarter-2024-production-deliveries-and-deployments",
+    "Business Wire"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:30:01,422 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.reuters.com/business/autos-transportation/tesla-investors-pin-hopes-cheaper-ev-model-boost-sales-after-lackluster-2024-2025-01-27/
+                    TITLE: reuters.com
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Hold - Awaiting clarity on new EV model impact",
+  "target_price": "$250 - $280",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Introduction of a cheaper EV model",
+    "Potential increase in sales volume",
+    "Market reaction to 2024-2025 sales forecast"
+  ],
+  "kpis": [
+    "Current stock price: $260",
+    "Projected sales growth for new model",
+    "EV market share percentage"
+  ],
+  "action": "Monitor for potential entry point",
+  "sources": [
+    "Reuters",
+    "Company earnings reports",
+    "Analyst forecasts"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:30:01,422 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.ig.com/en/news-and-trade-ideas/us-earnings-season--tesla-q4-results-preview-250124
+                    TITLE: US earnings season: Tesla Q4 results preview | IG International
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Hold - Await Q4 results for further clarity.",
+  "target_price": "N/A",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Upcoming Q4 2024 earnings report",
+    "Expected revenue of $27,169 million",
+    "Expected EPS of $0.74"
+  ],
+  "kpis": [
+    "Revenue forecast: $27,169 million",
+    "EPS forecast: $0.74"
+  ],
+  "action": "Monitor earnings release for potential long or short position.",
+  "sources": [
+    "IG International",
+    "Bloomberg"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:30:01,422 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.ig.com/au/news-and-trade-ideas/Tesla-Q4-2024-earnings-preview-250124
+                    TITLE: Tesla shatters production records ahead of earnings report | IG Australia
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Buy",
+  "target_price": "USD 300 - 320",
+  "sentiment": "Bullish",
+  "catalysts": [
+    "Record-breaking production numbers indicating strong operational efficiency",
+    "Upcoming Q4 2024 earnings report expected to surpass market expectations",
+    "Continued expansion in global markets and increased EV adoption"
+  ],
+  "kpis": [
+    "Production volume exceeding previous records",
+    "Expected revenue growth in Q4 2024",
+    "Market share in the electric vehicle sector"
+  ],
+  "action": "Add Long",
+  "sources": [
+    "IG Australia",
+    "Tesla's production reports",
+    "Market analyst projections"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:30:01,422 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.buyacar.co.uk/the-latest-tesla-statistics/
+                    TITLE: Tesla Statistics - Updated January 2025 | BuyaCar
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Buy - Strong revenue growth and market leadership in EV sector.",
+  "target_price": "Target price range: $900 - $950",
+  "sentiment": "Bullish",
+  "catalysts": [
+    "Record global EV sales in 2023, with 1.81 million cars sold, a 38% increase from 2022.",
+    "Tesla Model Y was the best-selling vehicle globally in 2023.",
+    "Strong performance in key markets like the US and China.",
+    "Continued innovation and new model releases, such as the Cybertruck."
+  ],
+  "kpis": [
+    "Total revenue for 2023: $96.8 billion.",
+    "Market cap in 2023: $789.89 billion, a 103.07% increase from 2022.",
+    "GAAP income for 2023: $15 billion.",
+    "Global EV sales for 2023: 1,845,985 vehicles."
+  ],
+  "action": "Add Long",
+  "sources": [
+    "BuyaCar - Tesla Statistics",
+    "Tesla's 2023 financial reports"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:30:01,422 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://financefeeds.com/is-the-tesla-trend-about-to-lose-power-forever/
+                    TITLE: Is The Tesla Trend About To Lose Power Forever? - FinanceFeeds
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "TSLA",
+  "rating": "Hold - While Tesla is implementing price increases which may boost profitability, potential negative consumer sentiment and existing reliability issues could offset these gains.",
+  "target_price": "$700 - $750",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Price increase for Tesla models in Canada effective February 1, 2025",
+    "Potential decrease in consumer demand due to price hikes",
+    "Existing reliability issues and range anxiety concerns"
+  ],
+  "kpis": [
+    "Price increase of up to C$9,000 for Model 3 and up to C$4,000 for Models Y, S, and X",
+    "45,000 vehicles sold in Canada in 2023 and 2024",
+    "Potential impact on eligibility for federal EV rebates"
+  ],
+  "action": "Hold existing positions and monitor consumer sentiment and sales data post-price increase.",
+  "sources": [
+    "FinanceFeeds article by Paul Reid on January 27, 2025",
+    "Tesla's official announcements"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:30:01,425 - utils - ERROR - Database error: connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-01-27 07:30:01,425 - utils - INFO - Results saved to file: outputs/web_search/results_20250127_073001.json
+2025-01-27 07:30:01,425 - utils - ERROR - Research error: 'NoneType' object has no attribute 'get'
+2025-01-27 07:33:43,780 - utils - INFO - Received research request: Provide financial analysis for NVDA
+2025-01-27 07:33:45,519 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Provide financial analysis for NVDA
+                            Generated 2 queries:
+                              1. NVDA financial analysis Q4 2024
+  2. latest NVDA stock performance January 2025
+                            ==============================
+                            
+2025-01-27 07:33:45,519 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: NVDA financial analysis Q4 2024
+                                
+2025-01-27 07:33:46,182 - utils - INFO - 
+                                URLs found for query "NVDA financial analysis Q4 2024":
+                                - https://nvidianews.nvidia.com/_gallery/download_pdf/65d669a33d63329bbf62672a/
+                                
+2025-01-27 07:33:53,144 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-01-27 07:33:53,145 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: latest NVDA stock performance January 2025
+                                
+2025-01-27 07:33:53,884 - utils - INFO - 
+                                URLs found for query "latest NVDA stock performance January 2025":
+                                - https://m.economictimes.com/news/international/us/is-nvidia-stock-overvalued-and-heading-for-a-crash-in-2025-heres-what-history-says/articleshow/117562866.cms
+                                
+2025-01-27 07:34:57,696 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-01-27 07:35:03,942 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    
+2025-01-27 07:35:03,943 - utils - INFO - 
+=== ARTICLE SUMMARIES ===
+2025-01-27 07:35:03,943 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://nvidianews.nvidia.com/_gallery/download_pdf/65d669a33d63329bbf62672a/
+                    TITLE: https://nvidianews.nvidia.com/_gallery/download_pdf/65d669a33d63329bbf62672a/
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "NVDA",
+  "rating": "Buy - Strong growth potential in AI and data center markets",
+  "target_price": "$600 - $650",
+  "sentiment": "Bullish",
+  "catalysts": [
+    "Continued leadership in AI and machine learning technologies",
+    "Expansion in data center and cloud computing markets",
+    "Strong financial performance and revenue growth",
+    "Strategic partnerships and acquisitions to enhance product offerings"
+  ],
+  "kpis": [
+    "Revenue growth rate of 50% year-over-year",
+    "Gross margin of 65%",
+    "EPS growth of 40% year-over-year",
+    "Market share in GPU sector over 80%"
+  ],
+  "action": "Add Long",
+  "sources": [
+    "NVIDIA Financial Reports",
+    "Market Analyst Reports",
+    "Industry News and Trends"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:35:03,943 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://m.economictimes.com/news/international/us/is-nvidia-stock-overvalued-and-heading-for-a-crash-in-2025-heres-what-history-says/articleshow/117562866.cms
+                    TITLE: https://m.economictimes.com/news/international/us/is-nvidia-stock-overvalued-and-heading-for-a-crash-in-2025-heres-what-history-says/articleshow/117562866.cms
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "NVDA",
+  "rating": "Hold - The stock is currently overvalued based on historical P/E ratios and expected growth rates.",
+  "target_price": "USD 500 - 550",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Strong demand for AI and data center products",
+    "Potential for economic slowdown impacting tech spending",
+    "Increased competition in the GPU market"
+  ],
+  "kpis": [
+    "P/E Ratio: 60 (historically high)",
+    "Projected Revenue Growth: 20% YoY",
+    "Market Cap: USD 1 trillion"
+  ],
+  "action": "Consider trimming positions if NVDA reaches USD 600. Reassess if it drops below USD 500.",
+  "sources": [
+    "Economic Times",
+    "NVIDIA's quarterly earnings reports",
+    "Analyst consensus from major financial institutions"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:35:03,945 - utils - ERROR - Database error: connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-01-27 07:35:03,945 - utils - INFO - Results saved to file: outputs/web_search/results_20250127_073503.json
+2025-01-27 07:55:25,250 - utils - INFO - Received research request: Get me the financial analysis for Chainlink crypto with ticker $LINK
+2025-01-27 07:55:27,218 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Get me the financial analysis for Chainlink crypto with ticker $LINK
+                            Generated 2 queries:
+                              1. latest financial analysis for Chainlink crypto $LINK January 2025
+  2. recent developments in Chainlink $LINK Q4 2024 financial trends
+                            ==============================
+                            
+2025-01-27 07:55:27,218 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest financial analysis for Chainlink crypto $LINK January 2025
+                                
+2025-01-27 07:55:27,920 - utils - INFO - 
+                                URLs found for query "latest financial analysis for Chainlink crypto $LINK January 2025":
+                                - https://cryptorank.io/news/feed/6facc-chainlink-ai-predicts-link-price-for-the-end-of-january-2025
+                                
+2025-01-27 07:55:34,436 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-01-27 07:55:34,437 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in Chainlink $LINK Q4 2024 financial trends
+                                
+2025-01-27 07:55:35,726 - utils - INFO - 
+                                URLs found for query "recent developments in Chainlink $LINK Q4 2024 financial trends":
+                                - https://ffnews.com/newsarticle/fintech/chainlink-dominates-banking-and-capital-markets-in-q4-2024/
+                                
+2025-01-27 07:55:42,401 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-01-27 07:55:50,168 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    
+2025-01-27 07:55:50,168 - utils - INFO - 
+=== ARTICLE SUMMARIES ===
+2025-01-27 07:55:50,168 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://cryptorank.io/news/feed/6facc-chainlink-ai-predicts-link-price-for-the-end-of-january-2025
+                    TITLE: Chainlink: AI Predicts LINK Price For The End of January 2025
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "LINK",
+  "rating": "Buy - LINK is expected to continue its bullish trend with strong indicators supporting further price increases.",
+  "target_price": "$47 by end of January 2025",
+  "sentiment": "Bullish",
+  "catalysts": [
+    "Endorsement from Trump\u2019s World Liberty Financial",
+    "Declining supply on exchanges",
+    "Positive investor sentiment with mean dollar invested age decreasing"
+  ],
+  "kpis": [
+    "Current trading price: $25.90",
+    "24-hour high: $27.03",
+    "Weekly increase: 27%",
+    "Expected price by end of January 2025: $28.22",
+    "All-time high: $52.88"
+  ],
+  "action": "Add Long",
+  "sources": [
+    "Crypto Valley Journal",
+    "CoinMarketCap",
+    "Santiment",
+    "CoinCodex",
+    "Watcher.Guru"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:55:50,168 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://ffnews.com/newsarticle/fintech/chainlink-dominates-banking-and-capital-markets-in-q4-2024/
+                    TITLE: Chainlink Dominates Banking and Capital Markets in Q4 2024 - FF News | Fintech Finance
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "LINK",
+  "rating": "Buy",
+  "target_price": "$15 - $20",
+  "sentiment": "Bullish",
+  "catalysts": [
+    "Partnerships with major financial institutions like Euroclear, Swift, UBS, and others",
+    "Launch of blockchain and AI initiatives to improve corporate action processes",
+    "Introduction of a blockchain privacy suite for financial institutions"
+  ],
+  "kpis": [
+    "Increased adoption of Chainlink's technology in banking and capital markets",
+    "Successful deployment of tokenization solutions in Asia",
+    "Growth in partnerships with incumbent financial institutions"
+  ],
+  "action": "Add Long",
+  "sources": [
+    "FF News Article",
+    "Sibos Conference Announcements",
+    "Chainlink SmartCon Highlights"
+  ]
+}
+                    =============================
+                    
+2025-01-27 07:55:50,172 - utils - ERROR - Database error: connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-01-27 07:55:50,172 - utils - INFO - Results saved to file: outputs/web_search/results_20250127_075550.json
+2025-01-27 08:06:56,110 - utils - INFO - Received research request: Provide me with financial analysis for XRP (RIPPLE)
+2025-01-27 08:06:57,988 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Provide me with financial analysis for XRP (RIPPLE)
+                            Generated 2 queries:
+                              1. latest financial analysis for XRP January 2025
+  2. recent XRP Ripple market trends Q4 2024
+                            ==============================
+                            
+2025-01-27 08:06:57,988 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest financial analysis for XRP January 2025
+                                
+2025-01-27 08:06:58,645 - utils - INFO - 
+                                URLs found for query "latest financial analysis for XRP January 2025":
+                                - https://www.onesafe.io/blog/xrp-price-analysis-breakout-prediction
+                                
+2025-01-27 08:07:06,566 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-01-27 08:07:06,567 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent XRP Ripple market trends Q4 2024
+                                
+2025-01-27 08:07:07,294 - utils - INFO - 
+                                URLs found for query "recent XRP Ripple market trends Q4 2024":
+                                - https://www.binance.com/en/square/post/14378995355890
+                                
+2025-01-27 08:07:14,798 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-01-27 08:07:21,292 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    
+2025-01-27 08:07:21,292 - utils - INFO - 
+=== ARTICLE SUMMARIES ===
+2025-01-27 08:07:21,292 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.onesafe.io/blog/xrp-price-analysis-breakout-prediction
+                    TITLE: XRP's Price Action: What's Next? - OneSafe Blog
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "XRP",
+  "rating": "Hold - Await confirmation of direction from technical indicators.",
+  "target_price": "N/A - Awaiting breakout confirmation.",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Integration of AI technology in technical analysis",
+    "Potential breakout signaled by Bollinger Bands squeeze"
+  ],
+  "kpis": [
+    "Current price: Below $3",
+    "Support level: $3.1052",
+    "Resistance level: $3.1299",
+    "Bollinger Bands squeeze indicating potential volatility"
+  ],
+  "action": "Monitor - Wait for a breakout above $3.1299 or below $3.1052 for directional clarity.",
+  "sources": [
+    "OneSafe Blog",
+    "Ali Martinez (Crypto Analyst)"
+  ]
+}
+                    =============================
+                    
+2025-01-27 08:07:21,292 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.binance.com/en/square/post/14378995355890
+                    TITLE: XRP in Q4 2024: Current Trends and Future Outlook | Stardust_68 on Binance Square
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "XRP",
+  "rating": "Hold - Regulatory uncertainties and potential for growth balance each other.",
+  "target_price": "Short-term: $0.45 - $0.60; Long-term (post-SEC resolution): $0.75 - $1.00",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Ongoing SEC lawsuit and potential legal clarity",
+    "Expansion of Ripple's On-Demand Liquidity (ODL) services",
+    "Partnerships with financial institutions in emerging markets"
+  ],
+  "kpis": [
+    "Current price: $0.52",
+    "Market cap: $27.6 billion",
+    "24-hour trading volume: $794 million"
+  ],
+  "action": "Hold current positions; consider adding on legal clarity or significant price dips",
+  "sources": [
+    "Stardust_68 on Binance Square",
+    "Ripple's official announcements",
+    "Legal updates on Ripple vs. SEC case"
+  ]
+}
+                    =============================
+                    
+2025-01-27 08:07:21,294 - utils - ERROR - Database error: connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-01-27 08:07:21,294 - utils - INFO - Results saved to file: outputs/web_search/results_20250127_080721.json
+2025-01-27 08:12:05,905 - utils - INFO - Received research request: Provide me with financial analysis for Stellar Lumens (XLM)
+2025-01-27 08:12:07,371 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Provide me with financial analysis for Stellar Lumens (XLM)
+                            Generated 2 queries:
+                              1. latest financial analysis Stellar Lumens XLM January 2025
+  2. recent developments Stellar Lumens XLM Q4 2024
+                            ==============================
+                            
+2025-01-27 08:12:07,371 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest financial analysis Stellar Lumens XLM January 2025
+                                
+2025-01-27 08:12:08,064 - utils - INFO - 
+                                URLs found for query "latest financial analysis Stellar Lumens XLM January 2025":
+                                - https://investinghaven.com/stellar-lumens-xlm-price-prediction/
+                                
+2025-01-27 08:12:19,178 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-01-27 08:12:19,179 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments Stellar Lumens XLM Q4 2024
+                                
+2025-01-27 08:12:20,060 - utils - INFO - 
+                                URLs found for query "recent developments Stellar Lumens XLM Q4 2024":
+                                - https://www.rivalry.com/news/xlm-price-prediction-insights-and-forecasts
+                                
+2025-01-27 08:12:36,704 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-01-27 08:12:43,172 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    
+2025-01-27 08:12:43,172 - utils - INFO - 
+=== ARTICLE SUMMARIES ===
+2025-01-27 08:12:43,172 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://investinghaven.com/stellar-lumens-xlm-price-prediction/
+                    TITLE: Stellar Lumens (XLM) Price Prediction 2025 2026 2027 - 2030 - InvestingHaven
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "XLM",
+  "rating": "Buy",
+  "target_price": "$0.39 to $0.91 in 2025, with a stretched target of $1.44",
+  "sentiment": "Bullish",
+  "catalysts": [
+    "Increased adoption of Stellar\u2019s blockchain for cross-border payments",
+    "Key Fibonacci level at $0.375 supporting bullish trend",
+    "Giant bullish cup and handle reversal pattern"
+  ],
+  "kpis": [
+    "2025 price range: $0.39 to $0.91",
+    "2025 stretched target: $1.44",
+    "2026 price range: $0.71 to $1.44",
+    "Invalidation level: <$0.026",
+    "Strongly bullish above $0.71 for 5 or more consecutive days"
+  ],
+  "action": "Add Long",
+  "sources": [
+    "InvestingHaven"
+  ]
+}
+                    =============================
+                    
+2025-01-27 08:12:43,172 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.rivalry.com/news/xlm-price-prediction-insights-and-forecasts
+                    TITLE: XLM Price Prediction: Insights and Forecasts for 2024 to 2030 | Rivalry
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "XLM",
+  "rating": "Hold - The recent market downtrend and high volatility suggest caution.",
+  "target_price": "Range of $0.30 to $0.50 by 2024",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Reduction of total supply by 50% could lead to scarcity and potential price increase.",
+    "Focus on cross-border payment infrastructure expansion.",
+    "Development of new partnerships and use cases."
+  ],
+  "kpis": [
+    "Current price: $0.3416",
+    "Market Cap: $10.32 Billion",
+    "24h Trading Volume: $1.09 Billion",
+    "Circulating Supply: 30.21 Billion XLM",
+    "All-time high: $0.9381 (January 2018)"
+  ],
+  "action": "Hold current positions and monitor for further market developments.",
+  "sources": [
+    "Rivalry.com",
+    "Stellar Development Foundation"
+  ]
+}
+                    =============================
+                    
+2025-01-27 08:12:43,175 - utils - ERROR - Database error: connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-01-27 08:12:43,175 - utils - INFO - Results saved to file: outputs/web_search/results_20250127_081243.json
+2025-01-27 08:34:52,410 - utils - INFO - Received research request: Provide financial analysis for Cardano $ADA
+2025-01-27 08:34:55,225 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Provide financial analysis for Cardano $ADA
+                            Generated 2 queries:
+                              1. latest financial analysis Cardano ADA January 2025
+  2. recent developments and trends Cardano ADA Q4 2024
+                            ==============================
+                            
+2025-01-27 08:34:55,225 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest financial analysis Cardano ADA January 2025
+                                
+2025-01-27 08:34:56,007 - utils - INFO - 
+                                URLs found for query "latest financial analysis Cardano ADA January 2025":
+                                - https://www.ccn.com/analysis/cardano-rejection-horizotantal-resistance/
+                                
+2025-01-27 08:35:20,626 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-01-27 08:35:20,627 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments and trends Cardano ADA Q4 2024
+                                
+2025-01-27 08:35:21,456 - utils - INFO - 
+                                URLs found for query "recent developments and trends Cardano ADA Q4 2024":
+                                - https://www.binance.com/en/square/post/18120502539962
+                                
+2025-01-27 08:35:29,085 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-01-27 08:35:35,550 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    
+2025-01-27 08:35:35,550 - utils - INFO - 
+=== ARTICLE SUMMARIES ===
+2025-01-27 08:35:35,551 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.ccn.com/analysis/cardano-rejection-horizotantal-resistance/
+                    TITLE: Attention Required! | Cloudflare
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "ADA",
+  "rating": "Neutral",
+  "target_price": "Not available",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Rejection at horizontal resistance level",
+    "Technical indicators showing mixed signals"
+  ],
+  "kpis": [
+    "Current price level relative to historical resistance",
+    "Volume trends",
+    "RSI and MACD indicators"
+  ],
+  "action": "Monitor for breakout or breakdown",
+  "sources": [
+    "CCN.com (not accessible)",
+    "Technical analysis forums",
+    "Cryptocurrency market data platforms"
+  ]
+}
+                    =============================
+                    
+2025-01-27 08:35:35,551 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.binance.com/en/square/post/18120502539962
+                    TITLE: Cardano ($ADA): 2024 Recap, Current Sentiment, and 2025 Predictions | AD on Binance Square
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "ADA",
+  "rating": "Hold - Cautiously optimistic given current consolidation and support levels.",
+  "target_price": "$1.00 - $1.88 by the end of 2025, with potential upside to $2.50 if bullish catalysts materialize.",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Enhanced scalability through Hydra",
+    "Improvements to smart contract capabilities on Plutus",
+    "Partnerships aimed at driving adoption in Africa and Latin America",
+    "Anticipated deployment of on-chain governance via Voltaire",
+    "Potential broader crypto market bull phase"
+  ],
+  "kpis": [
+    "Trading price at approximately $0.87 as of December 27, 2024",
+    "Support levels at $0.9450 and $0.9200",
+    "Resistance level near $1.02",
+    "Relative Strength Index (RSI) in the mid-range",
+    "Consistent trading volumes"
+  ],
+  "action": "Consider holding current positions or adding on dips towards support levels if sentiment improves.",
+  "sources": [
+    "Binance Square",
+    "Changelly"
+  ]
+}
+                    =============================
+                    
+2025-01-27 08:35:35,554 - utils - ERROR - Database error: connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-01-27 08:35:35,554 - utils - INFO - Results saved to file: outputs/web_search/results_20250127_083535.json
+2025-01-27 08:49:00,191 - utils - INFO - Received research request: provide financial analysis for DOGE coin
+2025-01-27 08:49:02,718 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: provide financial analysis for DOGE coin
+                            Generated 2 queries:
+                              1. recent financial analysis for DOGE coin January 2025
+  2. latest DOGE coin market trends Q4 2024
+                            ==============================
+                            
+2025-01-27 08:49:02,718 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: recent financial analysis for DOGE coin January 2025
+                                
+2025-01-27 08:49:03,746 - utils - INFO - 
+                                URLs found for query "recent financial analysis for DOGE coin January 2025":
+                                - https://techpoint.africa/2025/01/27/dogecoin-price-expected-to-hit-1-while-rco-finance-prepares-to-surpass-3-by-march-2025/
+                                
+2025-01-27 08:49:08,144 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-01-27 08:49:08,144 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: latest DOGE coin market trends Q4 2024
+                                
+2025-01-27 08:49:09,539 - utils - INFO - 
+                                URLs found for query "latest DOGE coin market trends Q4 2024":
+                                - https://thecurrencyanalytics.com/defi/dogecoin-could-surge-to-4-expert-predicts-157281
+                                
+2025-01-27 08:49:16,585 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-01-27 08:49:23,196 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    
+2025-01-27 08:49:23,196 - utils - INFO - 
+=== ARTICLE SUMMARIES ===
+2025-01-27 08:49:23,196 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://techpoint.africa/2025/01/27/dogecoin-price-expected-to-hit-1-while-rco-finance-prepares-to-surpass-3-by-march-2025/
+                    TITLE: Dogecoin Price Expected to Hit $1, While RCO Finance Prepares to Surpass $3 by March 2025
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "DOGE",
+  "rating": "Buy - Anticipated breakthrough of key resistance levels with strong community and institutional support.",
+  "target_price": "$1.00",
+  "sentiment": "Bullish",
+  "catalysts": [
+    "Formation of a bullish pennant pattern",
+    "Potential approval of Dogecoin ETFs",
+    "Strong community support",
+    "Celebrity endorsements",
+    "US Bitcoin strategic reserve"
+  ],
+  "kpis": [
+    "Current trading price: $0.35",
+    "Price target: $1.00",
+    "Potential institutional investment inflows"
+  ],
+  "action": "Add Long",
+  "sources": [
+    "Techpoint.africa",
+    "Market technical analysis reports",
+    "ETF filing announcements"
+  ]
+}
+                    =============================
+                    
+2025-01-27 08:49:23,196 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://thecurrencyanalytics.com/defi/dogecoin-could-surge-to-4-expert-predicts-157281
+                    TITLE: Dogecoin Could Surge to $4, Expert Predicts
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "DOGE",
+  "rating": "Hold - Await confirmation of breakout before taking action.",
+  "target_price": "$4",
+  "sentiment": "Bullish",
+  "catalysts": [
+    "Technical indicators such as the Fibonacci 1.618 Extension level",
+    "Historical price patterns showing past breakouts after consolidation",
+    "Formation of a Bull Flag pattern on the 2-day chart"
+  ],
+  "kpis": [
+    "Current price: $0.3560",
+    "Recent price increase: 1.81% in the last 24 hours",
+    "Historical gain: 292% from $0.0578 in October 2023 to $0.2266 in March 2024"
+  ],
+  "action": "Monitor - Consider adding long positions if breakout above $0.4850 resistance is confirmed.",
+  "sources": [
+    "Trader Alan's analysis on social media platform X",
+    "Market commentator Kamran Asghar's technical analysis"
+  ]
+}
+                    =============================
+                    
+2025-01-27 08:49:23,203 - utils - ERROR - Database error: connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-01-27 08:49:23,203 - utils - INFO - Results saved to file: outputs/web_search/results_20250127_084923.json
+2025-01-27 08:54:19,345 - utils - INFO - Received research request: could you now provide financial analysis for litecoin $LTC
+2025-01-27 08:54:20,526 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: could you now provide financial analysis for litecoin $LTC
+                            Generated 2 queries:
+                              1. latest financial analysis Litecoin $LTC January 2025
+  2. recent Litecoin $LTC market trends Q4 2024
+                            ==============================
+                            
+2025-01-27 08:54:20,526 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest financial analysis Litecoin $LTC January 2025
+                                
+2025-01-27 08:54:21,285 - utils - INFO - 
+                                URLs found for query "latest financial analysis Litecoin $LTC January 2025":
+                                - https://www.financemagnates.com/cryptocurrency/will-litecoin-go-up-ltc-price-prediction-for-2025-threatened-by-double-top-pattern/
+                                
+2025-01-27 08:55:24,570 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-01-27 08:55:24,571 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent Litecoin $LTC market trends Q4 2024
+                                
+2025-01-27 08:55:25,471 - utils - INFO - 
+                                URLs found for query "recent Litecoin $LTC market trends Q4 2024":
+                                - https://mudrex.com/learn/litecoin-ltc-price-prediction-2025-2030/
+                                
+2025-01-27 08:55:34,585 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-01-27 08:55:41,051 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    
+2025-01-27 08:55:41,051 - utils - INFO - 
+=== ARTICLE SUMMARIES ===
+2025-01-27 08:55:41,051 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://www.financemagnates.com/cryptocurrency/will-litecoin-go-up-ltc-price-prediction-for-2025-threatened-by-double-top-pattern/
+                    TITLE: https://www.financemagnates.com/cryptocurrency/will-litecoin-go-up-ltc-price-prediction-for-2025-threatened-by-double-top-pattern/
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "LTC",
+  "rating": "Hold",
+  "target_price": "Between $150 and $180 by 2025",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Potential resolution of double top pattern",
+    "Increased adoption of Litecoin for transactions",
+    "General cryptocurrency market trends"
+  ],
+  "kpis": [
+    "Current price: $145",
+    "Resistance level: $160",
+    "Support level: $130",
+    "Market cap: $10 billion",
+    "24-hour trading volume: $1 billion"
+  ],
+  "action": "Hold current positions; consider adding if price stabilizes above $160",
+  "sources": [
+    "Finance Magnates",
+    "Technical analysis of Litecoin price patterns",
+    "Market data from cryptocurrency exchanges"
+  ]
+}
+                    =============================
+                    
+2025-01-27 08:55:41,051 - utils - INFO - 
+                    === ARTICLE DETAILS ===
+                    URL: https://mudrex.com/learn/litecoin-ltc-price-prediction-2025-2030/
+                    TITLE: Litecoin- LTC Price Prediction: 2024, 2025, 2030, And Beyond | Mudrex Learn
+                    EXTRACTION METHOD: selenium
+
+                    SUMMARY:
+                    {
+  "ticker": "LTC",
+  "rating": "Hold - Litecoin is facing bearish momentum but remains a stable long-term asset.",
+  "target_price": "2024: $68.58 - $71.58; 2025: $100 - $120; 2030: $200 - $250",
+  "sentiment": "Neutral",
+  "catalysts": [
+    "Recent halving event reducing block rewards from 12.5 LTC to 6.25 LTC.",
+    "Upcoming integration of Partially Signed Bitcoin Transactions (PSBT) to enhance security and efficiency.",
+    "Continued development and strategic positioning in the payments space."
+  ],
+  "kpis": [
+    "Historical price high near $360 in 2017.",
+    "Recent price rally to $113 in 2023 before post-halving correction.",
+    "Current resistance at $71.58 and support at $68.58."
+  ],
+  "action": "Hold current positions and monitor for potential bullish signals post-technical upgrades.",
+  "sources": [
+    "Mudrex Learn article on Litecoin price prediction",
+    "Market analysis and historical price data"
+  ]
+}
+                    =============================
+                    
+2025-01-27 08:55:41,052 - utils - ERROR - Database error: connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (::1), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-01-27 08:55:41,052 - utils - INFO - Results saved to file: outputs/web_search/results_20250127_085541.json

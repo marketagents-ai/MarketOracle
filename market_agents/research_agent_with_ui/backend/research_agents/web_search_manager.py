@@ -12,7 +12,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 from urllib.parse import urlparse
-from .tools_manager import ToolsManager
+from market_agents.research_agent_with_ui.backend.research_agents.tools_manager import ToolsManager
 import yaml
 from googlesearch import search
 from pydantic import BaseModel, Field
@@ -43,6 +43,7 @@ class WebSearchConfig(BaseSettings):
         "Accept-Language": "en-US,en;q=0.5"
     }
     llm_configs: Dict[str, Dict[str, Any]]
+    tools_storage_path: str = None
 
 
     
@@ -163,9 +164,9 @@ class SearchManager:
                 
                 urls = list(search(
                     query,
-                    num=num_results,
-                    stop=num_results,
-                    pause=self.search_params['pause']
+                    num_results=num_results,
+                    #stop=num_results,
+                    #pause=self.search_params['pause']
                 ))
                 
                 self.last_request_time = time.time()
