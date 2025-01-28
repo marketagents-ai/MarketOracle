@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trash2 } from 'lucide-react';
 import { AVAILABLE_TOOLS } from './tools.config';
-import { Switch } from '../ToolsPanel/Switch'; // Updated import path
+import { Switch } from './Switch';
 
 interface ToolsListProps {
   type: 'executable' | 'typed';
@@ -11,9 +11,25 @@ export const ToolsList: React.FC<ToolsListProps> = ({ type }) => {
   const tools = AVAILABLE_TOOLS.filter(tool => tool.type === type);
   
   const handleToggle = (toolId: string, enabled: boolean) => {
-    // Here you would implement the logic to enable/disable the tool
-    // and update the chat type/mode accordingly
     console.log(`Tool ${toolId} ${enabled ? 'enabled' : 'disabled'}`);
+  };
+
+  const handleDelete = (toolId: string) => {
+    // Get existing tools from localStorage
+    const savedTools = localStorage.getItem('customTools');
+    if (savedTools) {
+      try {
+        const customTools = JSON.parse(savedTools);
+        // Filter out the tool to be deleted
+        const updatedTools = customTools.filter((tool: any) => tool.id !== toolId);
+        // Save back to localStorage
+        localStorage.setItem('customTools', JSON.stringify(updatedTools));
+        // Force refresh
+        window.dispatchEvent(new Event('customToolsUpdated'));
+      } catch (error) {
+        console.error('Error deleting tool:', error);
+      }
+    }
   };
 
   return (
@@ -38,9 +54,15 @@ export const ToolsList: React.FC<ToolsListProps> = ({ type }) => {
               onCheckedChange={(checked) => handleToggle(tool.id, checked)}
               className="data-[state=checked]:bg-blue-600"
             />
-            <button className="opacity-0 group-hover:opacity-100 p-1.5 rounded-md hover:bg-gray-700 text-gray-400 hover:text-white transition-all">
-              <Trash2 size={16} />
-            </button>
+            {tool.isCustom && (
+              <button 
+                onClick={() => handleDelete(tool.id)}
+                className="p-1.5 rounded-md hover:bg-gray-700 text-red-400 hover:text-red-300"
+                aria-label="Delete tool"
+              >
+                <Trash2 size={16} />
+              </button>
+            )}
           </div>
         </div>
       ))}

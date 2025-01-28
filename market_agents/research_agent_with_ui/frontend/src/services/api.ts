@@ -51,6 +51,63 @@ export const sendCustomMessage = async (message: string): Promise<any> => {
   }
 };
 
+export const createTool = async (tool: { name: string; description: string }) => {
+  try {
+    const response = await fetch(`${API_URL}/api/tools`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(tool),
+    });
+
+    if (!response.ok) {
+      throw new APIError('Failed to create tool');
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error('Error creating tool:', error);
+    throw error instanceof APIError ? error : new APIError('Failed to create tool');
+  }
+};
+export const deleteCustomTool = async (toolId: string): Promise<void> => {
+  const response = await fetch(`${API_URL}/tools/${toolId}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+
+  if (!response.ok) {
+    const error = await response.json();
+    throw new APIError(error.detail || 'Failed to delete tool');
+  }
+};
+
+export const getCustomTools = async (): Promise<CustomTool[]> => {
+  const response = await fetch(`${API_URL}/tools`);
+  
+  if (!response.ok) {
+    const error = await response.json();
+    throw new APIError(error.detail || 'Failed to fetch tools');
+  }
+
+  return response.json();
+};
+export const fetchTools = async () => {
+  try {
+    const response = await fetch(`${API_URL}/api/tools`);
+    if (!response.ok) {
+      throw new APIError('Failed to fetch tools');
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching tools:', error);
+    throw error instanceof APIError ? error : new APIError('Failed to fetch tools');
+  }
+};
+
 // import { APIError } from '../utils/api';
 // import type { ResearchData } from '../types/research';
 

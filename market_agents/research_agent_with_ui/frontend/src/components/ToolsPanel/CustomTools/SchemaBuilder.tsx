@@ -29,9 +29,11 @@ export const SchemaBuilder: React.FC<SchemaBuilderProps> = ({ onCancel, onSave }
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onSave({
-      id: crypto.randomUUID(),
       name,
       description,
+      type: "custom",
+      enabled: true,
+      created_at: new Date().toISOString(),
       schema: {
         type: 'object',
         properties: Object.fromEntries(

@@ -2,6 +2,7 @@ import asyncio
 import json
 import logging
 import os
+import sys
 import random
 import threading
 import uuid
@@ -12,7 +13,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 from urllib.parse import urlparse
-from .tools_manager import ToolsManager
+from tools_manager import ToolsManager
 import yaml
 from googlesearch import search
 from pydantic import BaseModel, Field
@@ -22,6 +23,11 @@ from market_agents.inference.message_models import LLMConfig, LLMOutput, LLMProm
 from market_agents.inference.parallel_inference import ParallelAIUtilities, RequestLimits
 from market_agents.research_agents.utils import parse_ai_response, clean_json_string, load_config
 from market_agents.research_agents.research_schemas import SearchQueries
+
+
+
+# sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+# from market_agents.research_agent_with_ui.backend.toolsmanager import ToolsManager
 
 
 # Set up logging
@@ -43,6 +49,9 @@ class WebSearchConfig(BaseSettings):
         "Accept-Language": "en-US,en;q=0.5"
     }
     llm_configs: Dict[str, Dict[str, Any]]
+    tools_storage_path: Optional[str] = None
+
+    model_config = SettingsConfigDict(extra='forbid')
 
 
     
