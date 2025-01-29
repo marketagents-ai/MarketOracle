@@ -5,28 +5,31 @@ import type { ResearchData } from '../types/research';
 // Change the API_URL definition
 const API_URL = 'http://localhost:8000'; 
 
-export const fetchResearch = async (query: string, urls?: string[]): Promise<ResearchData[]> => {
+export const fetchResearch = async (
+  query: string, 
+  customSchemas: any[] = []
+): Promise<ResearchData[]> => {
   try {
-    const response = await fetch(`${API_URL}/api/research`, { // Make sure it's /api/research
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        query,
-        urls: urls || []
-      })
-    });
+      const response = await fetch(`${API_URL}/api/research`, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+              query,
+              custom_schemas: customSchemas
+          }),
+      });
 
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({ detail: 'Failed to fetch research data' }));
-      throw new APIError(errorData.detail || `Error: ${response.status}`, response.status);
-    }
+      if (!response.ok) {
+          const errorData = await response.json();
+          throw new APIError(errorData.detail || `Error: ${response.status}`, response.status);
+      }
 
-    return await response.json();
+      return await response.json();
   } catch (error) {
-    console.error('Research API Error:', error);
-    throw error instanceof APIError ? error : new APIError('Failed to connect to research service');
+      console.error('Research API Error:', error);
+      throw error instanceof APIError ? error : new APIError('Failed to connect to research service');
   }
 };
 

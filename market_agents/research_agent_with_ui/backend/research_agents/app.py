@@ -47,6 +47,7 @@ app.add_middleware(
 class ResearchRequest(BaseModel):
     query: str
     urls: Optional[List[str]] = None
+    custom_schemas: Optional[List[Dict[str, Any]]] = None 
 
 @app.get("/", response_class=HTMLResponse)
 async def home():
@@ -472,31 +473,130 @@ async def toggle_tool(tool_id: str, enabled: bool):
     
 @app.post("/api/research")
 async def research(request: ResearchRequest):
+    """Process a research query and return analyzed results"""
+    logger.info(f"Received research request: {request.query}")
     try:
+        if not request.query.strip():
+            raise HTTPException(status_code=400, detail="Query cannot be empty")
+            
         config_data, prompts = load_config()
+        config_data["query"] = request.query
+        if request.urls:
+            config_data["urls"] = request.urls
+            
         config = WebSearchConfig(**config_data)
-        agent = WebSearchAgent(config, prompts)
+
+        # Generate descriptions for custom schemas if missing
+        if request.custom_schemas:
+            enhanced_schemas = []
+            for schema in request.custom_schemas:
+                if not schema.get('description'):
+                    description = await generate_field_description(schema['name'])
+                    schema['description'] = description
+                enhanced_schemas.append(schema)
+            
+            logger.info(f"Enhanced schemas with descriptions: {enhanced_schemas}")
+        else:
+            enhanced_schemas = None
         
-        # Log the incoming request
-        logger.info(f"Processing research query: {request.query}")
+        # Initialize agent with enhanced schemas
+        agent = WebSearchAgent(
+            config=config, 
+            prompts=prompts,
+            custom_schemas=enhanced_schemas
+        )
         
-        await agent.process_search_query(request.query)
+        try:
+            await agent.process_search_query(request.query)
+        except Exception as search_error:
+            logger.error(f"Search process error: {str(search_error)}")
+            raise HTTPException(status_code=500, detail="Search process failed")
         
-        # Log the raw results
-        logger.info(f"Raw results: {agent.results}")
-        
-        # Convert Pydantic models to dict for JSON serialization
-        formatted_results = [
-            result.model_dump(exclude_none=True) 
-            for result in agent.results 
-            if result is not None
-        ]
+        formatted_results = []
+        for result in agent.results:
+            if result:
+                try:
+                    # Generate standard summary
+                    summary = await agent.generate_ai_summary(
+                        result.url,
+                        {"text": result.content},
+                        "Contains tables/charts" if hasattr(result, 'has_data') and result.has_data else "Text only"
+                    )
+
+                    # Generate custom field analysis with enhanced schemas
+                    if enhanced_schemas and isinstance(summary, dict) and 'assets' in summary and summary['assets']:
+                        for asset in summary['assets']:
+                            custom_fields = {}
+                            for schema in enhanced_schemas:
+                                field_name = schema['name'].lower()
+                                custom_analysis = await agent._generate_custom_field_analysis(
+                                    result.content,
+                                    schema['name'],
+                                    schema['description']  # Using enhanced description
+                                )
+                                custom_fields[field_name] = custom_analysis
+                            
+                            asset['custom_fields'] = custom_fields
+
+                    formatted_result = {
+                        "url": result.url,
+                        "title": result.title,
+                        "content": result.content,
+                        "timestamp": result.timestamp.isoformat(),
+                        "status": result.status,
+                        "summary": summary,
+                        "agent_id": result.agent_id,
+                        "extraction_method": result.extraction_method
+                    }
+                    
+                    formatted_results.append(formatted_result)
+                    
+                except Exception as e:
+                    logger.error(f"Error generating summary for result: {str(e)}")
+                    continue
         
         return formatted_results
 
     except Exception as e:
         logger.error(f"Research error: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
+
+async def generate_field_description(field_name: str) -> str:
+    """Generate a detailed description for a custom field based on its name."""
+    try:
+        prompt = f"""
+        Generate a detailed description for a cryptocurrency market analysis field named "{field_name}".
+        The description should:
+        1. Explain what kind of analysis this field should contain
+        2. Specify what metrics or data points should be included
+        3. Indicate how this information is relevant for market analysis
+        4. Include guidance for both technical and fundamental aspects if applicable
+        
+        Format: Return only the description text, no additional formatting.
+        """
+
+        response = await client.chat.completions.create(
+            model="gpt-4-turbo-preview",
+            messages=[
+                {"role": "system", "content": "You are a finanical market analysis expert."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.7,
+            max_tokens=200
+        )
+
+        description = response.choices[0].message.content.strip()
+        logger.info(f"Generated description for {field_name}: {description}")
+        return description
+
+    except Exception as e:
+        logger.error(f"Error generating field description: {str(e)}")
+        # Fallback description if generation fails
+        return f"Analysis and insights related to {field_name} in financial & trading markets"
+    
+
+
+
 # @app.post("/api/research")
 # async def research(request: ResearchRequest):
 #     try:
