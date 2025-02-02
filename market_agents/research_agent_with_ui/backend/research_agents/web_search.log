@@ -4928,3 +4928,602 @@ tools_storage_path
 assets.0.ticker
   Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
     For further information visit https://errors.pydantic.dev/2.8/v/string_type
+2025-01-30 15:25:27,645 - utils - INFO - Received research request: Top memecoins to invest in
+2025-01-30 15:25:31,254 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top memecoins to invest in
+                            Generated 2 queries:
+                              1. latest memecoin investment opportunities January 2025
+  2. top performing memecoins Q4 2024
+                            ==============================
+                            
+2025-01-30 15:25:31,254 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin investment opportunities January 2025
+                                
+2025-01-30 15:25:34,198 - utils - INFO - 
+                                URLs found for query "latest memecoin investment opportunities January 2025":
+                                - https://techpoint.africa/2025/01/30/the-best-meme-coins-to-invest-in-for-2025-6-cryptos-that-are-poised-for-explosive-growth-in-the-coming-year/
+- https://www.tribuneindia.com/news/impact-feature/top-10-meme-coins-to-invest-in-january-2025-with-100x-potential-big-gains-ahead/
+- https://www.analyticsinsight.net/cryptocurrency-analytics-insight/maximize-your-profits-in-january-2025-with-these-5-top-meme-coins
+- https://techpoint.africa/2025/01/29/this-0-000043-meme-coin-could-explode-to-0-008-arctic-pablos-insane-potential-plus-pudgy-penguins-massive-surge-trumps-unstoppable-momentum/
+- https://www.tribuneindia.com/news/impact-feature/best-new-meme-coins-to-join-in-january-2025-btfds-90-apy-staking-pudgy-penguins-340m-market-cap-and-dogecoins-3-price-prediction/
+                                
+2025-01-30 15:28:27,891 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 15:28:27,892 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top performing memecoins Q4 2024
+                                
+2025-01-30 15:28:31,971 - utils - INFO - 
+                                URLs found for query "top performing memecoins Q4 2024":
+                                - https://crypto.news/best-10-meme-coins/
+- https://lbanklabs.medium.com/lbank-labs-top-10-trending-memecoins-of-2024-086ff6115d66
+- https://cryptobriefing.com/meme-trading-volume-q4-2024/
+- https://coingape.com/meme-coin-frenzy-q4-2024-hits-150b-market-cap-with-436-growth/
+- https://www.binance.com/en/square/post/15403948179522
+                                
+2025-01-30 15:29:26,058 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 15:29:36,765 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: None
+                    
+2025-01-30 15:58:04,148 - utils - INFO - Received research request: Top meme coins to invest
+2025-01-30 15:58:06,958 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top meme coins to invest
+                            Generated 2 queries:
+                              1. latest meme coins investment opportunities January 2025
+  2. top meme coins performance trends Q4 2024
+                            ==============================
+                            
+2025-01-30 15:58:06,958 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest meme coins investment opportunities January 2025
+                                
+2025-01-30 15:58:10,086 - utils - INFO - 
+                                URLs found for query "latest meme coins investment opportunities January 2025":
+                                - https://techpoint.africa/2025/01/30/the-best-meme-coins-to-invest-in-for-2025-6-cryptos-that-are-poised-for-explosive-growth-in-the-coming-year/
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://www.tribuneindia.com/news/impact-feature/best-new-meme-coins-to-join-in-january-2025-btfds-90-apy-staking-pudgy-penguins-340m-market-cap-and-dogecoins-3-price-prediction/
+- https://techpoint.africa/2025/01/29/this-0-000043-meme-coin-could-explode-to-0-008-arctic-pablos-insane-potential-plus-pudgy-penguins-massive-surge-trumps-unstoppable-momentum/
+- https://www.analyticsinsight.net/cryptocurrency-analytics-insight/maximize-your-profits-in-january-2025-with-these-5-top-meme-coins
+                                
+2025-01-30 16:00:04,182 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 16:00:04,182 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top meme coins performance trends Q4 2024
+                                
+2025-01-30 16:00:07,594 - utils - INFO - 
+                                URLs found for query "top meme coins performance trends Q4 2024":
+                                - https://coingape.com/meme-coin-frenzy-q4-2024-hits-150b-market-cap-with-436-growth/
+- https://lbanklabs.medium.com/lbank-labs-top-10-trending-memecoins-of-2024-086ff6115d66
+- https://crypto.news/best-10-meme-coins/
+- https://bdc.consulting/insights/MarketResearch/memecoins
+- https://bitcoinist.com/coingecko-meme-coins-are-1-trend-in-2024/
+                                
+2025-01-30 16:01:53,094 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 16:02:04,209 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: None
+                    
+2025-01-30 16:13:21,237 - utils - INFO - Received research request: top memecoins
+2025-01-30 16:13:26,046 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: top memecoins
+                            Generated 2 queries:
+                              1. latest memecoin trends January 2025
+  2. top performing memecoins Q4 2024
+                            ==============================
+                            
+2025-01-30 16:13:26,046 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends January 2025
+                                
+2025-01-30 16:13:30,114 - utils - INFO - 
+                                URLs found for query "latest memecoin trends January 2025":
+                                - https://techpoint.africa/2025/01/29/10-top-meme-coins-in-january-2025-you-need-to-know-about-unlocking-the-potential-of-todays-hottest-cryptos/
+- https://www.tribuneindia.com/news/impact-feature/top-10-meme-coins-to-invest-in-january-2025-with-100x-potential-big-gains-ahead/
+- https://www.kraken.com/learn/top-memecoins-2025
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://techpoint.africa/2025/01/28/3-trending-meme-coins-for-2025-dogevspepe-a-viral-mystery-presale-thats-about-to-break-records/
+                                
+2025-01-30 16:15:34,040 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 16:15:34,040 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top performing memecoins Q4 2024
+                                
+2025-01-30 16:15:37,219 - utils - INFO - 
+                                URLs found for query "top performing memecoins Q4 2024":
+                                - https://crypto.news/best-10-meme-coins/
+- https://lbanklabs.medium.com/lbank-labs-top-10-trending-memecoins-of-2024-086ff6115d66
+- https://cryptobriefing.com/meme-trading-volume-q4-2024/
+- https://www.binance.com/en/square/post/15403948179522
+- https://m.economictimes.com/wealth/invest/three-memecoin-price-predictions-for-q4-2024/articleshow/114418729.cms
+                                
+2025-01-30 16:17:15,776 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 16:17:26,913 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: None
+                    
+2025-01-30 16:37:13,564 - utils - INFO - Received research request: top memecoins to invest on
+2025-01-30 16:37:16,024 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: top memecoins to invest on
+                            Generated 3 queries:
+                              1. latest memecoin investment opportunities January 2025
+  2. top performing memecoins Q4 2024
+  3. recent memecoin market trends January 2025
+                            ==============================
+                            
+2025-01-30 16:37:16,024 - utils - INFO - 
+                                === Processing Query 1/3 ===
+                                Query: latest memecoin investment opportunities January 2025
+                                
+2025-01-30 16:37:19,353 - utils - INFO - 
+                                URLs found for query "latest memecoin investment opportunities January 2025":
+                                - https://techpoint.africa/2025/01/30/the-best-meme-coins-to-invest-in-for-2025-6-cryptos-that-are-poised-for-explosive-growth-in-the-coming-year/
+- https://www.tribuneindia.com/news/impact-feature/top-10-meme-coins-to-invest-in-january-2025-with-100x-potential-big-gains-ahead/
+- https://www.analyticsinsight.net/cryptocurrency-analytics-insight/maximize-your-profits-in-january-2025-with-these-5-top-meme-coins
+- https://techpoint.africa/2025/01/29/this-0-000043-meme-coin-could-explode-to-0-008-arctic-pablos-insane-potential-plus-pudgy-penguins-massive-surge-trumps-unstoppable-momentum/
+- https://www.tribuneindia.com/news/impact-feature/best-new-meme-coins-to-join-in-january-2025-btfds-90-apy-staking-pudgy-penguins-340m-market-cap-and-dogecoins-3-price-prediction/
+                                
+2025-01-30 16:39:34,821 - utils - ERROR - Error in summary generation: 'WebSearchAgent' object has no attribute '_format_custom_schemas_prompt'
+2025-01-30 16:39:34,823 - utils - ERROR - Error processing search query: 1 validation error for MarketResearch
+analysis_type
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2025-01-30 16:39:34,823 - utils - ERROR - Search process error: 1 validation error for MarketResearch
+analysis_type
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2025-01-30 16:39:34,823 - utils - ERROR - Research error: 
+2025-01-30 16:48:57,497 - utils - INFO - Received research request: top memecoin to invest on
+2025-01-30 16:49:00,303 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: top memecoin to invest on
+                            Generated 2 queries:
+                              1. latest memecoin investment opportunities January 2025
+  2. top performing memecoins Q1 2025
+                            ==============================
+                            
+2025-01-30 16:49:00,303 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin investment opportunities January 2025
+                                
+2025-01-30 16:49:03,790 - utils - INFO - 
+                                URLs found for query "latest memecoin investment opportunities January 2025":
+                                - https://techpoint.africa/2025/01/30/the-best-meme-coins-to-invest-in-for-2025-6-cryptos-that-are-poised-for-explosive-growth-in-the-coming-year/
+- https://www.tribuneindia.com/news/impact-feature/top-10-meme-coins-to-invest-in-january-2025-with-100x-potential-big-gains-ahead/
+- https://www.analyticsinsight.net/cryptocurrency-analytics-insight/top-5-new-meme-coins-to-invest-in-january-2025-unlock-massive-gains-with-btfds-referral-program
+- https://techpoint.africa/2025/01/29/this-0-000043-meme-coin-could-explode-to-0-008-arctic-pablos-insane-potential-plus-pudgy-penguins-massive-surge-trumps-unstoppable-momentum/
+- https://www.tribuneindia.com/news/impact-feature/best-new-meme-coins-to-join-in-january-2025-btfds-90-apy-staking-pudgy-penguins-340m-market-cap-and-dogecoins-3-price-prediction/
+                                
+2025-01-30 16:51:52,177 - utils - ERROR - Error in summary generation: WebSearchAgent._format_custom_schemas_prompt() missing 1 required positional argument: 'custom_schemas'
+2025-01-30 16:51:52,177 - utils - ERROR - Error processing search query: 1 validation error for MarketResearch
+analysis_type
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2025-01-30 16:51:52,177 - utils - ERROR - Search process error: 1 validation error for MarketResearch
+analysis_type
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2025-01-30 16:51:52,177 - utils - ERROR - Research error: 
+2025-01-30 16:56:14,433 - utils - INFO - Received research request: top memecoins
+2025-01-30 16:56:16,579 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: top memecoins
+                            Generated 2 queries:
+                              1. latest memecoin trends January 2025
+  2. top performing memecoins Q4 2024
+                            ==============================
+                            
+2025-01-30 16:56:16,580 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends January 2025
+                                
+2025-01-30 16:56:21,382 - utils - INFO - 
+                                URLs found for query "latest memecoin trends January 2025":
+                                - https://techpoint.africa/2025/01/29/10-top-meme-coins-in-january-2025-you-need-to-know-about-unlocking-the-potential-of-todays-hottest-cryptos/
+- https://www.tribuneindia.com/news/impact-feature/top-10-meme-coins-to-invest-in-january-2025-with-100x-potential-big-gains-ahead/
+- https://www.kraken.com/learn/top-memecoins-2025
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://techpoint.africa/2025/01/28/3-trending-meme-coins-for-2025-dogevspepe-a-viral-mystery-presale-thats-about-to-break-records/
+                                
+2025-01-30 16:59:31,916 - utils - ERROR - Error in summary generation: WebSearchAgent._format_custom_schemas_prompt() missing 1 required positional argument: 'custom_schemas'
+2025-01-30 16:59:31,916 - utils - ERROR - Error processing search query: 1 validation error for MarketResearch
+analysis_type
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2025-01-30 16:59:31,916 - utils - ERROR - Search process error: 1 validation error for MarketResearch
+analysis_type
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2025-01-30 16:59:31,916 - utils - ERROR - Research error: 
+2025-01-30 17:00:14,492 - utils - INFO - Received research request: top memecoins to invest on
+2025-01-30 17:00:16,079 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: top memecoins to invest on
+                            Generated 3 queries:
+                              1. latest memecoin investment opportunities January 2025
+  2. top performing memecoins Q4 2024
+  3. current trends in memecoin investments early 2025
+                            ==============================
+                            
+2025-01-30 17:00:16,079 - utils - INFO - 
+                                === Processing Query 1/3 ===
+                                Query: latest memecoin investment opportunities January 2025
+                                
+2025-01-30 17:00:19,193 - utils - INFO - 
+                                URLs found for query "latest memecoin investment opportunities January 2025":
+                                - https://techpoint.africa/2025/01/30/the-best-meme-coins-to-invest-in-for-2025-6-cryptos-that-are-poised-for-explosive-growth-in-the-coming-year/
+- https://www.tribuneindia.com/news/impact-feature/top-10-meme-coins-to-invest-in-january-2025-with-100x-potential-big-gains-ahead/
+- https://www.analyticsinsight.net/cryptocurrency-analytics-insight/top-5-new-meme-coins-to-invest-in-january-2025-unlock-massive-gains-with-btfds-referral-program
+- https://techpoint.africa/2025/01/29/this-0-000043-meme-coin-could-explode-to-0-008-arctic-pablos-insane-potential-plus-pudgy-penguins-massive-surge-trumps-unstoppable-momentum/
+- https://www.tribuneindia.com/news/impact-feature/best-new-meme-coins-to-join-in-january-2025-btfds-90-apy-staking-pudgy-penguins-340m-market-cap-and-dogecoins-3-price-prediction/
+                                
+2025-01-30 17:03:44,589 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 17:03:44,590 - utils - INFO - 
+                                === Processing Query 2/3 ===
+                                Query: top performing memecoins Q4 2024
+                                
+2025-01-30 17:03:48,122 - utils - INFO - 
+                                URLs found for query "top performing memecoins Q4 2024":
+                                - https://crypto.news/best-10-meme-coins/
+- https://lbanklabs.medium.com/lbank-labs-top-10-trending-memecoins-of-2024-086ff6115d66
+- https://cryptobriefing.com/meme-trading-volume-q4-2024/
+- https://m.economictimes.com/wealth/invest/three-memecoin-price-predictions-for-q4-2024/articleshow/114418729.cms
+- https://www.binance.com/en/square/post/15403948179522
+                                
+2025-01-30 17:05:31,853 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 17:05:31,854 - utils - INFO - 
+                                === Processing Query 3/3 ===
+                                Query: current trends in memecoin investments early 2025
+                                
+2025-01-30 17:05:35,435 - utils - INFO - 
+                                URLs found for query "current trends in memecoin investments early 2025":
+                                - https://techpoint.africa/2025/01/30/the-best-meme-coins-to-invest-in-for-2025-6-cryptos-that-are-poised-for-explosive-growth-in-the-coming-year/
+- https://www.nasdaq.com/articles/1-huge-new-reason-meme-coins-will-go-higher-2025
+- https://www.tribuneindia.com/news/impact-feature/top-10-meme-coins-to-invest-in-january-2025-with-100x-potential-big-gains-ahead/
+- https://www.kraken.com/learn/top-memecoins-2025
+- https://www.linkedin.com/pulse/cryptocurrency-market-trends-2025-bitcoin-memecoins-regulation-esklf
+                                
+2025-01-30 17:07:29,881 - utils - INFO - 
+                            Query 3 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 17:07:50,212 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 3
+                    Total URLs Processed: 6
+                    Total Successful Extractions: 15
+                    Custom Fields Analyzed: None
+                    
+2025-01-30 17:16:22,418 - utils - INFO - Received research request: Top memecoins to invest on
+2025-01-30 17:16:24,932 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: Top memecoins to invest on
+                            Generated 3 queries:
+                              1. latest memecoin investment opportunities January 2025
+  2. top performing memecoins Q4 2024
+  3. recent trends in memecoin market January 2025
+                            ==============================
+                            
+2025-01-30 17:16:24,932 - utils - INFO - 
+                                === Processing Query 1/3 ===
+                                Query: latest memecoin investment opportunities January 2025
+                                
+2025-01-30 17:16:27,994 - utils - INFO - 
+                                URLs found for query "latest memecoin investment opportunities January 2025":
+                                - https://techpoint.africa/2025/01/30/the-best-meme-coins-to-invest-in-for-2025-6-cryptos-that-are-poised-for-explosive-growth-in-the-coming-year/
+- https://www.tribuneindia.com/news/impact-feature/top-10-meme-coins-to-invest-in-january-2025-with-100x-potential-big-gains-ahead/
+- https://www.analyticsinsight.net/cryptocurrency-analytics-insight/top-5-new-meme-coins-to-invest-in-january-2025-unlock-massive-gains-with-btfds-referral-program
+- https://techpoint.africa/2025/01/29/this-0-000043-meme-coin-could-explode-to-0-008-arctic-pablos-insane-potential-plus-pudgy-penguins-massive-surge-trumps-unstoppable-momentum/
+- https://www.tribuneindia.com/news/impact-feature/best-new-meme-coins-to-join-in-january-2025-btfds-90-apy-staking-pudgy-penguins-340m-market-cap-and-dogecoins-3-price-prediction/
+                                
+2025-01-30 17:18:37,277 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:18:37,278 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:18:37,278 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:18:37,278 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:18:37,278 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:18:37,278 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 17:18:37,278 - utils - INFO - 
+                                === Processing Query 2/3 ===
+                                Query: top performing memecoins Q4 2024
+                                
+2025-01-30 17:18:40,908 - utils - INFO - 
+                                URLs found for query "top performing memecoins Q4 2024":
+                                - https://crypto.news/best-10-meme-coins/
+- https://lbanklabs.medium.com/lbank-labs-top-10-trending-memecoins-of-2024-086ff6115d66
+- https://cryptobriefing.com/meme-trading-volume-q4-2024/
+- https://m.economictimes.com/wealth/invest/three-memecoin-price-predictions-for-q4-2024/articleshow/114418729.cms
+- https://www.binance.com/en/square/post/15403948179522
+                                
+2025-01-30 17:19:55,325 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:19:55,326 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:19:55,326 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:19:55,326 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:19:55,326 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:19:55,326 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 17:19:55,326 - utils - INFO - 
+                                === Processing Query 3/3 ===
+                                Query: recent trends in memecoin market January 2025
+                                
+2025-01-30 17:19:59,024 - utils - INFO - 
+                                URLs found for query "recent trends in memecoin market January 2025":
+                                - https://techpoint.africa/2025/01/29/10-top-meme-coins-in-january-2025-you-need-to-know-about-unlocking-the-potential-of-todays-hottest-cryptos/
+- https://www.kraken.com/learn/top-memecoins-2025
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://www.tribuneindia.com/news/impact-feature/top-10-meme-coins-to-invest-in-january-2025-with-100x-potential-big-gains-ahead/
+- https://www.binance.com/en/square/post/18967136298338
+                                
+2025-01-30 17:21:25,344 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:25,344 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:25,344 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:25,344 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:25,344 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:25,344 - utils - INFO - 
+                            Query 3 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 17:21:45,504 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 3
+                    Total URLs Processed: 6
+                    Total Successful Extractions: 15
+                    Custom Fields Analyzed: None
+                    
+2025-01-30 17:21:45,505 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:45,505 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:45,505 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:45,505 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:45,506 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:45,506 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:45,506 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:45,506 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:45,506 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:45,506 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:45,506 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:45,506 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:45,506 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:45,506 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:21:45,506 - utils - ERROR - Error in AI summary generation: cannot access local variable 'custom_fields_prompt' where it is not associated with a value
+2025-01-30 17:24:03,803 - utils - INFO - Received research request: bitcoins current price
+2025-01-30 17:24:05,967 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: bitcoins current price
+                            Generated 2 queries:
+                              1. current Bitcoin price analysis January 2025
+  2. latest Bitcoin market trends Q1 2025
+                            ==============================
+                            
+2025-01-30 17:24:05,967 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: current Bitcoin price analysis January 2025
+                                
+2025-01-30 17:24:09,259 - utils - INFO - 
+                                URLs found for query "current Bitcoin price analysis January 2025":
+                                - https://www.binance.com/square/post/19573205200449
+- https://investinghaven.com/crypto-blockchain/bitcoin-buy-signal-and-confirmation-on-the-btc-chart-in-january-2025/
+- https://www.financemagnates.com/cryptocurrency/why-is-bitcoin-going-up-today-btc-price-surges-after-trump-media-and-fed-decisions/
+- https://www.statista.com/statistics/326707/bitcoin-price-index/
+- https://www.statista.com/statistics/377382/bitcoin-market-capitalization/
+                                
+2025-01-30 17:25:00,671 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 17:25:00,671 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: latest Bitcoin market trends Q1 2025
+                                
+2025-01-30 17:25:03,850 - utils - INFO - 
+                                URLs found for query "latest Bitcoin market trends Q1 2025":
+                                - https://www.coindesk.com/coindesk-indices/2025/01/29/bitcoin-market-projection-for-2025
+- https://www.cmegroup.com/newsletters/quarterly-cryptocurrencies-report/2025-q1-cryptocurrency-insights.html
+- https://markets.businessinsider.com/news/currencies/bitcoin-market-projection-for-2025-1034284225
+- https://m.economictimes.com/markets/cryptocurrency/whats-next-for-bitcoin-in-2025-experts-prediction-and-insights/articleshow/116904281.cms
+- https://www.equiti.com/sc-en/news/global-macro-analysis/bitcoin-outlook-q1-2025/
+                                
+2025-01-30 17:28:31,073 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 17:28:43,252 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: None
+                    
+2025-01-30 17:46:37,532 - utils - INFO - Received research request: bitcoins current price
+2025-01-30 17:46:40,337 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: bitcoins current price
+                            Generated 2 queries:
+                              1. current bitcoin price January 2025
+  2. recent bitcoin price trends last 30 days
+                            ==============================
+                            
+2025-01-30 17:46:40,337 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: current bitcoin price January 2025
+                                
+2025-01-30 17:46:44,913 - utils - INFO - 
+                                URLs found for query "current bitcoin price January 2025":
+                                - https://www.statista.com/statistics/326707/bitcoin-price-index/
+- https://www.binance.com/en/price-prediction/bitcoin
+- https://changelly.com/blog/bitcoin-price-prediction/
+- https://changelly.com/blog/bitcoin-price-prediction/#Bitcoin-Overview
+- https://changelly.com/blog/bitcoin-price-prediction/#What-Affects-the-Value-of-Bitcoin
+                                
+2025-01-30 17:48:25,558 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 17:48:25,558 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent bitcoin price trends last 30 days
+                                
+2025-01-30 17:48:28,672 - utils - INFO - 
+                                URLs found for query "recent bitcoin price trends last 30 days":
+                                - https://www.investing.com/crypto/bitcoin/historical-data
+- https://in.investing.com/crypto/bitcoin/historical-data
+- https://www.investing.com/crypto/bitcoin/bitcoin-futures-historical-data
+- https://www.investing.com/crypto/bitcoin/markets
+- https://www.investing.com/crypto/bitcoin/btc-usd-historical-data
+                                
+2025-01-30 17:48:53,091 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 17:49:05,379 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: None
+                    
+2025-01-30 17:53:45,361 - utils - INFO - Received research request: top memecoins to invest on
+2025-01-30 17:53:45,374 - utils - ERROR - Research error: object.__init__() takes exactly one argument (the instance to initialize)
+2025-01-30 17:55:08,964 - utils - INFO - Received research request: top memecoins to invest on
+2025-01-30 17:55:11,506 - utils - INFO - 
+                            === Search Process Starting ===
+                            Original Query: top memecoins to invest on
+                            Generated 3 queries:
+                              1. latest memecoin investment opportunities January 2025
+  2. top performing memecoins Q4 2024
+  3. recent trends in memecoin market January 2025
+                            ==============================
+                            
+2025-01-30 17:55:11,507 - utils - INFO - 
+                                === Processing Query 1/3 ===
+                                Query: latest memecoin investment opportunities January 2025
+                                
+2025-01-30 17:55:15,016 - utils - INFO - 
+                                URLs found for query "latest memecoin investment opportunities January 2025":
+                                - https://techpoint.africa/2025/01/30/the-best-meme-coins-to-invest-in-for-2025-6-cryptos-that-are-poised-for-explosive-growth-in-the-coming-year/
+- https://www.tribuneindia.com/news/impact-feature/top-10-meme-coins-to-invest-in-january-2025-with-100x-potential-big-gains-ahead/
+- https://www.analyticsinsight.net/cryptocurrency-analytics-insight/maximize-your-profits-in-january-2025-with-these-5-top-meme-coins
+- https://techpoint.africa/2025/01/29/this-0-000043-meme-coin-could-explode-to-0-008-arctic-pablos-insane-potential-plus-pudgy-penguins-massive-surge-trumps-unstoppable-momentum/
+- https://www.tribuneindia.com/news/impact-feature/best-new-meme-coins-to-join-in-january-2025-btfds-90-apy-staking-pudgy-penguins-340m-market-cap-and-dogecoins-3-price-prediction/
+                                
+2025-01-30 17:58:50,001 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 17:58:50,002 - utils - INFO - 
+                                === Processing Query 2/3 ===
+                                Query: top performing memecoins Q4 2024
+                                
+2025-01-30 17:58:53,361 - utils - INFO - 
+                                URLs found for query "top performing memecoins Q4 2024":
+                                - https://crypto.news/best-10-meme-coins/
+- https://lbanklabs.medium.com/lbank-labs-top-10-trending-memecoins-of-2024-086ff6115d66
+- https://cryptobriefing.com/meme-trading-volume-q4-2024/
+- https://m.economictimes.com/wealth/invest/three-memecoin-price-predictions-for-q4-2024/articleshow/114418729.cms
+- https://www.binance.com/en/square/post/15403948179522
+                                
+2025-01-30 18:01:28,222 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 18:01:28,223 - utils - INFO - 
+                                === Processing Query 3/3 ===
+                                Query: recent trends in memecoin market January 2025
+                                
+2025-01-30 18:01:31,299 - utils - INFO - 
+                                URLs found for query "recent trends in memecoin market January 2025":
+                                - https://techpoint.africa/2025/01/29/10-top-meme-coins-in-january-2025-you-need-to-know-about-unlocking-the-potential-of-todays-hottest-cryptos/
+- https://www.kraken.com/learn/top-memecoins-2025
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://www.tribuneindia.com/news/impact-feature/top-10-meme-coins-to-invest-in-january-2025-with-100x-potential-big-gains-ahead/
+- https://www.binance.com/en/square/post/18967136298338
+                                
+2025-01-30 18:03:34,639 - utils - INFO - 
+                            Query 3 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-01-30 18:03:54,619 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 3
+                    Total URLs Processed: 6
+                    Total Successful Extractions: 15
+                    Custom Fields Analyzed: None
+                    

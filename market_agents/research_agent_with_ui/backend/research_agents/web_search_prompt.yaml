@@ -338,6 +338,8 @@ analysis_template: |
   3. Market Impact Analysis
   4. Trading Implications
   5. Content-Specific Analysis (Tables/Charts/Text)
+  6. Custom field analysis:
+    {custom_fields_analysis}
 
   Format the response as a structured JSON object containing all analyses.
 

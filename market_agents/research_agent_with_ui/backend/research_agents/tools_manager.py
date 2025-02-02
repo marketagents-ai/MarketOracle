@@ -56,7 +56,11 @@ class ToolsManager:
 
     def add_tool(self, tool_name: str, tool_config: Dict[str, Any]) -> None:
         """Add or update a tool"""
+        from research_schemas import validate_schema  
         try:
+            if 'schema' in tool_config:
+                # Fixed the missing closing parenthesis
+                validate_schema(tool_config['schema'])
             # Ensure required fields
             tool_config.update({
                 "name": tool_name,

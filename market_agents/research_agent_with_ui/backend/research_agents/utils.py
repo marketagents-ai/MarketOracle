@@ -107,7 +107,7 @@ def convert_to_number(value: str) -> float:
 
 def get_default_summary(has_data: bool = False) -> Dict[str, Any]:
     """Get a default summary structure when analysis fails."""
-    return {
+    base_summary =  {
         "NEWS_ANALYSIS": {
             "key_developments": "Analysis failed - using default summary",
             "market_impact": "Analysis failed - using default summary",
@@ -198,6 +198,28 @@ def get_default_summary(has_data: bool = False) -> Dict[str, Any]:
             }
         }
     }
+    base_summary["CUSTOM_METRICS"] = {
+        "roi_percentage": {
+            "prediction": "Analysis pending",
+            "confidence": "0%",
+            "factors": [],
+            "timeline": "Short-term"
+        },
+        "market_impact": {
+            "prediction": "Analysis pending",
+            "affected_sectors": [],
+            "magnitude": "Unknown",
+            "duration": "Short-term"
+        },
+        "risk_assessment": {
+            "level": "Unknown",
+            "factors": [],
+            "mitigation": "Analysis pending"
+        }
+    }
+    
+    return base_summary
+    
 
 
 def structure_text_response(content: str, has_data: bool = False) -> Dict[str, Any]:

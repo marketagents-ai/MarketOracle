@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List, Optional,Any,Dict
 from enum import Enum
 from pydantic import BaseModel, Field
 
@@ -27,6 +27,10 @@ class AssetAnalysis(BaseModel):
     kpis: List[str] = Field(default_factory=list, description="Key performance indicators (quantitative) for the asset.")
     action: Optional[str] = Field(None, description="Recommended portfolio action (e.g., Add Long, Close Short).")
     sources: List[str] = Field(default_factory=list, description="Information sources (e.g., brokers, analysts).")
+    custom_fields: Dict[str, Any] = {}  # Store custom field analysis
+
+    class Config:
+        extra = "allow" 
 
 class SectorInfo(BaseModel):
     name: str = Field(..., description="Name of the sector or industry.")
