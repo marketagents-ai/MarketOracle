@@ -5,34 +5,56 @@ import type { ResearchData } from '../types/research';
 // Change the API_URL definition
 const API_URL = 'http://localhost:8000'; 
 
+
+
 export const fetchResearch = async (
   query: string, 
   customSchemas: any[] = []
 ): Promise<ResearchData[]> => {
   try {
-      const response = await fetch(`${API_URL}/api/research`, {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-              query,
-              custom_schemas: customSchemas
-          }),
-      });
+    // Get enabled tools from localStorage
+    const savedTools = localStorage.getItem('customTools');
+    const tools = savedTools ? JSON.parse(savedTools) : [];
+    const enabledTools = tools.filter((tool: any) => tool.enabled).map((tool: any) => ({
+      name: tool.name,
+      description: tool.description,
+      schema_definition: tool.schema
+    }));
 
-      if (!response.ok) {
-          const errorData = await response.json();
-          throw new APIError(errorData.detail || `Error: ${response.status}`, response.status);
-      }
+    console.log('Query being sent:', query);
+    console.log('Enabled tools from localStorage:', enabledTools);
+    console.log('Query being sent:', query);
+    console.log('Custom schemas before request:', JSON.stringify(customSchemas, null, 2));
+    console.log('Custom schemas type:', typeof customSchemas);
 
-      return await response.json();
+    const requestBody = {
+      query,
+      custom_schemas: enabledTools
+    };
+
+    console.log('Full request body:', JSON.stringify(requestBody, null, 2));
+
+    const response = await fetch(`${API_URL}/api/research`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(requestBody),
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new APIError(errorData.detail || `Error: ${response.status}`, response.status);
+    }
+
+    const data = await response.json();
+    console.log('Research API response:', data);
+    return data;
   } catch (error) {
-      console.error('Research API Error:', error);
-      throw error instanceof APIError ? error : new APIError('Failed to connect to research service');
+    console.error('Research API Error:', error);
+    throw error instanceof APIError ? error : new APIError('Failed to connect to research service');
   }
 };
-
 export const sendCustomMessage = async (message: string): Promise<any> => {
   try {
     const response = await fetch(`${API_URL}/api/custom`, {
@@ -108,6 +130,32 @@ export const fetchTools = async () => {
   } catch (error) {
     console.error('Error fetching tools:', error);
     throw error instanceof APIError ? error : new APIError('Failed to fetch tools');
+  }
+};
+export const submitResearch = async (query: string): Promise<ResearchData[]> => {
+  try {
+    const enabledSchemas = getEnabledSchemas();
+    
+    const response = await fetch(`${API_URL}/api/research`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        query,
+        customSchemas: enabledSchemas
+      }),
+    });
+
+    if (!response.ok) {
+      throw new APIError('Research request failed');
+    }
+
+    const data = await response.json();
+    return data;
+    
+  } catch (error) {
+    throw error instanceof APIError ? error : new APIError('Failed to connect to research service');
   }
 };
 

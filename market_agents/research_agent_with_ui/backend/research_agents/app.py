@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException, Form, File, UploadFile  # Add Form, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import List, Optional, Dict, Any
 from datetime import datetime
 from fastapi.responses import HTMLResponse
@@ -44,10 +44,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-class ResearchRequest(BaseModel):
-    query: str
-    urls: Optional[List[str]] = None
-    custom_schemas: Optional[List[Dict[str, Any]]] = None 
+
 
 @app.get("/", response_class=HTMLResponse)
 async def home():
@@ -470,96 +467,88 @@ async def toggle_tool(tool_id: str, enabled: bool):
     except Exception as e:
         logger.error(f"Error toggling tool: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
-    
+
+class CustomSchema(BaseModel):
+    name: str
+    description: str
+    schema_definition: Dict[str, Any]
+
+class ResearchRequest(BaseModel):
+    query: str
+    custom_schemas: List[CustomSchema] = Field(default_factory=list)
+
 @app.post("/api/research")
 async def research(request: ResearchRequest):
-    """Process a research query and return analyzed results"""
-    logger.info(f"Received research request: {request.query}")
     try:
-        if not request.query.strip():
-            raise HTTPException(status_code=400, detail="Query cannot be empty")
-            
+        logger.info("Received research request")
+        logger.info(f"Query: {request.query}")
+        logger.info(f"Custom schemas received: {[schema.dict() for schema in request.custom_schemas]}")
+        
+        # Load config and set up agent
         config_data, prompts = load_config()
         config_data["query"] = request.query
-        if request.urls:
-            config_data["urls"] = request.urls
-            
-        config = WebSearchConfig(**config_data)
-
-        # Generate descriptions for custom schemas if missing
-        if request.custom_schemas:
-            enhanced_schemas = []
-            for schema in request.custom_schemas:
-                if not schema.get('description'):
-                    description = await generate_field_description(schema['name'])
-                    schema['description'] = description
-                enhanced_schemas.append(schema)
-            
-            logger.info(f"Enhanced schemas with descriptions: {enhanced_schemas}")
-        else:
-            enhanced_schemas = None
         
-        # Initialize agent with enhanced schemas
+        # Process custom schemas into the format expected by WebSearchAgent
+        custom_schemas = []
+        if request.custom_schemas:
+            for schema in request.custom_schemas:
+                processed_schema = {
+                    "name": schema.name,
+                    "description": schema.description,
+                    "schema_definition": {
+                        "type": "object",
+                        "properties": {
+                            schema.name: {
+                                "type": "string",
+                                "description": schema.description
+                            }
+                        }
+                    }
+                }
+                custom_schemas.append(processed_schema)
+                
+        logger.info(f"Processed custom schemas: {json.dumps(custom_schemas, indent=2)}")
+        
+        # Initialize WebSearchAgent with config and schemas
+        config = WebSearchConfig(**config_data)
         agent = WebSearchAgent(
-            config=config, 
+            config=config,
             prompts=prompts,
-            custom_schemas=enhanced_schemas
+            custom_schemas=custom_schemas
         )
         
-        try:
-            await agent.process_search_query(request.query)
-        except Exception as search_error:
-            logger.error(f"Search process error: {str(search_error)}")
-            raise HTTPException(status_code=500, detail="Search process failed")
+        # Process the search query
+        await agent.process_search_query(request.query)
         
+        # Format results
         formatted_results = []
         for result in agent.results:
             if result:
-                try:
-                    # Generate standard summary
-                    summary = await agent.generate_ai_summary(
-                        result.url,
-                        {"text": result.content},
-                        "Contains tables/charts" if hasattr(result, 'has_data') and result.has_data else "Text only"
-                    )
-
-                    # Generate custom field analysis with enhanced schemas
-                    if enhanced_schemas and isinstance(summary, dict) and 'assets' in summary and summary['assets']:
-                        for asset in summary['assets']:
-                            custom_fields = {}
-                            for schema in enhanced_schemas:
-                                field_name = schema['name'].lower()
-                                custom_analysis = await agent._generate_custom_field_analysis(
-                                    result.content,
-                                    schema['name'],
-                                    schema['description']  # Using enhanced description
-                                )
-                                custom_fields[field_name] = custom_analysis
-                            
-                            asset['custom_fields'] = custom_fields
-
-                    formatted_result = {
-                        "url": result.url,
-                        "title": result.title,
-                        "content": result.content,
-                        "timestamp": result.timestamp.isoformat(),
-                        "status": result.status,
-                        "summary": summary,
-                        "agent_id": result.agent_id,
-                        "extraction_method": result.extraction_method
-                    }
-                    
-                    formatted_results.append(formatted_result)
-                    
-                except Exception as e:
-                    logger.error(f"Error generating summary for result: {str(e)}")
-                    continue
+                formatted_result = {
+                    "url": result.url,
+                    "title": result.title,
+                    "content": result.content,
+                    "timestamp": result.timestamp.isoformat(),
+                    "status": result.status,
+                    "summary": result.summary,
+                    "custom_fields": {}
+                }
+                
+                # Add custom fields if they exist in the summary
+                if result.summary and 'assets' in result.summary:
+                    for asset in result.summary['assets']:
+                        if 'custom_fields' in asset:
+                            formatted_result["custom_fields"] = asset['custom_fields']
+                
+                formatted_results.append(formatted_result)
         
+        logger.info(f"Returning {len(formatted_results)} results")
         return formatted_results
 
     except Exception as e:
         logger.error(f"Research error: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
+
 
 async def generate_field_description(field_name: str) -> str:
     """Generate a detailed description for a custom field based on its name."""
@@ -596,142 +585,6 @@ async def generate_field_description(field_name: str) -> str:
     
 
 
-
-# @app.post("/api/research")
-# async def research(request: ResearchRequest):
-#     try:
-#         config_data, prompts = load_config()
-#         config = WebSearchConfig(**config_data)
-#         agent = WebSearchAgent(config, prompts)
-        
-#         # Log the incoming request
-#         logger.info(f"Processing research query: {request.query}")
-        
-#         await agent.process_search_query(request.query)
-        
-#         # Log the raw results
-#         logger.info(f"Raw results: {agent.results}")
-        
-#         formatted_results = []
-#         for result in agent.results:
-#             if result:
-#                 try:
-#                     formatted_result = {
-#                         "url": str(result.url),
-#                         "title": str(result.title),
-#                         "content": str(result.content),
-#                         "timestamp": datetime.now().isoformat(),
-#                         "status": "success",
-#                         "summary": {
-#                             "summary": str(result.summary.get("summary", "")),
-#                             "key_points": result.summary.get("key_points", []),
-#                             "market_impact": {
-#                                 "short_term": "",
-#                                 "medium_term": "",
-#                                 "long_term": ""
-#                             },
-#                             "trading_implications": {
-#                                 "entry_points": [],
-#                                 "exit_targets": [],
-#                                 "stop_loss_levels": [],
-#                                 "position_sizing": ""
-#                             },
-#                             "technical_analysis": {
-#                                 "trend_direction": "",
-#                                 "support_levels": [],
-#                                 "resistance_levels": [],
-#                                 "indicators": {}
-#                             },
-#                             "sentiment_analysis": {
-#                                 "overall_sentiment": "",
-#                                 "sentiment_score": "",
-#                                 "social_metrics": {
-#                                     "social_volume": "",
-#                                     "sentiment_trend": ""
-#                                 },
-#                                 "market_confidence": ""
-#                             },
-#                             "risk_assessment": {
-#                                 "risk_level": "",
-#                                 "risk_factors": [],
-#                                 "mitigation_strategies": [],
-#                                 "risk_reward_ratio": ""
-#                             },
-#                             "price_analysis": {
-#                                 "current_price": "",
-#                                 "target_prices": {
-#                                     "short_term": [],
-#                                     "medium_term": [],
-#                                     "long_term": []
-#                                 },
-#                                 "price_drivers": [],
-#                                 "volatility_assessment": ""
-#                             }
-#                         },
-#                         "agent_id": str(result.agent_id),
-#                         "extraction_method": str(result.extraction_method)
-#                     }
-#                     formatted_results.append(formatted_result)
-                    
-#                 except Exception as e:
-#                     logger.error(f"Error formatting result: {e}")
-#                     continue
-        
-#         # Log the formatted results
-#         logger.info(f"Formatted results: {formatted_results}")
-        
-#         if not formatted_results:
-#             return []
-            
-#         return formatted_results
-
-#     except Exception as e:
-#         logger.error(f"Research error: {str(e)}")
-#         raise HTTPException(status_code=500, detail=str(e))
-
-
-# @app.post("/api/research")
-# async def research(request: ResearchRequest):
-#     """Process a research query and return analyzed results"""
-#     logger.info(f"Received research request: {request.query}")
-#     try:
-#         if not request.query.strip():
-#             raise HTTPException(status_code=400, detail="Query cannot be empty")
-            
-#         config_data, prompts = load_config()
-#         config_data["query"] = request.query
-#         if request.urls:
-#             config_data["urls"] = request.urls
-            
-#         config = WebSearchConfig(**config_data)
-#         agent = WebSearchAgent(config, prompts)
-        
-#         # Add error handling for the search process
-#         try:
-#             await agent.process_search_query(request.query)
-#         except Exception as search_error:
-#             logger.error(f"Search process error: {str(search_error)}")
-#             raise HTTPException(status_code=500, detail="Search process failed")
-        
-#         formatted_results = []
-#         for result in agent.results:
-#             if result:
-#                 formatted_results.append({
-#                     "url": result.url,
-#                     "title": result.title,
-#                     "content": result.content,
-#                     "timestamp": result.timestamp.isoformat(),
-#                     "status": result.status,
-#                     "summary": result.summary,
-#                     "agent_id": result.agent_id,
-#                     "extraction_method": result.extraction_method
-#                 })
-        
-#         return formatted_results
-        
-#     except Exception as e:
-#         logger.error(f"Research error: {str(e)}")
-#         raise HTTPException(status_code=500, detail=str(e))
 
 def start():
     """Function to start the server when running directly"""

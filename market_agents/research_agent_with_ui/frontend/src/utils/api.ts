@@ -14,6 +14,26 @@ export const handleAPIError = (error: unknown): string => {
   }
   return 'An unexpected error occurred. Please try again.';
 };
+export const toggleCustomToolsAPI = async (enabled: boolean): Promise<void> => {
+  try {
+    const response = await fetch('http://localhost:8000/api/tools/toggle', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ enabled }),
+    });
+
+    if (!response.ok) {
+      throw new APIError('Failed to toggle custom tools', response.status);
+    }
+  } catch (error) {
+    if (error instanceof APIError) {
+      throw error;
+    }
+    throw new APIError('Network error while toggling custom tools');
+  }
+};
 
 // import { APIError } from '../utils/api';
 import type { ResearchData } from '../types/research';

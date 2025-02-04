@@ -23,29 +23,18 @@ export interface SchemaField {
   required?: boolean;
 }
 
-export interface CustomTool {
-  id: string;
-  name: string;
-  description: string;
-  enabled?: boolean;
-  schema: {
-    type: 'object';
-    properties: Record<string, {
-      type: SchemaField['type'];
-      required?: boolean;
-    }>;
-  };
-}
 
+export interface Tool {
+  id: string;
+  name: string;
+  description: string;
+  schema: any;
+  enabled: boolean;
+}
 export interface CustomTool {
   id: string;
   name: string;
   description: string;
-  schema: {
-    type: 'object';
-    properties: Record<string, {
-      type: SchemaField['type'];
-      required?: boolean;
-    }>;
-  };
-};
+  schema: Record<string, any>;
+  enabled: boolean;
+}

@@ -1,6 +1,6 @@
-from typing import List, Optional
+from typing import List, Optional, Dict, Any
 from enum import Enum
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, create_model
 
 class SearchQueries(BaseModel):
     """Schema for search query generation"""
@@ -27,6 +27,7 @@ class AssetAnalysis(BaseModel):
     kpis: List[str] = Field(default_factory=list, description="Key performance indicators (quantitative) for the asset.")
     action: Optional[str] = Field(None, description="Recommended portfolio action (e.g., Add Long, Close Short).")
     sources: List[str] = Field(default_factory=list, description="Information sources (e.g., brokers, analysts).")
+    custom_fields: Dict[str, str] = Field(default_factory=dict, description="Custom analysis fields")
 
 class SectorInfo(BaseModel):
     name: str = Field(..., description="Name of the sector or industry.")

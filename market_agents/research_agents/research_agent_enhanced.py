@@ -30,11 +30,17 @@ class WebSearchResult(BaseModel):
     agent_id: str
     extraction_method: str = "unknown"
 
-
 class WebSearchAgent:
-    def __init__(self, config, prompts: Dict):
+    def __init__(
+        self,
+        config: WebSearchConfig,
+        prompts: Dict[str, str],
+        custom_schemas: Optional[List[Dict[str, Any]]] = None
+    ):
         self.config = config
         self.prompts = prompts
+        self.custom_schemas = custom_schemas or []
+        logger.info(f"Initialized WebSearchAgent with custom schemas: {self.custom_schemas}")
         self.results: List[WebSearchResult] = []
         
         oai_request_limits = RequestLimits(
@@ -139,7 +145,7 @@ class WebSearchAgent:
             raise
 
     async def generate_ai_summary(self, url: str, content: Dict[str, Any], content_type: str) -> Dict[str, Any]:
-        """Generate AI summary using schema specified in config."""
+        """Generate AI summary using schema specified in config with custom field support."""
         try:
             llm_config_dict = self.config.llm_configs["content_analysis"].copy()
             schema_config = llm_config_dict.pop('schema_config', {})
@@ -151,6 +157,14 @@ class WebSearchAgent:
             schema_class = self.get_schema_class(schema_config['schema_name'])
 
             content_text = content.get('text', '')[:self.config.content_max_length]
+
+            # Build prompt including custom fields if they exist
+            custom_fields_section = ""
+            if hasattr(self, 'custom_schemas') and self.custom_schemas:
+                custom_fields_section = "\nCustom Analysis Fields Required:\n" + "\n".join(
+                    f"- {schema['name']}: {schema.get('description', '')}"
+                    for schema in self.custom_schemas
+                )
 
             formatted_prompt = f"""
             Analyze this market content and provide comprehensive insights:
@@ -169,6 +183,7 @@ class WebSearchAgent:
             5. Include quantitative metrics and specific data points where available
             6. Cite sources and provide evidence for recommendations
             7. Return a json object adhering to the provided schema
+            {custom_fields_section}
             """
 
             structured_tool = StructuredTool(
@@ -203,11 +218,50 @@ class WebSearchAgent:
                         
                         if response.json_object and hasattr(response.json_object, 'object'):
                             try:
+                                # Parse the base analysis
                                 result = schema_class(**response.json_object.object)
-                                return json.loads(result.model_dump_json(exclude_none=True))
+                                analysis_result = json.loads(result.model_dump_json(exclude_none=True))
+                                
+                                # Generate custom field analysis if custom schemas exist
+                                if hasattr(self, 'custom_schemas') and self.custom_schemas and 'assets' in analysis_result and analysis_result['assets']:
+                                    for asset in analysis_result['assets']:
+                                        custom_fields = {}
+                                        for schema in self.custom_schemas:
+                                            field_name = schema['name'].lower()
+                                            logger.info(f"Generating custom analysis for field: {field_name}")
+                                            
+                                            # Generate custom analysis with retry logic
+                                            max_field_retries = 2
+                                            for field_attempt in range(max_field_retries):
+                                                try:
+                                                    custom_analysis = await self._generate_custom_field_analysis(
+                                                        content_text,
+                                                        field_name,
+                                                        schema.get('description', '')
+                                                    )
+                                                    
+                                                    if custom_analysis and custom_analysis != f"No analysis available for {field_name}":
+                                                        custom_fields[field_name] = custom_analysis
+                                                        logger.info(f"Successfully generated analysis for {field_name}")
+                                                        break
+                                                except Exception as field_error:
+                                                    logger.error(f"Attempt {field_attempt + 1} failed for {field_name}: {str(field_error)}")
+                                                    if field_attempt < max_field_retries - 1:
+                                                        await asyncio.sleep(1)
+                                            
+                                            if field_name not in custom_fields:
+                                                custom_fields[field_name] = f"Analysis pending for {field_name}"
+                                        
+                                        asset['custom_fields'] = custom_fields
+                                
+                                return analysis_result
+
                             except Exception as e:
                                 logger.error(f"Error validating response: {str(e)}")
-                                continue
+                                if attempt < max_retries - 1:
+                                    continue
+                                else:
+                                    raise
 
                 except Exception as e:
                     logger.error(f"Attempt {attempt + 1} failed: {str(e)}")

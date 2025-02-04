@@ -1,16 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import type { CustomTool, SchemaField } from '../../../types/tools';
 
 interface SchemaBuilderProps {
+  initialTool?: CustomTool | null;
   onCancel: () => void;
   onSave: (tool: CustomTool) => void;
 }
 
-export const SchemaBuilder: React.FC<SchemaBuilderProps> = ({ onCancel, onSave }) => {
-  const [name, setName] = useState('');
-  const [description, setDescription] = useState('');
-  const [fields, setFields] = useState<SchemaField[]>([]);
+export const SchemaBuilder: React.FC<SchemaBuilderProps> = ({ initialTool, onCancel, onSave }) => {
+  const [name, setName] = useState(initialTool?.name || '');
+  const [description, setDescription] = useState(initialTool?.description || '');
+  const [fields, setFields] = useState<SchemaField[]>(
+    initialTool?.schema?.properties 
+      ? Object.entries(initialTool.schema.properties).map(([name, field]: [string, any]) => ({
+          name,
+          type: field.type,
+          required: field.required || false
+        }))
+      : []
+  );
 
   const addField = () => {
     setFields([...fields, { name: '', type: 'string', required: false }]);
@@ -29,22 +38,27 @@ export const SchemaBuilder: React.FC<SchemaBuilderProps> = ({ onCancel, onSave }
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onSave({
+      id: initialTool?.id || '',
       name,
       description,
       type: "custom",
-      enabled: true,
-      created_at: new Date().toISOString(),
+      enabled: initialTool?.enabled ?? true,
       schema: {
         type: 'object',
         properties: Object.fromEntries(
           fields.map(field => [
             field.name,
-            { type: field.type, required: field.required }
+            { 
+              type: field.type, 
+              required: field.required,
+              description: `Analysis and insights related to ${field.name} in financial markets` // Add description
+            }
           ])
         )
       }
     });
   };
+
 
   return (
     <form onSubmit={handleSubmit} className="bg-gray-700 rounded-lg p-4 mb-4">

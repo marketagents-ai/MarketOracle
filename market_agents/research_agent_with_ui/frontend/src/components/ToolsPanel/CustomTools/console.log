@@ -1,0 +1,21 @@
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+ChatInput.tsx:45 ChatInput - Current mode: custom
+ChatInput.tsx:45 ChatInput - Current mode: custom
+useCustomTools.ts:7 Initial tools from localStorage: [{"id":"1738675697293","name":"ROT","description":"Return on Investement","type":"custom","enabled":true,"schema":{"type":"object","properties":{"ROI":{"type":"string","required":false,"description":"Analysis and insights related to ROI in financial markets"}}}}]
+useCustomTools.ts:7 Initial tools from localStorage: [{"id":"1738675697293","name":"ROT","description":"Return on Investement","type":"custom","enabled":true,"schema":{"type":"object","properties":{"ROI":{"type":"string","required":false,"description":"Analysis and insights related to ROI in financial markets"}}}}]
+useCustomTools.ts:22 Current tools state: [{…}]
+useCustomTools.ts:23 Enabled tools: [{…}]
+useCustomTools.ts:22 Current tools state: [{…}]
+useCustomTools.ts:23 Enabled tools: [{…}]
+ChatInput.tsx:45 ChatInput - Current mode: custom
+ChatInput.tsx:45 ChatInput - Current mode: custom
+ChatInput.tsx:45 ChatInput - Current mode: research
+ChatInput.tsx:45 ChatInput - Current mode: research
+CustomToolBuilder.tsx:27 Current tools in localStorage: [{"id":"1738675697293","name":"ROT","description":"Return on Investement","type":"custom","enabled":true,"schema":{"type":"object","properties":{"ROI":{"type":"string","required":false,"description":"Analysis and insights related to ROI in financial markets"}}}}]
+CustomToolBuilder.tsx:27 Current tools in localStorage: [{"id":"1738675697293","name":"ROT","description":"Return on Investement","type":"custom","enabled":true,"schema":{"type":"object","properties":{"ROI":{"type":"string","required":false,"description":"Analysis and insights related to ROI in financial markets"}}}}]
+CustomToolBuilder.tsx:27 Current tools in localStorage: [{"id":"1738675697293","name":"ROT","description":"Return on Investement","type":"custom","enabled":true,"schema":{"type":"object","properties":{"ROI":{"type":"string","required":false,"description":"Analysis and insights related to ROI in financial markets"}}}}]
+api.ts:13 Sending request with custom schemas: []length: 0[[Prototype]]: Array(0)at: ƒ at()concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()findLast: ƒ findLast()findLastIndex: ƒ findLastIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toReversed: ƒ toReversed()toSorted: ƒ toSorted()toSpliced: ƒ toSpliced()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()with: ƒ with()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {at: true, copyWithin: true, entries: true, fill: true, find: true, …}[[Prototype]]: Object
+ChatMessage.tsx:13 ChatMessage content: crypto market
+ChatMessage.tsx:13 ChatMessage content: crypto market
+ChatInput.tsx:45 ChatInput - Current mode: research
+ChatInput.tsx:45 ChatInput - Current mode: research

@@ -27,10 +27,13 @@ class AssetAnalysis(BaseModel):
     kpis: List[str] = Field(default_factory=list, description="Key performance indicators (quantitative) for the asset.")
     action: Optional[str] = Field(None, description="Recommended portfolio action (e.g., Add Long, Close Short).")
     sources: List[str] = Field(default_factory=list, description="Information sources (e.g., brokers, analysts).")
-    custom_fields: Dict[str, Any] = {}  # Store custom field analysis
+    custom_fields: Dict[str, str] = Field(
+        default_factory=dict,
+        description="Custom analysis fields provided by enabled tools"
+    )
 
     class Config:
-        extra = "allow" 
+        extra = "allow"
 
 class SectorInfo(BaseModel):
     name: str = Field(..., description="Name of the sector or industry.")

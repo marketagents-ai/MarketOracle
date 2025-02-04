@@ -13,7 +13,7 @@ from market_agents.inference.parallel_inference import ParallelAIUtilities, Requ
 from market_agents.inference.message_models import LLMOutput, LLMPromptContext, LLMConfig, StructuredTool
 from datetime import datetime
 import json
-from pydantic import BaseModel
+from pydantic import BaseModel, Field ,validator  
 from pathlib import Path
 import uuid
 from typing import Any, Dict, List, Optional, Type
@@ -39,20 +39,16 @@ class WebSearchAgent:
         prompts: Dict[str, str],
         custom_schemas: Optional[List[Dict[str, Any]]] = None
     ):
-        # Remove the super().__init__() call since this class doesn't inherit from any parent
-        self.logger = logging.getLogger(__name__)
-        
-        # Initialize instance variables
         self.config = config
         self.prompts = prompts
-        self.custom_schemas = custom_schemas or []
+        self.custom_schemas = custom_schemas or []  # Store custom schemas
+        logger.info(f"Initialized WebSearchAgent with custom schemas: {self.custom_schemas}")
         self.results: List[WebSearchResult] = []
+        _, self.prompts = load_config()
         
-        # Log custom schemas configuration
-        if self.custom_schemas:
-            self.logger.info(f"Initialized with custom schemas: {[schema['name'] for schema in self.custom_schemas]}")
-        else:
-            self.logger.warning("No custom schemas configured")
+        def set_custom_schemas(self, schemas):
+            """Add custom schemas to be used alongside default schemas"""
+            self.custom_schemas = schemas
         
         # Initialize other components
         oai_request_limits = RequestLimits(
@@ -111,17 +107,24 @@ class WebSearchAgent:
         """
 
     async def process_search_query(self, query: str) -> None:
-        """Process a search query by generating multiple queries and fetching URLs."""
         try:
             search_queries = await self.search_manager.generate_search_queries(query)
             
-            logger.info(f"""
-                            === Search Process Starting ===
-                            Original Query: {query}
-                            Generated {len(search_queries)} queries:
-                            {chr(10).join(f'  {i+1}. {q}' for i, q in enumerate(search_queries))}
-                            ==============================
-                            """)
+            # Format custom tools info using self.custom_schemas
+            custom_tools_info = "\n".join([
+                f"      - {schema['name']}: {schema['description']}"
+                for schema in self.custom_schemas
+            ]) if self.custom_schemas else "      None"
+            
+            log_message = "=== Search Process Starting ===\n"
+            log_message += f"Original Query: {query}\n\n"
+            log_message += "Active Custom Tools:\n"
+            log_message += f"{custom_tools_info}\n\n"
+            log_message += f"Generated {len(search_queries)} queries:\n"
+            log_message += "".join([f"{i+1}. {q}\n" for i, q in enumerate(search_queries)])
+            log_message += "=============================="
+            
+            logger.info(log_message)
 
             all_results = []
             
@@ -205,43 +208,193 @@ class WebSearchAgent:
         except Exception as e:
             logger.error(f"Error processing search query: {str(e)}")
             raise
-
     async def _generate_custom_field_analysis(self, content: str, field_name: str, description: str) -> str:
         """Generate specific analysis for a custom field"""
-        prompt = f"""
-        Based on the following market content, provide a detailed analysis for {field_name}.
-        
-        Field Description: {description}
-        
-        Content to analyze:
-        {content}
-        
-        Requirements:
-        1. Provide specific numerical predictions or values where applicable
-        2. Include market-based justification for your analysis
-        3. Reference specific data points from the content
-        4. Consider both short-term and long-term implications
-        5. Ensure analysis is actionable and concrete
-        6. Base all analysis solely on the provided content
-        7. Format the response in a clear, structured manner
-        """
-
         try:
+            prompt = f"""
+            Based on the following market content, provide a detailed analysis for {field_name}.
+            
+            Field Description: {description}
+            
+            Content to analyze:
+            {content}
+            
+            Requirements:
+            1. Provide specific numerical predictions or values where applicable
+            2. Include market-based justification for your analysis
+            3. Reference specific data points from the content
+            4. Consider both short-term and long-term implications
+            5. Ensure analysis is actionable and concrete
+            6. Base all analysis solely on the provided content
+            7. Format the response as a single string with clear, structured analysis
+            """
+
             context = LLMPromptContext(
                 id=str(uuid.uuid4()),
-                system_string="You are an expert financial analyst specializing in cryptocurrency markets.",
+                system_string="You are an expert financial analyst. Provide concise, specific analysis as a single text string.",
                 new_message=prompt,
-                llm_config=self.llm_configs["content_analysis"].dict(),
+                llm_config=self.llm_configs["content_analysis"],
                 use_history=False
             )
             
             responses = await self.ai_utils.run_parallel_ai_completion([context])
             if responses and len(responses) > 0:
-                return responses[0].content.strip()
-            return ""
+                response = responses[0]
+                if hasattr(response, 'content'):
+                    content = response.content
+                elif hasattr(response, 'message'):
+                    content = response.message.content
+                else:
+                    content = str(response)
+                    
+                # Return just the string content
+                if isinstance(content, dict):
+                    return str(content.get('analysis', '') or content.get('content', '') or str(content))
+                return str(content).strip()
+                
+            return f"No analysis available for {field_name}"
         except Exception as e:
             logger.error(f"Error generating custom field analysis: {str(e)}")
-            return ""
+            return f"Error analyzing {field_name}: {str(e)}"
+    async def generate_ai_summary(self, url: str, content: Dict[str, Any], content_type: str) -> Dict[str, Any]:
+        """Generate AI summary using schema specified in config with enhanced custom field support."""
+        try:
+            # Get base LLM config
+            llm_config_dict = self.config.llm_configs["content_analysis"].copy()
+            schema_config = llm_config_dict.pop('schema_config', {})
+            system_prompt = llm_config_dict.pop('system_prompt', None)
+            llm_config = LLMConfig(**llm_config_dict)
+
+            # Get merged schema class
+            schema_class = self.get_merged_schemas()
+            content_text = content.get('text', '')[:self.config.content_max_length]
+
+            # Format custom fields section
+            custom_fields_section = ""
+            if self.custom_schemas:
+                custom_fields_section = "\nCUSTOM FIELDS ANALYSIS REQUIRED:\n"
+                for schema in self.custom_schemas:
+                    for field_name, field_props in schema['schema_definition']['properties'].items():
+                        custom_fields_section += f"""
+                        {field_name.upper()}:
+                        Description: {field_props.get('description', '')}
+                        Requirements:
+                        - Provide specific numerical predictions where applicable
+                        - Include market-based justification
+                        - Reference specific data points from the content
+                        - Consider both short-term and long-term implications
+                        - Provide confidence levels for predictions
+                        """
+
+            # Create enhanced prompt
+            formatted_prompt = f"""
+            Analyze this market content and provide detailed insights including both standard and custom metrics:
+
+            URL: {url}
+            CONTENT TYPE: {content_type}
+            
+            CONTENT:
+            {content_text}
+
+            STANDARD ANALYSIS REQUIREMENTS:
+            1. Asset identification and basic metrics
+            2. Price targets with confidence levels
+            3. Market sentiment analysis
+            4. Key catalysts and drivers
+            5. Risk assessment
+            6. Trading recommendations
+            7. Source credibility assessment
+
+            {custom_fields_section}
+
+            RESPONSE REQUIREMENTS:
+            1. Base all analysis strictly on the provided content
+            2. Include quantitative metrics where available
+            3. Provide specific predictions with confidence levels
+            4. Structure response in JSON format
+            5. Include all standard and custom fields
+            6. Ensure comprehensive coverage of all metrics
+            """
+
+            structured_tool = StructuredTool(
+                json_schema=schema_class.model_json_schema(),
+                schema_name=schema_config.get('schema_name', 'MarketResearch'),
+                schema_description=schema_config.get('schema_description', 'Market analysis with custom fields'),
+                instruction_string=schema_config.get('instruction_string', 'Provide structured market analysis')
+            )
+
+            context = LLMPromptContext(
+                id=str(uuid.uuid4()),
+                system_string=system_prompt or "You are a financial market analysis expert.",
+                new_message=formatted_prompt,
+                llm_config=llm_config.dict(),
+                structured_output=structured_tool,
+                use_schema_instruction=True,
+                use_history=False
+            )
+
+            # Process with retry logic
+            max_retries = 3
+            for attempt in range(max_retries):
+                try:
+                    responses = await self.ai_utils.run_parallel_ai_completion([context])
+                    
+                    if responses and len(responses) > 0:
+                        response = responses[0]
+                        if response.json_object and hasattr(response.json_object, 'object'):
+                            try:
+                                # Pre-process the response to ensure required fields exist
+                                response_data = response.json_object.object
+                                if isinstance(response_data, dict):
+                                    # Ensure required fields exist
+                                    if 'analysis_type' not in response_data:
+                                        response_data['analysis_type'] = 'asset'  # Default type
+                                    
+                                    # Initialize assets if not present
+                                    if 'assets' not in response_data:
+                                        response_data['assets'] = []
+                                    
+                                    # Process custom fields
+                                    for asset in response_data.get('assets', []):
+                                        if 'custom_fields' in asset:
+                                            asset['custom_fields'] = {
+                                                k: str(v) if isinstance(v, (dict, list)) else str(v)
+                                                for k, v in asset['custom_fields'].items()
+                                            }
+                                
+                                # Now validate with the schema
+                                schema_class = self.get_merged_schemas()
+                                result = schema_class(**response_data)
+                                return json.loads(result.model_dump_json(exclude_none=True))
+                            except Exception as validation_error:
+                                logger.error(f"Validation error: {str(validation_error)}")
+                                # Return a valid default structure
+                                return {
+                                    'analysis_type': 'asset',
+                                    'assets': [{
+                                        'custom_fields': {}
+                                    }]
+                                }
+
+                    # Return valid default structure
+                    return {
+                        'analysis_type': 'asset',
+                        'assets': [{
+                            'custom_fields': {}
+                        }]
+                    }
+
+                except Exception as e:
+                    logger.error(f"Error in generate_ai_summary: {str(e)}")
+                    return {
+                        'analysis_type': 'asset',
+                        'assets': [{
+                            'custom_fields': {}
+                        }]
+                    }
+        except Exception as e:
+            logger.error(f"Error in previous method: {str(e)}")
+            return {} 
     def get_schema_class(self, schema_name: str) -> Type[BaseModel]:
         """Dynamically import and return the specified schema class from research_schemas."""
         try:
@@ -251,181 +404,44 @@ class WebSearchAgent:
         except (ImportError, AttributeError) as e:
             logger.error(f"Error loading schema {schema_name}: {str(e)}")
             raise
-    async def generate_ai_summary(self, url: str, content: Dict[str, Any], content_type: str) -> Dict[str, Any]:
-        """Generate AI summary using schema specified in config with enhanced custom field support."""
+
+    def get_merged_schemas(self) -> Type[BaseModel]:
+        """Merge default research schemas with custom schemas"""
         try:
-            # Get base LLM config
-            llm_config_dict = self.config.llm_configs["content_analysis"].copy()
-            schema_config = llm_config_dict.pop('schema_config', {})
-            system_prompt = llm_config_dict.pop('system_prompt', None)
-            prompt_template = llm_config_dict.pop('prompt_template', None)
-            llm_config = LLMConfig(**llm_config_dict)
-
-            # Dynamically get the schema class
-            schema_class = self.get_schema_class(schema_config['schema_name'])
+            # Get base schema class
+            base_schema = self.get_schema_class('MarketResearch')
             
-            content_text = content.get('text', '')[:self.config.content_max_length]
+            # If no custom schemas, return base class
+            if not self.custom_schemas:
+                return base_schema
 
-            # Enhanced custom fields prompt generation
-            custom_fields_prompt = ""
-            if self.custom_schemas:
-                for schema in self.custom_schemas:
-                    field_name = schema['name'].upper()
-                    custom_fields_prompt += f"\n{field_name} ANALYSIS:\n"
-                    custom_fields_prompt += f"- Description: {schema.get('description', '')}\n"
-                    custom_fields_prompt += "- Requirements:\n"
-                    custom_fields_prompt += "  * Provide numerical predictions with confidence levels\n"
-                    custom_fields_prompt += "  * Include market-based justification\n"
-                    custom_fields_prompt += "  * Consider both short and long-term implications\n"
+            # Create a new AssetAnalysis class with custom fields
+            class CustomAssetAnalysis(self.get_schema_class('AssetAnalysis')):
+                custom_fields: Dict[str, str] = Field(
+                    default_factory=dict,
+                    description="Custom analysis fields as key-value string pairs"
+                )
 
-            # Enhanced prompt with custom fields support
-            formatted_prompt = f"""
-            Analyze this market content and provide detailed insights including custom metrics:
+                @validator('custom_fields')  # Use validator decorator
+                def validate_custom_fields(cls, v):
+                    # Ensure all values are strings
+                    return {k: str(v) if isinstance(v, (dict, list)) else str(v) 
+                        for k, v in v.items()}
 
-            URL: {url}
-            CONTENT TYPE: {content_type}
-            
-            CONTENT:
-            {content_text}
+            # Create a new MarketResearch class with custom asset analysis
+            class CustomMarketResearch(base_schema):
+                assets: List[CustomAssetAnalysis] = Field(
+                    default_factory=list,
+                    description="List of asset analyses including custom fields"
+                )
 
-            {custom_fields_prompt}
-
-            Requirements:
-            1. Identify key market drivers and trends
-            2. Provide specific price targets and confidence levels
-            3. Include quantitative metrics where available
-            4. Analyze custom fields with detailed predictions
-            5. Base all analysis on provided content
-            6. Return structured JSON response
-            """
-
-            structured_tool = StructuredTool(
-                json_schema=schema_class.model_json_schema(),
-                schema_name=schema_config['schema_name'],
-                schema_description=schema_config['schema_description'],
-                instruction_string=schema_config['instruction_string']
-            )
-
-            context = LLMPromptContext(
-                id=str(uuid.uuid4()),
-                system_string=system_prompt,
-                new_message=formatted_prompt,
-                llm_config=llm_config.dict(),
-                structured_output=structured_tool,
-                use_schema_instruction=True,
-                use_history=False
-            )
-
-            max_retries = 3
-            for attempt in range(max_retries):
-                try:
-                    responses = await self.ai_utils.run_parallel_ai_completion([context])
-                    
-                    if responses and len(responses) > 0:
-                        response = responses[0]
-                        
-                        if response.json_object and hasattr(response.json_object, 'object'):
-                            try:
-                                result = schema_class(**response.json_object.object)
-                                analysis_result = json.loads(result.model_dump_json(exclude_none=True))
-                                
-                                if self.custom_schemas and 'assets' in analysis_result and analysis_result['assets']:
-                                    for asset in analysis_result['assets']:
-                                        custom_fields = {}
-                                        for schema in self.custom_schemas:
-                                            field_name = schema['name'].lower()
-                                            logger.info(f"Generating custom analysis for field: {field_name}")
-                                            
-                                            # Generate custom analysis with retry logic
-                                            max_field_retries = 2
-                                            for field_attempt in range(max_field_retries):
-                                                try:
-                                                    custom_analysis = await self._generate_custom_field_analysis(
-                                                        content_text,
-                                                        field_name,
-                                                        schema.get('description', '')
-                                                    )
-                                                    
-                                                    if custom_analysis and custom_analysis != f"No analysis available for {field_name}":
-                                                        custom_fields[field_name] = custom_analysis
-                                                        logger.info(f"Successfully generated analysis for {field_name}")
-                                                        break
-                                                except Exception as field_error:
-                                                    logger.error(f"Attempt {field_attempt + 1} failed for {field_name}: {str(field_error)}")
-                                                    if field_attempt < max_field_retries - 1:
-                                                        await asyncio.sleep(1)
-                                            
-                                            if field_name not in custom_fields:
-                                                custom_fields[field_name] = f"Analysis pending for {field_name}"
-                                        
-                                        asset['custom_fields'] = custom_fields
-                                
-                                return analysis_result
-
-                            except Exception as e:
-                                logger.error(f"Error validating response: {str(e)}")
-                                continue
-
-                except Exception as e:
-                    logger.error(f"Attempt {attempt + 1} failed: {str(e)}")
-                    if attempt < max_retries - 1:
-                        await asyncio.sleep(1 * (attempt + 1))
-                        continue
-
-            # Return empty schema structure if all attempts fail
-            return json.loads(schema_class().model_dump_json())
+            logger.info(f"Successfully created merged schema with custom fields")
+            return CustomMarketResearch
 
         except Exception as e:
-            logger.error(f"Error in summary generation: {str(e)}")
-            schema_class = self.get_schema_class(self.config.llm_configs["content_analysis"]["schema_config"]["schema_name"])
-            return json.loads(schema_class().model_dump_json())
-
-    async def _generate_custom_field_analysis(self, content: str, field_name: str, description: str) -> str:
-        """Generate specific analysis for a custom field with enhanced market metrics"""
-        prompt = f"""
-        Based on the following market content, provide a detailed analysis for {field_name.upper()}.
-        
-        Field Description: {description}
-        
-        Content to analyze:
-        {content}
-        
-        Required Analysis Format:
-        1. Numerical Prediction:
-        - Specific value or range
-        - Confidence level (%)
-        - Timeline (short/medium/long term)
-        
-        2. Market Justification:
-        - Key market drivers
-        - Supporting data points
-        - Technical indicators
-        
-        3. Risk Assessment:
-        - Potential challenges
-        - Market conditions
-        - Impact factors
-        
-        Format the response as a concise, structured analysis with specific numbers and predictions.
-        """
-
-        try:
-            context = LLMPromptContext(
-                id=str(uuid.uuid4()),
-                system_string="You are an expert financial analyst specializing in cryptocurrency markets and quantitative analysis.",
-                new_message=prompt,
-                llm_config=self.llm_configs["content_analysis"].dict(),
-                use_history=False
-            )
-            
-            responses = await self.ai_utils.run_parallel_ai_completion([context])
-            if responses and len(responses) > 0:
-                return responses[0].content.strip()
-            return f"No analysis available for {field_name}"
-        except Exception as e:
-            logger.error(f"Error generating custom field analysis: {str(e)}")
-            return f"Analysis failed for {field_name}: {str(e)}"
-
+            logger.error(f"Error merging schemas: {str(e)}")
+            # Fallback to base schema if merge fails
+            return self.get_schema_class('MarketResearch')
 
     def _format_custom_fields_prompt(self) -> str:
         """Format custom fields for the prompt with detailed requirements"""

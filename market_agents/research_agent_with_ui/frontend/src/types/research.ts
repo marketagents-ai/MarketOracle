@@ -53,3 +53,20 @@ export interface ResearchData {
   agent_id: string;
   extraction_method: string;
 }
+
+export const sendResearchRequest = async (query: string, customSchemas: any[]) => {
+  console.log('Sending research request with:', {
+    query,
+    customSchemas
+  });
+  
+  const response = await fetch('/api/research', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      query,
+      custom_schemas: customSchemas
+    })
+  });
