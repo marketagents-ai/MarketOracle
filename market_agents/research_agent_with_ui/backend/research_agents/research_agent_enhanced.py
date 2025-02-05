@@ -238,21 +238,36 @@ class WebSearchAgent:
             )
             
             responses = await self.ai_utils.run_parallel_ai_completion([context])
+            
             if responses and len(responses) > 0:
                 response = responses[0]
-                if hasattr(response, 'content'):
-                    content = response.content
-                elif hasattr(response, 'message'):
-                    content = response.message.content
-                else:
-                    content = str(response)
+                
+                # If response is a dict with choices (OpenAI format)
+                if isinstance(response, dict) and 'choices' in response:
+                    message_content = response['choices'][0]['message']['content']
+                    try:
+                        # Parse JSON and extract analysis
+                        content_dict = json.loads(message_content)
+                        return content_dict['analysis']
+                    except (json.JSONDecodeError, KeyError):
+                        return message_content.strip()
+                
+                # If response is already a string
+                if isinstance(response, str):
+                    try:
+                        content_dict = json.loads(response)
+                        return content_dict['analysis']
+                    except (json.JSONDecodeError, KeyError):
+                        return response.strip()
+                
+                # If response is a custom object with json_object attribute
+                if hasattr(response, 'json_object') and hasattr(response.json_object, 'object'):
+                    return response.json_object.object.get('analysis', str(response))
                     
-                # Return just the string content
-                if isinstance(content, dict):
-                    return str(content.get('analysis', '') or content.get('content', '') or str(content))
-                return str(content).strip()
+                return str(response)
                 
             return f"No analysis available for {field_name}"
+            
         except Exception as e:
             logger.error(f"Error generating custom field analysis: {str(e)}")
             return f"Error analyzing {field_name}: {str(e)}"

@@ -480,36 +480,28 @@ class ResearchRequest(BaseModel):
 @app.post("/api/research")
 async def research(request: ResearchRequest):
     try:
+        # Debug logging
         logger.info("Received research request")
         logger.info(f"Query: {request.query}")
+        logger.info(f"Raw request data: {request.dict()}")
         logger.info(f"Custom schemas received: {[schema.dict() for schema in request.custom_schemas]}")
         
-        # Load config and set up agent
+        # Convert custom schemas to the format expected by WebSearchAgent
+        custom_schemas = [
+            {
+                "name": schema.name,
+                "description": schema.description,
+                "schema_definition": schema.schema_definition  # Changed from 'schema' to 'schema_definition'
+            }
+            for schema in request.custom_schemas
+        ]
+        
+        logger.info(f"Processed custom schemas: {custom_schemas}")
+        
+        # Load config first
         config_data, prompts = load_config()
         config_data["query"] = request.query
         
-        # Process custom schemas into the format expected by WebSearchAgent
-        custom_schemas = []
-        if request.custom_schemas:
-            for schema in request.custom_schemas:
-                processed_schema = {
-                    "name": schema.name,
-                    "description": schema.description,
-                    "schema_definition": {
-                        "type": "object",
-                        "properties": {
-                            schema.name: {
-                                "type": "string",
-                                "description": schema.description
-                            }
-                        }
-                    }
-                }
-                custom_schemas.append(processed_schema)
-                
-        logger.info(f"Processed custom schemas: {json.dumps(custom_schemas, indent=2)}")
-        
-        # Initialize WebSearchAgent with config and schemas
         config = WebSearchConfig(**config_data)
         agent = WebSearchAgent(
             config=config,
@@ -517,38 +509,59 @@ async def research(request: ResearchRequest):
             custom_schemas=custom_schemas
         )
         
-        # Process the search query
-        await agent.process_search_query(request.query)
+        try:
+            await agent.process_search_query(request.query)
+        except Exception as search_error:
+            logger.error(f"Search process error: {str(search_error)}")
+            raise HTTPException(status_code=500, detail="Search process failed")
         
-        # Format results
         formatted_results = []
         for result in agent.results:
             if result:
-                formatted_result = {
-                    "url": result.url,
-                    "title": result.title,
-                    "content": result.content,
-                    "timestamp": result.timestamp.isoformat(),
-                    "status": result.status,
-                    "summary": result.summary,
-                    "custom_fields": {}
-                }
-                
-                # Add custom fields if they exist in the summary
-                if result.summary and 'assets' in result.summary:
-                    for asset in result.summary['assets']:
-                        if 'custom_fields' in asset:
-                            formatted_result["custom_fields"] = asset['custom_fields']
-                
-                formatted_results.append(formatted_result)
+                try:
+                    formatted_result = {
+                        "url": result.url,
+                        "title": result.title,
+                        "content": result.content,
+                        "timestamp": result.timestamp.isoformat(),
+                        "status": result.status,
+                        "summary": result.summary if hasattr(result, 'summary') else {},
+                        "agent_id": result.agent_id if hasattr(result, 'agent_id') else None,
+                        "extraction_method": result.extraction_method if hasattr(result, 'extraction_method') else None
+                    }
+                    
+                    # Process custom fields if they exist
+                    if hasattr(result, 'summary') and isinstance(result.summary, dict):
+                        if 'assets' in result.summary and result.summary['assets']:
+                            for asset in result.summary['assets']:
+                                if 'custom_fields' in asset:
+                                    processed_fields = {}
+                                    for field_name, field_value in asset['custom_fields'].items():
+                                        try:
+                                            if isinstance(field_value, dict) and 'choices' in field_value:
+                                                # Extract analysis from OpenAI response
+                                                message_content = field_value['choices'][0]['message']['content']
+                                                content_dict = json.loads(message_content)
+                                                processed_fields[field_name] = content_dict.get('analysis', '')
+                                            else:
+                                                processed_fields[field_name] = str(field_value)
+                                        except Exception as e:
+                                            logger.error(f"Error processing field {field_name}: {str(e)}")
+                                            processed_fields[field_name] = str(field_value)
+                                    
+                                    asset['custom_fields'] = processed_fields
+                    
+                    formatted_results.append(formatted_result)
+                    
+                except Exception as e:
+                    logger.error(f"Error formatting result: {str(e)}")
+                    continue
         
-        logger.info(f"Returning {len(formatted_results)} results")
         return formatted_results
 
     except Exception as e:
         logger.error(f"Research error: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
-
 
 async def generate_field_description(field_name: str) -> str:
     """Generate a detailed description for a custom field based on its name."""

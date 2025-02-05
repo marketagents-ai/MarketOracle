@@ -9376,3 +9376,1519 @@ Generated 2 queries:
                     Custom Fields Analyzed: ['ROT']
                     
 2025-02-05 03:43:04,404 - utils - INFO - Returning 10 results
+2025-02-05 15:32:25,178 - utils - INFO - Received research request
+2025-02-05 15:32:25,179 - utils - INFO - Query: memecoins pumping
+2025-02-05 15:32:25,179 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 15:32:25,189 - utils - INFO - Processed custom schemas: [
+  {
+    "name": "ROT",
+    "description": "Return on Investement",
+    "schema_definition": {
+      "type": "object",
+      "properties": {
+        "ROT": {
+          "type": "string",
+          "description": "Return on Investement"
+        }
+      }
+    }
+  }
+]
+2025-02-05 15:32:25,190 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}]
+2025-02-05 15:32:26,895 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins pumping
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. recent memecoin price pumps Q1 2025
+==============================
+2025-02-05 15:32:26,896 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-05 15:32:30,495 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://www.linkedin.com/pulse/10-best-memecoins-watch-explosive-growth-february2025-jade-mckinley-avsxe
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://bravenewcoin.com/sponsored/presale/5-top-new-meme-coins-to-join-in-february-2025-investors-are-rushing-in-for-this-90-apy-staking-bonanza
+- https://www.ccn.com/analysis/crypto/4-cryptos-primed-new-all-time-highs-feb-2025/
+- https://www.binance.com/en/square/post/19602782853985
+                                
+2025-02-05 15:32:37,489 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:32:47,943 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:33:07,154 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:33:21,710 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:33:42,801 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:34:05,233 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:34:30,961 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:34:38,292 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:34:40,477 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:34:55,472 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:34:59,685 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 15:34:59,685 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent memecoin price pumps Q1 2025
+                                
+2025-02-05 15:35:02,761 - utils - INFO - 
+                                URLs found for query "recent memecoin price pumps Q1 2025":
+                                - https://www.binance.com/en/square/post/18582728442553
+- https://www.binance.com/en/square/post/18003817567585
+- https://bravenewcoin.com/sponsored/presale/10-best-crypto-presales-that-will-pump-hard-in-q1-2025
+- https://techpoint.africa/2025/01/12/5-best-altcoins-to-buy-now-top-picks-before-2025-bull-run-explodes/
+- https://www.analyticsinsight.net/cryptocurrency-analytics-insight/bull-run-phase-2-4-cryptocurrencies-that-will-pump-to-the-moon-in-q1-2025
+                                
+2025-02-05 15:35:14,053 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:35:17,048 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:35:20,745 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:35:35,015 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:35:38,812 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:36:02,260 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:36:26,436 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:36:39,549 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:36:46,429 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:37:00,273 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:37:31,834 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 15:37:42,807 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 15:37:42,808 - utils - INFO - Returning 10 results
+2025-02-05 15:43:05,190 - utils - INFO - Received research request
+2025-02-05 15:43:05,190 - utils - INFO - Query: coins to watch
+2025-02-05 15:43:05,190 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 15:43:05,199 - utils - INFO - Processed custom schemas: [
+  {
+    "name": "ROT",
+    "description": "Return on Investement",
+    "schema_definition": {
+      "type": "object",
+      "properties": {
+        "ROT": {
+          "type": "string",
+          "description": "Return on Investement"
+        }
+      }
+    }
+  }
+]
+2025-02-05 15:43:05,200 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}]
+2025-02-05 15:43:06,833 - utils - INFO - === Search Process Starting ===
+Original Query: coins to watch
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest coins to watch February 2025
+2. top cryptocurrency trends Q1 2025
+==============================
+2025-02-05 15:43:06,833 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest coins to watch February 2025
+                                
+2025-02-05 15:43:09,937 - utils - INFO - 
+                                URLs found for query "latest coins to watch February 2025":
+                                - https://bravenewcoin.com/sponsored/presale/watch-out-these-3-are-the-next-best-cryptos-to-buy-in-2025
+- https://www.cryptotimes.io/2025/02/03/top-5-crypto-to-watch-in-february-xrp-sol-trump-doge-and-pi/
+- https://beincrypto.com/3-altcoins-to-watch-in-the-first-week-of-february-2025/
+- https://m.economictimes.com/wealth/invest/top-new-crypto-coins-to-watch-potential-100x-moonshots-for-2025/articleshow/117777361.cms
+- https://zebpay.com/blog/top-10-cryptos-to-invest-in-2025
+                                
+2025-02-05 15:44:21,359 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:44:27,222 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:44:35,617 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:44:49,326 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:45:36,613 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:45:51,424 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:46:17,201 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:46:50,762 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:47:02,767 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:47:12,700 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:47:22,576 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 15:47:22,576 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top cryptocurrency trends Q1 2025
+                                
+2025-02-05 15:47:25,581 - utils - INFO - 
+                                URLs found for query "top cryptocurrency trends Q1 2025":
+                                - https://101blockchains.com/top-crypto-market-predictions/
+- https://insights.glassnode.com/glassnode-coinbase-q1-2025-crypto-markets-guide/
+- https://m.economictimes.com/markets/cryptocurrency/crypto-market-outlook-for-2025-emerging-trends-and-must-watch-sectors/articleshow/117453522.cms
+- https://www.binance.com/en/square/post/19755000342082
+- https://www.cmegroup.com/newsletters/quarterly-cryptocurrencies-report/2025-q1-cryptocurrency-insights.html
+                                
+2025-02-05 15:48:34,507 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:48:41,280 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:48:48,811 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:49:00,707 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:49:20,876 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:49:34,833 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:49:42,104 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:50:00,909 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:50:05,121 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:50:09,978 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 15:50:14,456 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 15:50:25,801 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 15:50:25,801 - utils - INFO - Returning 10 results
+2025-02-05 15:59:54,077 - utils - INFO - Received research request
+2025-02-05 15:59:54,077 - utils - INFO - Query: memcoins
+2025-02-05 15:59:54,077 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 15:59:54,086 - utils - INFO - Processed custom schemas: [
+  {
+    "name": "ROT",
+    "description": "Return on Investement",
+    "schema_definition": {
+      "type": "object",
+      "properties": {
+        "ROT": {
+          "type": "string",
+          "description": "Return on Investement"
+        }
+      }
+    }
+  }
+]
+2025-02-05 15:59:54,088 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}]
+2025-02-05 15:59:55,892 - utils - INFO - === Search Process Starting ===
+Original Query: memcoins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest memcoin trends February 2025
+2. recent developments in memcoins Q1 2025
+==============================
+2025-02-05 15:59:55,892 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memcoin trends February 2025
+                                
+2025-02-05 15:59:59,043 - utils - INFO - 
+                                URLs found for query "latest memcoin trends February 2025":
+                                - https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://www.linkedin.com/pulse/10-best-memecoins-watch-explosive-growth-february2025-jade-mckinley-avsxe
+- https://bravenewcoin.com/sponsored/presale/5-top-new-meme-coins-to-join-in-february-2025-investors-are-rushing-in-for-this-90-apy-staking-bonanza
+- https://www.binance.com/en/square/post/19602782853985
+- https://www.bitget.com/news/detail/12560604535317
+                                
+2025-02-05 16:00:05,333 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:00:32,498 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:01:08,623 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:01:21,027 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:01:26,735 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:01:50,690 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:02:11,642 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:02:33,715 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:02:37,196 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:02:46,629 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:02:46,629 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 16:02:46,629 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in memcoins Q1 2025
+                                
+2025-02-05 16:02:49,604 - utils - INFO - 
+                                URLs found for query "recent developments in memcoins Q1 2025":
+                                - https://techpoint.africa/2025/01/16/top-10-meme-coins-to-invest-in-now-for-explosive-growth-in-2025-best-cryptos-worth-every-penny/
+- https://www.analyticsinsight.net/cryptocurrency-analytics-insight/3-top-memecoins-poised-for-massive-growth-in-q1-2025
+- https://www.binance.com/en/square/post/18582728442553
+- https://m.economictimes.com/wealth/invest/top-three-crypto-presale-coins-for-q1-2025/articleshow/117195985.cms
+- https://www.blockchainx.tech/meme-coin-development-companies/
+                                
+2025-02-05 16:04:01,319 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:04:06,594 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:04:17,345 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:04:28,212 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:04:46,513 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:04:51,213 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:04:54,312 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:05:04,452 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:05:22,064 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:05:31,116 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:05:43,253 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 16:05:54,536 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 16:05:54,536 - utils - INFO - Returning 10 results
+2025-02-05 16:14:50,585 - utils - INFO - Received research request
+2025-02-05 16:14:50,585 - utils - INFO - Query: memcoins
+2025-02-05 16:14:50,585 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 16:14:50,593 - utils - INFO - Processed custom schemas: [
+  {
+    "name": "ROT",
+    "description": "Return on Investement",
+    "schema_definition": {
+      "type": "object",
+      "properties": {
+        "ROT": {
+          "type": "string",
+          "description": "Return on Investement"
+        }
+      }
+    }
+  }
+]
+2025-02-05 16:14:50,595 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}]
+2025-02-05 16:14:52,342 - utils - INFO - === Search Process Starting ===
+Original Query: memcoins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest memcoin trends February 2025
+2. recent developments in memcoins Q1 2025
+==============================
+2025-02-05 16:14:52,342 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memcoin trends February 2025
+                                
+2025-02-05 16:14:55,278 - utils - INFO - 
+                                URLs found for query "latest memcoin trends February 2025":
+                                - https://www.linkedin.com/pulse/10-best-memecoins-watch-explosive-growth-february2025-jade-mckinley-avsxe
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://bravenewcoin.com/sponsored/presale/5-top-new-meme-coins-to-join-in-february-2025-investors-are-rushing-in-for-this-90-apy-staking-bonanza
+- https://www.binance.com/en/square/post/19602782853985
+- https://www.bitget.com/news/detail/12560604535317
+                                
+2025-02-05 16:15:01,196 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:15:07,136 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:15:12,826 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:15:29,015 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:15:55,639 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:16:11,306 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:16:34,857 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:16:42,777 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:16:46,971 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:17:00,662 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:17:07,575 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 16:17:07,575 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in memcoins Q1 2025
+                                
+2025-02-05 16:17:11,327 - utils - INFO - 
+                                URLs found for query "recent developments in memcoins Q1 2025":
+                                - https://techpoint.africa/2025/01/16/top-10-meme-coins-to-invest-in-now-for-explosive-growth-in-2025-best-cryptos-worth-every-penny/
+- https://www.analyticsinsight.net/cryptocurrency-analytics-insight/3-top-memecoins-poised-for-massive-growth-in-q1-2025
+- https://www.binance.com/en/square/post/18582728442553
+- https://m.economictimes.com/wealth/invest/top-three-crypto-presale-coins-for-q1-2025/articleshow/117195985.cms
+- https://www.blockchainx.tech/meme-coin-development-companies/
+                                
+2025-02-05 16:18:24,105 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:18:30,702 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:18:35,075 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:18:45,327 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:19:03,646 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:19:14,705 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:19:18,198 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:19:33,854 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:19:46,436 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:19:56,588 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:20:05,493 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 16:20:16,352 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 16:20:16,352 - utils - INFO - Returning 10 results
+2025-02-05 16:24:43,452 - utils - INFO - Received research request
+2025-02-05 16:24:43,452 - utils - INFO - Query: memecoins
+2025-02-05 16:24:43,452 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 16:24:43,462 - utils - INFO - Processed custom schemas: [
+  {
+    "name": "ROT",
+    "description": "Return on Investement",
+    "schema_definition": {
+      "type": "object",
+      "properties": {
+        "ROT": {
+          "type": "string",
+          "description": "Return on Investement"
+        }
+      }
+    }
+  }
+]
+2025-02-05 16:24:43,464 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}]
+2025-02-05 16:24:44,842 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. recent developments in memecoins Q1 2025
+==============================
+2025-02-05 16:24:44,842 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-05 16:24:47,715 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://www.linkedin.com/pulse/10-best-memecoins-watch-explosive-growth-february2025-jade-mckinley-avsxe
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://bravenewcoin.com/sponsored/presale/5-top-new-meme-coins-to-join-in-february-2025-investors-are-rushing-in-for-this-90-apy-staking-bonanza
+- https://www.ccn.com/analysis/crypto/4-cryptos-primed-new-all-time-highs-feb-2025/
+- https://www.binance.com/en/square/post/19602782853985
+                                
+2025-02-05 16:24:53,865 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:24:58,581 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:25:08,416 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:25:22,507 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:25:45,007 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:26:02,275 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:26:26,662 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:26:27,811 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:26:27,814 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:26:31,844 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:26:36,936 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 16:26:36,936 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in memecoins Q1 2025
+                                
+2025-02-05 16:26:40,486 - utils - INFO - 
+                                URLs found for query "recent developments in memecoins Q1 2025":
+                                - https://www.binance.com/en/square/post/18582728442553
+- https://www.analyticsinsight.net/cryptocurrency-analytics-insight/3-top-memecoins-poised-for-massive-growth-in-q1-2025
+- https://nulltx.com/the-3-top-new-meme-coins-to-invest-in-this-month-featuring-a-5-9m-presale/
+- https://m.economictimes.com/wealth/invest/top-three-crypto-presale-coins-for-q1-2025/articleshow/117195985.cms
+- https://bravenewcoin.com/sponsored/presale/cryptos-next-big-thing-4-top-meme-coins-to-join-in-2025
+                                
+2025-02-05 16:27:51,142 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:27:55,354 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:27:57,981 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:28:14,153 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:28:30,789 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:28:46,488 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:28:57,120 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:29:08,751 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:29:30,504 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:29:48,817 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:30:07,875 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 16:30:19,259 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 16:30:19,259 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,259 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,259 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,259 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,259 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,259 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,259 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,259 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,259 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,259 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,259 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,259 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,260 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,260 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,260 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,260 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,260 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,260 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,260 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,260 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,260 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,260 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,260 - utils - ERROR - Error processing field rot: Expecting value: line 1 column 1 (char 0)
+2025-02-05 16:30:19,260 - utils - INFO - Returning 10 results
+2025-02-05 16:40:35,018 - utils - INFO - Received research request
+2025-02-05 16:40:35,018 - utils - INFO - Query: memecoin
+2025-02-05 16:40:35,018 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 16:40:35,028 - utils - INFO - Processed custom schemas: [
+  {
+    "name": "ROT",
+    "description": "Return on Investement",
+    "schema_definition": {
+      "type": "object",
+      "properties": {
+        "ROT": {
+          "type": "string",
+          "description": "Return on Investement"
+        }
+      }
+    }
+  }
+]
+2025-02-05 16:40:35,029 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}]
+2025-02-05 16:40:36,789 - utils - INFO - === Search Process Starting ===
+Original Query: memecoin
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. recent developments in memecoin market Q1 2025
+==============================
+2025-02-05 16:40:36,789 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-05 16:40:40,240 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://www.linkedin.com/pulse/10-best-memecoins-watch-explosive-growth-february2025-jade-mckinley-avsxe
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://bravenewcoin.com/sponsored/presale/5-top-new-meme-coins-to-join-in-february-2025-investors-are-rushing-in-for-this-90-apy-staking-bonanza
+- https://www.ccn.com/analysis/crypto/4-cryptos-primed-new-all-time-highs-feb-2025/
+- https://www.binance.com/en/square/post/19602782853985
+                                
+2025-02-05 16:40:47,083 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:40:58,648 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:41:07,305 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:41:30,965 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:41:51,107 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:42:03,791 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:42:27,624 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:42:29,742 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:42:32,827 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:42:37,320 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:42:40,184 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 16:42:40,185 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in memecoin market Q1 2025
+                                
+2025-02-05 16:42:43,172 - utils - INFO - 
+                                URLs found for query "recent developments in memecoin market Q1 2025":
+                                - https://www.binance.com/en/square/post/18590792685577
+- https://m.economictimes.com/wealth/invest/top-three-crypto-presale-coins-for-q1-2025/articleshow/117195985.cms
+- https://nulltx.com/the-3-top-new-meme-coins-to-invest-in-this-month-featuring-a-5-9m-presale/
+- https://www.analyticsinsight.net/cryptocurrency-analytics-insight/3-top-memecoins-poised-for-massive-growth-in-q1-2025
+- https://www.binance.com/en/square/post/18582728442553
+                                
+2025-02-05 16:43:51,034 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:43:55,044 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:44:03,035 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:44:14,503 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:44:31,705 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:44:38,668 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:44:52,011 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:45:01,057 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:45:18,811 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:45:21,574 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 16:45:25,155 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 16:45:36,232 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 17:00:16,730 - utils - INFO - Received research request
+2025-02-05 17:00:16,731 - utils - INFO - Query: memecoins
+2025-02-05 17:00:16,731 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:00:16,740 - utils - INFO - Processed custom schemas: [
+  {
+    "name": "ROT",
+    "description": "Return on Investement",
+    "schema_definition": {
+      "type": "object",
+      "properties": {
+        "ROT": {
+          "type": "string",
+          "description": "Return on Investement"
+        }
+      }
+    }
+  }
+]
+2025-02-05 17:00:16,741 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}]
+2025-02-05 17:00:19,031 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. recent developments in memecoins Q1 2025
+==============================
+2025-02-05 17:00:19,031 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-05 17:00:22,307 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://www.linkedin.com/pulse/10-best-memecoins-watch-explosive-growth-february2025-jade-mckinley-avsxe
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://bravenewcoin.com/sponsored/presale/5-top-new-meme-coins-to-join-in-february-2025-investors-are-rushing-in-for-this-90-apy-staking-bonanza
+- https://www.ccn.com/analysis/crypto/4-cryptos-primed-new-all-time-highs-feb-2025/
+- https://www.binance.com/en/square/post/19602782853985
+                                
+2025-02-05 17:00:28,190 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:00:32,323 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:00:37,403 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:00:50,066 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:01:08,490 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:01:19,295 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:01:37,162 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:01:38,240 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:01:38,243 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:01:40,268 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:01:43,301 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:01:43,301 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in memecoins Q1 2025
+                                
+2025-02-05 17:01:46,535 - utils - INFO - 
+                                URLs found for query "recent developments in memecoins Q1 2025":
+                                - https://www.analyticsinsight.net/cryptocurrency-analytics-insight/3-top-memecoins-poised-for-massive-growth-in-q1-2025
+- https://nulltx.com/the-3-top-new-meme-coins-to-invest-in-this-month-featuring-a-5-9m-presale/
+- https://www.binance.com/en/square/post/18582728442553
+- https://m.economictimes.com/wealth/invest/top-three-crypto-presale-coins-for-q1-2025/articleshow/117195985.cms
+- https://bravenewcoin.com/sponsored/presale/cryptos-next-big-thing-4-top-meme-coins-to-join-in-2025
+                                
+2025-02-05 17:02:56,019 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:03:03,526 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:03:26,528 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:03:34,682 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:03:49,211 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:03:51,413 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:03:55,226 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:04:02,809 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:04:12,915 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:04:23,649 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:04:34,996 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:04:46,897 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 17:08:59,926 - utils - INFO - Received research request
+2025-02-05 17:08:59,926 - utils - INFO - Query: memecoins
+2025-02-05 17:08:59,926 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:08:59,934 - utils - INFO - Processed custom schemas: [
+  {
+    "name": "ROT",
+    "description": "Return on Investement",
+    "schema_definition": {
+      "type": "object",
+      "properties": {
+        "ROT": {
+          "type": "string",
+          "description": "Return on Investement"
+        }
+      }
+    }
+  }
+]
+2025-02-05 17:08:59,935 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}]
+2025-02-05 17:09:01,797 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. recent developments in memecoins Q1 2025
+==============================
+2025-02-05 17:09:01,797 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-05 17:09:04,696 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://www.linkedin.com/pulse/10-best-memecoins-watch-explosive-growth-february2025-jade-mckinley-avsxe
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://bravenewcoin.com/sponsored/presale/5-top-new-meme-coins-to-join-in-february-2025-investors-are-rushing-in-for-this-90-apy-staking-bonanza
+- https://www.ccn.com/analysis/crypto/4-cryptos-primed-new-all-time-highs-feb-2025/
+- https://www.binance.com/en/square/post/19602782853985
+                                
+2025-02-05 17:09:10,732 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:09:16,462 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:09:20,636 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:09:29,840 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:09:40,294 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:09:55,656 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:10:13,371 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:10:14,396 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:10:14,399 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:10:19,768 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:10:22,070 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:10:22,071 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in memecoins Q1 2025
+                                
+2025-02-05 17:10:24,968 - utils - INFO - 
+                                URLs found for query "recent developments in memecoins Q1 2025":
+                                - https://www.analyticsinsight.net/cryptocurrency-analytics-insight/3-top-memecoins-poised-for-massive-growth-in-q1-2025
+- https://www.binance.com/en/square/post/18582728442553
+- https://nulltx.com/the-3-top-new-meme-coins-to-invest-in-this-month-featuring-a-5-9m-presale/
+- https://m.economictimes.com/wealth/invest/top-three-crypto-presale-coins-for-q1-2025/articleshow/117195985.cms
+- https://bravenewcoin.com/sponsored/presale/cryptos-next-big-thing-4-top-meme-coins-to-join-in-2025
+                                
+2025-02-05 17:11:33,060 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:11:41,174 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:12:06,252 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:12:09,466 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:12:11,848 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:12:21,783 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:12:44,415 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:12:51,525 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:12:59,814 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:13:09,122 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:13:22,300 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:13:33,007 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 17:15:36,588 - utils - INFO - Received research request
+2025-02-05 17:15:36,589 - utils - INFO - Query: test
+2025-02-05 17:15:36,589 - utils - INFO - Raw request data: {'query': 'test', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]}
+2025-02-05 17:15:36,589 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:15:36,589 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:15:36,598 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:15:38,183 - utils - INFO - === Search Process Starting ===
+Original Query: test
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest software testing trends February 2025
+2. recent advancements in automated testing Q1 2025
+==============================
+2025-02-05 17:15:38,183 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest software testing trends February 2025
+                                
+2025-02-05 17:15:41,470 - utils - INFO - 
+                                URLs found for query "latest software testing trends February 2025":
+                                - https://www.parasoft.com/blog/annual-software-testing-trends/
+- https://www.parasoft.com/blog/annual-software-testing-trends/#1_The_Continued_Rise_of_AI-Driven_Testing
+- https://www.parasoft.com/blog/annual-software-testing-trends/#5_Test_Impact_Analysis_Delivers_Software_Faster
+- https://www.testingxperts.com/blog/software-testing-trends/
+- https://www.linkedin.com/pulse/ai-software-testing-top-insights-trends-2025-blinq-io-zjg1f
+                                
+2025-02-05 17:15:53,743 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:15:53,744 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:15:53,747 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:15:53,747 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:15:53,748 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:15:53,748 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:15:53,750 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:15:53,750 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:15:53,751 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:15:53,751 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:15:53,751 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:15:53,751 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent advancements in automated testing Q1 2025
+                                
+2025-02-05 17:15:57,049 - utils - INFO - 
+                                URLs found for query "recent advancements in automated testing Q1 2025":
+                                - https://www.itsutra.com/blog/qa-automation-2025
+- https://qatraininghub.com/software-testing-trends-for-2025/
+- https://dogq.io/blog/test-automation-statistics-for-making-the-right-decisions/
+- https://www.linkedin.com/pulse/2025-beyond-evolution-automation-testing-you-cant-miss-mir-u5wrf
+- https://www.headspin.io/blog/the-ultimate-list-of-automated-testing-tools
+                                
+2025-02-05 17:16:31,809 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:31,810 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:31,811 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:31,811 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:31,813 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:31,813 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:31,815 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:31,815 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:31,816 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:31,816 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:31,816 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:16:42,637 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 17:16:42,641 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:42,641 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:42,641 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:16:42,644 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:42,644 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:42,644 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:16:42,646 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:42,646 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:42,646 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:16:42,648 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:42,648 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:42,648 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:16:42,650 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:42,650 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:42,650 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:16:42,652 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:42,653 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:42,653 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:16:42,654 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:42,654 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:42,654 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:16:42,656 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:42,656 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:42,656 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:16:42,658 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:42,658 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:42,658 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:16:42,661 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:16:42,661 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:16:42,661 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:18:58,613 - utils - INFO - Received research request
+2025-02-05 17:18:58,614 - utils - INFO - Query: test
+2025-02-05 17:18:58,614 - utils - INFO - Raw request data: {'query': 'test', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]}
+2025-02-05 17:18:58,614 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:18:58,614 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:18:58,623 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:18:59,908 - utils - INFO - === Search Process Starting ===
+Original Query: test
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest software testing trends February 2025
+2. recent advancements in automated testing Q1 2025
+==============================
+2025-02-05 17:18:59,908 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest software testing trends February 2025
+                                
+2025-02-05 17:19:02,772 - utils - INFO - 
+                                URLs found for query "latest software testing trends February 2025":
+                                - https://www.parasoft.com/blog/annual-software-testing-trends/
+- https://www.parasoft.com/blog/annual-software-testing-trends/#1_The_Continued_Rise_of_AI-Driven_Testing
+- https://www.parasoft.com/blog/annual-software-testing-trends/#5_Test_Impact_Analysis_Delivers_Software_Faster
+- https://www.testingxperts.com/blog/software-testing-trends/
+- https://www.linkedin.com/pulse/ai-software-testing-top-insights-trends-2025-blinq-io-zjg1f
+                                
+2025-02-05 17:19:14,215 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:14,216 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:14,218 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:14,218 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:14,220 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:14,220 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:14,222 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:14,222 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:14,223 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:14,223 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:14,223 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:19:14,223 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent advancements in automated testing Q1 2025
+                                
+2025-02-05 17:19:17,491 - utils - INFO - 
+                                URLs found for query "recent advancements in automated testing Q1 2025":
+                                - https://www.itsutra.com/blog/qa-automation-2025
+- https://qatraininghub.com/software-testing-trends-for-2025/
+- https://dogq.io/blog/test-automation-statistics-for-making-the-right-decisions/
+- https://www.linkedin.com/pulse/2025-beyond-evolution-automation-testing-you-cant-miss-mir-u5wrf
+- https://www.headspin.io/blog/the-ultimate-list-of-automated-testing-tools
+                                
+2025-02-05 17:19:35,244 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:35,244 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:35,247 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:35,247 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:35,248 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:35,248 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:35,250 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:35,250 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:35,251 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:35,251 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:35,251 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:19:46,385 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 17:19:46,389 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:46,389 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:46,389 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:19:46,392 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:46,392 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:46,392 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:19:46,394 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:46,394 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:46,394 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:19:46,397 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:46,397 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:46,397 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:19:46,399 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:46,399 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:46,400 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:19:46,401 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:46,401 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:46,401 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:19:46,404 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:46,404 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:46,404 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:19:46,406 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:46,406 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:46,406 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:19:46,407 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:46,408 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:46,408 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:19:46,410 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:19:46,410 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:19:46,410 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:22:37,571 - utils - INFO - Received research request
+2025-02-05 17:22:37,571 - utils - INFO - Query: test
+2025-02-05 17:22:37,571 - utils - INFO - Raw request data: {'query': 'test', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]}
+2025-02-05 17:22:37,571 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:22:37,572 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:22:37,582 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:22:40,074 - utils - INFO - === Search Process Starting ===
+Original Query: test
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest software testing methodologies February 2025
+2. recent advancements in automated testing tools Q1 2025
+==============================
+2025-02-05 17:22:40,074 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest software testing methodologies February 2025
+                                
+2025-02-05 17:22:43,057 - utils - INFO - 
+                                URLs found for query "latest software testing methodologies February 2025":
+                                - https://www.parasoft.com/blog/annual-software-testing-trends/
+- https://www.parasoft.com/blog/annual-software-testing-trends/#1_The_Continued_Rise_of_AI-Driven_Testing
+- https://www.parasoft.com/blog/annual-software-testing-trends/#5_Test_Impact_Analysis_Delivers_Software_Faster
+- https://www.globalapptesting.com/blog/qa-testing-methodologies-and-techniques
+- https://www.linkedin.com/pulse/ultimate-roadmap-becoming-software-tester-2025-mohamed-said-ibrahim-qt8ef
+                                
+2025-02-05 17:22:55,487 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:22:55,487 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:22:55,489 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:22:55,489 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:22:55,490 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:22:55,491 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:22:55,492 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:22:55,492 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:22:55,494 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:22:55,494 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:22:55,494 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:22:55,494 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent advancements in automated testing tools Q1 2025
+                                
+2025-02-05 17:22:58,523 - utils - INFO - 
+                                URLs found for query "recent advancements in automated testing tools Q1 2025":
+                                - https://www.headspin.io/blog/the-ultimate-list-of-automated-testing-tools
+- https://www.itsutra.com/blog/qa-automation-2025
+- https://qatraininghub.com/software-testing-trends-for-2025/
+- https://thectoclub.com/tools/qa-automation-tools/
+- https://dogq.io/blog/test-automation-statistics-for-making-the-right-decisions/
+                                
+2025-02-05 17:23:35,795 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:35,796 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:35,797 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:35,797 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:35,798 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:35,798 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:35,800 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:35,800 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:35,802 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:35,802 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:35,802 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:23:46,607 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 17:23:46,611 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:46,611 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:46,611 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:23:46,615 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:46,615 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:46,615 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:23:46,617 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:46,617 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:46,617 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:23:46,620 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:46,621 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:46,621 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:23:46,623 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:46,623 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:46,623 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:23:46,625 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:46,625 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:46,625 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:23:46,626 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:46,626 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:46,626 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:23:46,628 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:46,628 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:46,628 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:23:46,630 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:46,630 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:46,630 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:23:46,632 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:23:46,632 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:23:46,632 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:29:06,139 - utils - INFO - Received research request
+2025-02-05 17:29:06,140 - utils - INFO - Query: test
+2025-02-05 17:29:06,140 - utils - INFO - Raw request data: {'query': 'test', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]}
+2025-02-05 17:29:06,140 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:29:06,140 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:29:06,150 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:29:07,808 - utils - INFO - === Search Process Starting ===
+Original Query: test
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest software testing trends February 2025
+2. recent advancements in automated testing tools Q1 2025
+==============================
+2025-02-05 17:29:07,808 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest software testing trends February 2025
+                                
+2025-02-05 17:29:10,671 - utils - INFO - 
+                                URLs found for query "latest software testing trends February 2025":
+                                - https://www.parasoft.com/blog/annual-software-testing-trends/
+- https://www.parasoft.com/blog/annual-software-testing-trends/#1_The_Continued_Rise_of_AI-Driven_Testing
+- https://www.parasoft.com/blog/annual-software-testing-trends/#5_Test_Impact_Analysis_Delivers_Software_Faster
+- https://www.testingxperts.com/blog/software-testing-trends/
+- https://www.linkedin.com/pulse/ai-software-testing-top-insights-trends-2025-blinq-io-zjg1f
+                                
+2025-02-05 17:29:19,556 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:19,556 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:19,558 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:19,558 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:19,559 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:19,559 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:19,561 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:19,562 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:19,563 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:19,563 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:19,563 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:29:19,563 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent advancements in automated testing tools Q1 2025
+                                
+2025-02-05 17:29:22,929 - utils - INFO - 
+                                URLs found for query "recent advancements in automated testing tools Q1 2025":
+                                - https://www.headspin.io/blog/the-ultimate-list-of-automated-testing-tools
+- https://www.itsutra.com/blog/qa-automation-2025
+- https://qatraininghub.com/software-testing-trends-for-2025/
+- https://dogq.io/blog/test-automation-statistics-for-making-the-right-decisions/
+- https://thectoclub.com/tools/qa-automation-tools/
+                                
+2025-02-05 17:29:37,570 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:37,571 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:37,572 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:37,572 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:37,574 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:37,574 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:37,575 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:37,575 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:37,577 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:37,577 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:37,577 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:29:48,700 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 17:29:48,704 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:48,704 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:48,704 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:29:48,707 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:48,707 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:48,707 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:29:48,709 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:48,709 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:48,709 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:29:48,711 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:48,711 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:48,711 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:29:48,714 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:48,714 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:48,714 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:29:48,716 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:48,716 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:48,716 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:29:48,718 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:48,718 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:48,718 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:29:48,719 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:48,720 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:48,720 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:29:48,721 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:48,721 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:48,721 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:29:48,723 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:29:48,723 - utils - ERROR - Error in previous method: 'schema_definition'
+2025-02-05 17:29:48,723 - utils - ERROR - Error generating summary for result: name 'enhanced_schemas' is not defined
+2025-02-05 17:32:59,069 - utils - INFO - Received research request
+2025-02-05 17:32:59,069 - utils - INFO - Query: test
+2025-02-05 17:32:59,070 - utils - INFO - Raw request data: {'query': 'test', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]}
+2025-02-05 17:32:59,070 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:32:59,070 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:32:59,080 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:33:01,109 - utils - INFO - === Search Process Starting ===
+Original Query: test
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest software testing methodologies February 2025
+2. recent advancements in automated testing tools Q1 2025
+==============================
+2025-02-05 17:33:01,109 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest software testing methodologies February 2025
+                                
+2025-02-05 17:33:04,035 - utils - INFO - 
+                                URLs found for query "latest software testing methodologies February 2025":
+                                - https://www.parasoft.com/blog/annual-software-testing-trends/
+- https://www.parasoft.com/blog/annual-software-testing-trends/#1_The_Continued_Rise_of_AI-Driven_Testing
+- https://www.parasoft.com/blog/annual-software-testing-trends/#5_Test_Impact_Analysis_Delivers_Software_Faster
+- https://www.globalapptesting.com/blog/qa-testing-methodologies-and-techniques
+- https://www.linkedin.com/pulse/ultimate-roadmap-becoming-software-tester-2025-mohamed-said-ibrahim-qt8ef
+                                
+2025-02-05 17:33:18,431 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:33:29,503 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:33:35,687 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:33:38,939 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:33:43,753 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:33:49,137 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:33:53,470 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:33:55,071 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:33:55,073 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:33:59,439 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:33:59,439 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:33:59,439 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent advancements in automated testing tools Q1 2025
+                                
+2025-02-05 17:34:02,782 - utils - INFO - 
+                                URLs found for query "recent advancements in automated testing tools Q1 2025":
+                                - https://www.headspin.io/blog/the-ultimate-list-of-automated-testing-tools
+- https://www.itsutra.com/blog/qa-automation-2025
+- https://qatraininghub.com/software-testing-trends-for-2025/
+- https://dogq.io/blog/test-automation-statistics-for-making-the-right-decisions/
+- https://thectoclub.com/tools/qa-automation-tools/
+                                
+2025-02-05 17:34:19,264 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:34:24,405 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:34:30,178 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:34:40,632 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:34:46,995 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:34:57,277 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:35:19,296 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:35:26,666 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:35:26,668 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:35:37,378 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:35:41,982 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:35:53,155 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 17:40:16,460 - utils - INFO - Received research request
+2025-02-05 17:40:16,460 - utils - INFO - Query: coins
+2025-02-05 17:40:16,460 - utils - INFO - Raw request data: {'query': 'coins', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]}
+2025-02-05 17:40:16,460 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:40:16,460 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:40:16,470 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:40:18,068 - utils - INFO - === Search Process Starting ===
+Original Query: coins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest coin market trends February 2025
+2. recent developments in coin technology Q1 2025
+==============================
+2025-02-05 17:40:18,068 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest coin market trends February 2025
+                                
+2025-02-05 17:40:21,079 - utils - INFO - 
+                                URLs found for query "latest coin market trends February 2025":
+                                - https://www.binance.com/square/post/19859695298857
+- https://financefeeds.com/5-best-crypto-presales-for-february-2025-will-you-catch-the-next-100x-coin/
+- https://www.ccn.com/analysis/crypto/4-cryptos-primed-new-all-time-highs-feb-2025/
+- https://coindcx.com/blog/cryptocurrency/top-10-cryptos-2025/
+- https://www.thearmchairtrader.com/crypto/trading-gains-2025-forecast-graniteshares/
+                                
+2025-02-05 17:40:34,159 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:40:36,516 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:40:39,070 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:40:56,122 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:41:06,624 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:41:10,350 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:41:13,143 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:41:16,602 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:41:19,945 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:41:27,500 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:41:32,650 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:41:32,650 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in coin technology Q1 2025
+                                
+2025-02-05 17:41:36,232 - utils - INFO - 
+                                URLs found for query "recent developments in coin technology Q1 2025":
+                                - https://www.binance.com/square/post/18220840879801
+- https://bravenewcoin.com/sponsored/article/crypto-market-outlook-2025-key-trends-and-emerging-developments
+- https://www.binance.com/en/square/post/19755000342082
+- https://www.coinspeaker.com/crypto-market-guide-2025-4-key-trends-watch-in-q1/
+- https://m.economictimes.com/wealth/invest/top-three-crypto-presale-coins-for-q1-2025/articleshow/117195985.cms
+                                
+2025-02-05 17:42:41,824 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:42:46,642 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:42:49,738 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:42:58,863 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:43:06,988 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:43:12,424 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:43:15,750 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:43:18,565 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:43:18,569 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:43:27,696 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:43:36,662 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:43:48,073 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 17:50:58,767 - utils - INFO - Received research request
+2025-02-05 17:50:58,767 - utils - INFO - Query: test
+2025-02-05 17:50:58,768 - utils - INFO - Raw request data: {'query': 'test', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]}
+2025-02-05 17:50:58,768 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:50:58,768 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:50:58,776 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:51:00,091 - utils - INFO - === Search Process Starting ===
+Original Query: test
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest software testing trends February 2025
+2. recent developments in automated testing tools Q1 2025
+==============================
+2025-02-05 17:51:00,091 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest software testing trends February 2025
+                                
+2025-02-05 17:51:02,944 - utils - INFO - 
+                                URLs found for query "latest software testing trends February 2025":
+                                - https://www.parasoft.com/blog/annual-software-testing-trends/
+- https://www.parasoft.com/blog/annual-software-testing-trends/#1_The_Continued_Rise_of_AI-Driven_Testing
+- https://www.parasoft.com/blog/annual-software-testing-trends/#5_Test_Impact_Analysis_Delivers_Software_Faster
+- https://www.testingxperts.com/blog/software-testing-trends/
+- https://www.linkedin.com/pulse/ai-software-testing-top-insights-trends-2025-blinq-io-zjg1f
+                                
+2025-02-05 17:51:14,559 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:51:22,854 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:51:29,350 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:51:37,689 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:51:44,725 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:51:54,029 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:51:54,032 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:52:01,727 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:52:01,730 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:52:09,218 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:52:15,418 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:52:15,418 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in automated testing tools Q1 2025
+                                
+2025-02-05 17:52:18,381 - utils - INFO - 
+                                URLs found for query "recent developments in automated testing tools Q1 2025":
+                                - https://www.itsutra.com/blog/qa-automation-2025
+- https://www.accelq.com/blog/test-automation-tools/
+- https://www.headspin.io/blog/the-ultimate-list-of-automated-testing-tools
+- https://qatraininghub.com/software-testing-trends-for-2025/
+- https://www.xenonstack.com/insights/software-testing-automation-trends
+                                
+2025-02-05 17:52:44,501 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:52:55,569 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:52:55,571 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:53:03,690 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:53:08,076 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:53:13,752 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:53:13,755 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:53:18,516 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:53:18,520 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:53:24,694 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:53:32,144 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 17:53:43,071 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
+2025-02-05 17:59:26,685 - utils - INFO - Received research request
+2025-02-05 17:59:26,686 - utils - INFO - Query: coins
+2025-02-05 17:59:26,686 - utils - INFO - Raw request data: {'query': 'coins', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]}
+2025-02-05 17:59:26,686 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:59:26,686 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:59:26,695 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
+2025-02-05 17:59:28,780 - utils - INFO - === Search Process Starting ===
+Original Query: coins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+
+Generated 2 queries:
+1. latest cryptocurrency coin trends February 2025
+2. top performing coins Q1 2025
+==============================
+2025-02-05 17:59:28,781 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest cryptocurrency coin trends February 2025
+                                
+2025-02-05 17:59:32,206 - utils - INFO - 
+                                URLs found for query "latest cryptocurrency coin trends February 2025":
+                                - https://zebpay.com/blog/top-10-cryptos-to-invest-in-2025
+- https://www.ccn.com/analysis/crypto/4-cryptos-primed-new-all-time-highs-feb-2025/
+- https://coindcx.com/blog/cryptocurrency/top-10-cryptos-2025/
+- https://www.binance.com/square/post/19859695298857
+- https://mudrex.com/learn/new-crypto-listings/
+                                
+2025-02-05 17:59:39,567 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:59:49,283 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:59:56,907 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:59:58,235 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:59:58,237 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:59:59,340 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 17:59:59,343 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 18:00:02,136 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 18:00:05,856 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 18:00:25,972 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 18:01:19,803 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 18:01:19,803 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top performing coins Q1 2025
+                                
+2025-02-05 18:01:22,744 - utils - INFO - 
+                                URLs found for query "top performing coins Q1 2025":
+                                - https://m.economictimes.com/wealth/invest/top-three-crypto-presale-coins-for-q1-2025/articleshow/117195985.cms
+- https://techpoint.africa/2025/01/12/5-best-altcoins-to-buy-now-top-picks-before-2025-bull-run-explodes/
+- https://www.binance.com/en/square/post/17956909898649
+- https://thenewscrypto.com/best-cryptos-expected-to-skyrocket-in-q1-2025-solana-sol-sui-sui-cutoshi-cuto/
+- https://coingape.com/markets/top-4-ai-coins-set-to-dominate-q1-2025-market-rally/
+                                
+2025-02-05 18:02:37,600 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 18:02:47,923 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 18:03:05,127 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 18:03:13,960 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 18:03:21,648 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 18:03:28,977 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 18:03:35,376 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 18:03:46,631 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 18:04:02,421 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 18:04:16,019 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-05 18:04:42,499 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-05 18:04:53,807 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT']
+                    
