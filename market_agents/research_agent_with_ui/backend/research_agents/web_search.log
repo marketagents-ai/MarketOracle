@@ -10892,3 +10892,163 @@ Generated 2 queries:
                     Total Successful Extractions: 10
                     Custom Fields Analyzed: ['ROT']
                     
+2025-02-14 16:24:18,868 - utils - INFO - Received research request
+2025-02-14 16:24:18,868 - utils - INFO - Query: Memecoin
+2025-02-14 16:24:18,868 - utils - INFO - Raw request data: {'query': 'Memecoin', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]}
+2025-02-14 16:24:18,869 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-14 16:24:18,869 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-14 16:24:18,880 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-14 16:24:20,214 - utils - INFO - === Search Process Starting ===
+Original Query: Memecoin
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. recent developments in memecoin market Q1 2025
+==============================
+2025-02-14 16:24:20,214 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-14 16:24:23,428 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://techpoint.africa/cryptoexplorer/2025/02/12/top-3-best-meme-coins-to-invest-in-february-2025-featuring-a-1-1m-presale/
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://www.ccn.com/analysis/crypto/memecoins-crashed-first-week-february/
+- https://www.binance.com/en/square/post/20072007680466
+- https://www.dlnews.com/research/best-meme-coin-for-2025-supercycle-high-return-crypto-picks/
+                                
+2025-02-14 16:25:48,093 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:25:52,684 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:26:00,449 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:26:26,159 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:27:01,387 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:27:04,666 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:27:10,901 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:27:25,350 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:28:08,764 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:28:14,510 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:28:24,530 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-14 16:28:24,530 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in memecoin market Q1 2025
+                                
+2025-02-14 16:28:27,923 - utils - INFO - 
+                                URLs found for query "recent developments in memecoin market Q1 2025":
+                                - https://techpoint.africa/cryptoexplorer/2025/02/11/next-crypto-to-explode-6-coins-set-for-a-massive-breakout-in-2025/
+- https://www.binance.com/en/square/post/18590792685577
+- https://techpoint.africa/cryptoexplorer/2025/02/06/best-meme-coins-to-buy-now/
+- https://www.binance.com/en/square/post/17951941895922
+- https://m.economictimes.com/wealth/invest/three-new-meme-coins-that-could-skyrocket-soon/articleshow/117235517.cms
+                                
+2025-02-14 16:29:49,305 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:29:55,154 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:30:06,831 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:30:20,016 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:30:50,454 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:31:09,040 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:31:57,932 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:32:12,821 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:33:15,558 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:33:24,456 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:33:48,242 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-14 16:34:00,295 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT', 'Risk to Reward ']
+                    
+2025-02-14 16:40:45,345 - utils - INFO - Received research request
+2025-02-14 16:40:45,345 - utils - INFO - Query: memecoins to invest on
+2025-02-14 16:40:45,345 - utils - INFO - Raw request data: {'query': 'memecoins to invest on', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]}
+2025-02-14 16:40:45,346 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-14 16:40:45,346 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-14 16:40:45,355 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-14 16:40:46,840 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins to invest on
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 2 queries:
+1. latest memecoin investment opportunities February 2025
+2. top performing memecoins Q1 2025
+==============================
+2025-02-14 16:40:46,840 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin investment opportunities February 2025
+                                
+2025-02-14 16:40:50,643 - utils - INFO - 
+                                URLs found for query "latest memecoin investment opportunities February 2025":
+                                - https://techpoint.africa/cryptoexplorer/2025/02/12/top-3-best-meme-coins-to-invest-in-february-2025-featuring-a-1-1m-presale/
+- https://www.dlnews.com/research/best-meme-coin-for-2025-supercycle-high-return-crypto-picks/
+- https://www.dxtalks.com/blog/news-2/top-7-meme-coins-to-watch-in-2025-potential-for-skyrocketing-returns-740
+- https://www.binance.com/square/post/20072007680466
+- https://www.coinspeaker.com/6-best-new-meme-coins-invest-february-2025-next-big-movers/
+                                
+2025-02-14 16:41:14,077 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:41:19,570 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:41:27,078 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:41:31,934 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:41:40,775 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:41:50,610 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:42:17,027 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:42:29,777 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:43:13,737 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:43:18,432 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:43:18,433 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-14 16:43:18,433 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top performing memecoins Q1 2025
+                                
+2025-02-14 16:43:22,396 - utils - INFO - 
+                                URLs found for query "top performing memecoins Q1 2025":
+                                - https://www.binance.com/en/square/post/18582728442553
+- https://techpoint.africa/cryptoexplorer/2025/02/11/next-crypto-to-explode-6-coins-set-for-a-massive-breakout-in-2025/
+- https://m.economictimes.com/wealth/invest/top-three-crypto-presale-coins-for-q1-2025/articleshow/117195985.cms
+- https://www.bitget.com/news/detail/12560604525516
+- https://www.kraken.com/learn/top-memecoins-2025
+                                
+2025-02-14 16:44:41,958 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:44:56,638 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:46:06,400 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:46:14,805 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:46:37,906 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:46:46,690 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:47:10,809 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:47:12,242 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:47:12,246 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:47:13,707 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:47:13,708 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-14 16:47:25,574 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT', 'Risk to Reward ']
+                    
