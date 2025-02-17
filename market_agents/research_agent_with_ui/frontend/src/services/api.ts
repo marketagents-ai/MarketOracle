@@ -23,7 +23,6 @@ export const fetchResearch = async (
 
     console.log('Query being sent:', query);
     console.log('Enabled tools from localStorage:', enabledTools);
-    console.log('Query being sent:', query);
     console.log('Custom schemas before request:', JSON.stringify(customSchemas, null, 2));
     console.log('Custom schemas type:', typeof customSchemas);
 
@@ -48,8 +47,16 @@ export const fetchResearch = async (
     }
 
     const data = await response.json();
+    
+    // Add error handling for malformed response
+    if (!data) {
+      console.error('Empty response from research service');
+      return [];
+    }
+
     console.log('Research API response:', data);
     return data;
+    
   } catch (error) {
     console.error('Research API Error:', error);
     throw error instanceof APIError ? error : new APIError('Failed to connect to research service');

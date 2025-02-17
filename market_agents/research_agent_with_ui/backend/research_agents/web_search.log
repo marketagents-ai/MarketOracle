@@ -9376,10 +9376,17 @@ Generated 2 queries:
                     Custom Fields Analyzed: ['ROT']
                     
 2025-02-05 03:43:04,404 - utils - INFO - Returning 10 results
+<<<<<<< Updated upstream
 2025-02-05 15:32:25,178 - utils - INFO - Received research request
 2025-02-05 15:32:25,179 - utils - INFO - Query: memecoins pumping
 2025-02-05 15:32:25,179 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
 2025-02-05 15:32:25,189 - utils - INFO - Processed custom schemas: [
+=======
+2025-02-14 15:51:18,969 - utils - INFO - Received research request
+2025-02-14 15:51:18,969 - utils - INFO - Query: memecoins to invest on
+2025-02-14 15:51:18,970 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-14 15:51:18,979 - utils - INFO - Processed custom schemas: [
+>>>>>>> Stashed changes
   {
     "name": "ROT",
     "description": "Return on Investement",
@@ -9392,6 +9399,7 @@ Generated 2 queries:
         }
       }
     }
+<<<<<<< Updated upstream
   }
 ]
 2025-02-05 15:32:25,190 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}]
@@ -9428,11 +9436,73 @@ Generated 2 queries:
 2025-02-05 15:34:40,477 - utils - INFO - Successfully created merged schema with custom fields
 2025-02-05 15:34:55,472 - utils - INFO - Successfully created merged schema with custom fields
 2025-02-05 15:34:59,685 - utils - INFO - 
+=======
+  },
+  {
+    "name": "Risk to Reward ",
+    "description": "what is risk to reward ratio",
+    "schema_definition": {
+      "type": "object",
+      "properties": {
+        "Risk to Reward ": {
+          "type": "string",
+          "description": "what is risk to reward ratio"
+        }
+      }
+    }
+  }
+]
+2025-02-14 15:51:18,980 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'Risk to Reward ': {'type': 'string', 'description': 'what is risk to reward ratio'}}}}]
+2025-02-14 15:51:19,015 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins to invest on
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 1 queries:
+1. memecoins to invest on 2025 latest
+==============================
+2025-02-14 15:51:19,015 - utils - INFO - 
+                                === Processing Query 1/1 ===
+                                Query: memecoins to invest on 2025 latest
+                                
+2025-02-14 15:51:22,070 - utils - INFO - 
+                                URLs found for query "memecoins to invest on 2025 latest":
+                                - https://techpoint.africa/cryptoexplorer/2025/02/14/investing-in-innovation-an-in-depth-analysis-of-the-10-best-meme-coins-to-buy-for-2025-and-their-potential-to-revolutionize-the-market/
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://www.binance.com/en/square/post/20227039880545
+- https://www.thecryptoupdates.com/meme-coins-on-fire-top-10-meme-coins-to-invest-in-2025-for-maximum-roi/
+- https://nftevening.com/solana-meme-coins/
+                                
+2025-02-14 15:51:45,108 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:51:45,113 - utils - ERROR - Error in generate_ai_summary: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1695b7590>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,114 - utils - ERROR - Error generating custom field analysis: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1695c4d90>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,116 - utils - ERROR - Error generating custom field analysis: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1695c6b90>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,118 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:51:45,122 - utils - ERROR - Error in generate_ai_summary: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1695f4f10>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,124 - utils - ERROR - Error generating custom field analysis: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1695f6510>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,125 - utils - ERROR - Error generating custom field analysis: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1695f50d0>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,127 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:51:45,131 - utils - ERROR - Error in generate_ai_summary: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x169613f90>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,132 - utils - ERROR - Error generating custom field analysis: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x169609610>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,134 - utils - ERROR - Error generating custom field analysis: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x16960b4d0>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,135 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:51:45,140 - utils - ERROR - Error in generate_ai_summary: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x169631910>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,142 - utils - ERROR - Error generating custom field analysis: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x169632f10>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,144 - utils - ERROR - Error generating custom field analysis: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x169631790>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,145 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:51:45,149 - utils - ERROR - Error in generate_ai_summary: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x169658b50>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,151 - utils - ERROR - Error generating custom field analysis: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x16965a190>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,152 - utils - ERROR - Error generating custom field analysis: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/cl100k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x16965bfd0>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-02-14 15:51:45,152 - utils - INFO - 
+>>>>>>> Stashed changes
                             Query 1 Results Summary:
                             - URLs processed: 5
                             - Successful extractions: 5
                             - Failed extractions: 0
                             
+<<<<<<< Updated upstream
 2025-02-05 15:34:59,685 - utils - INFO - 
                                 === Processing Query 2/2 ===
                                 Query: recent memecoin price pumps Q1 2025
@@ -9473,6 +9543,20 @@ Generated 2 queries:
 2025-02-05 15:43:05,190 - utils - INFO - Query: coins to watch
 2025-02-05 15:43:05,190 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
 2025-02-05 15:43:05,199 - utils - INFO - Processed custom schemas: [
+=======
+2025-02-14 15:51:48,395 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 1
+                    Total URLs Processed: 2
+                    Total Successful Extractions: 5
+                    Custom Fields Analyzed: ['ROT', 'Risk to Reward ']
+                    
+2025-02-14 15:51:48,395 - utils - INFO - Returning 5 results
+2025-02-14 15:53:24,640 - utils - INFO - Received research request
+2025-02-14 15:53:24,641 - utils - INFO - Query: memecoins price
+2025-02-14 15:53:24,641 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-14 15:53:24,647 - utils - INFO - Processed custom schemas: [
+>>>>>>> Stashed changes
   {
     "name": "ROT",
     "description": "Return on Investement",
@@ -9485,6 +9569,7 @@ Generated 2 queries:
         }
       }
     }
+<<<<<<< Updated upstream
   }
 ]
 2025-02-05 15:43:05,200 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}]
@@ -9575,11 +9660,24 @@ Generated 2 queries:
         "ROT": {
           "type": "string",
           "description": "Return on Investement"
+=======
+  },
+  {
+    "name": "Risk to Reward ",
+    "description": "what is risk to reward ratio",
+    "schema_definition": {
+      "type": "object",
+      "properties": {
+        "Risk to Reward ": {
+          "type": "string",
+          "description": "what is risk to reward ratio"
+>>>>>>> Stashed changes
         }
       }
     }
   }
 ]
+<<<<<<< Updated upstream
 2025-02-05 15:59:54,088 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}]
 2025-02-05 15:59:55,892 - utils - INFO - === Search Process Starting ===
 Original Query: memcoins
@@ -9614,11 +9712,49 @@ Generated 2 queries:
 2025-02-05 16:02:37,196 - utils - INFO - Successfully created merged schema with custom fields
 2025-02-05 16:02:46,629 - utils - INFO - Successfully created merged schema with custom fields
 2025-02-05 16:02:46,629 - utils - INFO - 
+=======
+2025-02-14 15:53:24,648 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'Risk to Reward ': {'type': 'string', 'description': 'what is risk to reward ratio'}}}}]
+2025-02-14 15:53:41,919 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins price
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 2 queries:
+1. latest memecoin price trends February 2025
+2. recent memecoin market developments Q1 2025
+==============================
+2025-02-14 15:53:41,919 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin price trends February 2025
+                                
+2025-02-14 15:53:45,805 - utils - INFO - 
+                                URLs found for query "latest memecoin price trends February 2025":
+                                - https://techpoint.africa/cryptoexplorer/2025/02/12/top-3-best-meme-coins-to-invest-in-february-2025-featuring-a-1-1m-presale/
+- https://www.ccn.com/analysis/crypto/memecoins-crashed-first-week-february/
+- https://www.dxtalks.com/blog/news-2/top-7-meme-coins-to-watch-in-2025-potential-for-skyrocketing-returns-740
+- https://coinfomania.com/2025-memecoin-supercycle/
+- https://www.coinspeaker.com/6-best-new-meme-coins-to-invest-in-february-2025/
+                                
+2025-02-14 15:54:09,572 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:54:14,330 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:54:23,162 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:54:25,572 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:54:30,435 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:54:38,700 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:55:08,639 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:55:13,808 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:55:23,023 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:55:25,865 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:55:31,351 - utils - INFO - 
+>>>>>>> Stashed changes
                             Query 1 Results Summary:
                             - URLs processed: 5
                             - Successful extractions: 5
                             - Failed extractions: 0
                             
+<<<<<<< Updated upstream
 2025-02-05 16:02:46,629 - utils - INFO - 
                                 === Processing Query 2/2 ===
                                 Query: recent developments in memcoins Q1 2025
@@ -9642,16 +9778,80 @@ Generated 2 queries:
 2025-02-05 16:05:22,064 - utils - INFO - Successfully created merged schema with custom fields
 2025-02-05 16:05:31,116 - utils - INFO - Successfully created merged schema with custom fields
 2025-02-05 16:05:43,253 - utils - INFO - 
+=======
+2025-02-14 15:55:31,351 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent memecoin market developments Q1 2025
+                                
+2025-02-14 15:55:35,590 - utils - INFO - 
+                                URLs found for query "recent memecoin market developments Q1 2025":
+                                - https://techpoint.africa/cryptoexplorer/2025/02/11/next-crypto-to-explode-6-coins-set-for-a-massive-breakout-in-2025/
+- https://techpoint.africa/cryptoexplorer/2025/02/06/best-meme-coins-to-buy-now/
+- https://www.binance.com/en/square/post/18582728442553
+- https://m.economictimes.com/wealth/invest/must-watch-tokens-for-2025-four-cryptos-ready-to-explode/articleshow/117264736.cms
+- https://tradebrains.in/doge-uprising-among-the-best-memecoins-to-buy-in-q1-2025-for-1500x-returns/
+                                
+2025-02-14 15:57:05,503 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:57:11,816 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:57:22,816 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:57:36,986 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:58:25,744 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:58:40,061 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 15:59:39,021 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:04:40,017 - utils - ERROR - Error in generate_ai_summary: 5 validation errors for ChatCompletion
+id
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+choices
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+created
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+model
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+object
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2025-02-14 16:04:40,031 - utils - ERROR - Error generating custom field analysis: 5 validation errors for ChatCompletion
+id
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+choices
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+created
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+model
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+object
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2025-02-14 16:04:40,037 - utils - ERROR - Error generating custom field analysis: '3fd90c37-a55f-4b79-acb2-c998b0e6962e'
+2025-02-14 16:04:40,040 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:04:40,053 - utils - ERROR - Error in generate_ai_summary: '3fd90c37-a55f-4b79-acb2-c998b0e6962e'
+2025-02-14 16:04:40,060 - utils - ERROR - Error generating custom field analysis: '3fd90c37-a55f-4b79-acb2-c998b0e6962e'
+2025-02-14 16:04:40,067 - utils - ERROR - Error generating custom field analysis: '3fd90c37-a55f-4b79-acb2-c998b0e6962e'
+2025-02-14 16:04:40,067 - utils - INFO - 
+>>>>>>> Stashed changes
                             Query 2 Results Summary:
                             - URLs processed: 5
                             - Successful extractions: 5
                             - Failed extractions: 0
                             
+<<<<<<< Updated upstream
 2025-02-05 16:05:54,536 - utils - INFO - 
+=======
+2025-02-14 16:04:51,456 - utils - INFO - 
+>>>>>>> Stashed changes
                     === Final Search Summary ===
                     Total Queries Processed: 2
                     Total URLs Processed: 4
                     Total Successful Extractions: 10
+<<<<<<< Updated upstream
                     Custom Fields Analyzed: ['ROT']
                     
 2025-02-05 16:05:54,536 - utils - INFO - Returning 10 results
@@ -9659,6 +9859,15 @@ Generated 2 queries:
 2025-02-05 16:14:50,585 - utils - INFO - Query: memcoins
 2025-02-05 16:14:50,585 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
 2025-02-05 16:14:50,593 - utils - INFO - Processed custom schemas: [
+=======
+                    Custom Fields Analyzed: ['ROT', 'Risk to Reward ']
+                    
+2025-02-14 16:04:51,457 - utils - INFO - Returning 10 results
+2025-02-14 16:05:32,236 - utils - INFO - Received research request
+2025-02-14 16:05:32,238 - utils - INFO - Query: bitcoin price
+2025-02-14 16:05:32,238 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-14 16:05:32,247 - utils - INFO - Processed custom schemas: [
+>>>>>>> Stashed changes
   {
     "name": "ROT",
     "description": "Return on Investement",
@@ -9671,6 +9880,7 @@ Generated 2 queries:
         }
       }
     }
+<<<<<<< Updated upstream
   }
 ]
 2025-02-05 16:14:50,595 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}]
@@ -9707,11 +9917,88 @@ Generated 2 queries:
 2025-02-05 16:16:46,971 - utils - INFO - Successfully created merged schema with custom fields
 2025-02-05 16:17:00,662 - utils - INFO - Successfully created merged schema with custom fields
 2025-02-05 16:17:07,575 - utils - INFO - 
+=======
+  },
+  {
+    "name": "Risk to Reward ",
+    "description": "what is risk to reward ratio",
+    "schema_definition": {
+      "type": "object",
+      "properties": {
+        "Risk to Reward ": {
+          "type": "string",
+          "description": "what is risk to reward ratio"
+        }
+      }
+    }
+  }
+]
+2025-02-14 16:05:32,248 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'Risk to Reward ': {'type': 'string', 'description': 'what is risk to reward ratio'}}}}]
+2025-02-14 16:05:32,269 - utils - INFO - === Search Process Starting ===
+Original Query: bitcoin price
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 1 queries:
+1. bitcoin price 2025 latest
+==============================
+2025-02-14 16:05:32,269 - utils - INFO - 
+                                === Processing Query 1/1 ===
+                                Query: bitcoin price 2025 latest
+                                
+2025-02-14 16:05:35,682 - utils - INFO - 
+                                URLs found for query "bitcoin price 2025 latest":
+                                - https://www.statista.com/statistics/326707/bitcoin-price-index/
+- https://m.economictimes.com/news/international/us/bitcoin-to-reach-1-million-in-valuation-that-too-within-months-heres-the-logic-jan3-ceo-samson-mow-gives-for-the-prediction/articleshow/118220877.cms
+- https://www.binance.com/en/price-prediction/bitcoin
+- https://changelly.com/blog/bitcoin-price-prediction/
+- https://changelly.com/blog/bitcoin-price-prediction/#Bitcoin-Overview
+                                
+2025-02-14 16:05:49,456 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:05:49,467 - utils - ERROR - Error in generate_ai_summary: 5 validation errors for ChatCompletion
+id
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+choices
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+created
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+model
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+object
+  Field required [type=missing, input_value={'error': 'Cannot connect...rovided, or not known]'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2025-02-14 16:05:49,476 - utils - ERROR - Error generating custom field analysis: 'a07adad7-a7de-4e22-bf7e-f71b92d3b4af'
+2025-02-14 16:05:49,485 - utils - ERROR - Error generating custom field analysis: 'a07adad7-a7de-4e22-bf7e-f71b92d3b4af'
+2025-02-14 16:05:49,487 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:05:49,495 - utils - ERROR - Error in generate_ai_summary: 'a07adad7-a7de-4e22-bf7e-f71b92d3b4af'
+2025-02-14 16:05:49,501 - utils - ERROR - Error generating custom field analysis: 'a07adad7-a7de-4e22-bf7e-f71b92d3b4af'
+2025-02-14 16:05:49,507 - utils - ERROR - Error generating custom field analysis: 'a07adad7-a7de-4e22-bf7e-f71b92d3b4af'
+2025-02-14 16:05:49,508 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:05:49,519 - utils - ERROR - Error in generate_ai_summary: 'a07adad7-a7de-4e22-bf7e-f71b92d3b4af'
+2025-02-14 16:05:49,525 - utils - ERROR - Error generating custom field analysis: 'a07adad7-a7de-4e22-bf7e-f71b92d3b4af'
+2025-02-14 16:05:49,533 - utils - ERROR - Error generating custom field analysis: 'a07adad7-a7de-4e22-bf7e-f71b92d3b4af'
+2025-02-14 16:05:49,535 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:05:49,545 - utils - ERROR - Error in generate_ai_summary: 'a07adad7-a7de-4e22-bf7e-f71b92d3b4af'
+2025-02-14 16:05:49,559 - utils - ERROR - Error generating custom field analysis: 'a07adad7-a7de-4e22-bf7e-f71b92d3b4af'
+2025-02-14 16:05:49,575 - utils - ERROR - Error generating custom field analysis: 'a07adad7-a7de-4e22-bf7e-f71b92d3b4af'
+2025-02-14 16:05:49,577 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:05:49,586 - utils - ERROR - Error in generate_ai_summary: 'a07adad7-a7de-4e22-bf7e-f71b92d3b4af'
+2025-02-14 16:05:49,603 - utils - ERROR - Error generating custom field analysis: 'a07adad7-a7de-4e22-bf7e-f71b92d3b4af'
+2025-02-14 16:05:49,620 - utils - ERROR - Error generating custom field analysis: 'a07adad7-a7de-4e22-bf7e-f71b92d3b4af'
+2025-02-14 16:05:49,620 - utils - INFO - 
+>>>>>>> Stashed changes
                             Query 1 Results Summary:
                             - URLs processed: 5
                             - Successful extractions: 5
                             - Failed extractions: 0
                             
+<<<<<<< Updated upstream
 2025-02-05 16:17:07,575 - utils - INFO - 
                                 === Processing Query 2/2 ===
                                 Query: recent developments in memcoins Q1 2025
@@ -9752,6 +10039,20 @@ Generated 2 queries:
 2025-02-05 16:24:43,452 - utils - INFO - Query: memecoins
 2025-02-05 16:24:43,452 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}]
 2025-02-05 16:24:43,462 - utils - INFO - Processed custom schemas: [
+=======
+2025-02-14 16:05:52,636 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 1
+                    Total URLs Processed: 2
+                    Total Successful Extractions: 5
+                    Custom Fields Analyzed: ['ROT', 'Risk to Reward ']
+                    
+2025-02-14 16:05:52,636 - utils - INFO - Returning 5 results
+2025-02-14 16:06:20,350 - utils - INFO - Received research request
+2025-02-14 16:06:20,350 - utils - INFO - Query: bitcoin price
+2025-02-14 16:06:20,351 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-14 16:06:20,360 - utils - INFO - Processed custom schemas: [
+>>>>>>> Stashed changes
   {
     "name": "ROT",
     "description": "Return on Investement",
@@ -9764,14 +10065,142 @@ Generated 2 queries:
         }
       }
     }
+<<<<<<< Updated upstream
   }
 ]
 2025-02-05 16:24:43,464 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}]
 2025-02-05 16:24:44,842 - utils - INFO - === Search Process Starting ===
+=======
+  },
+  {
+    "name": "Risk to Reward ",
+    "description": "what is risk to reward ratio",
+    "schema_definition": {
+      "type": "object",
+      "properties": {
+        "Risk to Reward ": {
+          "type": "string",
+          "description": "what is risk to reward ratio"
+        }
+      }
+    }
+  }
+]
+2025-02-14 16:06:20,361 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'Risk to Reward ': {'type': 'string', 'description': 'what is risk to reward ratio'}}}}]
+2025-02-14 16:06:21,868 - utils - INFO - === Search Process Starting ===
+Original Query: bitcoin price
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 2 queries:
+1. latest bitcoin price trends February 2025
+2. bitcoin price analysis last 30 days February 2025
+==============================
+2025-02-14 16:06:21,868 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest bitcoin price trends February 2025
+                                
+2025-02-14 16:06:25,964 - utils - INFO - 
+                                URLs found for query "latest bitcoin price trends February 2025":
+                                - https://www.statista.com/statistics/326707/bitcoin-price-index/
+- https://bitcoinmagazine.com/markets/what-bitcoin-price-history-predicts-for-february-2025
+- https://kvapay.com/blog/post/will-bitcoin-price-reach-200000-usd-in-2025-an-in-depth-analysis
+- https://www.coindesk.com/markets/2025/02/14/bitcoin-bull-market-is-far-from-over-suggests-historical-trends-tied-to-200-week-average
+- https://m.economictimes.com/news/international/us/bitcoin-to-reach-1-million-in-valuation-that-too-within-months-heres-the-logic-jan3-ceo-samson-mow-gives-for-the-prediction/articleshow/118220877.cms
+                                
+2025-02-14 16:08:14,112 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:08:18,281 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:08:28,790 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:08:33,414 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:08:41,321 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:08:46,862 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:08:54,802 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:09:01,606 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:09:09,345 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:09:15,726 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:09:23,614 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-14 16:09:23,614 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: bitcoin price analysis last 30 days February 2025
+                                
+2025-02-14 16:09:29,526 - utils - INFO - 
+                                URLs found for query "bitcoin price analysis last 30 days February 2025":
+                                - https://www.statista.com/statistics/326707/bitcoin-price-index/
+- https://www.investing.com/crypto/bitcoin/historical-data
+- https://in.investing.com/crypto/bitcoin/historical-data
+- https://www.investing.com/crypto/bitcoin/bitcoin-futures-historical-data
+- https://www.investing.com/crypto/bitcoin/markets
+                                
+2025-02-14 16:09:52,291 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:09:56,693 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:10:05,646 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:10:08,162 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:10:15,003 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:10:17,821 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:10:24,467 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:10:27,550 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:10:33,306 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:10:35,944 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:10:41,144 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-14 16:10:53,543 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT', 'Risk to Reward ']
+                    
+2025-02-14 16:10:53,543 - utils - INFO - Returning 10 results
+2025-02-14 16:14:32,720 - utils - INFO - Received research request
+2025-02-14 16:14:32,720 - utils - INFO - Query: memecoins
+2025-02-14 16:14:32,721 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-14 16:14:32,730 - utils - INFO - Processed custom schemas: [
+  {
+    "name": "ROT",
+    "description": "Return on Investement",
+    "schema_definition": {
+      "type": "object",
+      "properties": {
+        "ROT": {
+          "type": "string",
+          "description": "Return on Investement"
+        }
+      }
+    }
+  },
+  {
+    "name": "Risk to Reward ",
+    "description": "what is risk to reward ratio",
+    "schema_definition": {
+      "type": "object",
+      "properties": {
+        "Risk to Reward ": {
+          "type": "string",
+          "description": "what is risk to reward ratio"
+        }
+      }
+    }
+  }
+]
+2025-02-14 16:14:32,731 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROT': {'type': 'string', 'description': 'Return on Investement'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'Risk to Reward ': {'type': 'string', 'description': 'what is risk to reward ratio'}}}}]
+2025-02-14 16:14:34,117 - utils - INFO - === Search Process Starting ===
+>>>>>>> Stashed changes
 Original Query: memecoins
 
 Active Custom Tools:
       - ROT: Return on Investement
+<<<<<<< Updated upstream
 
 Generated 2 queries:
 1. latest memecoin trends February 2025
@@ -10903,17 +11332,27 @@ Original Query: Memecoins
 
 Active Custom Tools:
       - ROT: Return on Investement
+=======
+>>>>>>> Stashed changes
       - Risk to Reward : what is risk to reward ratio
 
 Generated 2 queries:
 1. latest memecoin trends February 2025
 2. recent developments in memecoins Q1 2025
 ==============================
+<<<<<<< Updated upstream
 2025-02-14 16:54:14,230 - utils - INFO - 
                                 === Processing Query 1/2 ===
                                 Query: latest memecoin trends February 2025
                                 
 2025-02-14 16:54:17,448 - utils - INFO - 
+=======
+2025-02-14 16:14:34,118 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-14 16:14:40,335 - utils - INFO - 
+>>>>>>> Stashed changes
                                 URLs found for query "latest memecoin trends February 2025":
                                 - https://techpoint.africa/cryptoexplorer/2025/02/12/top-3-best-meme-coins-to-invest-in-february-2025-featuring-a-1-1m-presale/
 - https://zebpay.com/blog/top-5-meme-coins-of-2025
@@ -10921,4 +11360,59 @@ Generated 2 queries:
 - https://www.binance.com/en/square/post/20072007680466
 - https://www.dlnews.com/research/best-meme-coin-for-2025-supercycle-high-return-crypto-picks/
                                 
+<<<<<<< Updated upstream
 2025-02-14 16:54:31,675 - utils - INFO - Successfully created merged schema with custom fields
+=======
+2025-02-14 16:16:02,399 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:16:11,601 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:16:19,086 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:16:25,779 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:16:40,482 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:16:43,233 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:16:48,327 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:16:59,748 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:17:47,671 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:17:52,161 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:18:01,989 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-14 16:18:01,989 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in memecoins Q1 2025
+                                
+2025-02-14 16:18:05,676 - utils - INFO - 
+                                URLs found for query "recent developments in memecoins Q1 2025":
+                                - https://techpoint.africa/cryptoexplorer/2025/02/11/next-crypto-to-explode-6-coins-set-for-a-massive-breakout-in-2025/
+- https://www.binance.com/en/square/post/18582728442553
+- https://m.economictimes.com/wealth/invest/top-three-crypto-presale-coins-for-q1-2025/articleshow/117195985.cms
+- https://techpoint.africa/cryptoexplorer/2025/02/06/best-meme-coins-to-buy-now/
+- https://www.binance.com/en/square/post/18590792685577
+                                
+2025-02-14 16:19:30,983 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:19:39,599 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:19:49,409 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:20:03,128 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:20:53,199 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:21:01,251 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:21:25,454 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:21:39,146 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:22:30,782 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:22:39,946 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-14 16:23:09,790 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-14 16:23:21,466 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 10
+                    Custom Fields Analyzed: ['ROT', 'Risk to Reward ']
+                    
+2025-02-14 16:23:21,466 - utils - INFO - Returning 10 results
+>>>>>>> Stashed changes
