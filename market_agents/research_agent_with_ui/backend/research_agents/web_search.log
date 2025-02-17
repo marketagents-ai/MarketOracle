@@ -10892,3 +10892,33 @@ Generated 2 queries:
                     Total Successful Extractions: 10
                     Custom Fields Analyzed: ['ROT']
                     
+2025-02-14 16:54:12,658 - utils - INFO - Received research request
+2025-02-14 16:54:12,659 - utils - INFO - Query: Memecoins
+2025-02-14 16:54:12,659 - utils - INFO - Raw request data: {'query': 'Memecoins', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]}
+2025-02-14 16:54:12,659 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-14 16:54:12,659 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-14 16:54:12,669 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-14 16:54:14,230 - utils - INFO - === Search Process Starting ===
+Original Query: Memecoins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. recent developments in memecoins Q1 2025
+==============================
+2025-02-14 16:54:14,230 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-14 16:54:17,448 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://techpoint.africa/cryptoexplorer/2025/02/12/top-3-best-meme-coins-to-invest-in-february-2025-featuring-a-1-1m-presale/
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://www.ccn.com/analysis/crypto/memecoins-crashed-first-week-february/
+- https://www.binance.com/en/square/post/20072007680466
+- https://www.dlnews.com/research/best-meme-coin-for-2025-supercycle-high-return-crypto-picks/
+                                
+2025-02-14 16:54:31,675 - utils - INFO - Successfully created merged schema with custom fields

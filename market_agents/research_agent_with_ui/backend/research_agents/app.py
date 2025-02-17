@@ -37,9 +37,11 @@ app = FastAPI(
     description="API for web research and analysis",
     version="1.0.0"
 )
+
+# Corrected CORS middleware configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Configure this appropriately for production
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
