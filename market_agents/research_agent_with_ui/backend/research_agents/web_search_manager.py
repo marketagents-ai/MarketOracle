@@ -38,7 +38,7 @@ class WebSearchConfig(BaseSettings):
     rate_limit: float = 0.1
     content_max_length: int = 1000000
     request_timeout: int = 30
-    urls_per_query: int = 9
+    urls_per_query: int = 1
     use_ai_summary: bool = True 
     methods: List[str] = ["selenium", "playwright", "beautifulsoup", "newspaper3k", "scrapy", 
                          "requests_html", "mechanicalsoup", "httpx"]

@@ -11416,3 +11416,362 @@ Generated 2 queries:
                     
 2025-02-14 16:23:21,466 - utils - INFO - Returning 10 results
 >>>>>>> Stashed changes
+2025-02-17 17:23:28,491 - utils - INFO - Received research request
+2025-02-17 17:23:28,491 - utils - INFO - Query: Memecoins
+2025-02-17 17:23:28,492 - utils - INFO - Raw request data: {'query': 'Memecoins', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]}
+2025-02-17 17:23:28,492 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:23:28,492 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:23:28,501 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:23:33,306 - utils - INFO - === Search Process Starting ===
+Original Query: Memecoins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. top performing memecoins Q1 2025
+==============================
+2025-02-17 17:23:33,306 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-17 17:23:36,745 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://www.binance.com/en/square/post/20393260809113
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://techpoint.africa/cryptoexplorer/2025/02/12/top-3-best-meme-coins-to-invest-in-february-2025-featuring-a-1-1m-presale/
+- https://www.ccn.com/analysis/crypto/memecoins-crashed-first-week-february/
+- https://disruptafrica.com/2025/02/17/best-meme-coins-what-is-the-best-meme-coin-to-buy/
+                                
+2025-02-17 17:23:48,411 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:23:53,731 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:24:00,373 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:24:10,288 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:24:42,571 - utils - INFO - Received research request
+2025-02-17 17:24:42,571 - utils - INFO - Query: Bitcoin
+2025-02-17 17:24:42,571 - utils - INFO - Raw request data: {'query': 'Bitcoin', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]}
+2025-02-17 17:24:42,571 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:24:42,571 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:24:42,580 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:24:43,779 - utils - INFO - === Search Process Starting ===
+Original Query: Bitcoin
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 2 queries:
+1. latest Bitcoin market trends February 2025
+2. recent Bitcoin price analysis Q1 2025
+==============================
+2025-02-17 17:24:43,779 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest Bitcoin market trends February 2025
+                                
+2025-02-17 17:24:46,825 - utils - INFO - 
+                                URLs found for query "latest Bitcoin market trends February 2025":
+                                - https://www.statista.com/statistics/326707/bitcoin-price-index/
+- https://www.statista.com/statistics/377382/bitcoin-market-capitalization/
+- https://www.statista.com/statistics/1200477/bitcoin-mining-by-country/
+- https://www.statista.com/markets/414/topic/990/financial-instruments-investments/
+- https://zebpay.com/blog/bitcoin-technical-analysis-report-17th-february-2025
+                                
+2025-02-17 17:25:11,767 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:25:17,876 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:25:24,218 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:25:30,660 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:25:38,176 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:25:43,326 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:25:49,929 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:25:57,188 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:25:57,192 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:26:01,127 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:26:06,874 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 5
+                            - Successful extractions: 5
+                            - Failed extractions: 0
+                            
+2025-02-17 17:26:06,874 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent Bitcoin price analysis Q1 2025
+                                
+2025-02-17 17:26:09,827 - utils - INFO - 
+                                URLs found for query "recent Bitcoin price analysis Q1 2025":
+                                - https://cryptorank.io/news/feed/6b73c-cryptocurrency-3-coins-on-path-for-a-major-breakthrough-this-q1-2025
+- https://www.binance.com/en/square/post/20162895298234
+- https://www.fxempire.com/forecasts/article/bitcoin-q1-2025-forecast-1487357
+- https://www.livemint.com/market/commodities/gold-glitters-with-11-surge-in-2025-beats-equities-and-bitcoin-is-there-more-room-for-upside-11739778590679.html
+- https://www.statista.com/statistics/326707/bitcoin-price-index/
+                                
+2025-02-17 17:26:25,991 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:26:36,006 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:26:52,827 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:26:56,524 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:27:01,837 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:27:09,946 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:27:16,013 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:27:22,182 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:27:28,838 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:27:33,344 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:27:53,267 - utils - INFO - Received research request
+2025-02-17 17:27:53,267 - utils - INFO - Query: Memecoins
+2025-02-17 17:27:53,267 - utils - INFO - Raw request data: {'query': 'Memecoins', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]}
+2025-02-17 17:27:53,268 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:27:53,268 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:27:53,278 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:27:54,242 - utils - INFO - === Search Process Starting ===
+Original Query: Memecoins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. recent developments in memecoins Q1 2025
+==============================
+2025-02-17 17:27:54,242 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-17 17:27:59,950 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://www.binance.com/en/square/post/20393260809113
+- https://techpoint.africa/cryptoexplorer/2025/02/12/top-3-best-meme-coins-to-invest-in-february-2025-featuring-a-1-1m-presale/
+- https://zebpay.com/blog/top-5-meme-coins-of-2025
+- https://www.ccn.com/analysis/crypto/memecoins-crashed-first-week-february/
+- https://www.dxtalks.com/blog/news-2/top-7-meme-coins-to-watch-in-2025-potential-for-skyrocketing-returns-740
+                                
+2025-02-17 17:28:09,013 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:28:12,987 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:28:18,685 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:28:29,275 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:28:55,299 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:29:03,045 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:29:22,545 - utils - INFO - Received research request
+2025-02-17 17:29:22,545 - utils - INFO - Query: Memecoins
+2025-02-17 17:29:22,545 - utils - INFO - Raw request data: {'query': 'Memecoins', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]}
+2025-02-17 17:29:22,546 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:29:22,546 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:29:22,555 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:29:23,563 - utils - INFO - === Search Process Starting ===
+Original Query: Memecoins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. recent developments in memecoins Q1 2025
+==============================
+2025-02-17 17:29:23,563 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-17 17:29:26,728 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://www.binance.com/en/square/post/20393260809113
+                                
+2025-02-17 17:29:27,388 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:29:34,440 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:29:40,270 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-17 17:29:40,270 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in memecoins Q1 2025
+                                
+2025-02-17 17:29:43,435 - utils - INFO - 
+                                URLs found for query "recent developments in memecoins Q1 2025":
+                                - https://techpoint.africa/cryptoexplorer/2025/02/11/next-crypto-to-explode-6-coins-set-for-a-massive-breakout-in-2025/
+                                
+2025-02-17 17:29:48,183 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:29:57,716 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:30:05,721 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-17 17:30:16,633 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROT', 'Risk to Reward ']
+                    
+2025-02-17 17:33:14,862 - utils - INFO - Received research request
+2025-02-17 17:33:14,863 - utils - INFO - Query: Bitcoins
+2025-02-17 17:33:14,863 - utils - INFO - Raw request data: {'query': 'Bitcoins', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]}
+2025-02-17 17:33:14,863 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:33:14,864 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:33:14,874 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:33:15,851 - utils - INFO - === Search Process Starting ===
+Original Query: Bitcoins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 2 queries:
+1. latest Bitcoin market trends February 2025
+2. recent developments in Bitcoin regulations Q1 2025
+==============================
+2025-02-17 17:33:15,852 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest Bitcoin market trends February 2025
+                                
+2025-02-17 17:33:18,761 - utils - INFO - 
+                                URLs found for query "latest Bitcoin market trends February 2025":
+                                - https://www.statista.com/statistics/326707/bitcoin-price-index/
+                                
+2025-02-17 17:33:25,033 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:33:29,900 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:33:39,248 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-17 17:33:39,248 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in Bitcoin regulations Q1 2025
+                                
+2025-02-17 17:33:42,201 - utils - INFO - 
+                                URLs found for query "recent developments in Bitcoin regulations Q1 2025":
+                                - https://www.coinbase.com/institutional/research-insights/research/market-intelligence/guide-to-crypto-markets-q1-2025
+                                
+2025-02-17 17:33:43,657 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:33:48,982 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:33:55,200 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-17 17:34:05,862 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROT', 'Risk to Reward ']
+                    
+2025-02-17 17:35:35,829 - utils - INFO - Received research request
+2025-02-17 17:35:35,829 - utils - INFO - Query: bitcoin
+2025-02-17 17:35:35,829 - utils - INFO - Raw request data: {'query': 'bitcoin', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]}
+2025-02-17 17:35:35,830 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:35:35,830 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:35:35,841 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:35:37,295 - utils - INFO - === Search Process Starting ===
+Original Query: bitcoin
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 2 queries:
+1. latest bitcoin market trends February 2025
+2. recent developments in bitcoin technology Q1 2025
+==============================
+2025-02-17 17:35:37,295 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest bitcoin market trends February 2025
+                                
+2025-02-17 17:35:40,156 - utils - INFO - 
+                                URLs found for query "latest bitcoin market trends February 2025":
+                                - https://www.statista.com/statistics/326707/bitcoin-price-index/
+                                
+2025-02-17 17:35:46,404 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:35:50,613 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:35:57,333 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-17 17:35:57,334 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in bitcoin technology Q1 2025
+                                
+2025-02-17 17:36:00,251 - utils - INFO - 
+                                URLs found for query "recent developments in bitcoin technology Q1 2025":
+                                - https://www.coinbase.com/institutional/research-insights/research/market-intelligence/guide-to-crypto-markets-q1-2025
+                                
+2025-02-17 17:36:00,844 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:36:07,972 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:36:23,696 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-17 17:36:34,669 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROT', 'Risk to Reward ']
+                    
+2025-02-17 17:40:59,795 - utils - INFO - Received research request
+2025-02-17 17:40:59,795 - utils - INFO - Query: memecoins
+2025-02-17 17:40:59,795 - utils - INFO - Raw request data: {'query': 'memecoins', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]}
+2025-02-17 17:40:59,796 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:40:59,796 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:40:59,806 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:41:01,292 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. top performing memecoins Q1 2025
+==============================
+2025-02-17 17:41:01,293 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-17 17:41:04,092 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://www.binance.com/en/square/post/20393260809113
+                                
+2025-02-17 17:41:04,743 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:41:12,133 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:41:18,492 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-17 17:41:18,492 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top performing memecoins Q1 2025
+                                
+2025-02-17 17:41:21,332 - utils - INFO - 
+                                URLs found for query "top performing memecoins Q1 2025":
+                                - https://www.binance.com/en/square/post/18582728442553
+                                
+2025-02-17 17:41:21,867 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:41:25,671 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:41:30,884 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-17 17:41:42,094 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROT', 'Risk to Reward ']
+                    

@@ -3,7 +3,7 @@ max_concurrent_requests: 50
 rate_limit: 0.1
 content_max_length: 4000
 request_timeout: 30
-urls_per_query: 5
+urls_per_query: 1
 use_ai_summary: true
 methods: 
   - "selenium"
