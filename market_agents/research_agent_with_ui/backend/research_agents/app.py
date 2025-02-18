@@ -15,6 +15,9 @@ import json
 import openai
 from io import StringIO
 import io
+from sse_starlette.sse import EventSourceResponse
+import asyncio
+
 
 load_dotenv()
 
@@ -31,6 +34,18 @@ client = AsyncOpenAI(
     api_key=os.getenv('OPENAI_KEY')
 )
 
+
+log_queue = asyncio.Queue()
+
+async def log_generator():
+    while True:
+        log_message = await log_queue.get()
+        if log_message is None:  # Sentinel value to stop the generator
+            break
+        yield {
+            "event": "log",
+            "data": json.dumps({"message": log_message, "timestamp": datetime.now().isoformat()})
+        }
 
 app = FastAPI(
     title="Research API",
@@ -117,7 +132,28 @@ class Tool(BaseModel):
     id: str
     name: str
     description: str
-
+@app.get("/api/research/stream")
+async def research_stream(query: str):
+    async def event_generator():
+        research_steps = [
+            "Initializing search parameters and configurations...",
+            "Querying search engines for relevant sources...",
+            "Analyzing search results and filtering relevant content...",
+            "Extracting key information from sources...",
+            "Processing market data and trends...",
+            "Applying custom analysis tools...",
+            "Generating comprehensive market insights...",
+            "Finalizing analysis and preparing response..."
+        ]
+        
+        for step in research_steps:
+            await asyncio.sleep(0.5)  # Simulate processing time
+            yield {
+                "event": "message",
+                "data": json.dumps({"log": step})
+            }
+    
+    return EventSourceResponse(event_generator())
 @app.post("/api/custom")
 async def custom_chat(
     message: str = Form(...),
@@ -479,14 +515,35 @@ class ResearchRequest(BaseModel):
     query: str
     custom_schemas: List[CustomSchema] = Field(default_factory=list)
 
+@app.get("/api/research/logs")
+async def research_logs():
+    async def generate():
+        try:
+            while True:
+                message = await log_queue.get()
+                if message is None:  # Sentinel value to stop the generator
+                    break
+                yield {
+                    "event": "message",
+                    "data": json.dumps({"message": message})
+                }
+        except asyncio.CancelledError:
+            pass
+
+    return EventSourceResponse(generate())
+
 @app.post("/api/research")
 async def research(request: ResearchRequest):
     try:
+        if not hasattr(app, 'log_queue'):
+            app.log_queue = asyncio.Queue()
         # Debug logging
+        await log_queue.put("🚀 Initializing research process...")
         logger.info("Received research request")
         logger.info(f"Query: {request.query}")
         logger.info(f"Raw request data: {request.dict()}")
         logger.info(f"Custom schemas received: {[schema.dict() for schema in request.custom_schemas]}")
+        logger.info(f"Processing research query: {request}")
         
         # Convert custom schemas to the format expected by WebSearchAgent
         custom_schemas = [
@@ -499,10 +556,12 @@ async def research(request: ResearchRequest):
         ]
         
         logger.info(f"Processed custom schemas: {custom_schemas}")
+        await log_queue.put("🔍 Collecting custom tools...")
         
         # Load config first
         config_data, prompts = load_config()
         config_data["query"] = request.query
+        await log_queue.put("🔍 Configuring search parameters...")
         
         config = WebSearchConfig(**config_data)
         agent = WebSearchAgent(
@@ -512,11 +571,12 @@ async def research(request: ResearchRequest):
         )
         
         try:
+            await log_queue.put("📊 Starting web search and analysis...")
             await agent.process_search_query(request.query)
         except Exception as search_error:
             logger.error(f"Search process error: {str(search_error)}")
             raise HTTPException(status_code=500, detail="Search process failed")
-        
+        await log_queue.put("✅ Search completed, processing results...")
         formatted_results = []
         for result in agent.results:
             if result:
@@ -558,10 +618,12 @@ async def research(request: ResearchRequest):
                 except Exception as e:
                     logger.error(f"Error formatting result: {str(e)}")
                     continue
-        
+        await log_queue.put("✨ Research process completed successfully")
         return formatted_results
+        
 
     except Exception as e:
+        await log_queue.put(f"❌ Error occurred: {str(e)}")
         logger.error(f"Research error: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 

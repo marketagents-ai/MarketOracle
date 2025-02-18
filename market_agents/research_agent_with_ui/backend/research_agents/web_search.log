@@ -11775,3 +11775,696 @@ Generated 2 queries:
                     Total Successful Extractions: 2
                     Custom Fields Analyzed: ['ROT', 'Risk to Reward ']
                     
+2025-02-17 17:53:21,658 - utils - INFO - Received research request
+2025-02-17 17:53:21,658 - utils - INFO - Query: memecoins
+2025-02-17 17:53:21,659 - utils - INFO - Raw request data: {'query': 'memecoins', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]}
+2025-02-17 17:53:21,659 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:53:21,659 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:53:21,667 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:53:23,145 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. recent developments in memecoins Q1 2025
+==============================
+2025-02-17 17:53:23,145 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-17 17:53:26,594 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://www.binance.com/en/square/post/20393260809113
+                                
+2025-02-17 17:53:27,246 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:53:33,871 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:53:40,244 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-17 17:53:40,244 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in memecoins Q1 2025
+                                
+2025-02-17 17:53:43,446 - utils - INFO - 
+                                URLs found for query "recent developments in memecoins Q1 2025":
+                                - https://techpoint.africa/cryptoexplorer/2025/02/11/next-crypto-to-explode-6-coins-set-for-a-massive-breakout-in-2025/
+                                
+2025-02-17 17:53:45,246 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:53:57,105 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:54:16,634 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-17 17:54:27,771 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROT', 'Risk to Reward ']
+                    
+2025-02-17 17:55:04,970 - utils - INFO - Received research request
+2025-02-17 17:55:04,970 - utils - INFO - Query: Memecoins
+2025-02-17 17:55:04,970 - utils - INFO - Raw request data: {'query': 'Memecoins', 'custom_schemas': [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]}
+2025-02-17 17:55:04,971 - utils - INFO - Custom schemas received: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:55:04,971 - utils - INFO - Processed custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:55:04,980 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROT', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {'ROI': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to ROI in financial markets'}}}}, {'name': 'Risk to Reward ', 'description': 'what is risk to reward ratio', 'schema_definition': {'type': 'object', 'properties': {'RisktoRewardRatio': {'type': 'string', 'required': False, 'description': 'Analysis and insights related to RisktoRewardRatio in financial markets'}}}}]
+2025-02-17 17:55:05,797 - utils - INFO - === Search Process Starting ===
+Original Query: Memecoins
+
+Active Custom Tools:
+      - ROT: Return on Investement
+      - Risk to Reward : what is risk to reward ratio
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. top performing memecoins Q1 2025
+==============================
+2025-02-17 17:55:05,797 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-17 17:55:09,061 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://www.binance.com/en/square/post/20393260809113
+                                
+2025-02-17 17:55:09,717 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:55:14,405 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:55:26,893 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-17 17:55:26,894 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top performing memecoins Q1 2025
+                                
+2025-02-17 17:55:30,119 - utils - INFO - 
+                                URLs found for query "top performing memecoins Q1 2025":
+                                - https://www.binance.com/en/square/post/18582728442553
+                                
+2025-02-17 17:55:30,695 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:55:34,360 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-17 17:55:43,333 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-17 17:55:53,973 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROT', 'Risk to Reward ']
+                    
+2025-02-18 14:32:08,835 - utils - INFO - Received research request
+2025-02-18 14:32:08,837 - utils - INFO - Query: bitcoin price
+2025-02-18 14:32:08,838 - utils - INFO - Raw request data: {'query': 'bitcoin price', 'custom_schemas': [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]}
+2025-02-18 14:32:08,838 - utils - INFO - Custom schemas received: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:32:08,838 - utils - INFO - Processed custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:32:08,848 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:32:23,099 - utils - INFO - === Search Process Starting ===
+Original Query: bitcoin price
+
+Active Custom Tools:
+      - ROI: Return on Investement
+
+Generated 2 queries:
+1. latest bitcoin price trends February 2025
+2. recent bitcoin price fluctuations Q1 2025
+==============================
+2025-02-18 14:32:23,099 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest bitcoin price trends February 2025
+                                
+2025-02-18 14:33:48,907 - utils - INFO - 
+                                URLs found for query "latest bitcoin price trends February 2025":
+                                - https://www.statista.com/statistics/326707/bitcoin-price-index/
+                                
+2025-02-18 14:34:24,522 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 14:34:51,557 - utils - INFO - Received research request
+2025-02-18 14:34:51,557 - utils - INFO - Query: memcoins
+2025-02-18 14:34:51,557 - utils - INFO - Raw request data: {'query': 'memcoins', 'custom_schemas': [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]}
+2025-02-18 14:34:51,557 - utils - INFO - Custom schemas received: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:34:51,558 - utils - INFO - Processed custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:34:51,570 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:34:52,962 - utils - INFO - === Search Process Starting ===
+Original Query: memcoins
+
+Active Custom Tools:
+      - ROI: Return on Investement
+
+Generated 2 queries:
+1. latest memcoin trends February 2025
+2. recent developments in memcoins Q1 2025
+==============================
+2025-02-18 14:34:52,962 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memcoin trends February 2025
+                                
+2025-02-18 14:34:56,656 - utils - INFO - 
+                                URLs found for query "latest memcoin trends February 2025":
+                                - https://techpoint.africa/cryptoexplorer/2025/02/15/6-top-meme-coins-to-invest-in-2025-the-next-big-players-in-the-crypto-space/
+                                
+2025-02-18 14:35:13,192 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 14:35:20,114 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 14:35:33,059 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 14:35:33,059 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in memcoins Q1 2025
+                                
+2025-02-18 14:35:37,216 - utils - INFO - 
+                                URLs found for query "recent developments in memcoins Q1 2025":
+                                - https://techpoint.africa/cryptoexplorer/2025/02/11/next-crypto-to-explode-6-coins-set-for-a-massive-breakout-in-2025/
+                                
+2025-02-18 14:36:00,123 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 14:36:10,105 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 14:36:24,980 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 14:36:37,502 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROI']
+                    
+2025-02-18 14:46:02,150 - utils - INFO - Received research request
+2025-02-18 14:46:02,150 - utils - INFO - Query: memecoins
+2025-02-18 14:46:02,150 - utils - INFO - Raw request data: {'query': 'memecoins', 'custom_schemas': [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]}
+2025-02-18 14:46:02,150 - utils - INFO - Custom schemas received: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:46:02,151 - utils - INFO - Processed custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:46:02,162 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:46:05,261 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins
+
+Active Custom Tools:
+      - ROI: Return on Investement
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. top performing memecoins Q1 2025
+==============================
+2025-02-18 14:46:05,261 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-18 14:46:08,749 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://zebpay.com/blog/top-5-meme-coins-of-2025
+                                
+2025-02-18 14:47:09,473 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 14:47:23,326 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 14:47:45,145 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 14:47:45,145 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top performing memecoins Q1 2025
+                                
+2025-02-18 14:47:48,466 - utils - INFO - 
+                                URLs found for query "top performing memecoins Q1 2025":
+                                - https://www.binance.com/en/square/post/18582728442553
+                                
+2025-02-18 14:48:16,491 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 14:48:34,085 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 14:49:13,160 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 14:49:25,630 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROI']
+                    
+2025-02-18 14:52:51,554 - utils - INFO - Received research request
+2025-02-18 14:52:51,554 - utils - INFO - Query: memecoins
+2025-02-18 14:52:51,554 - utils - INFO - Raw request data: {'query': 'memecoins', 'custom_schemas': [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]}
+2025-02-18 14:52:51,554 - utils - INFO - Custom schemas received: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:52:51,554 - utils - INFO - Processing research query: query='memecoins' custom_schemas=[CustomSchema(name='ROI', description='Return on Investement', schema_definition={'type': 'object', 'properties': {}})]
+2025-02-18 14:52:51,554 - utils - INFO - Processed custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:52:51,567 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:52:53,905 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins
+
+Active Custom Tools:
+      - ROI: Return on Investement
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. recent developments in memecoins Q1 2025
+==============================
+2025-02-18 14:52:53,905 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-18 14:52:57,906 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://zebpay.com/blog/top-5-meme-coins-of-2025
+                                
+2025-02-18 14:53:58,527 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 14:55:50,189 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 14:56:21,402 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 14:56:21,402 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in memecoins Q1 2025
+                                
+2025-02-18 14:56:25,127 - utils - INFO - 
+                                URLs found for query "recent developments in memecoins Q1 2025":
+                                - https://www.binance.com/en/square/post/18582728442553
+                                
+2025-02-18 14:57:22,516 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 14:57:35,480 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 14:58:06,257 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 14:58:18,221 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROI']
+                    
+2025-02-18 14:59:27,216 - utils - INFO - Received research request
+2025-02-18 14:59:27,216 - utils - INFO - Query: memecoins
+2025-02-18 14:59:27,217 - utils - INFO - Raw request data: {'query': 'memecoins', 'custom_schemas': [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]}
+2025-02-18 14:59:27,217 - utils - INFO - Custom schemas received: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:59:27,217 - utils - INFO - Processing research query: query='memecoins' custom_schemas=[CustomSchema(name='ROI', description='Return on Investement', schema_definition={'type': 'object', 'properties': {}})]
+2025-02-18 14:59:27,217 - utils - INFO - Processed custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:59:27,230 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 14:59:29,032 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins
+
+Active Custom Tools:
+      - ROI: Return on Investement
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. recent developments in memecoins Q1 2025
+==============================
+2025-02-18 14:59:29,032 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-18 14:59:32,681 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://zebpay.com/blog/top-5-meme-coins-of-2025
+                                
+2025-02-18 15:00:33,334 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:00:43,620 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:01:02,111 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 15:01:02,111 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in memecoins Q1 2025
+                                
+2025-02-18 15:01:05,628 - utils - INFO - 
+                                URLs found for query "recent developments in memecoins Q1 2025":
+                                - https://www.binance.com/en/square/post/18582728442553
+                                
+2025-02-18 15:01:35,062 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:01:47,303 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:02:19,276 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 15:02:32,444 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROI']
+                    
+2025-02-18 15:04:21,097 - utils - INFO - Received research request
+2025-02-18 15:04:21,098 - utils - INFO - Query: memecoins
+2025-02-18 15:04:21,098 - utils - INFO - Raw request data: {'query': 'memecoins', 'custom_schemas': [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]}
+2025-02-18 15:04:21,098 - utils - INFO - Custom schemas received: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:04:21,098 - utils - INFO - Processing research query: query='memecoins' custom_schemas=[CustomSchema(name='ROI', description='Return on Investement', schema_definition={'type': 'object', 'properties': {}})]
+2025-02-18 15:04:21,098 - utils - INFO - Processed custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:04:21,110 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:04:22,817 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins
+
+Active Custom Tools:
+      - ROI: Return on Investement
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. top performing memecoins Q1 2025
+==============================
+2025-02-18 15:04:22,817 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-18 15:04:26,954 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://zebpay.com/blog/top-5-meme-coins-of-2025
+                                
+2025-02-18 15:05:27,543 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:05:40,629 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:05:58,722 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 15:05:58,722 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top performing memecoins Q1 2025
+                                
+2025-02-18 15:06:02,095 - utils - INFO - 
+                                URLs found for query "top performing memecoins Q1 2025":
+                                - https://www.binance.com/en/square/post/18582728442553
+                                
+2025-02-18 15:06:15,657 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:06:27,869 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:06:58,438 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 15:07:11,015 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROI']
+                    
+2025-02-18 15:11:02,743 - utils - INFO - Received research request
+2025-02-18 15:11:02,743 - utils - INFO - Query: memecoins
+2025-02-18 15:11:02,743 - utils - INFO - Raw request data: {'query': 'memecoins', 'custom_schemas': [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]}
+2025-02-18 15:11:02,743 - utils - INFO - Custom schemas received: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:11:02,743 - utils - INFO - Processing research query: query='memecoins' custom_schemas=[CustomSchema(name='ROI', description='Return on Investement', schema_definition={'type': 'object', 'properties': {}})]
+2025-02-18 15:11:02,743 - utils - INFO - Processed custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:11:02,755 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:11:04,962 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins
+
+Active Custom Tools:
+      - ROI: Return on Investement
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. top performing memecoins Q1 2025
+==============================
+2025-02-18 15:11:04,962 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-18 15:11:08,619 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://zebpay.com/blog/top-5-meme-coins-of-2025
+                                
+2025-02-18 15:12:09,307 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:12:17,219 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:12:28,748 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 15:12:28,749 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top performing memecoins Q1 2025
+                                
+2025-02-18 15:12:32,160 - utils - INFO - 
+                                URLs found for query "top performing memecoins Q1 2025":
+                                - https://www.binance.com/en/square/post/18582728442553
+                                
+2025-02-18 15:12:46,305 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:13:01,320 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:13:25,874 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 15:13:38,562 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROI']
+                    
+2025-02-18 15:17:14,929 - utils - INFO - Received research request
+2025-02-18 15:17:14,930 - utils - INFO - Query: MEMECOINS
+2025-02-18 15:17:14,930 - utils - INFO - Raw request data: {'query': 'MEMECOINS', 'custom_schemas': [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]}
+2025-02-18 15:17:14,930 - utils - INFO - Custom schemas received: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:17:14,930 - utils - INFO - Processing research query: query='MEMECOINS' custom_schemas=[CustomSchema(name='ROI', description='Return on Investement', schema_definition={'type': 'object', 'properties': {}})]
+2025-02-18 15:17:14,930 - utils - INFO - Processed custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:17:14,940 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:17:16,637 - utils - INFO - === Search Process Starting ===
+Original Query: MEMECOINS
+
+Active Custom Tools:
+      - ROI: Return on Investement
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. top performing memecoins Q1 2025
+==============================
+2025-02-18 15:17:16,637 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-18 15:17:20,690 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://zebpay.com/blog/top-5-meme-coins-of-2025
+                                
+2025-02-18 15:18:21,364 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:18:34,113 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:18:57,719 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 15:18:57,719 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top performing memecoins Q1 2025
+                                
+2025-02-18 15:19:01,574 - utils - INFO - 
+                                URLs found for query "top performing memecoins Q1 2025":
+                                - https://www.binance.com/en/square/post/18582728442553
+                                
+2025-02-18 15:19:09,569 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:19:23,122 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:19:56,840 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 15:20:09,297 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROI']
+                    
+2025-02-18 15:22:34,461 - utils - INFO - Received research request
+2025-02-18 15:22:34,461 - utils - INFO - Query: MEMCOINS
+2025-02-18 15:22:34,461 - utils - INFO - Raw request data: {'query': 'MEMCOINS', 'custom_schemas': [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]}
+2025-02-18 15:22:34,461 - utils - INFO - Custom schemas received: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:22:34,461 - utils - INFO - Processing research query: query='MEMCOINS' custom_schemas=[CustomSchema(name='ROI', description='Return on Investement', schema_definition={'type': 'object', 'properties': {}})]
+2025-02-18 15:22:34,461 - utils - INFO - Processed custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:22:34,474 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:22:36,760 - utils - INFO - === Search Process Starting ===
+Original Query: MEMCOINS
+
+Active Custom Tools:
+      - ROI: Return on Investement
+
+Generated 2 queries:
+1. latest memcoin developments February 2025
+2. recent trends in memcoins Q1 2025
+==============================
+2025-02-18 15:22:36,760 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memcoin developments February 2025
+                                
+2025-02-18 15:22:40,502 - utils - INFO - 
+                                URLs found for query "latest memcoin developments February 2025":
+                                - https://zebpay.com/blog/top-5-meme-coins-of-2025
+                                
+2025-02-18 15:23:41,071 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:23:54,358 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:24:10,635 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 15:24:10,635 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent trends in memcoins Q1 2025
+                                
+2025-02-18 15:24:14,485 - utils - INFO - 
+                                URLs found for query "recent trends in memcoins Q1 2025":
+                                - https://techpoint.africa/cryptoexplorer/2025/02/15/6-top-meme-coins-to-invest-in-2025-the-next-big-players-in-the-crypto-space/
+                                
+2025-02-18 15:24:22,328 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:24:29,814 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:24:48,528 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 15:25:01,162 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROI']
+                    
+2025-02-18 15:28:57,652 - utils - INFO - Received research request
+2025-02-18 15:28:57,653 - utils - INFO - Query: memecoins
+2025-02-18 15:28:57,653 - utils - INFO - Raw request data: {'query': 'memecoins', 'custom_schemas': [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]}
+2025-02-18 15:28:57,653 - utils - INFO - Custom schemas received: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:28:57,653 - utils - INFO - Processing research query: query='memecoins' custom_schemas=[CustomSchema(name='ROI', description='Return on Investement', schema_definition={'type': 'object', 'properties': {}})]
+2025-02-18 15:28:57,653 - utils - INFO - Processed custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:28:57,665 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 15:28:59,307 - utils - INFO - === Search Process Starting ===
+Original Query: memecoins
+
+Active Custom Tools:
+      - ROI: Return on Investement
+
+Generated 2 queries:
+1. latest memecoin trends February 2025
+2. top performing memecoins Q1 2025
+==============================
+2025-02-18 15:28:59,308 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest memecoin trends February 2025
+                                
+2025-02-18 15:29:03,206 - utils - INFO - 
+                                URLs found for query "latest memecoin trends February 2025":
+                                - https://zebpay.com/blog/top-5-meme-coins-of-2025
+                                
+2025-02-18 15:30:03,815 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:30:16,713 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:30:35,739 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 15:30:35,739 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: top performing memecoins Q1 2025
+                                
+2025-02-18 15:30:39,555 - utils - INFO - 
+                                URLs found for query "top performing memecoins Q1 2025":
+                                - https://www.binance.com/en/square/post/18582728442553
+                                
+2025-02-18 15:30:48,021 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:31:03,358 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 15:31:28,966 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 15:31:41,297 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 2
+                    Custom Fields Analyzed: ['ROI']
+                    
+2025-02-18 16:03:52,448 - utils - INFO - Received research request
+2025-02-18 16:03:52,448 - utils - INFO - Query: meemcoins
+2025-02-18 16:03:52,448 - utils - INFO - Raw request data: {'query': 'meemcoins', 'custom_schemas': [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]}
+2025-02-18 16:03:52,449 - utils - INFO - Custom schemas received: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 16:03:52,449 - utils - INFO - Processing research query: query='meemcoins' custom_schemas=[CustomSchema(name='ROI', description='Return on Investement', schema_definition={'type': 'object', 'properties': {}})]
+2025-02-18 16:03:52,449 - utils - INFO - Processed custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 16:03:52,462 - utils - INFO - Initialized WebSearchAgent with custom schemas: [{'name': 'ROI', 'description': 'Return on Investement', 'schema_definition': {'type': 'object', 'properties': {}}}]
+2025-02-18 16:03:53,838 - utils - INFO - === Search Process Starting ===
+Original Query: meemcoins
+
+Active Custom Tools:
+      - ROI: Return on Investement
+
+Generated 2 queries:
+1. latest meemcoin trends February 2025
+2. recent developments in meemcoins Q1 2025
+==============================
+2025-02-18 16:03:53,838 - utils - INFO - 
+                                === Processing Query 1/2 ===
+                                Query: latest meemcoin trends February 2025
+                                
+2025-02-18 16:07:57,704 - utils - INFO - 
+                                URLs found for query "latest meemcoin trends February 2025":
+                                
+                                
+2025-02-18 16:07:57,706 - utils - INFO - 
+                            Query 1 Results Summary:
+                            - URLs processed: 0
+                            - Successful extractions: 0
+                            - Failed extractions: 0
+                            
+2025-02-18 16:07:57,706 - utils - INFO - 
+                                === Processing Query 2/2 ===
+                                Query: recent developments in meemcoins Q1 2025
+                                
+2025-02-18 16:08:02,073 - utils - INFO - 
+                                URLs found for query "recent developments in meemcoins Q1 2025":
+                                - https://www.binance.com/en/square/post/18582728442553
+                                
+2025-02-18 16:08:16,643 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 16:08:32,302 - utils - INFO - Successfully created merged schema with custom fields
+2025-02-18 16:09:00,533 - utils - INFO - 
+                            Query 2 Results Summary:
+                            - URLs processed: 1
+                            - Successful extractions: 1
+                            - Failed extractions: 0
+                            
+2025-02-18 16:09:13,405 - utils - INFO - 
+                    === Final Search Summary ===
+                    Total Queries Processed: 2
+                    Total URLs Processed: 4
+                    Total Successful Extractions: 1
+                    Custom Fields Analyzed: ['ROI']
+                    
