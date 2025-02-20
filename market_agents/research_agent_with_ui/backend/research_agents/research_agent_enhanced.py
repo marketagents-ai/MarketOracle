@@ -19,6 +19,8 @@ import uuid
 from typing import Any, Dict, List, Optional, Type
 import asyncio
 import logging
+from sse_starlette.sse import EventSourceResponse
+import asyncio
 
 
 class WebSearchResult(BaseModel):
@@ -31,20 +33,23 @@ class WebSearchResult(BaseModel):
     agent_id: str
     extraction_method: str = "unknown"
 
-
+log_queue = asyncio.Queue()
 class WebSearchAgent:
     def __init__(
         self,
         config: WebSearchConfig,
         prompts: Dict[str, str],
-        custom_schemas: Optional[List[Dict[str, Any]]] = None
+        custom_schemas: Optional[List[Dict[str, Any]]] = None,
+        log_queue: Optional[asyncio.Queue] = None
     ):
         self.config = config
         self.prompts = prompts
         self.custom_schemas = custom_schemas or []  # Store custom schemas
+        self.log_queue = log_queue
         logger.info(f"Initialized WebSearchAgent with custom schemas: {self.custom_schemas}")
         self.results: List[WebSearchResult] = []
         _, self.prompts = load_config()
+        self.log_queue = log_queue 
         
         def set_custom_schemas(self, schemas):
             """Add custom schemas to be used alongside default schemas"""
@@ -64,6 +69,11 @@ class WebSearchAgent:
         
         # Instantiate URLFetcher for URL fetching only
         self.url_fetcher = URLFetcher(config, prompts)
+    async def log(self, message: str):
+        """Helper method to send logs to both logger and queue"""
+        logger.info(message)
+        if self.log_queue:
+            await self.log_queue.put(message)
     async def generate_market_analysis(self, content: str) -> Dict[str, Any]:
         # Combine default and custom fields for analysis
         analysis_fields = {
@@ -108,7 +118,11 @@ class WebSearchAgent:
 
     async def process_search_query(self, query: str) -> None:
         try:
+            if self.log_queue:
+                await self.log_queue.put("🔄 Starting search query processing...")
             search_queries = await self.search_manager.generate_search_queries(query)
+            if self.log_queue:
+                await self.log_queue.put(f"📊 Generated {len(search_queries)} search queries")
             
             # Format custom tools info using self.custom_schemas
             custom_tools_info = "\n".join([
@@ -129,6 +143,8 @@ class WebSearchAgent:
             all_results = []
             
             for idx, search_query in enumerate(search_queries, 1):
+                if self.log_queue:
+                    await self.log_queue.put(f"🔍 Processing Query {idx}/{len(search_queries)}: {search_query}")
                 logger.info(f"""
                                 === Processing Query {idx}/{len(search_queries)} ===
                                 Query: {search_query}
@@ -143,21 +159,30 @@ class WebSearchAgent:
                                 URLs found for query "{search_query}":
                                 {chr(10).join(f'- {url}' for url in urls)}
                                 """)
+                if self.log_queue:
+                    await self.log_queue.put(f"🌐 Found {len(urls)} URLs to process")
+                for i, url in enumerate(urls, 1):
+                    await log_queue.put(f"   {i}. {url}")
 
                 for url in urls:
                     self.search_manager.query_url_mapping[url] = search_query
+                    if self.log_queue:
+                        await self.log_queue.put(f"🔗 Processing URL: {url}")
                 
                 # Fetch raw content without summary
                 fetched_results = await self.url_fetcher.process_urls(urls, self.search_manager.query_url_mapping)
 
                 # For each fetched result, generate summary and create WebSearchResult
                 for fr in fetched_results:
+                    await log_queue.put(f"📥 Content extracted from: {fr.url}")
                     # Generate summary if enabled
                     summary = {}
                     if self.config.use_ai_summary:
                         # Generate standard summary
                         summary = await self.generate_ai_summary(fr.url, fr.content, 
                                                             "Contains tables/charts" if fr.has_data else "Text only")
+                        if self.log_queue:
+                            await self.log_queue.put(f"✨ Summary completed for: {fr.url}")
                         
                         # Generate custom field summaries if custom schemas exist
                         if self.custom_schemas and 'assets' in summary and summary['assets']:
@@ -187,6 +212,27 @@ class WebSearchAgent:
                         extraction_method=fr.extraction_method
                     )
                     all_results.append(web_result)
+                    if self.log_queue:
+                        await self.log_queue.put(f"✅ Completed processing: {fr.url}")
+                    successful = len([r for r in fetched_results if r.content])
+                    failed = len(urls) - successful
+                    await log_queue.put(f"""
+                        📊 Query {idx} Results:
+                        - URLs found: {len(urls)}
+                        - Successfully processed: {successful}
+                        - Failed: {failed}
+                        """)
+
+                    self.results = all_results
+                    
+                    total_successful = len([r for r in self.results if r and r.status == "success"])
+                    await log_queue.put(f"""
+✨ Search Complete:
+   - Total queries processed: {len(search_queries)}
+   - Total URLs processed: {sum(len(self.search_manager.get_urls_for_query(q)) for q in search_queries)}
+   - Successfully analyzed: {total_successful}
+   - Failed: {len(self.results) - total_successful}
+""")
                 
                 logger.info(f"""
                             Query {idx} Results Summary:
@@ -274,6 +320,7 @@ class WebSearchAgent:
     async def generate_ai_summary(self, url: str, content: Dict[str, Any], content_type: str) -> Dict[str, Any]:
         """Generate AI summary using schema specified in config with enhanced custom field support."""
         try:
+            await self.log(f"🔄 Starting AI summary generation for: {url}")
             # Get base LLM config
             llm_config_dict = self.config.llm_configs["content_analysis"].copy()
             schema_config = llm_config_dict.pop('schema_config', {})

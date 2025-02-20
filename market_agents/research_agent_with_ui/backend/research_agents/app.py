@@ -567,11 +567,11 @@ async def research(request: ResearchRequest):
         agent = WebSearchAgent(
             config=config,
             prompts=prompts,
-            custom_schemas=custom_schemas
+            custom_schemas=custom_schemas,
+            log_queue=log_queue 
         )
-        
+        await log_queue.put("📊 Starting web search and analysis...")
         try:
-            await log_queue.put("📊 Starting web search and analysis...")
             await agent.process_search_query(request.query)
         except Exception as search_error:
             logger.error(f"Search process error: {str(search_error)}")
