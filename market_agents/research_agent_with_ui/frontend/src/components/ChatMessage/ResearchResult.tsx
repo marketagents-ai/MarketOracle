@@ -161,7 +161,7 @@ export const ResearchResult: React.FC<ResearchResultProps> = ({ data }) => {
 
   // Main component return
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 relative z-0"> 
       {renderSummaryTable()}
       
       {/* Source Analysis Details */}

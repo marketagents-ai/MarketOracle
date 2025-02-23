@@ -9,6 +9,8 @@ import { useChats } from './hooks/useChats';
 import { fetchResearch, sendCustomMessage } from './services/api';
 import { handleAPIError } from './utils/api';
 import type { ChatItem, ChatMode } from './types/chat';
+import { ResearchProvider } from './context/ResearchContext';
+import { AIFinancialLoader } from './components/AIFinancialLoader';
 
 export const App: React.FC = () => {
   const { chats, activeChat, setActiveChat, createChat, updateChat, updateChatMode } = useChats();
@@ -42,15 +44,7 @@ export const App: React.FC = () => {
         responseData = await fetchResearch(query, urls);
       } else {
         // Custom mode
-        const response = await sendCustomMessage(message, file);
-      
-        const aiMessage: ChatItem = {
-          isUser: false,
-          content: response.content,
-          timestamp: new Date(),
-          mode: 'custom',
-          fileInfo: response.file_info
-        };
+        responseData = await sendCustomMessage(query);
       }
   
       const responseMessage: ChatItem = {
@@ -74,39 +68,47 @@ export const App: React.FC = () => {
       setIsLoading(false);
     }
   };
-
   return (
-    <div className="h-screen flex flex-col bg-gray-900 text-white">
-      <Header />
-      <main className="flex-1 flex overflow-hidden">
-        <Sidebar
-          chats={chats}
-          activeChat={activeChat}
-          onNewChat={() => createChat(activeChatMode)}
-          onSelectChat={setActiveChat}
-        />
-        <div className="flex-1 flex flex-col overflow-hidden">
-          <div className="p-4 border-b border-gray-800">
-            <ChatModeSelector
-              mode={activeChatMode}
-              onModeChange={(mode) => updateChatMode(activeChat!, mode)}
-              disabled={!activeChat}
-            />
-          </div>
+    <ResearchProvider>
+      <div className="h-screen flex flex-col bg-gray-900 text-white">
+        <Header />
+        <main className="flex-1 flex overflow-hidden">
+          <Sidebar
+            chats={chats}
+            activeChat={activeChat}
+            onNewChat={() => createChat(activeChatMode)}
+            onSelectChat={setActiveChat}
+          />
           <div className="flex-1 flex flex-col overflow-hidden">
-            <ChatHistory messages={activeMessages} />
-            <div className="border-t border-gray-800 p-4">
-              <ChatInput
+            <div className="p-4 border-b border-gray-800">
+              <ChatModeSelector
                 mode={activeChatMode}
-                onSubmit={handleSubmit}
-                isLoading={isLoading}
+                onModeChange={(mode) => updateChatMode(activeChat!, mode)}
                 disabled={!activeChat}
               />
             </div>
+            <div className="flex-1 flex flex-col overflow-hidden relative">
+              <div className="flex-1 overflow-y-auto">
+                <ChatHistory messages={activeMessages} />
+                {isLoading && activeChatMode === 'research' && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <AIFinancialLoader />
+                  </div>
+                )}
+              </div>
+              <div className="sticky bottom-0 border-t border-gray-800 bg-[#0d1117] p-4 z-50">
+                <ChatInput
+                  mode={activeChatMode}
+                  onSubmit={handleSubmit}
+                  isLoading={isLoading}
+                  disabled={!activeChat}
+                />
+              </div>
+            </div>
           </div>
-        </div>
-        <ToolsPanel />
-      </main>
-    </div>
+          <ToolsPanel />
+        </main>
+      </div>
+    </ResearchProvider>
   );
 };
